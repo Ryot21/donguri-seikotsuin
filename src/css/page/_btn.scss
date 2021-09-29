@@ -1,0 +1,137 @@
+
+
+// ページ内のボタン
+
+.page{
+	&-top {
+		&__btn {
+			display: flex;
+			position: absolute;
+			top: 400px;
+			left: 50%;
+			text-shadow: 1px 1px $lightblack;
+			z-index: 111;
+			@include max-screen($break_point_pc) {
+				transform: translateX(-50%);
+			}
+			@include min-screen($break_point_max) {
+				top: 470px;
+				left: 50%;
+			}
+			@include min-screen($break_point_pc) {
+				top: 20px;
+				right: 20px;
+				left: auto;
+			}
+		}
+		&__contact {
+			&__link {
+				position: relative;
+				display: block;
+				width: 120px;
+				height: 40px;
+				background: #81786a;
+				margin: 0 0 0 10px;
+				border-radius: 5px;
+				box-shadow: 0px 1px 2px $lightblack inset;
+				transition-duration: 0.5s; 
+				&:hover {
+					background: $brown;
+					transition-duration: 0.5s; 
+				}
+				// テキスト部分
+				&::before {
+					font-family: 'Font Awesome 5 Free';
+					content: '\f0e0';
+					font-weight: 400;
+					font-size: 23px;
+					color: #fff;
+					position: absolute;
+					// width: 25px;
+					// height: 25px;
+					top: -2px;
+					left: 13px;
+					z-index: 10;
+				}
+				&::after {
+					content: "ご予約は\Aこちら";
+					white-space: pre;
+					font-size: 14px;
+					font-weight: bold;
+					line-height: 1;
+					color: $white;
+					position: absolute;
+					top: 6px;
+					right:15px;
+					@include min-screen($break_point_max) {
+						content: "ご予約はこちら";
+						top: 10px;
+						right: 10px;
+						font-size: 16px;
+						line-height: 1.2;
+					}
+				}
+				// //テキスト部分
+				@include min-screen($break_point_max) {
+					width: 170px;
+				}
+			}
+		}
+		&__line{
+			&__link {
+				position: relative;
+				display: block;
+				width: 130px;
+				height: 40px;
+				background: $L-green;
+				margin: 0 0 0 10px;
+				border-radius: 5px;
+				box-shadow: 0px 1px 2px $lightblack inset;
+				transition-duration: 0.5s; 
+
+				&:hover {
+					background: $Dgreen;
+					transition-duration: 0.5s; 
+				}
+				// テキスト部分
+				&::before {
+					font-family: 'Font Awesome 5 Brands';
+					content: '\f3c0';
+					font-weight: 400;
+					font-size: 25px;
+					color: #fff;
+					position: absolute;
+					width: 25px;
+					height: 25px;
+					top: -5px;
+					left: 25px;
+					z-index: 10;
+				}
+				&::after {
+					content: "お友達\A登録";
+					white-space: pre;
+					font-size: 14px;
+					font-weight: bold;
+					line-height: 1;
+					color: $white;
+					position: absolute;
+					top: 6px;
+					right:25px;
+					@include min-screen($break_point_max) {
+						content: "お友達登録";
+						top: 10px;
+						right: 25px;
+						font-size: 16px;
+						line-height: 1.2;
+					}
+				}
+				// //テキスト部分
+
+				@include min-screen($break_point_max) {
+					width: 170px;
+				}
+			}
+
+		}
+	}
+}

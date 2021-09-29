@@ -1,0 +1,42 @@
+/*=========================
+l-header
+
+<header class="l-header">
+	ヘッダーのコンテンツ
+</header>
+==========================*/
+
+.home {
+	.l-header {
+		position: relative;
+		height: 350px;
+		@include min-screen($break_point_max) {
+			height: 600px;
+		}
+		@include min-screen($break_point_pc) {
+			height: 600px;
+		}
+	}
+}
+
+
+
+.l-header {
+	padding: 15px 10px;
+	@include min-screen($break_point_pc) {
+		width: 100%;
+		max-width: 1200px;
+		padding: 25px 50px;
+		margin: 0 auto;
+	}
+	&__wrap {
+
+	}
+}
+
+// 固定
+.l-header--fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+}

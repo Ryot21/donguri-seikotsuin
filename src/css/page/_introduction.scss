@@ -1,0 +1,24 @@
+
+// 7.院内紹介／スタッフ紹介
+.page-introduction {
+	&-header {
+		
+		@include min-screen($break_point_max) {
+			
+		}
+		&__title {
+			
+			@include min-screen($break_point_max) {
+				
+			}
+		}
+
+		&__date {
+			
+		}
+
+	}
+	&__content { //ブログコンテンツ内はここに
+
+	}
+}

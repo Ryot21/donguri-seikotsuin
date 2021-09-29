@@ -1,0 +1,45 @@
+/*===========
+ Basic color
+===========*/
+$black: #333;
+$lightblack:#4E4848;
+$white: #ffffffeb;
+$gray: #BCBBB6;
+$btn-gray:#B1B1B1;
+$brown: #837054;
+$bg-brown: hsla(36, 22%, 42%, 0.349);
+$red : #b01717;
+$beige: #ffeddc;
+$yellow: #E5D02F;
+$blue: #00B6EB;
+$Dgreen:#053f3f;
+$L-green:hsla(101, 95%, 38%, 0.8);
+
+$board_text__color: #2e2729;
+$paper_text__color: #20526a;
+$text__color__hover: #21759b;
+
+/*===========
+ main color for this site.
+===========*/
+
+$color__background-body: $black;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #f6f6f6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: $board_text__color;
+$color__link-visited: $board_text__color;
+$color__link-hover: $text__color__hover;
+$color__text-main: $board_text__color;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;

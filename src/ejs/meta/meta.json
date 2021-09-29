@@ -1,0 +1,92 @@
+{
+
+  "home": {
+    "bodyclass": "home",
+    "title": "どんぐり整骨院 | 埼玉県所沢市の整骨院",
+    "description": "埼玉県所沢市を拠点に置く、地元形の整骨院です。",
+    "canonical": "/",
+    "keywords": "どんぐり整骨院, 埼玉県, 所沢市, 整骨院, 駐車場あり"
+  },
+
+  "about": {
+    "bodyclass": "about",
+    "title": "どんぐり整骨院 | 当院のこだわり",
+    "description": "埼玉県所沢市を拠点に置く、地元形の整骨院です。",
+    "canonical": "/about/",
+    "keywords": "当院のこだわり, 埼玉県, 所沢市, 整骨院, 駐車場あり"
+  },
+
+  "menu": {
+    "bodyclass": "menu",
+    "title": "どんぐり整骨院 | メニュー/料金表",
+    "description": "埼玉県所沢市を拠点に置く、地元形の整骨院です。",
+    "canonical": "/menu/",
+    "keywords": "メニュー, 料金, 埼玉県, 所沢市, 整骨院"
+  },
+
+  "introduction": {
+    "bodyclass": "introduction",
+    "title": "どんぐり整骨院 | 院内紹介/スタッフ紹介",
+    "description": "埼玉県所沢市を拠点に置く、地元形の整骨院です。",
+    "canonical": "/introduction/",
+    "keywords": "どんぐり整骨院, 院内紹介, スタッフ紹介 埼玉県, 所沢市, 整骨院"
+  },
+
+  "access": {
+    "bodyclass": "access",
+    "title": "どんぐり整骨院 | アクセス",
+    "description": "埼玉県所沢市を拠点に置く、地元形の整骨院です。",
+    "canonical": "/access/",
+    "keywords": "どんぐり整骨院, アクセス, 埼玉県, 所沢市, 整骨院"
+  },
+
+  "q&a": {
+    "bodyclass": "q&a",
+    "title": "どんぐり整骨院 | よくあるご質問",
+    "description": "埼玉県所沢市を拠点に置く、地元形の整骨院です。",
+    "canonical": "/q&a/",
+    "keywords": "どんぐり整骨院, よくあるご質問, 埼玉県, 所沢市, 整骨院"
+  },
+
+  "blog": {
+    "bodyclass": "blog",
+    "title": "どんぐり整骨院 | ブログ",
+    "description": "埼玉県所沢市を拠点に置く、地元形の整骨院です。",
+    "canonical": "/blog/",
+    "keywords": "どんぐり整骨院, ブログ, 埼玉県, 所沢市, 整骨院"
+  },
+
+  "contact": {
+    "bodyclass": "contact",
+    "title": "どんぐり整骨院 | お問い合わせ",
+    "description": "埼玉県所沢市を拠点に置く、地元形の整骨院です。",
+    "canonical": "/contact/",
+    "keywords": "どんぐり整骨院, お問い合わせ, 予約, 埼玉県, 所沢市, 整骨院"
+  },
+
+  "thanks": {
+    "bodyclass": "thanks",
+    "title": "どんぐり整骨院 | お問い合わせありがとうございます。",
+    "description": "埼玉県所沢市を拠点に置く、地元形の整骨院です。",
+    "canonical": "/contact/thanks/",
+    "keywords": "どんぐり整骨院, お問い合わせ, 予約, 埼玉県, 所沢市, 整骨院"
+  },
+
+
+
+  "accident": {
+    "bodyclass": "accident",
+    "title": "どんぐり整骨院 | 交通事故施術について",
+    "description": "埼玉県所沢市を拠点に置く、地元形の整骨院です。",
+    "canonical": "/accident/",
+    "keywords": "どんぐり整骨院, 交通事故施術, 埼玉県, 所沢市, 整骨院"
+  },
+
+  "visit": {
+    "bodyclass": "visit",
+    "title": "どんぐり整骨院 | 訪問マッサージについて",
+    "description": "埼玉県所沢市を拠点に置く、地元形の整骨院です。",
+    "canonical": "/visit/",
+    "keywords": "どんぐり整骨院, 訪問マッサージ, 埼玉県, 所沢市, 整骨院"
+  }
+}

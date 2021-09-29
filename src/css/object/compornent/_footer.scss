@@ -1,0 +1,41 @@
+/* ====================
+footer
+
+
+=======================*/
+
+
+.c-footer {
+  &__logo {
+    width: 200px;
+    margin: 80px auto 80px;
+    opacity: 0.9;
+    filter: drop-shadow(0px 0px 0px $black);
+
+    @include min-screen($break_point_max) {
+      width: 150px;
+      margin: 50px auto 0;
+    }
+    @include min-screen($break_point_pc) {
+      width: 170px;
+      margin: 50px auto 0;
+    }
+  }
+
+  &__bottombox {
+    @include min-screen($break_point_pc) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  &__detail {
+    
+  }
+
+
+
+  
+}

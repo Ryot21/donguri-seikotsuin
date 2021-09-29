@@ -1,0 +1,24 @@
+
+// 9.よくあるご質問
+.page-qa {
+	&-header {
+		
+		@include min-screen($break_point_max) {
+			
+		}
+		&__title {
+			
+			@include min-screen($break_point_max) {
+				
+			}
+		}
+
+		&__date {
+			
+		}
+
+	}
+	&__content { //ブログコンテンツ内はここに
+
+	}
+}

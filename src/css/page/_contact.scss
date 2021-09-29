@@ -1,0 +1,26 @@
+
+// 10.ご予約／お問い合わせ
+.page-contact {
+	&-header {
+		
+		@include min-screen($break_point_max) {
+			
+		}
+		&__title {
+			
+			@include min-screen($break_point_max) {
+				
+			}
+		}
+
+		&__date {
+			
+		}
+
+	}
+	&__content { //ブログコンテンツ内はここに
+
+	}
+}
+
+

@@ -1,0 +1,79 @@
+/* ====================
+ card
+
+<div class="p-card">
+  <figure class="p-card__thumbnail">
+    <img src="" alt="">
+  </figure>
+  <div class="p-card__textbox">
+    <h3 class="p-card__title">
+      タイトル
+    </h3>
+    <p class="p-card__detail">
+      概要がはいります。概要がはいります。概要がはいります。概要がはいります。
+    </p>
+  </div>
+</div>
+
+=======================*/
+
+.p-card {
+  width: 100%;
+  filter: drop-shadow(1px 1px 1px $lightblack);
+  overflow: hidden;
+  @include max-screen($break_point_max) {
+    margin-bottom: 20px;
+  }
+  @include min-screen($break_point_max) {
+    width: calc(50% - 10px);
+    padding: 0 5px;
+    &:last-child {
+      display: none;
+    }
+  }
+  @include min-screen($break_point_pc) {
+    width: calc(33.333% - 10px);
+    &:last-child {
+      display: block;
+    }
+  }
+  &__thumbnail {
+    width: 100%;
+    background: $white;
+    padding: 5px 10px;
+    border: 2px solid $Dgreen;
+    border-radius: 10px;
+    transition-duration: 0.3s; 
+    &:hover {
+      background: $gray;
+      transition-duration: 0.3s; 
+    }
+    img {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    &-1, &-2, &-3 {
+      width: 100%;
+      cursor: pointer;
+      transition-duration: 0.3s;    
+      &:hover {
+        opacity: 0.6;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+
+  &__textbox {
+    padding: 20px;
+  }
+
+  &__title {
+    font-size:20px;
+    font-weight: bold;
+  }
+
+  &__detail {
+    font-size:14px;
+    margin-top: 1em;
+  }
+}

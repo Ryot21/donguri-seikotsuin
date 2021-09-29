@@ -1,0 +1,127 @@
+/* ====================
+header
+
+  <nav class="c-header">
+      <ul class="c-header__gnav">
+        <li class="c-header__menu">
+          <a href="#">メニュー1</a>
+        </li>
+        <li class="c-header__menu">
+          <a href="#">メニュー2</a>
+        </li>
+        <li class="c-header__menu">
+          <a href="#">メニュー3</a>
+        </li>
+      </ul>
+  </nav>
+
+
+=======================*/
+
+
+.c-header {
+  @include min-screen($break_point_pc) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 300px;
+    margin: 100px auto 0;
+    opacity: 0.9;
+    filter: drop-shadow(0px 0px 0px $black);
+
+    @include min-screen($break_point_max) {
+      width: 400px;
+      margin: 90px auto 0;
+    }
+    @include min-screen($break_point_pc) {
+      width: 480px;
+      margin: 120px auto 0;
+    }
+  }
+
+  &__gnav {
+    display: none;
+    @include min-screen($break_point_max) {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      list-style: none;
+      
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+  &__menu {
+    position: relative;
+    margin: 0 5px;
+    // overflow: hidden;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 1px;
+      left: 0;
+      height: 7px;
+      width: 100% !important;
+      transition: 0.5s;
+      animation: FadeOut 0.5s;
+      z-index: -1;
+    }
+    i {
+      transition: 0.5s;
+    }
+    &:hover {
+      i,
+      img {
+        transition: 0.5s;
+        animation: icon-bounds 1.5s ease infinite;
+      }
+      &::after {
+        @include min-screen($break_point_pc) {
+          width: 70%;
+          background-color: #e5f135;
+          margin-top: 1px;
+          transition: 0.5s;
+          animation: FadeIn 0.5s;
+        }
+      }
+    }
+    @include min-screen($break_point_max) {
+      width: 65px;
+      line-height: 1.2;
+    }
+    @include min-screen($break_point_pc) {
+      width: 90px;
+    }
+    a {
+      display: block;
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+
+      &:hover {
+        opacity: 0.8;
+        
+      }
+      img {
+        display: block;
+        width: 67px;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 10px;
+        margin-bottom: 10px;
+
+      }
+    }
+  }
+  
+}

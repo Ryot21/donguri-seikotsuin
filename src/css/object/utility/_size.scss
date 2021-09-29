@@ -1,0 +1,19 @@
+@mixin font_size ($n) {
+  @for $i from 8 through $n {
+    .u-fs-#{$i} {
+      font-size: #{$i}px !important;
+      @include min-screen($break_point_min) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@include font_size(40);//MAX40まで
+
+
+.f-s-small {
+  font-size: 12px;
+  @include min-screen($break_point_min) {
+    font-size: 16px;
+  }
+}

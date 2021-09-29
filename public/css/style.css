@@ -1447,6 +1447,7 @@ body {
   left: 15px;
   width: 80px;
   height: 80px;
+  z-index: 111111;
 }
 
 blockquote,
@@ -1920,7 +1921,7 @@ global-navigation active
 .mobile-menu {
   position: fixed;
   left: 50%;
-  top: 35%;
+  top: 45%;
   width: 320px;
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);

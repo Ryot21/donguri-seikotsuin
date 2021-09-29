@@ -3,10 +3,13 @@
 global-navigation active
 ==========================*/
 
-#container {
+#container,
+.l-header,
+.page-top__btn,
+.l-container {
   position: relative;
   // height: 100vh;
-  z-index: 2;
+  // z-index: 2;
   transition: all 0.5s;
   
 }
@@ -53,7 +56,10 @@ global-navigation active
 .menu-open {
   /* スマホhーmenu時にスクロール禁止 */
   overflow: hidden;
-  & #container {
+  // & #container {
+  & .l-header,
+  .page-top__btn,
+  .l-container {
     opacity: 0;
     transition: 0.01s ease-in, opacity 0.01s ease-out;
   }
@@ -74,8 +80,8 @@ global-navigation active
       &__item {
           transform: none;
           opacity: 1;
-          /* $iが1から始まり、5で終わる */
-          @for $i from 1 through 5 {
+          /* $iが1から始まり、10で終わる */
+          @for $i from 1 through 10 {
               /* 0.07sずつ遅らせて表示させる。(二つ目以降も適用) */
               &:nth-child(#{$i}) {
                   transition-delay: $i * 0.07s;

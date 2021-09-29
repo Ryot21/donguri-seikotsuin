@@ -34,9 +34,39 @@ l-header
 	}
 }
 
+
+
 // 固定
-.l-header--fixed {
+/*==ふわっと出現させるためのCSS*/
+/*　上に上がる動き　*/
+#nav.UpMove{
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width:87%;
+	max-width: 670px;
+	min-width: 670px;
+	height: 110px;
+	background: #ffffffb0;
+	padding: 20px 35px;
+	margin: 0 auto;
+	z-index: 999;
+	animation: DownAnime 0.5s forwards;
+	@include min-screen($break_point_pc) {
+		width:93.5%;
+		max-width: 960px;
+		padding: 20px 40px;
+	}
 }
+
+
+/*　下に下がる動き　*/
+#nav.DownMove{
+	// position: fixed;
+	width:100%;
+	height: auto;
+	// animation: UpAnime 0.5s forwards;
+	z-index: 11111;
+}
+

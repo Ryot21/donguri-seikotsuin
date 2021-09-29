@@ -161,6 +161,50 @@ Version: 2021.04.01（更新日）
   }
 }
 
+/*　上に上がる動き　*/
+
+@-webkit-keyframes UpAnime {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/*　下に下がる動き　*/
+
+@-webkit-keyframes DownAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 [data-aos][data-aos][data-aos-duration="50"],
 body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms;
@@ -1865,9 +1909,11 @@ l-footer
 global-navigation active
 ==========================*/
 
-#container {
+#container,
+.l-header,
+.page-top__btn,
+.l-container {
   position: relative;
-  z-index: 2;
   transition: all 0.5s;
 }
 
@@ -1917,7 +1963,9 @@ global-navigation active
   overflow: hidden;
 }
 
-.menu-open #container {
+.menu-open .l-header,
+.menu-open .page-top__btn,
+.menu-open .l-container {
   opacity: 0;
   transition: 0.01s ease-in, opacity 0.01s ease-out;
 }
@@ -1943,7 +1991,12 @@ global-navigation active
   -webkit-transform: none;
   transform: none;
   opacity: 1;
-  /* $iが1から始まり、5で終わる */
+  /* $iが1から始まり、10で終わる */
+  /* 0.07sずつ遅らせて表示させる。(二つ目以降も適用) */
+  /* 0.07sずつ遅らせて表示させる。(二つ目以降も適用) */
+  /* 0.07sずつ遅らせて表示させる。(二つ目以降も適用) */
+  /* 0.07sずつ遅らせて表示させる。(二つ目以降も適用) */
+  /* 0.07sずつ遅らせて表示させる。(二つ目以降も適用) */
   /* 0.07sずつ遅らせて表示させる。(二つ目以降も適用) */
   /* 0.07sずつ遅らせて表示させる。(二つ目以降も適用) */
   /* 0.07sずつ遅らせて表示させる。(二つ目以降も適用) */
@@ -1969,6 +2022,26 @@ global-navigation active
 
 .menu-open .mobile-menu__item:nth-child(5) {
   transition-delay: 0.35s;
+}
+
+.menu-open .mobile-menu__item:nth-child(6) {
+  transition-delay: 0.42s;
+}
+
+.menu-open .mobile-menu__item:nth-child(7) {
+  transition-delay: 0.49s;
+}
+
+.menu-open .mobile-menu__item:nth-child(8) {
+  transition-delay: 0.56s;
+}
+
+.menu-open .mobile-menu__item:nth-child(9) {
+  transition-delay: 0.63s;
+}
+
+.menu-open .mobile-menu__item:nth-child(10) {
+  transition-delay: 0.7s;
 }
 
 .mobile-menu__main {
@@ -2039,10 +2112,34 @@ l-header
   padding: 15px 10px;
 }
 
-.l-header--fixed {
+/*==ふわっと出現させるためのCSS*/
+
+/*　上に上がる動き　*/
+
+#nav.UpMove {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 87%;
+  max-width: 670px;
+  min-width: 670px;
+  height: 110px;
+  background: #ffffffb0;
+  padding: 20px 35px;
+  margin: 0 auto;
+  z-index: 999;
+  -webkit-animation: DownAnime 0.5s forwards;
+  animation: DownAnime 0.5s forwards;
+}
+
+/*　下に下がる動き　*/
+
+#nav.DownMove {
+  width: 100%;
+  height: auto;
+  z-index: 11111;
 }
 
 /*=========================
@@ -2084,7 +2181,12 @@ l-paper
   left: auto;
 }
 
-.l-paper_topleft {
+.l-paper--inner {
+  position: absolute;
+  top: 80px;
+}
+
+.l-paper--inner_topleft {
   position: absolute;
   top: 0;
   left: 0;
@@ -3690,6 +3792,12 @@ article
     max-width: 1200px;
     padding: 25px 50px;
     margin: 0 auto;
+  }
+
+  #nav.UpMove {
+    width: 93.5%;
+    max-width: 960px;
+    padding: 20px 40px;
   }
 
   .l-paper {

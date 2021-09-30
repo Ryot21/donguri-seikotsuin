@@ -2331,6 +2331,15 @@ footer
   padding: 0 10px;
 }
 
+.c-footer__copy {
+  font-size: 10px;
+  color: #2b2a29;
+  text-align: center;
+  background-color: #ffffffeb;
+  padding: 5px 0;
+  border-top: 1px solid #2b2a29;
+}
+
 /* ====================
 header
 
@@ -3530,6 +3539,10 @@ article
 
   .c-footer__calendar {
     padding: 0 20px 20px;
+  }
+
+  .c-footer__copy {
+    font-size: 12px;
   }
 
   .c-header__logo {

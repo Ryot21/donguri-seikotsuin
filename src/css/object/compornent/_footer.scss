@@ -14,7 +14,7 @@ footer
 
     @include min-screen($break_point_max) {
       width: 150px;
-      margin: 50px auto 0;
+      margin: 50px auto;
     }
     @include min-screen($break_point_pc) {
       width: 170px;

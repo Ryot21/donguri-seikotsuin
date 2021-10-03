@@ -6,7 +6,7 @@ l-container
   margin: 0 auto;
   padding: 0 $content_padding_sp;
   @include clearfix;
-  @include min-screen($break_point_pc) {
+  @include min-screen($break_point_max) {
     padding: 0 $content_padding;
   }
 }

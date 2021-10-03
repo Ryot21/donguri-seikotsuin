@@ -2802,6 +2802,7 @@ article
 }
 
 .page-kodawari-fristbox__pic__title {
+  text-shadow: 2px 3px 1px #ffffffeb;
   font-size: 1.5em;
   position: absolute;
   top: 50%;
@@ -3003,6 +3004,122 @@ article
 .page-index .shoukai,
 .page-index .blog {
   padding: 50px 0px;
+  text-align: center;
+}
+
+.page-menu {
+  margin-top: 60px;
+}
+
+.page-menu__title {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.page-menu__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 30px;
+  height: 50px;
+  background: url(../images/icon/page-title-left.png) no-repeat;
+  opacity: .8;
+}
+
+.page-menu__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -28px;
+  width: 30px;
+  height: 50px;
+  background: url(../images/icon/page-title-right.png) no-repeat;
+}
+
+.page-menu__bottombox {
+  margin: 50px auto;
+}
+
+.page-menu__bottombox__pic {
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-menu__bottombox__pic img {
+  width: 100%;
+  padding: 10px;
+}
+
+.page-menu__bottombox__text {
+  width: 100%;
+  padding: 10px;
+}
+
+.page-menu-fristbox {
+  width: 100%;
+  margin: 50px auto;
+  border: 3px solid #4E4848;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.page-menu-fristbox__pic {
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.page-menu-fristbox__pic img {
+  width: 100%;
+}
+
+.page-menu-fristbox__pic__title {
+  font-size: 1.5em;
+  text-shadow: 2px 3px 1px #ffffffeb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.page-menu-fristbox__menubox {
+  background: #ffffffeb;
+  padding: 30px 15px;
+  line-height: 1.7;
+}
+
+.page-menu-fristbox__menubox table {
+  font-size: 18px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.page-menu-fristbox__menubox table tr {
+  display: -ms-grid;
+  display: grid;
+}
+
+.page-menu-fristbox__menubox table tr td {
+  padding-right: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.page-menu-fristbox__menubox table tr td:first-child {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.page-menu-fristbox__menubox p {
+  margin: 30px auto;
   text-align: center;
 }
 
@@ -3598,6 +3715,10 @@ article
     padding-bottom: 50px;
   }
 
+  .l-container {
+    padding: 0 50px;
+  }
+
   .home .l-header {
     height: 600px;
   }
@@ -3791,6 +3912,36 @@ article
   .page-index .blog {
     padding: 50px 20px;
   }
+
+  .page-menu {
+    margin-top: 50px;
+  }
+
+  .page-menu__bottombox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .page-menu__bottombox__pic {
+    width: calc(50% - 20px);
+  }
+
+  .page-menu__bottombox__text {
+    width: calc(50% - 20px);
+  }
+
+  .page-menu-fristbox {
+    margin-bottom: 50px;
+  }
+
+  .page-menu-fristbox__pic {
+    height: 200px;
+  }
+
+  .page-menu-fristbox__menubox table tr {
+    display: table-row;
+  }
 }
 
 @media screen and (min-width: 980px) {
@@ -3978,10 +4129,6 @@ article
 }
 
 @media screen and (min-width: 1000px) {
-  .l-container {
-    padding: 0 20px;
-  }
-
   .gnav-btn {
     display: none;
   }
@@ -4126,5 +4273,9 @@ article
 
   .blog-box {
     margin-bottom: 20px;
+  }
+
+  .page-menu-fristbox__menubox table tr td {
+    width: 250px;
   }
 }

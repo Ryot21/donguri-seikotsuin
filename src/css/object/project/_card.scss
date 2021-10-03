@@ -38,17 +38,25 @@
     }
   }
   &__thumbnail {
+    position: relative;
     width: 100%;
+    height: 260px;
     background: $white;
     padding: 5px 10px;
-    border: 2px solid $Dgreen;
     border-radius: 10px;
-    transition-duration: 0.3s; 
-    &:hover {
-      background: $gray;
-      transition-duration: 0.3s; 
+    transition-duration: .8s; 
+    &:hover img:nth-of-type(2) {
+      opacity: 0;
+      transition-duration: .8s; 
     }
     img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      display: block;
+      transition: .4s ease-in-out;
       border-radius: 10px;
       overflow: hidden;
     }

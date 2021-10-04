@@ -4650,6 +4650,22 @@ article
     margin-bottom: 20px;
   }
 
+  .left-box_top {
+    border-radius: 20%;
+  }
+
+  .left-box_flex {
+    border-radius: 20%;
+  }
+
+  .right-box_flex {
+    border-radius: 20%;
+  }
+
+  .right-box_bottom {
+    border-radius: 20%;
+  }
+
   .page-menu-fristbox__menubox table tr td {
     width: 250px;
   }

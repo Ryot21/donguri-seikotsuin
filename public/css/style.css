@@ -3154,6 +3154,150 @@ article
   overflow: hidden;
 }
 
+.left-box,
+.right-box {
+  width: 100%;
+}
+
+.left-box_top {
+  position: relative;
+  margin: 5px;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.left-box_top:hover {
+  border-radius: 20%;
+  transition: .2s;
+}
+
+.left-box_top a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.left-box_top a .img-box img {
+  transition: 2s;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  vertical-align: top;
+}
+
+.left-box_bottom {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left-box_flex {
+  position: relative;
+  width: calc(50% - 10px);
+  margin: 5px;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.left-box_flex:hover {
+  border-radius: 20%;
+  transition: .2s;
+}
+
+.left-box_flex a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.right-box_top {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-box_flex {
+  position: relative;
+  width: calc(50% - 10px);
+  margin: 5px;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.right-box_flex:hover {
+  border-radius: 20%;
+  transition: .2s;
+}
+
+.right-box_flex a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.right-box_bottom {
+  position: relative;
+  margin: 5px;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.right-box_bottom:hover {
+  border-radius: 20%;
+  transition: .2s;
+}
+
+.right-box_bottom a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.right-box_bottom a .img-box img {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  vertical-align: top;
+}
+
+.txt {
+  margin: auto;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.34em;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.txt-ttl {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.txt-box {
+  background: rgba(101, 80, 70, 0.5);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.8s;
+  opacity: 0;
+}
+
+.txt-box:hover {
+  transition: 0.8s;
+  opacity: 1;
+}
+
 .page-menu {
   margin-top: 60px;
 }
@@ -4132,6 +4276,16 @@ article
 
   .page-introduction-fristbox {
     margin-bottom: 100px;
+  }
+
+  .page-introduction-picbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0px;
+    margin: 0px auto;
   }
 
   .page-menu {

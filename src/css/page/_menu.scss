@@ -69,7 +69,7 @@
 		border-radius: 20px;
 		overflow: hidden;
 		@include min-screen($break_point_max) {
-			margin-bottom: 50px;
+			margin-bottom: 100px;
 		}
 
 		&__pic {

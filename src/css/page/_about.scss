@@ -39,6 +39,10 @@
 			margin: 50px auto;
 				@include min-screen($break_point_max) {
 					display: flex;
+					justify-content: center;
+					&:nth-child(odd) {
+						flex-direction: row-reverse;
+					}
 				}
 				&__pic {
 					width: 100%;
@@ -52,6 +56,11 @@
 					}
 				}
 				&__text {
+					h3 {
+						background-color: rgba(67, 91, 91, 0.1);
+						padding: 5px 25px;
+						border-radius: 20px;
+					}
 					width: 100%;
 					padding: 10px;
 					@include min-screen($break_point_max) {
@@ -67,7 +76,7 @@
 	&-fristbox { //【一つ目】のコンテンツ内はここに
 		width: 100%;
 		margin: 50px auto;
-		border: 3px solid $lightblack;
+		border: 1px solid $lightblack;
 		border-radius: 20px;
 		overflow: hidden;
 		@include min-screen($break_point_max) {

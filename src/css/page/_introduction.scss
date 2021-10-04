@@ -1,24 +1,78 @@
 
 // 7.院内紹介／スタッフ紹介
+
 .page-introduction {
-	&-header {
-		
+	margin-top: 60px;
+	@include min-screen($break_point_max) {
+		margin-top: 50px;
+	}
+	&__title {
+		position: relative;
+		display: inline-block;
+		left: 50%;
+		transform: translateX(-50%);
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -30px;
+			width: 30px;
+			height: 50px;
+			background: url(../images/icon/page-title-left.png) no-repeat;
+			opacity: .8;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: -28px;
+			width: 30px;
+			height: 50px;
+			background: url(../images/icon/page-title-right.png) no-repeat;
+			// opacity: .9;
+
+		}
 		@include min-screen($break_point_max) {
 			
 		}
-		&__title {
-			
+	}
+	&__bottombox {
+		margin: 50px auto;
+		@include min-screen($break_point_max) {
+			display: flex;
+		}
+		&__pic {
+			width: 100%;
+			overflow: hidden;
 			@include min-screen($break_point_max) {
-				
+				width: calc(50% - 20px);
+			}
+			img {
+				width: 100%;
+				padding: 10px;
 			}
 		}
-
-		&__date {
-			
+		&__text {
+			width: 100%;
+			padding: 10px;
+			@include min-screen($break_point_max) {
+				width: calc(50% - 20px);
+			}
 		}
-
 	}
-	&__content { //ブログコンテンツ内はここに
+
+
+	&-fristbox { //【一つ目】のコンテンツ内はここに
+		width: 100%;
+		margin: 50px auto;
+		text-align: center;
+		overflow: hidden;
+		@include min-screen($break_point_max) {
+			margin-bottom: 100px;
+		}
 
 	}
 }
+
+
+

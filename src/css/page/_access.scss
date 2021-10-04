@@ -1,24 +1,97 @@
 
 // 8.アクセス
 .page-access {
-	&-header {
-		
+	margin-top: 60px;
 		@include min-screen($break_point_max) {
-			
+			margin-top: 50px;
 		}
 		&__title {
-			
+			position: relative;
+			display: inline-block;
+			left: 50%;
+			transform: translateX(-50%);
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: -30px;
+				width: 30px;
+				height: 50px;
+				background: url(../images/icon/page-title-left.png) no-repeat;
+				opacity: .8;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: -28px;
+				width: 30px;
+				height: 50px;
+				background: url(../images/icon/page-title-right.png) no-repeat;
+				// opacity: .9;
+
+			}
 			@include min-screen($break_point_max) {
 				
 			}
 		}
+		&__bottombox {
+			margin: 50px auto;
+				@include min-screen($break_point_max) {
+					display: flex;
+					justify-content: center;
+					&:nth-child(odd) {
+						flex-direction: row-reverse;
+					}
+				}
+				&__pic {
+					width: 100%;
+					overflow: hidden;
+					@include min-screen($break_point_max) {
+						width: calc(50% - 20px);
+					}
+					img {
+						width: 100%;
+						padding: 10px;
+					}
+				}
+				&__text {
+					width: 100%;
+					padding: 10px;
+					@include min-screen($break_point_max) {
+						width: calc(50% - 20px);
+					}
+				}
+		}
 
-		&__date {
-			
+
+	&-inforbox {
+		color: $black;
+	}
+
+
+	&-timebox { //【一つ目】のコンテンツ内はここに
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		@include min-screen($break_point_max) {
+			width: 70%;
 		}
 
 	}
-	&__content { //ブログコンテンツ内はここに
+
+	&-mapbox { //【二つ目】のコンテンツ内はここに
+		width: 100%;
+		height: 300px;
+		border: 2px solid $lightblack;
+		overflow: hidden;
+		// @include min-screen($break_point_max) {
+		// 	margin-bottom: 50px;
+		// }
 
 	}
+
 }
+
+
+

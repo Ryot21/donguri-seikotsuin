@@ -41,10 +41,30 @@
   }
 }
 
+// padding関係
+.pd-top {
+  padding-top:50px;
+    @include min-screen($break_point_max) {
+      padding-top:50px;
+    }
+}
 .pd-btm {
   padding-bottom:50px;
     @include min-screen($break_point_max) {
       padding-bottom:50px;
+    }
+}
+// margin関係
+.mg-top {
+  margin-top:50px;
+    @include min-screen($break_point_max) {
+      margin-top:50px;
+    }
+}
+.mg-btm {
+  margin-bottom:50px;
+    @include min-screen($break_point_max) {
+      margin-bottom:50px;
     }
 }
 

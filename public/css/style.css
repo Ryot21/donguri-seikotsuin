@@ -1413,19 +1413,19 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .pd-top {
-  padding-top: 50px;
+  padding-top: 50px !important;
 }
 
 .pd-btm {
-  padding-bottom: 50px;
+  padding-bottom: 50px !important;
 }
 
 .mg-top {
-  margin-top: 50px;
+  margin-top: 50px !important;
 }
 
 .mg-btm {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
 }
 
 ul,
@@ -4003,19 +4003,19 @@ article
   }
 
   .pd-top {
-    padding-top: 50px;
+    padding-top: 50px !important;
   }
 
   .pd-btm {
-    padding-bottom: 50px;
+    padding-bottom: 50px !important;
   }
 
   .mg-top {
-    margin-top: 50px;
+    margin-top: 50px !important;
   }
 
   .mg-btm {
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
   }
 
   .l-container {

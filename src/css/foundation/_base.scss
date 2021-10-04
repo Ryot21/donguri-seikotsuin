@@ -43,28 +43,28 @@
 
 // padding関係
 .pd-top {
-  padding-top:50px;
+  padding-top:50px !important;
     @include min-screen($break_point_max) {
-      padding-top:50px;
+      padding-top:50px !important;
     }
 }
 .pd-btm {
-  padding-bottom:50px;
+  padding-bottom:50px !important;
     @include min-screen($break_point_max) {
-      padding-bottom:50px;
+      padding-bottom:50px !important;
     }
 }
 // margin関係
 .mg-top {
-  margin-top:50px;
+  margin-top:50px !important;
     @include min-screen($break_point_max) {
-      margin-top:50px;
+      margin-top:50px !important;
     }
 }
 .mg-btm {
-  margin-bottom:50px;
+  margin-bottom:50px !important;
     @include min-screen($break_point_max) {
-      margin-bottom:50px;
+      margin-bottom:50px !important;
     }
 }
 

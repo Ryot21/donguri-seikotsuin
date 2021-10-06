@@ -22,6 +22,31 @@
 	}
 }
 
+@keyframes FadeInLogo {
+	0% {
+		opacity: 0;
+		// transform: translateX(100px);
+	}
+	100% {
+		opacity: .9;
+		// transform: translateX(0);
+	}
+}
+@keyframes FadeInNavi {
+	0% {
+		opacity: 0;
+		// transform: translateX(100px);
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		// transform: translateX(0);
+	}
+}
+
+
 @keyframes icon-bounds{
 	0%{transform:translateY(0);}
 	20%{transform:translateY(-10px);}

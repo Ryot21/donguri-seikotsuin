@@ -1,10 +1,7 @@
 
 // 2.当院のこだわり
 .page-kodawari {
-	margin-top: 60px;
-		@include min-screen($break_point_max) {
-			margin-top: 50px;
-		}
+	
 		&__title {
 			position: relative;
 			display: inline-block;

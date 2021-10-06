@@ -6,10 +6,7 @@
 }
 
 .page-introduction {
-	margin-top: 60px;
-	@include min-screen($break_point_max) {
-		margin-top: 50px;
-	}
+	
 	&__title {
 		position: relative;
 		display: inline-block;
@@ -95,6 +92,7 @@
 .right-box {width: 100%;}
 
 .left-box {
+	
 	&_top {
 		position: relative;
 		margin: 5px;
@@ -105,7 +103,8 @@
 		}
 		&:hover {
 			border-radius: 20%;
-			transition: .2s;
+			filter: drop-shadow(1px 1px 2px $black);
+			transition: .5s;
 		}
 		a {
 			display: block;
@@ -135,7 +134,7 @@
 		}
 		&:hover {
 			border-radius: 20%;
-			transition: .2s;
+			transition: .5s;
 		}
 		a {
 			display: block;
@@ -178,7 +177,8 @@
 		}
 		&:hover {
 			border-radius: 20%;
-			transition: .2s;
+			filter: drop-shadow(1px 1px 2px $black);
+			transition: .5s;
 		}
 		a {
 			display: block;

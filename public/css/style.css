@@ -67,6 +67,54 @@ Version: 2021.04.01（更新日）
   }
 }
 
+@-webkit-keyframes FadeInLogo {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .9;
+  }
+}
+
+@keyframes FadeInLogo {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .9;
+  }
+}
+
+@-webkit-keyframes FadeInNavi {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes FadeInNavi {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes icon-bounds {
   0% {
     -webkit-transform: translateY(0);
@@ -1428,6 +1476,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin-bottom: 50px !important;
 }
 
+.page-kodawari,
+.page-menu,
+.page-introduction,
+.page-access,
+.page-faq {
+  margin-top: 60px;
+}
+
 ul,
 ol {
   padding: 0;
@@ -2379,9 +2435,13 @@ header
 .c-header__logo {
   width: 300px;
   margin: 100px auto 0;
-  opacity: 0.9;
+  opacity: 0;
   -webkit-filter: drop-shadow(0px 0px 0px #5A5A5A);
   filter: drop-shadow(0px 0px 0px #5A5A5A);
+  -webkit-animation: FadeInLogo 1s linear;
+  animation: FadeInLogo 1s linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .c-header__pic {
@@ -2393,9 +2453,16 @@ header
   opacity: 0.9;
   -webkit-filter: drop-shadow(0px 0px 0px #5A5A5A);
   filter: drop-shadow(0px 0px 0px #5A5A5A);
+  -webkit-animation: FadeInLogo .5s linear;
+  animation: FadeInLogo .5s linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .c-header__pic__title {
+  font-size: 38px;
+  text-shadow: 2px 2px 1px #ffffffeb;
+  line-height: 1;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2404,6 +2471,10 @@ header
   width: 100%;
   text-align: center;
   margin: 0;
+}
+
+.c-header__pic__title span {
+  font-size: 14px;
 }
 
 .c-header__gnav {
@@ -2743,10 +2814,6 @@ article
 
 /* ページごとのスタイル */
 
-.page-kodawari {
-  margin-top: 60px;
-}
-
 .page-kodawari__title {
   position: relative;
   display: inline-block;
@@ -2838,10 +2905,6 @@ article
 
 .page-kodawari-fristbox__textbox p {
   padding: 0 5px !important;
-}
-
-.page-access {
-  margin-top: 60px;
 }
 
 .page-access__title {
@@ -3047,6 +3110,100 @@ article
   right: 25px;
 }
 
+.page-faq__title {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.page-faq__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 30px;
+  height: 50px;
+  background: url(../images/icon/page-title-left.png) no-repeat;
+  opacity: .8;
+}
+
+.page-faq__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -28px;
+  width: 30px;
+  height: 50px;
+  background: url(../images/icon/page-title-right.png) no-repeat;
+}
+
+.page-faq__wrap {
+  margin: 50px auto;
+}
+
+.page-faq-block section {
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #5A5A5A;
+}
+
+.page-faq-block__title {
+  position: relative;
+  /*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 3% 3% 3% 50px;
+  transition: all .5s ease;
+}
+
+.page-faq-block__title::before,
+.page-faq-block__title::after {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 2px;
+  background: #5A5A5A;
+  transition: all 0.5s;
+}
+
+.page-faq-block__title::before {
+  top: 48%;
+  left: 15px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.page-faq-block__title::after {
+  top: 48%;
+  left: 15px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.page-faq-block__text {
+  display: none;
+  padding: 10px 20px 30px;
+}
+
+.close::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+
+.close::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transition: all 0.5s;
+}
+
+.close .page-faq-block__text {
+  transition: all 0.5s;
+}
+
 /* ====================
  トップページ用
 
@@ -3093,10 +3250,6 @@ article
 .page-index .blog {
   padding: 50px 0px;
   text-align: center;
-}
-
-.page-introduction {
-  margin-top: 60px;
 }
 
 .page-introduction__title {
@@ -3168,7 +3321,9 @@ article
 
 .left-box_top:hover {
   border-radius: 20%;
-  transition: .2s;
+  -webkit-filter: drop-shadow(1px 1px 2px #5A5A5A);
+  filter: drop-shadow(1px 1px 2px #5A5A5A);
+  transition: .5s;
 }
 
 .left-box_top a {
@@ -3201,7 +3356,7 @@ article
 
 .left-box_flex:hover {
   border-radius: 20%;
-  transition: .2s;
+  transition: .5s;
 }
 
 .left-box_flex a {
@@ -3245,7 +3400,9 @@ article
 
 .right-box_bottom:hover {
   border-radius: 20%;
-  transition: .2s;
+  -webkit-filter: drop-shadow(1px 1px 2px #5A5A5A);
+  filter: drop-shadow(1px 1px 2px #5A5A5A);
+  transition: .5s;
 }
 
 .right-box_bottom a {
@@ -3296,10 +3453,6 @@ article
 .txt-box:hover {
   transition: 0.8s;
   opacity: 1;
-}
-
-.page-menu {
-  margin-top: 60px;
 }
 
 .page-menu__title {
@@ -4018,6 +4171,14 @@ article
     margin-bottom: 50px !important;
   }
 
+  .page-kodawari,
+  .page-menu,
+  .page-introduction,
+  .page-access,
+  .page-faq {
+    margin-top: 50px;
+  }
+
   .l-container {
     padding: 0 50px;
   }
@@ -4104,6 +4265,10 @@ article
     list-style: none;
     width: 100%;
     padding: 0 20px;
+    -webkit-animation: FadeInNavi 1s linear;
+    animation: FadeInNavi 1s linear;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
   }
 
   .c-header__menu {
@@ -4118,10 +4283,6 @@ article
 
   .p-card:last-child {
     display: none;
-  }
-
-  .page-kodawari {
-    margin-top: 50px;
   }
 
   .page-kodawari__bottombox {
@@ -4159,10 +4320,6 @@ article
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-  }
-
-  .page-access {
-    margin-top: 50px;
   }
 
   .page-access__bottombox {
@@ -4230,6 +4387,10 @@ article
     width: 170px;
   }
 
+  .page-faq__wrap {
+    margin: 70px auto;
+  }
+
   .page-index__title {
     margin-bottom: 40px;
   }
@@ -4254,10 +4415,6 @@ article
   .page-index .shoukai,
   .page-index .blog {
     padding: 50px 20px;
-  }
-
-  .page-introduction {
-    margin-top: 50px;
   }
 
   .page-introduction__bottombox {
@@ -4286,10 +4443,6 @@ article
     max-width: 1000px;
     padding: 0px;
     margin: 0px auto;
-  }
-
-  .page-menu {
-    margin-top: 50px;
   }
 
   .page-menu__bottombox {

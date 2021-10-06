@@ -2,10 +2,7 @@
 // 3.メニュー／料金表
 
 .page-menu {
-	margin-top: 60px;
-	@include min-screen($break_point_max) {
-		margin-top: 50px;
-	}
+	
 	&__title {
 		position: relative;
 		display: inline-block;

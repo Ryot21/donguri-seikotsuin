@@ -175,13 +175,62 @@ function FixedAnime() {
 			}
 		}
 }
+  // 画面をスクロールをしたら動かしたい場合の記述
+  $(window).scroll(function () {
+    FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
+  });
 
-// 画面をスクロールをしたら動かしたい場合の記述
-$(window).scroll(function () {
-	FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
+
+
+//アコーディオンパネル > 「FAQ」に使用
+//クリックした時の動作 > 【.page-faq-block__title】要素をクリックしたら
+$('.page-faq-block__title').on('click', function() {
+
+  //【.page-faq-block__text】がついたすべてのアコーディオンを閉じる
+    $('.page-faq-block__text').slideUp(500);
+
+    //タイトル直後のアコーディオンを行うエリアを取得
+      var findElm = $(this).next(".page-faq-block__text");
+        
+      //タイトル要素にクラス名closeがあれば
+      if($(this).hasClass('close')){
+        //クラス名を除去 
+        $(this).removeClass('close');
+
+      //それ以外は
+      }else{
+
+        //クラス名closeを全て除去した後
+        $('.close').removeClass('close');
+
+        //クリックしたタイトルにクラス名closeを付与し
+        $(this).addClass('close');
+
+        //アコーディオンを開く
+        $(findElm).slideDown(500);
+      }
 });
 
-// ページが読み込まれたらすぐに動かしたい場合の記述
-$(window).on('load', function () {
-	FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
+//ページが読み込まれた際にopenクラスをつけ、openがついていたら開く動作※不必要なら下記全て削除
+$(window).on('load', function(){
+
+  //【.page-faq__wrap】のはじめの【.page-faq-block】にあるsectionにopenクラスを追加
+    $('.page-faq__wrap li:first-of-type section').addClass("open");
+
+  //openクラスを取得
+    $(".open").each(function(index, element){
+
+      //openクラスの子要素のtitleクラスを取得
+        var Title =$(element).children('.page-faq-block__title');
+        
+      //タイトルにクラス名closeを付与し
+        $(Title).addClass('close');
+
+      //openクラスの子要素【.page-faq-block__text】を取得
+        var Box =$(element).children('.page-faq-block__text');
+
+      //アコーディオンを開く
+        $(Box).slideDown(500);
+
+    });
 });

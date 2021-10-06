@@ -68,6 +68,19 @@
     }
 }
 
+// ページ共通 > 紙 > 縦幅
+.page-kodawari,
+.page-menu,
+.page-introduction,
+.page-access,
+.page-faq{
+	margin-top: 60px;
+		@include min-screen($break_point_max) {
+			margin-top: 50px;
+		}
+}
+
+
 ul,ol {
   padding: 0;
 }

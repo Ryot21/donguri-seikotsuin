@@ -10,12 +10,13 @@ l-paper
 	position: relative;
 	// 背景設定
 	background: url(../images/paper-bg4.png) repeat;
-	// opacity: 0.8;
 	// 『 インクカラー 』
 	color: $paper_text__color;
 	margin: 0 auto;
 	padding: 0 $paper_padding_sp;
 	border-radius: 1px 1px 1px 1px;
+
+
 	@include min-screen($break_point_pc) {
 		padding: 0 $paper_padding 40px;
 	}

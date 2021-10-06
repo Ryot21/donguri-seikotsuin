@@ -1,9 +1,5 @@
 # どんぐり整骨院（Ryot21/donguri-seikotsuin）
  
-# DEMO
- 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
- 
 # Features
  
 2021年12月に埼玉県所沢市にオープンした「どんぐり整骨院」さまのサイトを制作しました。
@@ -35,7 +31,7 @@ toc.js
 
 # Author
  
-* 作成者  　RyotaMaeda
-* 所属     株式会社Webitch
-* E-mail　 r.maeda@webitch.jp
- 
+* 作成者  　　RyotaMaeda
+* 所属     　株式会社Webitch
+* E-mail　 　r.maeda@webitch.jp
+* 好きな言葉　git push -u origin --all

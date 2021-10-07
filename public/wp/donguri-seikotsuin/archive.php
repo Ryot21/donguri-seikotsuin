@@ -5,6 +5,13 @@ Template Name: BLOG template
 	get_header('page');
 ?>
 
+
+
+
+
+
+
+
 <!-- 紙 -->
 <div class="l-paper">
 	<header id="header" class="l-header">
@@ -12,7 +19,7 @@ Template Name: BLOG template
 			<nav class="c-header">
 				<!-- 固定ページ > ヘッダー -->
 				<div class="c-header__pic">
-					<h1 class="c-header__pic__title">お知らせ / ブログ<br><span>NEWS / BLOG</span></h1>
+					<h1 class="c-header__pic__title">ブログ<br><span>BLOG</span></h1>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-page.jpg" alt="サイトヘッダー">
 				</div>
 				<!-- ヘッダーNavi -->
@@ -87,79 +94,92 @@ Template Name: BLOG template
 
 	<!-- ここからコンテンツ -->
 	<div id="area-3" class="page l-container">
-		<!-- お知らせ -->
+		<!-- どんぐり整骨院からのお知らせ -->
 		<section class="page-blog pd-btm">
-			<h2 class="page-blog__title">お知らせ</h2>
+			<h2 class="page-blog__title">どんぐり整骨院からのお知らせ</h2>
 			<!-- 画像説明 -->
 			<ul class="page-blog-fristbox">
-				<li class="page-blog-fristbox-list">
-					<a href="#">
-						<div class="page-blog-fristbox-list--text">
-							<p class="page-blog-fristbox-list--text__date">2021.10.05</p>
-							<h2 class="page-blog-fristbox-list--text__title">タイトルタイトル</h2>
-						</div>
-					</a>
-				</li>
-				<li class="page-blog-fristbox-list">
-					<a href="#">
-						<div class="page-blog-fristbox-list--text">
-							<p class="page-blog-fristbox-list--text__date">2021.10.05</p>
-							<h2 class="page-blog-fristbox-list--text__title">タイトルタイトル</h2>
-						</div>
-					</a>
-				</li>
-				<li class="page-blog-fristbox-list">
-					<a href="#">
-						<div class="page-blog-fristbox-list--text">
-							<p class="page-blog-fristbox-list--text__date">2021.10.05</p>
-							<h2 class="page-blog-fristbox-list--text__title">タイトルタイトル</h2>
-						</div>
-					</a>
-				</li>
+
+			<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+				<?php
+					$wp_query = new WP_Query();
+					$my_posts = array(
+						'post_type' => 'post',
+						'posts_per_page' => '3', // 表示件数の指定
+						'category_name' => 'news', //表示したいカテゴリー名を入力
+					);
+					$wp_query->query( $my_posts );
+					if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
+				?>
+
+				<?php get_template_part('module/news'); ?>
+				<?php endwhile; endif; ?>
+
+			<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
 			</ul>
 
-			<div class="display-f">
-
-			</div>
+			<?php get_template_part('module/pagination'); ?>
+			<?php wp_reset_postdata(); ?>
 
 		</section>
 
-		<!-- ブログ -->
+		<!-- コラム -->
 		<section class="page-blog pd-btm">
-			<h2 class="page-blog__title">ブログ</h2>
+			<h2 class="page-blog__title">コラム</h2>
 			<!-- 画像説明 -->
-			<ul class="page-blog-secbox">
-				<li class="page-blog-list">
-					<a href="#">
-						<!-- <div class="page-blog-list__pic">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
-						</div> -->
-						<div class="page-blog-list--text">
-							<p class="page-blog-list--text__date">2021.10.05</p>
-							<h2 class="page-blog-list--text__title">タイトルタイトル</h2>
-						</div>
-					</a>
-				</li>
-				<li class="page-blog-list">
-					<a href="#">
-						<div class="page-blog-list--text">
-							<p class="page-blog-list--text__date">2021.10.05</p>
-							<h2 class="page-blog-list--text__title">タイトルタイトル</h2>
-						</div>
-					</a>
-				</li>
-				<li class="page-blog-list">
-					<a href="#">
-						<div class="page-blog-list--text">
-							<p class="page-blog-list--text__date">2021.10.05</p>
-							<h2 class="page-blog-list--text__title">タイトルタイトル</h2>
-						</div>
-					</a>
-				</li>
+			<ul class="page-blog-secbox display-f">
 
-			<div class="display-f">
+			<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+				<?php
+					$wp_query = new WP_Query();
+					$my_posts = array(
+						'post_type' => 'post',
+						'posts_per_page' => '3', // 表示件数の指定
+						'category_name' => 'column,accident', //表示したいカテゴリー名を入力
+					);
+					$wp_query->query( $my_posts );
+					if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
+				?>
 
-			</div>
+				<?php get_template_part('module/blog'); ?>
+				<?php endwhile; endif; ?>
+
+			<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+			</ul>
+
+			<?php get_template_part('module/pagination'); ?>
+			<?php wp_reset_postdata(); ?>
+
+		</section>
+
+		<!-- 訪問マッサージ -->
+		<section class="page-blog pd-btm">
+			<h2 class="page-blog__title">訪問マッサージ</h2>
+			<!-- 画像説明 -->
+			<ul class="page-blog-secbox display-f">
+
+			<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+				<?php
+					$wp_query = new WP_Query();
+					$my_posts = array(
+						'post_type' => 'post',
+						'posts_per_page' => '3', // 表示件数の指定
+						'category_name' => 'visit', //表示したいカテゴリー名を入力
+					);
+					$wp_query->query( $my_posts );
+					if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
+				?>
+
+				<?php get_template_part('module/blog'); ?>
+				<?php endwhile; endif; ?>
+
+			<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+			<?php get_template_part('module/pagination'); ?>
+			<?php wp_reset_postdata(); ?>
+
+			</ul>
 
 		</section>
 	</div>

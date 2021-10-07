@@ -211,29 +211,95 @@ Version: 2021.04.01（更新日）
 
 @-webkit-keyframes FadeRight {
   0% {
-    padding-left: auto;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 
-  30% {
-    padding-left: 5px;
+  20% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  35% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  45% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  55% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  60% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  80% {
+    -webkit-transform: translateX(-3);
+    transform: translateX(-3);
   }
 
   100% {
-    padding-left: 7px;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes FadeRight {
   0% {
-    padding-left: auto;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 
-  30% {
-    padding-left: 5px;
+  20% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  35% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  45% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  55% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  60% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  80% {
+    -webkit-transform: translateX(-3);
+    transform: translateX(-3);
   }
 
   100% {
-    padding-left: 7px;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -2405,6 +2471,34 @@ l-wrapper
   transition-duration: 0.5s;
 }
 
+.category-news-tag {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  border: 1px solid #BCBBB6;
+  line-height: 1.2;
+  padding-bottom: 1px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 5px 4px;
+  border-radius: 4px;
+}
+
+.category-blog-tag {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: 1px solid #BCBBB6;
+  line-height: 1.2;
+  padding-bottom: 1px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 5px 4px;
+  border-radius: 4px;
+}
+
 /* ====================
 footer
 
@@ -3001,30 +3095,40 @@ article
   overflow: hidden;
 }
 
+.blog__title,
 .page-blog__title {
   border-bottom: 1px solid #5A5A5A;
 }
 
+.blog-fristbox,
 .page-blog-fristbox {
   max-width: 1000px;
   padding-top: 20px;
   margin: 0 auto;
 }
 
+.blog-fristbox-list,
 .page-blog-fristbox-list {
-  padding: 5px 0;
+  padding: 10px 10px 10px 0;
   border-bottom: 1px solid #d0d2d4;
   transition: all .5s;
 }
 
+.blog-fristbox-list:hover,
 .page-blog-fristbox-list:hover {
   color: black;
   background: #ffffffeb;
+  transition: all .5s;
+}
+
+.blog-fristbox-list:hover .page-blog-fristbox-list--text,
+.page-blog-fristbox-list:hover .page-blog-fristbox-list--text {
   transition: all .5s;
   -webkit-animation: FadeRight 1.5s ease infinite;
   animation: FadeRight 1.5s ease infinite;
 }
 
+.blog-fristbox-list a,
 .page-blog-fristbox-list a {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3038,70 +3142,92 @@ article
   padding: 0 5px;
 }
 
+.blog-fristbox-list--text,
 .page-blog-fristbox-list--text {
   width: 100%;
 }
 
+.blog-fristbox-list--text__date,
+.blog-fristbox-list--text__title,
+.blog-fristbox-list--text__desc,
 .page-blog-fristbox-list--text__date,
 .page-blog-fristbox-list--text__title,
 .page-blog-fristbox-list--text__desc {
   font-size: 16px;
-  padding-bottom: 10px;
 }
 
+.blog-fristbox-list--text__date,
 .page-blog-fristbox-list--text__date {
   line-height: 1.3;
 }
 
+.blog-fristbox-list--text__title,
 .page-blog-fristbox-list--text__title {
+  position: relative;
   font-weight: bold;
   line-height: 1.2;
 }
 
+.blog-fristbox-list--text__desc,
 .page-blog-fristbox-list--text__desc {
   display: none;
 }
 
-.blog-box {
-  width: 100%;
-  overflow: hidden;
+.blog-secbox,
+.page-blog-secbox {
+  margin-top: 50px;
 }
 
-.blog-box__thumbnail {
-  width: 100%;
-  background: #ffffffeb;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  transition-duration: 0.3s;
+.blog-secbox-list,
+.page-blog-secbox-list {
+  padding-bottom: 30px;
 }
 
-.blog-box__thumbnail:hover {
+.blog-secbox-list a:hover .page-blog-secbox-list__pic,
+.page-blog-secbox-list a:hover .page-blog-secbox-list__pic {
   background: #BCBBB6;
   transition-duration: 0.3s;
 }
 
-.blog-box__thumbnail img {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.blog-box__thumbnail-1,
-.blog-box__thumbnail-2,
-.blog-box__thumbnail-3 {
-  width: 100%;
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-
-.blog-box__thumbnail-1:hover,
-.blog-box__thumbnail-2:hover,
-.blog-box__thumbnail-3:hover {
+.blog-secbox-list a:hover .page-blog-secbox-list__pic img,
+.page-blog-secbox-list a:hover .page-blog-secbox-list__pic img {
   opacity: 0.6;
   transition-duration: 0.3s;
 }
 
-.blog-box__textbox {
+.blog-secbox-list__pic,
+.page-blog-secbox-list__pic {
+  width: 100%;
+  height: 180px;
+  padding-top: 10px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-filter: grayscale(20%);
+  filter: grayscale(20%);
+}
+
+.blog-secbox-list__pic img,
+.page-blog-secbox-list__pic img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: none;
+  object-position: 50% 50%;
+}
+
+.blog-secbox-list--text,
+.page-blog-secbox-list--text {
   line-height: 1.5;
+  text-align: left;
+}
+
+.blog-secbox-list--text__date,
+.page-blog-secbox-list--text__date {
+  position: relative;
+  font-size: 16px;
 }
 
 .page-top__btn {
@@ -3317,7 +3443,7 @@ article
   left: -30px;
   width: 20px;
   height: 30px;
-  background: url(/images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
+  background: url(../images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
 }
 
 .page-index__title::after {
@@ -3327,7 +3453,7 @@ article
   right: -35px;
   width: 20px;
   height: 30px;
-  background: url(/images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
+  background: url(../images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
 }
 
 .page-index__text {
@@ -4304,6 +4430,18 @@ article
     filter: drop-shadow(0px -3px 5px #4E4848);
   }
 
+  .category-news-tag {
+    top: 0px;
+    font-size: 10px;
+    padding: 6px 5px 5px;
+  }
+
+  .category-blog-tag {
+    top: 5px;
+    font-size: 10px;
+    padding: 6px 5px 5px;
+  }
+
   .c-footer__logo {
     width: 150px;
     margin: 50px auto;
@@ -4439,6 +4577,7 @@ article
     width: 70%;
   }
 
+  .blog-fristbox-list--text,
   .page-blog-fristbox-list--text {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -4448,20 +4587,17 @@ article
     flex-wrap: wrap;
   }
 
-  .page-blog-fristbox-list--text__date,
-  .page-blog-fristbox-list--text__title,
-  .page-blog-fristbox-list--text__desc {
-    font-size: 18px;
-  }
-
+  .blog-fristbox-list--text__date,
   .page-blog-fristbox-list--text__date {
     width: 20%;
   }
 
+  .blog-fristbox-list--text__title,
   .page-blog-fristbox-list--text__title {
     width: 80%;
   }
 
+  .blog-fristbox-list--text__desc,
   .page-blog-fristbox-list--text__desc {
     display: block;
     font-size: 18px;
@@ -4469,13 +4605,24 @@ article
     line-height: 1.5;
   }
 
-  .blog-box {
-    width: calc(50% - 10px);
-    padding: 0 5px;
+  .blog-secbox,
+  .page-blog-secbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
   }
 
-  .blog-box:last-child {
-    display: none;
+  .blog-secbox-list,
+  .page-blog-secbox-list {
+    width: 33.333%;
+    padding: 10px;
   }
 
   .page-top__btn {
@@ -4815,6 +4962,18 @@ article
     padding: 80px 20px;
   }
 
+  .category-news-tag {
+    top: 0px;
+    font-size: 12px;
+    padding: 4px 5px 4px;
+  }
+
+  .category-blog-tag {
+    top: 5px;
+    font-size: 12px;
+    padding: 4px 5px 4px;
+  }
+
   .c-footer__logo {
     width: 170px;
     margin: 50px auto 0;
@@ -4880,14 +5039,6 @@ article
     display: block;
   }
 
-  .blog-box {
-    width: calc(33.333% - 10px);
-  }
-
-  .blog-box:last-child {
-    display: block;
-  }
-
   .page-top__btn {
     top: 20px;
     right: 20px;
@@ -4916,10 +5067,6 @@ article
   }
 
   .p-card {
-    margin-bottom: 20px;
-  }
-
-  .blog-box {
     margin-bottom: 20px;
   }
 

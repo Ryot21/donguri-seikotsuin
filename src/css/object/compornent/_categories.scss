@@ -1,0 +1,65 @@
+
+// お知らせ カラー設定------------------------------------
+.category-news-tag {
+	position: absolute;
+	top: 0px;
+    right: 5px;
+    border: 1px solid $gray;
+	line-height: 1.2;
+	padding-bottom: 1px;
+	border-radius: 5px;
+
+	font-size: 12px;
+	font-weight: bold;
+	padding: 4px 5px 4px;
+	border-radius: 4px;
+	
+
+	@include min-screen($break_point_max) {
+		top: 0px;
+
+		font-size: 10px;
+		padding: 6px 5px 5px;
+	}
+	@include min-screen($break_point_pc) {
+		top: 0px;
+		
+		font-size: 12px;
+		padding: 4px 5px 4px;
+	}
+
+}
+
+
+// ブログ カラー設定------------------------------------
+.category-blog-tag {
+	position: absolute;
+	top: 5px;
+    right: 5px;
+    border: 1px solid $gray;
+	line-height: 1.2;
+	padding-bottom: 1px;
+	border-radius: 5px;
+
+	font-size: 12px;
+	font-weight: bold;
+	padding: 4px 5px 4px;
+	border-radius: 4px;
+	
+
+	@include min-screen($break_point_max) {
+		top: 5px;
+
+		font-size: 10px;
+		padding: 6px 5px 5px;
+	}
+	@include min-screen($break_point_pc) {
+		top: 5px;
+		
+		font-size: 12px;
+		padding: 4px 5px 4px;
+	}
+
+}
+
+

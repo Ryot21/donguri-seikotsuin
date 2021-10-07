@@ -24,7 +24,7 @@
 			left: -30px;
 			width: 20px;
 			height: 30px;
-			background: url(/images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
+			background: url(../images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
 			@include min-screen($break_point_max) {
 				top: 15px;
 			}
@@ -36,7 +36,7 @@
 			right: -35px;
 			width: 20px;
 			height: 30px;
-			background: url(/images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
+			background: url(../images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
 			@include min-screen($break_point_max) {
 				top: 15px;
 			}

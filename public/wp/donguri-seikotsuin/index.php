@@ -66,46 +66,29 @@ Template Name: TOP template
     <!-- 院内／スタッフ紹介 -->
     <section class="blog">
 		<h2 class="page-index__title">最近のブログ</h2>
-		
-		<div class="display-f">
-			<!-- 1つ目 -->
-			<div class="blog-box">
-				<div class="blog-box__thumbnail">
-					<img class="blog-box__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
-				</div>
-				<div class="blog-box__textbox">
-					<p class="blog-box__day">2021.10.01</p>
-					<h2 class="blog-box__title">タイトルタイトル</h2>
-					<div class="blog-box__detail"></div>
-				</div>
-			</div>
-			<!-- 2つ目 -->
-			<div class="blog-box">
-				<div class="blog-box__thumbnail">
-					<img class="blog-box__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
-				</div>
-				<div class="blog-box__textbox">
-					<p class="blog-box__day">2021.10.01</p>
-					<h2 class="blog-box__title">タイトルタイトル</h2>
-					<div class="blog-box__detail"></div>
-				</div>
-			</div>
-			<!-- 3つ目 -->
-			<div class="blog-box">
-				<div class="blog-box__thumbnail">
-					<img class="blog-box__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
-				</div>
-				<div class="blog-box__textbox">
-					<p class="blog-box__day">2021.10.01</p>
-					<h2 class="blog-box__title">タイトルタイトル</h2>
-					<div class="blog-box__detail"></div>
-				</div>
-			</div>
-		</div>
 
+		<ul class="page-blog-secbox display-f">
+
+		<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+			<?php
+				$wp_query = new WP_Query();
+				$my_posts = array(
+					'post_type' => 'post',
+					'posts_per_page' => '3', // 表示件数の指定
+					'category_name' => 'column,accident', //表示したいカテゴリー名を入力
+				);
+				$wp_query->query( $my_posts );
+				if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
+			?>
+
+			<?php get_template_part('module/blog'); ?>
+			<?php endwhile; endif; ?>
+
+		<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+		</ul>
 
 		<div class="c-btn">
-			<a href="#" class="c-btn-link">詳しくはこちら</a>
+			<a href="/blog/" class="c-btn-link">詳しくはこちら</a>
 		</div>
     </section>
 </div>

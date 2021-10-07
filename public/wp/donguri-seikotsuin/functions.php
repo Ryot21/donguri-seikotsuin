@@ -1,5 +1,8 @@
 <?php
 
+
+// アイキャッチ画像 追加機能-----------------------------------------
+		add_theme_support('post-thumbnails');
 // グローバルナビ　カスタムナビ機能-----------------------------------------
 		add_theme_support('menus');
 
@@ -112,7 +115,7 @@
 		}
 		function Change_objectlabel() {
 			global $wp_post_types;
-			$name = 'ブログ';
+			$name = 'お知らせ+ブログ';
 			$labels = &$wp_post_types['post']->labels;
 			$labels->name = $name;
 			$labels->singular_name = $name;
@@ -127,5 +130,42 @@
 		}
 		add_action( 'init', 'Change_objectlabel' );
 		add_action( 'admin_menu', 'Change_menulabel' );
+
+
+// お知らせ　カテゴリー [カラー+表示] 設定------------------
+		function categories_news_label() {// 呼び出すためのラベルを設定
+			$cats = get_the_category();
+			if(!empty($cats)){
+				if(!is_wp_error($cats)){
+					foreach($cats as $cat){
+						$cat_link = get_category_link($cat->term_id);
+						$cat_name = $cat->name;
+						$cat_id = $cat->cat_ID;
+						$cat_color = 'category_'.$cat_id;
+						$back_color = get_field('acf_taxonomy_color',$cat_color);// 背景色
+						$txt_color = get_field('acf_taxonomy_text_color',$cat_color);// テキストカラー
+						echo '<span class="category-news-tag" style="background-color:'.$back_color.';color:'.$txt_color.';">'.$cat_name.'</span>';
+					}
+				}
+			}
+		}
+
+// ブログ　カテゴリー [カラー+表示] 設定------------------
+		function categories_blog_label() {// 呼び出すためのラベルを設定
+			$cats = get_the_category();
+			if(!empty($cats)){
+				if(!is_wp_error($cats)){
+					foreach($cats as $cat){
+						$cat_link = get_category_link($cat->term_id);
+						$cat_name = $cat->name;
+						$cat_id = $cat->cat_ID;
+						$cat_color = 'category_'.$cat_id;
+						$back_color = get_field('acf_taxonomy_color',$cat_color);// 背景色
+						$txt_color = get_field('acf_taxonomy_text_color',$cat_color);// テキストカラー
+						echo '<span class="category-blog-tag" style="background-color:'.$back_color.';color:'.$txt_color.';">'.$cat_name.'</span>';
+					}
+				}
+			}
+		}
 
 ?>

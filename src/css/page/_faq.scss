@@ -1,36 +1,9 @@
 
 // 9.よくあるご質問 共通
 .page-faq {
-
 		&__title {
-			position: relative;
-			display: inline-block;
-			left: 50%;
-			transform: translateX(-50%);
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: -30px;
-				width: 30px;
-				height: 50px;
-				background: url(../images/icon/page-title-left.png) no-repeat;
-				opacity: .8;
-			}
-			&::after {
-				content: "";
-				position: absolute;
-				top: 0;
-				right: -28px;
-				width: 30px;
-				height: 50px;
-				background: url(../images/icon/page-title-right.png) no-repeat;
-				// opacity: .9;
+			// aboutに記述
 
-			}
-			@include min-screen($break_point_max) {
-				
-			}
 		}
 
 		&__wrap {

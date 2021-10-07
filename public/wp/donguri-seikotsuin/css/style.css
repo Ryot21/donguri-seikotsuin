@@ -1570,13 +1570,16 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin-bottom: 50px !important;
 }
 
+.page-index__text,
+.top-shoukai-inner,
+.top-blog-inner,
 .page-kodawari,
 .page-menu,
 .page-introduction,
 .page-blog,
 .page-access,
 .page-faq {
-  margin-top: 60px;
+  margin-top: 60px !important;
 }
 
 ul,
@@ -2473,8 +2476,8 @@ l-wrapper
 
 .category-news-tag {
   position: absolute;
-  top: 0px;
-  right: 5px;
+  top: -10px;
+  right: -15px;
   border: 1px solid #BCBBB6;
   line-height: 1.2;
   padding-bottom: 1px;
@@ -2482,7 +2485,7 @@ l-wrapper
   font-size: 12px;
   font-weight: bold;
   padding: 4px 5px 4px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .category-blog-tag {
@@ -2583,7 +2586,7 @@ header
 }
 
 .c-header__pic__title {
-  font-size: 38px;
+  font-size: 26px;
   text-shadow: 2px 2px 1px #ffffffeb;
   line-height: 1;
   position: absolute;
@@ -2937,18 +2940,31 @@ article
 
 /* ページごとのスタイル */
 
-.page-kodawari__title {
+.page-index__title,
+.page-kodawari__title,
+.page-menu__title,
+.page-access__title,
+.page-faq__title,
+.page-introduction__title,
+.page-menu__title {
   position: relative;
   display: inline-block;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  font-size: 26px;
 }
 
-.page-kodawari__title::before {
+.page-index__title::before,
+.page-kodawari__title::before,
+.page-menu__title::before,
+.page-access__title::before,
+.page-faq__title::before,
+.page-introduction__title::before,
+.page-menu__title::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 5px;
   left: -30px;
   width: 30px;
   height: 50px;
@@ -2956,14 +2972,25 @@ article
   opacity: .8;
 }
 
-.page-kodawari__title::after {
+.page-index__title::after,
+.page-kodawari__title::after,
+.page-menu__title::after,
+.page-access__title::after,
+.page-faq__title::after,
+.page-introduction__title::after,
+.page-menu__title::after {
   content: "";
   position: absolute;
-  top: 0;
+  top: 5px;
   right: -28px;
   width: 30px;
   height: 50px;
   background: url(../images/icon/page-title-right.png) no-repeat;
+  opacity: .8;
+}
+
+#area-3 {
+  padding: 200px 0px 70px;
 }
 
 .page-kodawari__bottombox {
@@ -3030,35 +3057,6 @@ article
   padding: 0 5px !important;
 }
 
-.page-access__title {
-  position: relative;
-  display: inline-block;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.page-access__title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -30px;
-  width: 30px;
-  height: 50px;
-  background: url(../images/icon/page-title-left.png) no-repeat;
-  opacity: .8;
-}
-
-.page-access__title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -28px;
-  width: 30px;
-  height: 50px;
-  background: url(../images/icon/page-title-right.png) no-repeat;
-}
-
 .page-access__bottombox {
   margin: 50px auto;
 }
@@ -3095,9 +3093,61 @@ article
   overflow: hidden;
 }
 
-.blog__title,
-.page-blog__title {
+.page-accident-header__title {
+  font-size: 26px;
+}
+
+.blog-header,
+.page-blog-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-bottom: 1px solid #5A5A5A;
+}
+
+.blog-header__title,
+.page-blog-header__title {
+  position: relative;
+  padding-left: 1em;
+  font-size: 26px;
+}
+
+.blog-header__title::before,
+.page-blog-header__title::before {
+  position: absolute;
+  content: "";
+  top: 22px;
+  left: 0;
+  width: .7em;
+  height: .7em;
+  margin: auto;
+  border: 0.15em solid;
+  border-radius: 30%;
+  box-sizing: border-box;
+}
+
+.blog-header .archive-btn,
+.page-blog-header .archive-btn {
+  width: 60px;
+  margin-left: auto;
+}
+
+.blog-header .archive-btn a,
+.page-blog-header .archive-btn a {
+  display: block;
+  margin: 0;
+  padding: 2px 10px;
+  color: #ffffffeb;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #B1B1B1;
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+  line-height: 1.5;
 }
 
 .blog-fristbox,
@@ -3230,12 +3280,61 @@ article
   font-size: 16px;
 }
 
+.blog-secbox {
+  margin-top: 0px;
+}
+
+.blog-secbox-list {
+  padding-bottom: 30px;
+}
+
+.blog-secbox-list a:hover .page-blog-secbox-list__pic {
+  background: #BCBBB6;
+  transition-duration: 0.3s;
+}
+
+.blog-secbox-list a:hover .page-blog-secbox-list__pic img {
+  opacity: 0.6;
+  transition-duration: 0.3s;
+}
+
+.blog-secbox-list__pic {
+  width: 100%;
+  height: 180px;
+  padding-top: 10px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-filter: grayscale(20%);
+  filter: grayscale(20%);
+}
+
+.blog-secbox-list__pic img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: none;
+  object-position: 50% 50%;
+}
+
+.blog-secbox-list--text {
+  line-height: 1.5;
+  text-align: left;
+}
+
+.blog-secbox-list--text__date {
+  position: relative;
+  font-size: 16px;
+}
+
 .page-top__btn {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 400px;
+  top: 500px;
   left: 50%;
   text-shadow: 1px 1px #4E4848;
   z-index: 111;
@@ -3325,33 +3424,8 @@ article
   right: 25px;
 }
 
-.page-faq__title {
-  position: relative;
-  display: inline-block;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.page-faq__title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -30px;
-  width: 30px;
-  height: 50px;
-  background: url(../images/icon/page-title-left.png) no-repeat;
-  opacity: .8;
-}
-
-.page-faq__title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -28px;
-  width: 30px;
-  height: 50px;
-  background: url(../images/icon/page-title-right.png) no-repeat;
+.page-contact-header__title {
+  font-size: 26px;
 }
 
 .page-faq__wrap {
@@ -3429,71 +3503,18 @@ article
 
 =======================*/
 
-.page-index__title {
-  display: inline-block;
-  position: relative;
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-
-.page-index__title::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -30px;
-  width: 20px;
-  height: 30px;
-  background: url(../images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
-}
-
-.page-index__title::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  right: -35px;
-  width: 20px;
-  height: 30px;
-  background: url(../images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
-}
-
 .page-index__text {
   margin-bottom: 30px;
-}
-
-.page-index .kodawari,
-.page-index .shoukai,
-.page-index .blog {
-  padding: 50px 0px;
   text-align: center;
 }
 
-.page-introduction__title {
-  position: relative;
-  display: inline-block;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+.page-index .kodawari {
+  padding: 50px 0px 70px;
 }
 
-.page-introduction__title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -30px;
-  width: 30px;
-  height: 50px;
-  background: url(../images/icon/page-title-left.png) no-repeat;
-  opacity: .8;
-}
-
-.page-introduction__title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -28px;
-  width: 30px;
-  height: 50px;
-  background: url(../images/icon/page-title-right.png) no-repeat;
+.page-index .top-shoukai,
+.page-index .top-blog {
+  padding: 70px 0px;
 }
 
 .page-introduction__bottombox {
@@ -3670,35 +3691,6 @@ article
   opacity: 1;
 }
 
-.page-menu__title {
-  position: relative;
-  display: inline-block;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.page-menu__title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -30px;
-  width: 30px;
-  height: 50px;
-  background: url(../images/icon/page-title-left.png) no-repeat;
-  opacity: .8;
-}
-
-.page-menu__title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -28px;
-  width: 30px;
-  height: 50px;
-  background: url(../images/icon/page-title-right.png) no-repeat;
-}
-
 .page-menu__bottombox {
   margin: 50px auto;
 }
@@ -3780,6 +3772,10 @@ article
 .page-menu-fristbox__menubox p {
   margin: 30px auto;
   text-align: center;
+}
+
+.page-visit-header__title {
+  font-size: 26px;
 }
 
 .u-ta-l {
@@ -4386,13 +4382,16 @@ article
     margin-bottom: 50px !important;
   }
 
+  .page-index__text,
+  .top-shoukai-inner,
+  .top-blog-inner,
   .page-kodawari,
   .page-menu,
   .page-introduction,
   .page-blog,
   .page-access,
   .page-faq {
-    margin-top: 50px;
+    margin-top: 50px !important;
   }
 
   .l-container {
@@ -4432,6 +4431,7 @@ article
 
   .category-news-tag {
     top: 0px;
+    right: 5px;
     font-size: 10px;
     padding: 6px 5px 5px;
   }
@@ -4475,6 +4475,10 @@ article
     margin: 90px auto 200px;
   }
 
+  .c-header__pic__title {
+    font-size: 35px;
+  }
+
   .c-header__gnav {
     position: absolute;
     bottom: 0;
@@ -4511,6 +4515,40 @@ article
 
   .p-card:last-child {
     display: none;
+  }
+
+  .page-index__title,
+  .page-kodawari__title,
+  .page-menu__title,
+  .page-access__title,
+  .page-faq__title,
+  .page-introduction__title,
+  .page-menu__title {
+    font-size: 35px;
+  }
+
+  .page-index__title::before,
+  .page-kodawari__title::before,
+  .page-menu__title::before,
+  .page-access__title::before,
+  .page-faq__title::before,
+  .page-introduction__title::before,
+  .page-menu__title::before {
+    top: 15px;
+  }
+
+  .page-index__title::after,
+  .page-kodawari__title::after,
+  .page-menu__title::after,
+  .page-access__title::after,
+  .page-faq__title::after,
+  .page-introduction__title::after,
+  .page-menu__title::after {
+    top: 15px;
+  }
+
+  #area-3 {
+    padding: 50px 20px;
   }
 
   .page-kodawari__bottombox {
@@ -4577,6 +4615,28 @@ article
     width: 70%;
   }
 
+  .page-accident-header__title {
+    font-size: 35px;
+  }
+
+  .blog-header__title,
+  .page-blog-header__title {
+    font-size: 35px;
+    padding-left: 1.5em;
+  }
+
+  .blog-header__title::before,
+  .page-blog-header__title::before {
+    top: 25px;
+    left: 15px;
+  }
+
+  .blog-header .archive-btn,
+  .page-blog-header .archive-btn {
+    width: 70px;
+    margin-right: 15px;
+  }
+
   .blog-fristbox-list--text,
   .page-blog-fristbox-list--text {
     display: -webkit-flex;
@@ -4621,8 +4681,26 @@ article
 
   .blog-secbox-list,
   .page-blog-secbox-list {
-    width: 33.333%;
-    padding: 10px;
+    width: calc(50% - 10px);
+    padding: 10px 5px;
+  }
+
+  .blog-secbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: -10px;
+  }
+
+  .blog-secbox-list {
+    width: calc(50% - 10px);
+    padding: 10px 5px;
   }
 
   .page-top__btn {
@@ -4654,33 +4732,24 @@ article
     width: 170px;
   }
 
+  .page-contact-header__title {
+    font-size: 35px;
+  }
+
   .page-faq__wrap {
     margin: 70px auto;
-  }
-
-  .page-index__title {
-    margin-bottom: 40px;
-  }
-
-  .page-index__title::before {
-    top: 15px;
-  }
-
-  .page-index__title::after {
-    top: 15px;
-  }
-
-  .page-index__title {
-    font-size: 30px;
   }
 
   .page-index__text {
     margin-bottom: 40px;
   }
 
-  .page-index .kodawari,
-  .page-index .shoukai,
-  .page-index .blog {
+  .page-index .kodawari {
+    padding: 50px 20px;
+  }
+
+  .page-index .top-shoukai,
+  .page-index .top-blog {
     padding: 50px 20px;
   }
 
@@ -4736,6 +4805,10 @@ article
 
   .page-menu-fristbox__menubox table tr {
     display: table-row;
+  }
+
+  .page-visit-header__title {
+    font-size: 35px;
   }
 }
 

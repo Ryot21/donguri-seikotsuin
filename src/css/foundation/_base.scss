@@ -69,15 +69,18 @@
 }
 
 // ページ共通 > 紙 > 縦幅
+.page-index__text,
+.top-shoukai-inner,
+.top-blog-inner,
 .page-kodawari,
 .page-menu,
 .page-introduction,
 .page-blog,
 .page-access,
 .page-faq{
-	margin-top: 60px;
+	margin-top: 60px !important;
 		@include min-screen($break_point_max) {
-			margin-top: 50px;
+			margin-top: 50px !important;
 		}
 }
 

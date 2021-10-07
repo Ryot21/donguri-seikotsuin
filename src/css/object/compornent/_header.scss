@@ -67,7 +67,7 @@ header
     }
 
     &__title {
-      font-size: 38px;
+      font-size: $font-title__sp;
       text-shadow: 2px 2px 1px $white;
       line-height: 1;
       position: absolute;
@@ -77,6 +77,9 @@ header
       width: 100%;
       text-align: center;
       margin: 0;
+      @include min-screen($break_point_max) {
+        font-size: $font-title__pc;
+      }
       span {
         font-size: 14px;
         // line-height: 1;

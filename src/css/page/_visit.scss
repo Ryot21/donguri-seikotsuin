@@ -7,9 +7,9 @@
 			
 		}
 		&__title {
-			
+			font-size: $font-title__sp;
 			@include min-screen($break_point_max) {
-				
+				font-size: $font-title__pc;
 			}
 		}
 

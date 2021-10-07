@@ -1,37 +1,61 @@
 
 // 2.当院のこだわり
-.page-kodawari {
-	
+.page-index,
+.page-kodawari,
+.page-menu,
+.page-access,
+.page-faq,
+.page-introduction,
+.page-menu {
 		&__title {
 			position: relative;
 			display: inline-block;
 			left: 50%;
 			transform: translateX(-50%);
+			font-size: $font-title__sp;
+			@include min-screen($break_point_max) {
+				font-size: $font-title__pc;
+			}
 			&::before {
 				content: "";
 				position: absolute;
-				top: 0;
+				top: 5px;
 				left: -30px;
 				width: 30px;
 				height: 50px;
 				background: url(../images/icon/page-title-left.png) no-repeat;
 				opacity: .8;
+				@include min-screen($break_point_max) {
+					top: 15px;
+				}
 			}
 			&::after {
 				content: "";
 				position: absolute;
-				top: 0;
+				top: 5px;
 				right: -28px;
 				width: 30px;
 				height: 50px;
 				background: url(../images/icon/page-title-right.png) no-repeat;
-				// opacity: .9;
+				opacity: .8;
+				@include min-screen($break_point_max) {
+					top: 15px;
+				}
+			}
 
-			}
-			@include min-screen($break_point_max) {
-				
-			}
 		}
+}
+
+// 固定ページ > TOP画像下部のスペース
+#area-3 {
+	padding: 200px 0px 70px;
+	// text-align: center;
+	@include min-screen($break_point_max) {
+		padding: 50px 20px;
+	}
+}
+
+.page-kodawari {
 		&__bottombox {
 			margin: 50px auto;
 				@include min-screen($break_point_max) {

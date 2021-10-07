@@ -2,10 +2,59 @@
 // 6.ブログ
 .blog,
 .page-blog {
-	&__title {
+	&-header {
+		display: flex;
+		align-items: center;
 		border-bottom: 1px solid $black;
-		@include min-screen($break_point_max) {
-			
+
+		&__title {//h2
+			position: relative;
+			padding-left: 1em;
+			font-size: $font-title__sp;
+
+			@include min-screen($break_point_max) {
+				font-size: $font-title__pc;
+				padding-left: 1.5em;
+			}
+			&::before {
+				position: absolute;
+				content: "";
+				top: 22px;
+				left: 0;
+				width: .7em;
+				height: .7em;
+				margin: auto;
+				border: 0.15em solid;
+
+				border-radius: 30%;
+				box-sizing: border-box;
+				@include min-screen($break_point_max) {
+					top: 25px;
+					left: 15px;
+				}
+
+			}
+		}
+		.archive-btn {
+			width: 60px;
+			margin-left: auto;
+			@include min-screen($break_point_max) {
+				width: 70px;
+				margin-right: 15px;
+			}
+			a {
+				display: block;
+				margin: 0;
+				padding: 2px 10px;
+				color: $white;
+				font-size: 16px;
+				line-height: 20px;
+				text-align: center;
+				background-color: $btn-gray;
+				border-radius: 5px;
+				transition: all 0.1s ease-in-out;
+				line-height: 1.5;
+			}
 		}
 	}
 	// 【お知らせ】ブロック
@@ -105,8 +154,12 @@
 		&-list { //li
 			padding-bottom: 30px;
 			@include min-screen($break_point_max) {
-				width: 33.333%;
-				padding: 10px;
+				width: calc(50% - 10px);
+				padding: 10px 5px;
+			}
+			@include min-screen($break_point_1440) {
+				// width: 33.333%;
+				// padding: 10px;
 			}
 			a {
 				&:hover {
@@ -157,5 +210,74 @@
 	}
 }
 
+// TOPページ > ブログ部分
 
+.blog {
+		// 【ブログ】ブロック
+		&-secbox { //ul
+			margin-top: 0px;
+			@include min-screen($break_point_max) {
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+				margin-top: -10px;
+			}
+			&-list { //li
+				padding-bottom: 30px;
+				@include min-screen($break_point_max) {
+					width: calc(50% - 10px);
+					padding: 10px 5px;
+				}
+				@include min-screen($break_point_1440) {
+					// width: 33.333%;
+					// padding: 10px;
+				}
 
+				a {
+					&:hover {
+						.page-blog-secbox-list__pic {
+							background: $gray;
+							transition-duration: 0.3s; 
+							img {
+								opacity: 0.6;
+								transition-duration: 0.3s;
+							}
+						}
+					}
+				}
+				&__pic { //画像部分
+					width: 100%;
+					height: 180px;
+					padding-top: 10px 0;
+					border-radius: 10px;
+					overflow: hidden;
+					filter: grayscale(20%);
+					@include min-screen($break_point_max) {
+					}
+					img {
+						display: inline-block;
+						height: auto;
+						max-width: 100%;
+						vertical-align: middle;
+						border-radius: 10px;
+						overflow: hidden;
+	
+						// 画像 > トリミング位置
+						object-fit: none;
+						object-position: 50% 50%;
+					}
+				}
+				&--text { //テキスト部分
+					line-height: 1.5;
+					text-align: left;
+					&__date { //p
+						position: relative;
+						font-size: 16px;
+					}
+					&__title { //h2
+	
+					}
+				}
+			}
+		}
+}

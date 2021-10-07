@@ -9,59 +9,34 @@
 =======================*/
 
 .page-index {
-	&__title {//h2
-		display: inline-block;
-		position: relative;
-		font-size: 24px;
-		margin-bottom: 30px;
-		@include min-screen($break_point_max) {
-			margin-bottom: 40px;
-		}
-		&::before {
-			content: "";
-			position: absolute;
-			top: 5px;
-			left: -30px;
-			width: 20px;
-			height: 30px;
-			background: url(../images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
-			@include min-screen($break_point_max) {
-				top: 15px;
-			}
-		}
-		&::after {
-			content: "";
-			position: absolute;
-			top: 5px;
-			right: -35px;
-			width: 20px;
-			height: 30px;
-			background: url(../images/logo/donguri-seikotsuin--ttl-icon.png) no-repeat;
-			@include min-screen($break_point_max) {
-				top: 15px;
-			}
-		}
-		@include min-screen($break_point_max) {
-			font-size: 30px;
-		}
+	&__title {
+		// aboutに記述
+
 	}
 	&__text {
 		margin-bottom: 30px;
+		text-align: center;
 		@include min-screen($break_point_max) {
 			margin-bottom: 40px;
 		}
 	}
 	//ここから下は、コンテンツ内部
-	.kodawari,
-	.shoukai,
-	.blog {
-		padding: 50px 0px;
-		text-align: center;
+	.kodawari {
+		padding: 50px 0px 70px;
+		// text-align: center;
 		@include min-screen($break_point_max) {
 			padding: 50px 20px;
 		}
 	}
-	.shoukai {
+	.top-shoukai,
+	.top-blog {
+		padding: 70px 0px;
+		// text-align: center;
+		@include min-screen($break_point_max) {
+			padding: 50px 20px;
+		}
+	}
+	.top-shoukai {
 
 	}
 }

@@ -28,10 +28,10 @@ Template Name: TOP template
 	</section>
 
 	<!-- 院内／スタッフ紹介 -->
-	<section class="shoukai">
+	<section class="top-shoukai">
 		<h2 class="page-index__title">院内の紹介</h2>
 
-		<div class="display-f">
+		<div class="top-shoukai-inner display-f">
 			<!-- 1つ目 -->
 			<div class="p-card">
 				<div class="p-card__thumbnail">
@@ -64,19 +64,33 @@ Template Name: TOP template
 
 
     <!-- 院内／スタッフ紹介 -->
-    <section class="blog">
+    <section class="top-blog">
 		<h2 class="page-index__title">最近のブログ</h2>
 
-		<ul class="page-blog-secbox display-f">
+		<ul class="top-blog-inner blog-secbox display-f">
 
 		<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+			<?php if(wp_is_mobile()): ?><!-- モバイルサイト向けの記述 -->
+				<?php
+					$wp_query = new WP_Query();
+					$my_posts = array(
+						'post_type' => 'post',
+						'posts_per_page' => '3', // 表示件数の指定
+						'category_name' => '', //表示したいカテゴリー名を入力
+					);
+				?>
+			<?php else: ?><!-- PCサイト向けの記述 -->
+				<?php
+					$wp_query = new WP_Query();
+					$my_posts = array(
+						'post_type' => 'post',
+						'posts_per_page' => '2', // 表示件数の指定
+						'category_name' => '', //表示したいカテゴリー名を入力
+					);
+				?>
+			<?php endif; ?>
+
 			<?php
-				$wp_query = new WP_Query();
-				$my_posts = array(
-					'post_type' => 'post',
-					'posts_per_page' => '3', // 表示件数の指定
-					'category_name' => 'column,accident', //表示したいカテゴリー名を入力
-				);
 				$wp_query->query( $my_posts );
 				if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
 			?>

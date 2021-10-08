@@ -1,0 +1,119 @@
+.p-pagination{
+  font-size: 14px;
+  text-align: center;
+  margin-top: 60px;
+  @include min-screen($break_point_pc) {
+    font-size: 20px;
+  }
+  &_arrow{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+    line-height: 34px;
+    position: relative;
+    margin: 0px 2px;
+    text-decoration: none;
+    position: relative;
+    // top: 3px;
+    @include min-screen($break_point_pc) {
+      width: 40px;
+      height: 40px;
+      margin: 0px 4px;
+      // top: -2px;
+    }
+    &:after{
+      font-family: "Font Awesome 5 Free";
+      font-weight: bold;
+      color: $Dgreen;
+      position: relative;
+      top: -2px;
+      @include min-screen($break_point_pc) {
+        top: 3px;
+      }
+    }
+    &__next{
+      &:after{
+        content: "\f054";
+      }
+    }
+    &__prev{
+      &:after{
+        content: "\f053";
+      }
+    }
+  }
+  &_count{
+    width: 30px;
+    height: 30px;
+    // border:solid 2px $blue;
+    color: $Dgreen;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0px 2px;
+    @include min-screen($break_point_pc) {
+      width: 40px;
+      height: 40px;
+      margin: 0px 4px;
+      line-height: 34px;
+    }
+  }
+  &_current{
+    background-color: $Dgreen;
+    border:solid 2px $Dgreen;
+    color: $white;
+  }
+  &__single {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $blue;
+    @include min-screen($break_point_min) {
+      @include flexbox;
+      padding-bottom: 50px;
+    }
+
+    .single-pagination {
+      margin-bottom: 15px;
+      @include min-screen($break_point_min) {
+        width: calc(50% - 10px);
+        margin-bottom: 0;
+      }
+      a {
+        @include flexbox;
+        align-items: center;
+      }
+      &__pic {
+        width: calc(22% - 10px);
+        @include min-screen($break_point_min) {
+          width: calc(32% - 10px);
+        }
+      }
+      &__title {
+        width: 78%;
+        text-align: left;
+        line-height: 1.4;
+        padding: 0 10px;
+        @include min-screen($break_point_min) {
+          width: 68%;
+          font-size: 16px;
+        }
+        span {
+          display: block;
+          margin-bottom: 5px;
+          color: $Dgreen;
+          @include min-screen($break_point_min) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .pages {
+    padding-right: 10px;
+  }
+}

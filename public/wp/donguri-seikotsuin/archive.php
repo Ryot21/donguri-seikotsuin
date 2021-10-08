@@ -99,9 +99,7 @@ Template Name: BLOG template
 			<div class="page-blog-header">
 				<h2 class="page-blog-header__title">お知らせ</h2>
 				<div class="archive-btn">
-					<a href="#">
-						一覧
-					</a>
+					<a href="<?php echo get_category_link('4');?>">一覧</a>
 				</div>
 			</div>
 			<!-- 画像説明 -->
@@ -125,8 +123,6 @@ Template Name: BLOG template
 			<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 
 			</ul>
-
-			<?php get_template_part('module/pagination'); ?>
 			<?php wp_reset_postdata(); ?>
 
 		</section>
@@ -136,9 +132,7 @@ Template Name: BLOG template
 			<div class="page-blog-header">
 				<h2 class="page-blog-header__title">コラム</h2>
 				<div class="archive-btn">
-					<a href="#">
-						一覧
-					</a>
+					<a href="<?php echo get_category_link('1');?>">一覧</a>
 				</div>
 			</div>
 			
@@ -152,7 +146,7 @@ Template Name: BLOG template
 						$my_posts = array(
 							'post_type' => 'post',
 							'posts_per_page' => '2', // 表示件数の指定
-							'category_name' => '', //表示したいカテゴリー名を入力
+							'category_name' => 'column,accident', //表示したいカテゴリー名を入力
 						);
 					?>
 				<?php else: ?><!-- PCサイト向けの記述 -->
@@ -171,67 +165,112 @@ Template Name: BLOG template
 					if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
 				?>
 
-				<?php get_template_part('module/blog'); ?>
+				<?php get_template_part('module/blog-sec'); ?>
 				<?php endwhile; endif; ?>
 
 				<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 			</ul>
 
-			<?php get_template_part('module/pagination'); ?>
 			<?php wp_reset_postdata(); ?>
 
 		</section>
 
-		<!-- 訪問マッサージ -->
-		<section class="page-blog pd-btm">
-			<div class="page-blog-header">
-				<h2 class="page-blog-header__title">訪問マッサージ</h2>
-				<div class="archive-btn">
-					<a href="#">
-						一覧
-					</a>
+		<!-- 交通事故+訪問マッサージ -->
+		<div class="display-f">
+			<section class="page-blog pd-btm">
+				<div class="page-blog-header">
+					<h2 class="page-blog-header__title">交通事故施術</h2>
+					<div class="archive-btn">
+						<a href="<?php echo get_category_link('3');?>">一覧</a>
+					</div>
 				</div>
-			</div>
-			<!-- 画像説明 -->
-			<ul class="page-blog-secbox display-f">
+				<!-- 画像説明 -->
+				<ul class="page-blog-threebox display-f">
+					<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 
-				<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
-				<?php if(wp_is_mobile()): ?><!-- モバイルサイト向けの記述 -->
+					<?php if(wp_is_mobile()): ?><!-- モバイルサイト向けの記述 -->
+						<?php
+							$wp_query = new WP_Query();
+							$my_posts = array(
+								'post_type' => 'post',
+								'posts_per_page' => '2', // 表示件数の指定
+								'category_name' => 'accident', //表示したいカテゴリー名を入力
+							);
+						?>
+					<?php else: ?><!-- PCサイト向けの記述 -->
+						<?php
+							$wp_query = new WP_Query();
+							$my_posts = array(
+								'post_type' => 'post',
+								'posts_per_page' => '1', // 表示件数の指定
+								'category_name' => 'accident', //表示したいカテゴリー名を入力
+							);
+						?>
+					<?php endif; ?>
+
 					<?php
-						$wp_query = new WP_Query();
-						$my_posts = array(
-							'post_type' => 'post',
-							'posts_per_page' => '2', // 表示件数の指定
-							'category_name' => '', //表示したいカテゴリー名を入力
-						);
+						$wp_query->query( $my_posts );
+						if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
 					?>
-				<?php else: ?><!-- PCサイト向けの記述 -->
+
+					<?php get_template_part('module/blog-three'); ?>
+					<?php endwhile; endif; ?>
+
+					<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+					<?php wp_reset_postdata(); ?>
+
+				</ul>
+
+			</section>
+			<section class="page-blog pd-btm">
+				<div class="page-blog-header">
+					<h2 class="page-blog-header__title">訪問マッサージ</h2>
+					<div class="archive-btn">
+						<a href="<?php echo get_category_link('2');?>">一覧</a>
+					</div>
+				</div>
+				<!-- 画像説明 -->
+				<ul class="page-blog-threebox display-f">
+
+					<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+					<?php if(wp_is_mobile()): ?><!-- モバイルサイト向けの記述 -->
+						<?php
+							$wp_query = new WP_Query();
+							$my_posts = array(
+								'post_type' => 'post',
+								'posts_per_page' => '2', // 表示件数の指定
+								'category_name' => 'visit', //表示したいカテゴリー名を入力
+							);
+						?>
+					<?php else: ?><!-- PCサイト向けの記述 -->
+						<?php
+							$wp_query = new WP_Query();
+							$my_posts = array(
+								'post_type' => 'post',
+								'posts_per_page' => '1', // 表示件数の指定
+								'category_name' => 'visit', //表示したいカテゴリー名を入力
+							);
+						?>
+					<?php endif; ?>
+
 					<?php
-						$wp_query = new WP_Query();
-						$my_posts = array(
-							'post_type' => 'post',
-							'posts_per_page' => '2', // 表示件数の指定
-							'category_name' => '', //表示したいカテゴリー名を入力
-						);
+						$wp_query->query( $my_posts );
+						if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
 					?>
-				<?php endif; ?>
+					<?php get_template_part('module/blog-three'); ?>
+					<?php endwhile; endif; ?>
 
-				<?php
-					$wp_query->query( $my_posts );
-					if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
-				?>
+					<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 
-				<?php get_template_part('module/blog'); ?>
-				<?php endwhile; endif; ?>
+					<?php wp_reset_postdata(); ?>
 
-				<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+				</ul>
 
-				<?php get_template_part('module/pagination'); ?>
-				<?php wp_reset_postdata(); ?>
+			</section>
+		</div>
 
-			</ul>
-
-		</section>
 	</div>
 
 

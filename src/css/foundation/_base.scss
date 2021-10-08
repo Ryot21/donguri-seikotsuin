@@ -41,6 +41,16 @@
   }
 }
 
+.display-f-sp {
+  margin-bottom: 30px;
+  @include max-screen($break_point_max) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+}
+
 // padding関係
 .pd-top {
   padding-top:50px !important;

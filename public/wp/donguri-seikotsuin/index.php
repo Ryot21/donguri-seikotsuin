@@ -23,7 +23,7 @@ Template Name: TOP template
 		テキストテキストテキストテキストテキストテキストテキストテキスト<br>
 		テキストテキストテキストテキストテキストテキストテキスト。</p>
 		<div class="c-btn">
-			<a href="#" class="c-btn-link">詳しくはこちら</a>
+			<a href="/about/" class="c-btn-link">詳しくはこちら</a>
 		</div>
 	</section>
 
@@ -58,7 +58,7 @@ Template Name: TOP template
 
 
 		<div class="c-btn">
-			<a href="/about/" class="c-btn-link">詳しくはこちら</a>
+			<a href="/introduction/" class="c-btn-link">詳しくはこちら</a>
 		</div>
 	</section>
 

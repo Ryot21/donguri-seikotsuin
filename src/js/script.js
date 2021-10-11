@@ -87,7 +87,7 @@ function navControl() {
 
 
   //ニュースティッカー
-  $('.c-newsticker_slider').bxSlider({
+  $('.l-page-newsbox').bxSlider({
       touchEnabled:false,//リンクを有効にするためスライドをマウスでドラッグした際にスライドの切り替えを可能にする機能を無効化
       mode: 'vertical',
       controls: false,
@@ -164,7 +164,7 @@ function navControl() {
 function FixedAnime() {
 	var elemTop = $('#area-3').offset().top;//#area-3の位置まできたら
 	var scroll = $(window).scrollTop();
-	if(scroll <= 560){//上から20pxスクロールされたら $('#header').addClass('DownMove');//DownMoveというクラス名を除き } else if (scroll >= elemTop){
+	if(scroll <= 580){//上から580pxスクロールされたら $('#header').addClass('DownMove');//DownMoveというクラス名を除き } else if (scroll >= elemTop){
 			$('#nav').removeClass('UpMove');//#headerについているUpMoveというクラス名を除く
 			$('#nav').addClass('DownMove');//#headerについているDownMoveというクラス名を付与
 

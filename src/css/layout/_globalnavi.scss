@@ -8,8 +8,6 @@ global-navigation active
 .page-top__btn,
 .l-container {
   position: relative;
-  // height: 100vh;
-  // z-index: 2;
   transition: all 0.5s;
   
 }
@@ -58,6 +56,7 @@ global-navigation active
   overflow: hidden;
   // & #container {
   & .l-header,
+  #topics,
   .page-top__btn,
   .l-container {
     opacity: 0;
@@ -92,58 +91,34 @@ global-navigation active
 }
 
 // ハンバーガーメニュータップopen後に表示されるメニュー　↓
-.mobile-menu__main /* ul */ {
-  display: inline-block;
-  list-style: none;
-  margin-bottom: 5px;
-  width: 100%;
-  .mobile-menu__item /* li */ {
-    position: relative;
-    height: .5em;
+.mobile-menu {
+  &__main {/* ul */
+    // display: inline-block;
+    // list-style: none;
+    // margin-bottom: 5px;
+    // width: 100%;
+
+  }
+  &__item { /* li */
+    // position: relative;
+    // height: .5em;
     @include min-screen($break_point_min) {
-      height: 2.5em;
+      // height: 2.5em;
     }
-    // ボーダーライン↓
-    &::before {
-      position: absolute;
-      content: '';
-      top: 20px;
-      left: 50%;
-      height: 10px;
-      width: 50%;  
-      background-color: rgba(200, 200, 200, 0.5);
-      transform: translateX(-50%);
-      @include min-screen($break_point_min) {
-        top: 95px;
-        width: 74%;
-      }
-    }
-    .mobile-menu__link /* a */ {
+    &__link /* a */ {
       position: relative;
       display: block;
-      cursor: pointer;
-      .en-title {
-        top: 0;
-        left: 0;
-        font-weight: 400;
-        font-size: 16px;
-      }
-      .ja-title {
-        position: absolute;
-        display: inline-block;
-        top: 10px;
-        left: 50%;
-        width: 100%;
-        text-align: center;
-        line-height: 1;
-        font-size: 16px;
-        color: $gray;
-        transform: translateX(-50%);
-        @include min-screen($break_point_min) {
-          top: 84px;
-          font-size: 12px;
-        }
-      }
+      /* 細め */
+      padding: .2em 3em;
+      margin: 5px 10px;
+      overflow: hidden;
+      box-shadow: 6px 0px 0.25rem $bg-brown;
+      background-image:
+        linear-gradient(90deg, hsla(0, 0%, 45%, .1) 2rem, hsla(0, 100%, 100%, 0) 2.5rem)
+      , linear-gradient(90deg, hsla(60, 100%, 85%, 1), hsla(60, 100%, 85%, 1));
+      transition-duration: 0.5s;
+
     }
   }
 }
+

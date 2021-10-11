@@ -1,0 +1,55 @@
+
+
+// ニュースティッカー用
+
+#topics {
+	border-left: 4px double $lightblack;
+    padding: 0px 0 0 20px;
+	@include min-screen($break_point_max) {
+		padding: 40px 0 0 20px;
+
+	}
+	@include min-screen($break_point_pc) {
+		padding: 20px 0 0 20px;
+
+	}
+}
+
+.bx-wrapper {
+	margin: auto 0;
+	// padding: 30px 0;
+	background: none;
+	border: none;
+	box-shadow:none;
+
+	@include min-screen($break_point_max) {
+		max-width: 50% !important;
+	}
+	.bx-viewport {
+		height: 45px !important;
+		// border-top: 1px solid $black;
+		// border-bottom: 1px solid $black;
+
+		@include min-screen($break_point_max) {
+			// height: 50px !important;
+		}
+		li {
+			
+		}
+		a {
+			display: block;
+			height: 37px !important;
+			padding-top: 35px !important;
+			@include min-screen($break_point_max) {
+				height: 45px !important;
+			}
+		}
+		span {
+			display:inline-block;
+			font-size:0.8rem;
+			margin-right:10px;
+			color:#777;
+		}
+		
+	}
+}

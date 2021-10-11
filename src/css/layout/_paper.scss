@@ -8,6 +8,7 @@ l-paper
 
 .l-paper {
 	position: relative;
+	top: -20px;
 	// 背景設定
 	background: url(../images/paper-bg4.png) repeat;
 	// 『 インクカラー 』
@@ -15,9 +16,8 @@ l-paper
 	margin: 0 auto;
 	padding: 0 $paper_padding_sp;
 	border-radius: 1px 1px 1px 1px;
-
-
 	@include min-screen($break_point_pc) {
+		top: 0;
 		padding: 0 $paper_padding 40px;
 	}
 	// 影設定
@@ -50,6 +50,13 @@ l-paper
 			left: auto;
 		}
 	}
+
+	// ニュースティッカー
+	&-newsbox {
+		// bx-wrapper > project > scss
+	}
+
+
 
 	&--inner {
 		position: absolute;

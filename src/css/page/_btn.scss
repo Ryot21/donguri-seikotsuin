@@ -7,7 +7,7 @@
 		&__btn {
 			display: flex;
 			position: absolute;
-			top: 500px;
+			top: 470px;
 			left: 50%;
 			text-shadow: 1px 1px $lightblack;
 			z-index: 111;
@@ -15,7 +15,7 @@
 				transform: translateX(-50%);
 			}
 			@include min-screen($break_point_max) {
-				top: 470px;
+				top: 540px;
 				left: 50%;
 			}
 			@include min-screen($break_point_pc) {

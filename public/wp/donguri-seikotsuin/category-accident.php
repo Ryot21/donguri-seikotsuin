@@ -19,7 +19,7 @@ Template Name: BLOG template
 			<nav class="c-header">
 				<!-- 固定ページ > ヘッダー -->
 				<div class="c-header__pic">
-					<h1 class="c-header__pic__title">コラム<br><span>COLUM</span></h1>
+					<h1 class="c-header__pic__title">訪問マッサージ<br><span>VISIT</span></h1>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-page.jpg" alt="サイトヘッダー">
 				</div>
 				<!-- ヘッダーNavi -->
@@ -97,7 +97,7 @@ Template Name: BLOG template
 		<!-- コラム -->
 		<section class="page-blog pd-btm">
 			<div class="page-blog-header">
-				<h2 class="page-blog-header__title">コラム</h2>
+				<h2 class="page-blog-header__title">交通事故施術</h2>
 			</div>
 			
 			<!-- 画像説明 -->
@@ -110,7 +110,7 @@ Template Name: BLOG template
 						$my_posts = array(
 							'post_type' => 'post',
 							'posts_per_page' => '5', // 表示件数の指定
-							'category_name' => 'column', //表示したいカテゴリー名を入力
+							'category_name' => 'accident', //表示したいカテゴリー名を入力
 						);
 					?>
 				<?php else: ?><!-- PCサイト向けの記述 -->
@@ -119,7 +119,7 @@ Template Name: BLOG template
 						$my_posts = array(
 							'post_type' => 'post',
 							'posts_per_page' => '8', // 表示件数の指定
-							'category_name' => 'column', //表示したいカテゴリー名を入力
+							'category_name' => 'accident', //表示したいカテゴリー名を入力
 						);
 					?>
 				<?php endif; ?>

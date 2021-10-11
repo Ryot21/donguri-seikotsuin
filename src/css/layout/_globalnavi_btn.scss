@@ -25,7 +25,7 @@
   position: relative;
   width: 30px;
   height: 22px;
-  top: 0px;
+  top: -10px;
   display: inline-block;
   @include min-screen($break_point_min) {
 
@@ -43,7 +43,7 @@
   width: 28px;
   height: 3px;
   right: 0;
-  background-color: $blue;
+  background: $bg-brown;
   display: block;
   transition: all .4s;
 }

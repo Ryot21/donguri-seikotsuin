@@ -146,7 +146,7 @@ Template Name: BLOG template
 						$my_posts = array(
 							'post_type' => 'post',
 							'posts_per_page' => '2', // 表示件数の指定
-							'category_name' => 'column,accident', //表示したいカテゴリー名を入力
+							'category_name' => 'column', //表示したいカテゴリー名を入力
 						);
 					?>
 				<?php else: ?><!-- PCサイト向けの記述 -->
@@ -155,7 +155,7 @@ Template Name: BLOG template
 						$my_posts = array(
 							'post_type' => 'post',
 							'posts_per_page' => '2', // 表示件数の指定
-							'category_name' => 'column,accident', //表示したいカテゴリー名を入力
+							'category_name' => 'column', //表示したいカテゴリー名を入力
 						);
 					?>
 				<?php endif; ?>

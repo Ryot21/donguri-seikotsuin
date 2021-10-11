@@ -1,36 +1,77 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<meta name="keywords" content="どんぐり整骨院, 埼玉県, 所沢市, 整骨院, 駐車場あり">
-	<meta name="description" content="埼玉県所沢市を拠点に置く、地元形の整骨院です。">
-	<title>どんぐり整骨院 | 埼玉県所沢市の整骨院</title>
 
-	<link rel="alternate" hreflang="ja" href="/">
-
-
-
+	<!-- ディスクリプション -->
+		<?php
+			if(is_home()) {
+				$description = get_bloginfo('description');
+			} else if(is_tax('news')) {//お知らせ
+				$description = 'どんぐり整骨院のお知らせ一覧ページです。どんぐり整骨院の更新情報をはじめとした各種情報を掲載しています。';
+			} else if(is_single()) {
+				$postsummary = strip_tags($post->post_content);
+				$textsearch = array('\n','<br>','<br />');
+				$postsummary = str_replace($textsearch, '', $postsummary);
+				$postsummary = mb_substr($postsummary, 0, 50). '…';
+				$description = $postsummary . ' | どんぐり整骨院';
+			} else if(is_category()) {//ブログ > カテゴリ
+				$description = 'どんぐり整骨院のカテゴリー一覧ページです。各サービスについての詳細な情報を公開します。';
+			} else if(is_page('about')) {//当院のこだわり
+				$description = 'どんぐり整骨院のこだわりをまとめたページです。';
+			} else if(is_page('contact')) {//お問い合わせ
+				$description = 'どんぐり整骨院のお問い合わせページです。お問い合わせの方はフォームよりご連絡ください。';
+			}
+		?>
+		<meta name="description" content="<?php echo $description; ?>">
+	<!-- /ディスクリプション -->
+	<!-- タイトル -->
+		<?php if( is_home()): ?>
+			<title><?php bloginfo('name'); ?></title>
+		<?php else: ?>
+			<title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
+		<?php endif; ?>
+	<!-- /タイトル -->
 	<!-- ogp -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="/">
-	<meta property="og:description" content="埼玉県所沢市を拠点に置く、地元形の整骨院です。">
-	<meta property="og:image" content="">
-	<meta property="og:title" content="どんぐり整骨院 | 埼玉県所沢市の整骨院">
-	<meta property="og:site_name" content="">
+		<?php
+			if(is_home()) {
+				$ogtype = 'website';
+			} else {
+				$ogtype = 'article';
+			}
+		?>
+		<meta property="og:type" content="<?php echo $ogtype; ?>">
+		<meta property="og:url" content="<?php echo("http://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]); ?>">
+		<meta property="og:description" content="<?php echo $description; ?>">
+		<meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/common/ogimage.png">
+		<meta property="og:title" content="<?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?>">
+		<meta property="og:site_name" content="<?php bloginfo('name'); ?>">
 	<!-- /ogp -->
-
-	<!-- swiper関連 -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-	<!-- // swiper関連 -->
 
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/aos.css">
+
 </head>
-<body class="<%= page['bodyclass'] %>">
+
+
+<?php
+  if(is_page()) {
+    $page = get_post( get_the_ID() );
+    $slug = $page->post_name;
+  } elseif(is_home()) {//トップ
+    $slug = 'index';
+  } elseif(is_category() || is_single()) {//ブログ
+    $slug = 'blog';
+  }
+
+?>
+
+
+<body class="<?php echo $slug; ?>">
   <div class="bgc">
     <!-- ボード > 左上のアイコン -->
     <div class="bgc__icon">
@@ -57,78 +98,48 @@
       <div id="js-menu" class="mobile-menu">
         <h2 class="mobile-menu__ttl">menu</h2>
         <ul class="mobile-menu__main">
-            <!-- 1.ホーム -->
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="/">
-                    <span class="en-title">HOME</span>
-                    <span class="ja-title">ホーム</span>
-                </a>
-            </li>
-            <!-- 2.当院のこだわり -->
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="/about/">
-                    <span class="en-title">about</span>
-                    <span class="ja-title">当院のこだわり</span>
-                </a>
-            </li>
-            <!-- 3.メニュー／料金表 -->
-            <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="/menu/">
-                    <span class="en-title">menu</span>
-                    <span class="ja-title">メニュー</span>
-                </a>
-            </li>
-            <!-- 4.交通事故施術 -->
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="/accident/">
-                  <span class="en-title">accident</span>
-                  <span class="ja-title">交通事故施術</span>
-              </a>
-            </li>
-            <!-- 5.訪問マッサージ -->
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="/visit/">
-                  <span class="en-title">visit</span>
-                  <span class="ja-title">訪問マッサージ</span>
-              </a>
-            </li>
-            <!-- 6.ブログ -->
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="/blog/">
-                  <span class="en-title">blog</span>
-                  <span class="ja-title">ブログ</span>
-              </a>
-            </li>
-            <!-- 7.院内／スタッフ紹介 -->
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="/introduction/">
-                  <span class="en-title">introduction</span>
-                  <span class="ja-title">院内／スタッフ</span>
-              </a>
-            </li>
-            <!-- 8.アクセス -->
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="/access/">
-                  <span class="en-title">access</span>
-                  <span class="ja-title">アクセス</span>
-              </a>
-            </li>
-            <!-- 9.よくあるご質問 -->
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="/faq/">
-                  <span class="en-title">FAQ</span>
-                  <span class="ja-title">よくある質問</span>
-              </a>
-            </li>
-            <!-- 10.ご予約／お問い合わせ -->
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link" href="/contact/">
-                  <span class="en-title">CONTACT</span>
-                  <span class="ja-title">ご予約／お問い合わせ</span>
-              </a>
-            </li>
+          <!-- 1.ホーム -->
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__item__link" href="/">ホーム</a>
+          </li>
+          <!-- 2.当院のこだわり -->
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__item__link" href="/about/">当院のこだわり</a>
+          </li>
+          <!-- 3.メニュー／料金表 -->
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__item__link" href="/menu/">メニュー</a>
+          </li>
+          <!-- 4.交通事故施術 -->
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__item__link" href="/accident/">交通事故施術</a>
+          </li>
+          <!-- 5.訪問マッサージ -->
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__item__link" href="/visit/">訪問マッサージ</a>
+          </li>
+          <!-- 6.ブログ -->
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__item__link" href="/blog/">ブログ</a>
+          </li>
+          <!-- 7.院内／スタッフ紹介 -->
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__item__link" href="/introduction/">院内／スタッフ</a>
+          </li>
+          <!-- 8.アクセス -->
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__item__link" href="/access/">アクセス</a>
+          </li>
+          <!-- 9.よくあるご質問 -->
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__item__link" href="/faq/">よくある質問</a>
+          </li>
+          <!-- 10.ご予約／お問い合わせ -->
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__item__link" href="/contact/">ご予約／お問い合わせ</a>
+          </li>
 
-        </ul>
+			</ul>
       </div>
 
       <!-- お問い合わせボタン＋LINEボタン -->

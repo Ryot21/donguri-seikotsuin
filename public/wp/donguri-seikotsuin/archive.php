@@ -21,7 +21,10 @@ Template Name: BLOG template
 				<div class="c-header__pic">
 					<h1 class="c-header__pic__title">ブログ<br><span>BLOG</span></h1>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-page.jpg" alt="サイトヘッダー">
+					<!-- パンくず -->
+					<?php get_template_part('module/breadcrumb'); ?>
 				</div>
+
 				<!-- ヘッダーNavi -->
 				<ul id="nav" class="c-header__gnav">
 					<!-- 2.当院のこだわり -->
@@ -92,6 +95,8 @@ Template Name: BLOG template
 		</div>
 	</header>
 
+
+
 	<!-- ここからコンテンツ -->
 	<div id="area-3" class="page l-container">
 		<!-- お知らせ -->
@@ -130,7 +135,7 @@ Template Name: BLOG template
 		<!-- コラム -->
 		<section class="page-blog pd-btm">
 			<div class="page-blog-header">
-				<h2 class="page-blog-header__title">コラム</h2>
+				<h2 class="page-blog-header__title">ブログ</h2>
 				<div class="archive-btn">
 					<a href="<?php echo get_category_link('1');?>">一覧</a>
 				</div>
@@ -146,7 +151,7 @@ Template Name: BLOG template
 						$my_posts = array(
 							'post_type' => 'post',
 							'posts_per_page' => '2', // 表示件数の指定
-							'category_name' => 'column', //表示したいカテゴリー名を入力
+							'category_name' => 'blog', //表示したいカテゴリー名を入力
 						);
 					?>
 				<?php else: ?><!-- PCサイト向けの記述 -->
@@ -155,7 +160,7 @@ Template Name: BLOG template
 						$my_posts = array(
 							'post_type' => 'post',
 							'posts_per_page' => '2', // 表示件数の指定
-							'category_name' => 'column', //表示したいカテゴリー名を入力
+							'category_name' => 'blog', //表示したいカテゴリー名を入力
 						);
 					?>
 				<?php endif; ?>

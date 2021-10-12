@@ -6,3 +6,4 @@
 			<span><?php the_time('Y.m.d'); ?></span><?php the_title(); ?>
 		</a>
 	</li>
+	

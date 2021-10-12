@@ -16,6 +16,8 @@ Template Name: INTRODUCTION template
 				<div class="c-header__pic">
 					<h1 class="c-header__pic__title">院内紹介<br><span>INTRODUCTION</span></h1>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-page.jpg" alt="サイトヘッダー">
+					<!-- パンくず -->
+					<?php get_template_part('module/breadcrumb'); ?>
 				</div>
 
 				<!-- ヘッダーNavi -->

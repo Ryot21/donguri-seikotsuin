@@ -127,11 +127,20 @@ body {
   &__icon {
     position: absolute;
     top: 2px;
-    left: 15px;
+    left: 50%;
+
     width: 80px;
     height: 80px;
     z-index: 111111;
 
+    @include max-screen($break_point_min) {
+      transform: translateX(-50%);
+    }  
+    @include min-screen($break_point_min) {
+      top: 15px;
+      left: 15px;
+
+    }  
   }
 }
 

@@ -60,14 +60,14 @@
 
 
 <?php
-  if(is_page()) {
-    $page = get_post( get_the_ID() );
-    $slug = $page->post_name;
-  } elseif(is_home()) {//トップ
-    $slug = 'index';
-  } elseif(is_category() || is_single()) {//ブログ
-    $slug = 'blog';
-  }
+	if(is_page()) {
+		$page = get_post( get_the_ID() );
+		$slug = $page->post_name;
+	} elseif(is_home()) {//トップ
+		$slug = 'index';
+	} elseif(is_category() || is_single()) {//ブログ
+		$slug = 'blog';
+	}
 
 ?>
 
@@ -159,7 +159,6 @@
 
 			<!-- ニュースティッカー -->
 			<!-- bx-wrapper > project > scss -->
-
 			<section id="topics">
 				<h2>お知らせ</h2>
 				<ul class="l-page-newsbox">
@@ -183,92 +182,105 @@
 
 				</ul>
 			</section>
-
-
 			<!-- // ニュースティッカー -->
 
 			<header id="header" class="l-header">
 				<div class="l-header__wrap">
 					<nav class="c-header">
-					<!-- サイトロゴ -->
-					<h1 class="c-header__logo">
-						<!-- 1.ホーム -->
-						<a href="/">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-seikotsuin3.png" alt="どんぐり整骨院">
-						</a>
-					</h1>
-					<!-- ヘッダーNavi -->
-					<ul id="nav" class="c-header__gnav">
-						
-						<!-- 2.当院のこだわり -->
-						<li class="c-header__menu">
-						<a href="/about/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-kodawari.png" alt="当院のこだわり">
-							当院の<br class="TB-br">こだわり
-						</a>
-						</li>
-						<!-- 3.メニュー -->
-						<li class="c-header__menu">
-						<a href="/menu/">
-							<!-- <img src="images/icon/menu_icon1.svg" alt="メニュー"> -->
-							<p style="padding-bottom:5px;"><i class="fas fa-yen-sign fa-3x"></i></p>
-							メニュー
-						</a>
-						</li>
-						<!-- 4.交通事故施術 -->
-						<li class="c-header__menu">
-						<a href="/accident/">
-							<!-- <img src="images/icon/menu_icon1.svg" alt="交通事故施術"> -->
-							<p style="padding-bottom:5px;"><i class="fas fa-car-crash fa-3x"></i></p>
-							交通事故<br class="TB-br">施術
-						</a>
-						</li>
-						<!-- 5.訪問マッサージ -->
-						<li class="c-header__menu">
-						<a href="/visit/">
-							<!-- <img src="images/icon/menu_icon1.svg" alt="訪問マッサージ"> -->
-							<p style="padding-bottom:5px;"><i class="fas fa-warehouse fa-3x"></i></p>
-							訪問<br class="TB-br">マッサージ
-						</a>
-						</li>
-						<!-- 6.ブログ -->
-						<li class="c-header__menu">
-						<a href="/blog/">
-							<!-- <img src="images/icon/menu_icon1.svg" alt="ブログ"> -->
-							<p style="padding-bottom:5px;"><i class="fa fa-book fa-3x" aria-hidden="true"></i></p>
-							ブログ
-						</a>
-						</li>
-						<!-- 7.院内／スタッフ紹介 -->
-						<li class="c-header__menu">
-						<a href="/introduction/">
-							<!-- <img src="images/icon/menu_icon1.svg" alt="院内／スタッフ"> -->
-							<p style="padding-bottom:5px;"><i class="far fa-hospital fa-3x" aria-hidden="true"></i></p>
-							院内紹介
-						</a>
-						</li>
-						<!-- 8.アクセス -->
-						<li class="c-header__menu">
-						<a href="/access/">
-							<!-- <img src="images/icon/menu_icon1.svg" alt="アクセス"> -->
-							<p style="padding-bottom:5px;"><i class="far fa-map fa-3x" aria-hidden="true"></i></p>
-							アクセス
-						</a>
-						</li>
-						<!-- 9.よくあるご質問 -->
-						<li class="c-header__menu">
-						<a href="/faq/">
-							<!-- <img src="images/icon/menu_icon1.svg" alt="よくある質問"> -->
-							<p style="padding-bottom:5px;"><i class="far fa-question-circle fa-3x" aria-hidden="true"></i></p>
-							よくある<br class="TB-br">質問
-						</a>
-						</li>
-						<!-- 10.ご予約／お問い合わせ -->
-						<!-- <li class="c-header__menu">
-						<a href="/contact/">ご予約／お問い合わせ</a>
-						</li> -->
 
-					</ul>
+						<!-- サイトロゴ -->
+						<h1 class="c-header__logo">
+							<!-- 1.ホーム -->
+							<a href="/">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-seikotsuin3.png" alt="どんぐり整骨院">
+							</a>
+						</h1>
+						<!-- //サイトロゴ -->
+
+						<!-- 付箋 -->
+						<div class="c-header__husen PC">
+							
+							<ol>
+								<li>下山口駅から徒歩１分</li>
+								<li>駐車場完備</li>
+								<li>くつろげる空間</li>
+							</ol>
+						</div>
+						<!-- //付箋 -->
+
+						<!-- ヘッダーNavi -->
+						<ul id="nav" class="c-header__gnav">
+							
+							<!-- 2.当院のこだわり -->
+							<li class="c-header__menu">
+							<a href="/about/">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-kodawari.png" alt="当院のこだわり">
+								当院の<br class="TB-br">こだわり
+							</a>
+							</li>
+							<!-- 3.メニュー -->
+							<li class="c-header__menu">
+							<a href="/menu/">
+								<!-- <img src="images/icon/menu_icon1.svg" alt="メニュー"> -->
+								<p style="padding-bottom:5px;"><i class="fas fa-yen-sign fa-3x"></i></p>
+								メニュー
+							</a>
+							</li>
+							<!-- 4.交通事故施術 -->
+							<li class="c-header__menu">
+							<a href="/accident/">
+								<!-- <img src="images/icon/menu_icon1.svg" alt="交通事故施術"> -->
+								<p style="padding-bottom:5px;"><i class="fas fa-car-crash fa-3x"></i></p>
+								交通事故<br class="TB-br">施術
+							</a>
+							</li>
+							<!-- 5.訪問マッサージ -->
+							<li class="c-header__menu">
+							<a href="/visit/">
+								<!-- <img src="images/icon/menu_icon1.svg" alt="訪問マッサージ"> -->
+								<p style="padding-bottom:5px;"><i class="fas fa-warehouse fa-3x"></i></p>
+								訪問<br class="TB-br">マッサージ
+							</a>
+							</li>
+							<!-- 6.ブログ -->
+							<li class="c-header__menu">
+							<a href="/blog/">
+								<!-- <img src="images/icon/menu_icon1.svg" alt="ブログ"> -->
+								<p style="padding-bottom:5px;"><i class="fa fa-book fa-3x" aria-hidden="true"></i></p>
+								ブログ
+							</a>
+							</li>
+							<!-- 7.院内／スタッフ紹介 -->
+							<li class="c-header__menu">
+							<a href="/introduction/">
+								<!-- <img src="images/icon/menu_icon1.svg" alt="院内／スタッフ"> -->
+								<p style="padding-bottom:5px;"><i class="far fa-hospital fa-3x" aria-hidden="true"></i></p>
+								院内紹介
+							</a>
+							</li>
+							<!-- 8.アクセス -->
+							<li class="c-header__menu">
+							<a href="/access/">
+								<!-- <img src="images/icon/menu_icon1.svg" alt="アクセス"> -->
+								<p style="padding-bottom:5px;"><i class="far fa-map fa-3x" aria-hidden="true"></i></p>
+								アクセス
+							</a>
+							</li>
+							<!-- 9.よくあるご質問 -->
+							<li class="c-header__menu">
+							<a href="/faq/">
+								<!-- <img src="images/icon/menu_icon1.svg" alt="よくある質問"> -->
+								<p style="padding-bottom:5px;"><i class="far fa-question-circle fa-3x" aria-hidden="true"></i></p>
+								よくある<br class="TB-br">質問
+							</a>
+							</li>
+							<!-- 10.ご予約／お問い合わせ -->
+							<!-- <li class="c-header__menu">
+							<a href="/contact/">ご予約／お問い合わせ</a>
+							</li> -->
+
+						</ul>
+						<!-- //ヘッダーNavi -->
 
 					</nav>
 				</div>

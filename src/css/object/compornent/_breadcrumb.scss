@@ -9,7 +9,13 @@
 =======================*/
 
 .c-breadcrumb {
-    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    padding: 5px 15px;
+    color: $black;
+    background: #ffffff6b;
     &__item {
       display: inline-block;
       &:not(:last-child) {
@@ -23,4 +29,4 @@
     &__link {
       text-decoration: none;
     }
-  }
+}

@@ -1,7 +1,4 @@
 <?php
-/*
-Template Name: BLOG template
-*/
 	get_header('page');
 ?>
 
@@ -21,6 +18,8 @@ Template Name: BLOG template
 				<div class="c-header__pic">
 					<h1 class="c-header__pic__title">お知らせ<br><span>NEWS</span></h1>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-page.jpg" alt="サイトヘッダー">
+					<!-- パンくず -->
+					<?php get_template_part('module/breadcrumb'); ?>
 				</div>
 				<!-- ヘッダーNavi -->
 				<ul id="nav" class="c-header__gnav">

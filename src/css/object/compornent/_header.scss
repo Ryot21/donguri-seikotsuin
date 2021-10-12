@@ -121,7 +121,7 @@ header
     }
   }
 
-  &__gnav {
+  &__gnav { //ul
     display: none;
     @include min-screen($break_point_max) {
       position: absolute;
@@ -139,70 +139,91 @@ header
       animation: FadeInNavi 1s linear;
       animation-fill-mode: both;
     }
-  }
-
-  &__menu {
-    position: relative;
-    margin: 0 5px;
-    // overflow: hidden;
-    &::after {
-      position: absolute;
-      content: '';
-      bottom: 1px;
-      left: 0;
-      height: 7px;
-      width: 100% !important;
-      transition: 0.5s;
-      animation: FadeOut 0.5s;
-      z-index: -1;
-    }
-    i {
-      transition: 0.5s;
-    }
-    &:hover {
-      i,
-      img {
-        transition: 0.5s;
-        animation: icon-bounds 1.5s ease infinite;
-      }
-      &::after {
-        @include min-screen($break_point_pc) {
-          width: 70%;
-          background-color: #e5f135;
-          margin-top: 1px;
+    li {
+      position: relative;
+      width: calc(12.5% - 10px);
+      height: 70px;
+      margin: 0 5px;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: -1px;
+      &:hover {
+        .c-header__gnav__iconbox {
+          left: 0;
+          // animation: icon-bounds 1.5s ease infinite;
+          animation: icon-bounds-yoko 1.5s ease infinite;
           transition: 0.5s;
-          animation: FadeIn 0.5s;
+        }
+        .c-header__gnav__text {
+
         }
       }
     }
-    @include min-screen($break_point_max) {
-      width: 65px;
-      line-height: 1.2;
-    }
-    @include min-screen($break_point_pc) {
-      width: 90px;
-    }
-    a {
+    &__iconbox { //アイコン
       display: block;
-      font-size: 12px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+
+      padding: 0 5px;
+      transition: 0.5s;
+
+    }
+    .icon {
+      &-kodarari { //当院のこだわり
+        .c-header__gnav__iconbox {
+          content: url(../images/logo/donguri-kodawari.png);
+        }
+      }
+      &-menu { //メニュー/料金表
+        .c-header__gnav__iconbox {
+          content: url(../images/logo/donguri-kodawari.png);
+        }
+      }
+      &-accident { //交通事故施術
+        .c-header__gnav__iconbox {
+          content: url(../images/logo/donguri-kodawari.png);
+        }
+      }
+      &-visit { //訪問マッサージ
+        .c-header__gnav__iconbox {
+          content: url(../images/logo/donguri-kodawari.png);
+        }
+      }
+      &-blog { //ブログ
+        .c-header__gnav__iconbox {
+          content: url(../images/logo/donguri-kodawari.png);
+        }
+      }
+      &-introduction { //院内紹介
+        .c-header__gnav__iconbox {
+          content: url(../images/logo/donguri-kodawari.png);
+        }
+      }
+      &-access { //アクセス
+        .c-header__gnav__iconbox {
+          content: url(../images/logo/donguri-kodawari.png);
+        }
+      }
+      &-faq { //よくある質問
+        .c-header__gnav__iconbox {
+          content: url(../images/logo/donguri-kodawari.png);
+        }
+      }
+    }
+    &__text { //テキスト
+      position: absolute;
+      bottom: -25px;
+      width: 100%;
+      color: $inkblack;
       font-weight: bold;
-      text-align: center;
 
-      &:hover {
-        opacity: 0.8;
-        
-      }
-      img {
-        display: block;
-        width: 67px;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-        padding: 0 10px;
-        margin-bottom: 10px;
-
-      }
     }
   }
+
+
+
+
+
   
 }

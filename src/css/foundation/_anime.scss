@@ -55,6 +55,19 @@
 	100%{transform:translateY(0);}
 }
 
+@keyframes icon-bounds-yoko{
+	0%{transform:translateX(0);}
+	20%{transform:translateX(-5px);}
+	35%{transform:translateX(5px);}
+	45%{transform:translateX(-3px);}
+	50%{transform:translateX(3px);}
+	55%{transform:translateX(-1px);}
+	60%{transform:translateX(1px);}
+	80%{transform:translateX(0px);}
+
+	100%{transform:translateX(0);}
+}
+
 
 @keyframes FadeRight {
 	0%{transform:translateX(0);}

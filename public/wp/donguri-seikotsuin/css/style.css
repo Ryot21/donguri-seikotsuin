@@ -209,6 +209,100 @@ Version: 2021.04.01（更新日）
   }
 }
 
+@-webkit-keyframes icon-bounds-yoko {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  20% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  35% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+
+  45% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+
+  55% {
+    -webkit-transform: translateX(-1px);
+    transform: translateX(-1px);
+  }
+
+  60% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+
+  80% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes icon-bounds-yoko {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  20% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  35% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+
+  45% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+
+  55% {
+    -webkit-transform: translateX(-1px);
+    transform: translateX(-1px);
+  }
+
+  60% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+
+  80% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 @-webkit-keyframes FadeRight {
   0% {
     -webkit-transform: translateX(0);
@@ -2781,54 +2875,70 @@ header
   display: none;
 }
 
-.c-header__menu {
+.c-header__gnav li {
   position: relative;
+  width: calc(12.5% - 10px);
+  height: 70px;
   margin: 0 5px;
-}
-
-.c-header__menu::after {
-  position: absolute;
-  content: '';
-  bottom: 1px;
-  left: 0;
-  height: 7px;
-  width: 100% !important;
-  transition: 0.5s;
-  -webkit-animation: FadeOut 0.5s;
-  animation: FadeOut 0.5s;
-  z-index: -1;
-}
-
-.c-header__menu i {
-  transition: 0.5s;
-}
-
-.c-header__menu:hover i,
-.c-header__menu:hover img {
-  transition: 0.5s;
-  -webkit-animation: icon-bounds 1.5s ease infinite;
-  animation: icon-bounds 1.5s ease infinite;
-}
-
-.c-header__menu a {
-  display: block;
-  font-size: 12px;
-  font-weight: bold;
   text-align: center;
+  font-size: 14px;
+  letter-spacing: -1px;
 }
 
-.c-header__menu a:hover {
-  opacity: 0.8;
+.c-header__gnav li:hover .c-header__gnav__iconbox {
+  left: 0;
+  -webkit-animation: icon-bounds-yoko 1.5s ease infinite;
+  animation: icon-bounds-yoko 1.5s ease infinite;
+  transition: 0.5s;
 }
 
-.c-header__menu a img {
+.c-header__gnav__iconbox {
   display: block;
-  width: 67px;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding: 0 10px;
-  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 5px;
+  transition: 0.5s;
+}
+
+.c-header__gnav .icon-kodarari .c-header__gnav__iconbox {
+  content: url(../images/logo/donguri-kodawari.png);
+}
+
+.c-header__gnav .icon-menu .c-header__gnav__iconbox {
+  content: url(../images/logo/donguri-kodawari.png);
+}
+
+.c-header__gnav .icon-accident .c-header__gnav__iconbox {
+  content: url(../images/logo/donguri-kodawari.png);
+}
+
+.c-header__gnav .icon-visit .c-header__gnav__iconbox {
+  content: url(../images/logo/donguri-kodawari.png);
+}
+
+.c-header__gnav .icon-blog .c-header__gnav__iconbox {
+  content: url(../images/logo/donguri-kodawari.png);
+}
+
+.c-header__gnav .icon-introduction .c-header__gnav__iconbox {
+  content: url(../images/logo/donguri-kodawari.png);
+}
+
+.c-header__gnav .icon-access .c-header__gnav__iconbox {
+  content: url(../images/logo/donguri-kodawari.png);
+}
+
+.c-header__gnav .icon-faq .c-header__gnav__iconbox {
+  content: url(../images/logo/donguri-kodawari.png);
+}
+
+.c-header__gnav__text {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  color: #2b2a29;
+  font-weight: bold;
 }
 
 /* ====================
@@ -4907,11 +5017,6 @@ article
     animation-fill-mode: both;
   }
 
-  .c-header__menu {
-    width: 65px;
-    line-height: 1.2;
-  }
-
   #topics {
     padding: 40px 0 0 20px;
   }
@@ -5538,19 +5643,6 @@ article
 
   .c-header__pic {
     margin: 100px auto 230px;
-  }
-
-  .c-header__menu:hover::after {
-    width: 70%;
-    background-color: #e5f135;
-    margin-top: 1px;
-    transition: 0.5s;
-    -webkit-animation: FadeIn 0.5s;
-    animation: FadeIn 0.5s;
-  }
-
-  .c-header__menu {
-    width: 90px;
   }
 
   #topics {

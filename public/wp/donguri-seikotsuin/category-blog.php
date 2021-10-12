@@ -21,72 +21,20 @@
 					<!-- パンくず -->
 					<?php get_template_part('module/breadcrumb'); ?>
 				</div>
-				<!-- ヘッダーNavi -->
-				<ul id="nav" class="c-header__gnav">
-					<!-- 2.当院のこだわり -->
-					<li class="c-header__menu">
-						<a href="/about/">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-kodawari.png" alt="当院のこだわり">
-						当院の<br class="TB-br">こだわり
-						</a>
-					</li>
-					<!-- 3.メニュー -->
-					<li class="c-header__menu">
-						<a href="/menu/">
-						<!-- <img src="images/icon/menu_icon1.svg" alt="メニュー"> -->
-						<p style="padding-bottom:5px;"><i class="fas fa-yen-sign fa-3x"></i></p>
-						メニュー
-						</a>
-					</li>
-					<!-- 4.交通事故施術 -->
-					<li class="c-header__menu">
-						<a href="/accident/">
-						<!-- <img src="images/icon/menu_icon1.svg" alt="交通事故施術"> -->
-						<p style="padding-bottom:5px;"><i class="fas fa-car-crash fa-3x"></i></p>
-						交通事故<br class="TB-br">施術
-						</a>
-					</li>
-					<!-- 5.訪問マッサージ -->
-					<li class="c-header__menu">
-						<a href="/visit/">
-						<!-- <img src="images/icon/menu_icon1.svg" alt="訪問マッサージ"> -->
-						<p style="padding-bottom:5px;"><i class="fas fa-warehouse fa-3x"></i></p>
-						訪問<br class="TB-br">マッサージ
-						</a>
-					</li>
-					<!-- 6.ブログ -->
-					<li class="c-header__menu">
-						<a href="/blog/">
-						<!-- <img src="images/icon/menu_icon1.svg" alt="ブログ"> -->
-						<p style="padding-bottom:5px;"><i class="fa fa-book fa-3x" aria-hidden="true"></i></p>
-						ブログ
-						</a>
-					</li>
-					<!-- 7.院内／スタッフ紹介 -->
-					<li class="c-header__menu">
-						<a href="/introduction/">
-						<!-- <img src="images/icon/menu_icon1.svg" alt="院内／スタッフ"> -->
-						<p style="padding-bottom:5px;"><i class="far fa-hospital fa-3x" aria-hidden="true"></i></p>
-						院内紹介
-						</a>
-					</li>
-					<!-- 8.アクセス -->
-					<li class="c-header__menu">
-						<a href="/access/">
-						<!-- <img src="images/icon/menu_icon1.svg" alt="アクセス"> -->
-						<p style="padding-bottom:5px;"><i class="far fa-map fa-3x" aria-hidden="true"></i></p>
-						アクセス
-						</a>
-					</li>
-					<!-- 9.よくあるご質問 -->
-					<li class="c-header__menu">
-						<a href="/faq/">
-						<!-- <img src="images/icon/menu_icon1.svg" alt="よくある質問"> -->
-						<p style="padding-bottom:5px;"><i class="far fa-question-circle fa-3x" aria-hidden="true"></i></p>
-						よくある<br class="TB-br">質問
-						</a>
-					</li>
-				</ul>
+
+
+				<!-- ul -->
+				<?php $args = array(
+					'menu' => 'header-menu', //管理画面で作成したメニュー名
+					'menu_class' => 'c-header__gnav', //メニューを構成する<ul>タグのクラス名
+					'container' => 'false', //<ul>タグを囲っている<div>タグについて
+					'link_before'  => '<div class="c-header__gnav__iconbox"></div><p class="c-header__gnav__text">',//テキストの直前
+					'link_after'      => '</p>',//テキストの直後
+				);
+					wp_nav_menu($args);
+				?>
+				<!-- // ul -->
+
 			</nav>
 		</div>
 	</header>

@@ -165,13 +165,13 @@ function FixedAnime() {
 	var elemTop = $('#area-3').offset().top;//#area-3の位置まできたら
 	var scroll = $(window).scrollTop();
 	if(scroll <= 580){//上から580pxスクロールされたら $('#header').addClass('DownMove');//DownMoveというクラス名を除き } else if (scroll >= elemTop){
-			$('#nav').removeClass('UpMove');//#headerについているUpMoveというクラス名を除く
-			$('#nav').addClass('DownMove');//#headerについているDownMoveというクラス名を付与
+			$('.c-header__gnav').removeClass('UpMove');//#headerについているUpMoveというクラス名を除く
+			$('.c-header__gnav').addClass('DownMove');//#headerについているDownMoveというクラス名を付与
 
 		}else{
-			if($('#nav').hasClass('DownMove')){//すでに#headerにDownMoveというクラス名がついていたら
-				$('#nav').removeClass('DownMove');//DownMoveというクラス名を除き
-				$('#nav').addClass('UpMove');//UpnMoveというクラス名を付与
+			if($('.c-header__gnav').hasClass('DownMove')){//すでに#headerにDownMoveというクラス名がついていたら
+				$('.c-header__gnav').removeClass('DownMove');//DownMoveというクラス名を除き
+				$('.c-header__gnav').addClass('UpMove');//UpnMoveというクラス名を付与
 			}
 		}
 }

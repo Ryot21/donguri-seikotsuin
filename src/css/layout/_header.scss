@@ -39,7 +39,7 @@ l-header
 // 固定
 /*==ふわっと出現させるためのCSS*/
 /*　上に上がる動き　*/
-#nav.UpMove{
+.c-header__gnav.UpMove{
 	position: fixed;
 	top: 0;
 	left: 50%;
@@ -47,8 +47,8 @@ l-header
 	width:87%;
 	max-width: 670px;
 	min-width: 670px;
-	height: 90px;
-	background: #ffffff8a;
+	height: 70px;
+	background: #ffffffb8;
 	padding: 20px 35px;
 	margin: 0 auto;
 	z-index: 999;
@@ -58,11 +58,48 @@ l-header
 		max-width: 960px;
 		padding: 20px 40px;
 	}
+	li { 
+		height: auto;
+		border-right: 1px dotted $lightblack;
+		&:last-child {
+			border-right: none;
+		}
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: 0;
+			left: 0;
+			height: 2px;
+			width: 100% !important;
+			transition: 0.5s;
+			opacity: 0;
+			animation: SlideOut 0.3s;
+		}
+		&:hover {
+			color: $blue;
+			margin-top: 1px;
+			transition: 0.5s;
+			opacity: 1;
+			animation: SlideIn 0.5s;
+			&::after {
+				background: $blue;
+				padding: 0 10px;
+				opacity: 0.8;
+				transition: ease .4s;
+			}
+		}
+	}
+	.c-header__gnav__iconbox {
+		display: none;
+	}
+	.c-header__gnav__text {
+		bottom: 2px;
+	}
 }
 
 
 /*　下に下がる動き　*/
-#nav.DownMove{
+.c-header__gnav.DownMove{
 	// position: fixed;
 	width:100%;
 	height: auto;

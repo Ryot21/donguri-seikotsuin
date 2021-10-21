@@ -58,12 +58,16 @@ global-navigation active
   & .l-header,
   #topics,
   .page-top__btn,
-  .l-container {
+  .l-container,
+  .l-paper,
+  .c-footer__logo,
+  .c-footer__detail,
+  .c-footer__map {
     opacity: 0;
     transition: 0.01s ease-in, opacity 0.01s ease-out;
   }
   & .mobile-menu {
-
+  
     z-index: 10;
       &__ttl {
         position: relative;

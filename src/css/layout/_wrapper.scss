@@ -13,20 +13,28 @@ l-wrapper
 		padding: 80px $wrapper_padding_tb;
 	}
 	@include min-screen($break_point_pc) {
+		max-width: $wrapper_width_iPadPro;
+		padding: 80px $wrapper_padding;
+	}
+	@include min-screen($break_point_1440) {
 		max-width: $wrapper_width;
 		padding: 80px $wrapper_padding;
 	}
 
 	&__clip {
+
+		display: none;
 		// ページ上部 > 金具部分
+		@include min-screen($break_point_max) {
+		display: block;
 		position: absolute;
-		top: 20px;
+		// top: 20px;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 200px;
+		// width: 200px;
 		filter: drop-shadow(0px -3px 4px $lightblack);
 		z-index: 1111;
-		@include min-screen($break_point_max) {
+		
 			top: 0px;
 			width: 270px;
 			filter: drop-shadow(0px -3px 5px $lightblack);

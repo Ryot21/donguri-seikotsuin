@@ -36,7 +36,7 @@ l-paper
 		transform: rotate(-2deg);
 		z-index: -1;
 		@include min-screen($break_point_max) {
-			left: 10px;
+			left: 15px;
 			transform: rotate(-3deg);
 		}
 	}
@@ -46,7 +46,7 @@ l-paper
 		left: auto;
 		@include min-screen($break_point_max) {
 			transform: rotate(3deg);
-			right: 10px;
+			right: 15px;
 			left: auto;
 		}
 	}

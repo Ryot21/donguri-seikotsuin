@@ -45,15 +45,20 @@ l-header
 	left: 50%;
 	transform: translateX(-50%);
 	width:87%;
-	max-width: 670px;
-	min-width: 670px;
+	max-width: 640px;
+	min-width: 640px;
 	height: 70px;
 	background: #ffffffb8;
-	padding: 20px 35px;
+	padding: 20px 5px;
 	margin: 0 auto;
 	z-index: 999;
 	animation: DownAnime 0.5s forwards;
 	@include min-screen($break_point_pc) {
+		width:93.5%;
+		max-width: 839px;
+		padding: 20px 40px;
+	}
+	@include min-screen($break_point_1440) {
 		width:93.5%;
 		max-width: 960px;
 		padding: 20px 40px;

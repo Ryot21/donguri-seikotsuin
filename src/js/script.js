@@ -182,6 +182,29 @@ function FixedAnime() {
 
 
 
+
+//スクロール途中からヘッダーを出現させるための設定を関数でまとめる
+function FixedAnimeSP() {
+	var elemTop = $('#area-3').offset().top;//#area-3の位置まできたら
+	var scroll = $(window).scrollTop();
+	if(scroll <= 580){//上から580pxスクロールされたら $('#header').addClass('DownMove');//DownMoveというクラス名を除き } else if (scroll >= elemTop){
+			$('#js-menuToggle').removeClass('UpMove');//#headerについているUpMoveというクラス名を除く
+			$('#js-menuToggle').addClass('DownMove');//#headerについているDownMoveというクラス名を付与
+
+		}else{
+			if($('#js-menuToggle').hasClass('DownMove')){//すでに#headerにDownMoveというクラス名がついていたら
+				$('#js-menuToggle').removeClass('DownMove');//DownMoveというクラス名を除き
+				$('#js-menuToggle').addClass('UpMove');//UpnMoveというクラス名を付与
+			}
+		}
+}
+  // 画面をスクロールをしたら動かしたい場合の記述
+  $(window).scroll(function () {
+    FixedAnimeSP();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
+  });
+
+
+
 //アコーディオンパネル > 「FAQ」に使用
 //クリックした時の動作 > 【.page-faq-block__title】要素をクリックしたら
 $('.page-faq-block__title').on('click', function() {
@@ -234,3 +257,4 @@ $(window).on('load', function(){
 
     });
 });
+

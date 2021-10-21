@@ -1711,12 +1711,15 @@ body {
 }
 
 .bgc__icon {
-  position: absolute;
-  top: 2px;
+  top: 8px;
   left: 50%;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   z-index: 111111;
+}
+
+.bgc__icon p {
+  display: none;
 }
 
 blockquote,
@@ -2418,7 +2421,11 @@ global-navigation active
 .menu-open .l-header,
 .menu-open #topics,
 .menu-open .page-top__btn,
-.menu-open .l-container {
+.menu-open .l-container,
+.menu-open .l-paper,
+.menu-open .c-footer__logo,
+.menu-open .c-footer__detail,
+.menu-open .c-footer__map {
   opacity: 0;
   transition: 0.01s ease-in, opacity 0.01s ease-out;
 }
@@ -2545,11 +2552,11 @@ l-header
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 87%;
-  max-width: 670px;
-  min-width: 670px;
+  max-width: 640px;
+  min-width: 640px;
   height: 70px;
   background: #ffffffb8;
-  padding: 20px 35px;
+  padding: 20px 5px;
   margin: 0 auto;
   z-index: 999;
   -webkit-animation: DownAnime 0.5s forwards;
@@ -2681,7 +2688,7 @@ l-wrapper
 .l-wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 80px 15px;
+  padding: 80px 20px;
 }
 
 .l-wrapper:after {
@@ -2691,15 +2698,7 @@ l-wrapper
 }
 
 .l-wrapper__clip {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 200px;
-  -webkit-filter: drop-shadow(0px -3px 4px #4E4848);
-  filter: drop-shadow(0px -3px 4px #4E4848);
-  z-index: 1111;
+  display: none;
 }
 
 /* ====================
@@ -3823,7 +3822,7 @@ article
 .page-top__line__link {
   position: relative;
   display: block;
-  width: 130px;
+  width: 150px;
   height: 40px;
   background: rgba(63, 189, 5, 0.8);
   margin: 0 0 0 10px;
@@ -3852,7 +3851,7 @@ article
 }
 
 .page-top__line__link::after {
-  content: "お友達\A登録";
+  content: "LINEから\Aご予約";
   white-space: pre;
   font-size: 14px;
   font-weight: bold;
@@ -4932,8 +4931,29 @@ article
     margin-top: 50px !important;
   }
 
+  .bgc__icon {
+    position: fixed;
+    top: 15px;
+    left: 8px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .bgc__icon p {
+    display: block;
+    color: #2b2a29;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.3;
+  }
+
   .l-container {
     padding: 0 50px;
+  }
+
+  .gnav-btn {
+    display: none;
   }
 
   .home .l-header {
@@ -4942,7 +4962,7 @@ article
 
   .l-paper::before,
   .l-paper::after {
-    left: 10px;
+    left: 15px;
     -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg);
   }
@@ -4950,17 +4970,25 @@ article
   .l-paper::after {
     -webkit-transform: rotate(3deg);
     transform: rotate(3deg);
-    right: 10px;
+    right: 15px;
     left: auto;
   }
 
   .l-wrapper {
     width: 100%;
-    max-width: 700px;
+    max-width: 670px;
     padding: 80px 15px;
   }
 
   .l-wrapper__clip {
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-filter: drop-shadow(0px -3px 4px #4E4848);
+    filter: drop-shadow(0px -3px 4px #4E4848);
+    z-index: 1111;
     top: 0px;
     width: 270px;
     -webkit-filter: drop-shadow(0px -3px 5px #4E4848);
@@ -5010,11 +5038,11 @@ article
 
   .c-header__husen {
     position: absolute;
-    top: 85px;
-    right: 55px;
-    width: 230px;
+    top: 55px;
+    right: 30px;
+    width: 180px;
     color: #2b2a29;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.8;
     padding: 40px 15px 10px;
@@ -5060,6 +5088,10 @@ article
     animation-fill-mode: both;
   }
 
+  .c-header__gnav__text {
+    font-size: 11px;
+  }
+
   #topics {
     padding: 40px 0 0 20px;
   }
@@ -5088,8 +5120,8 @@ article
   }
 
   .p-card__thumbnail {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
   }
 
   .page-index__title,
@@ -5295,7 +5327,7 @@ article
   }
 
   .page-top__line__link::after {
-    content: "お友達登録";
+    content: "LINEからご予約";
     top: 10px;
     right: 25px;
     font-size: 16px;
@@ -5303,7 +5335,7 @@ article
   }
 
   .page-top__line__link {
-    width: 170px;
+    width: 210px;
   }
 
   .page-contact-header__title {
@@ -5324,7 +5356,7 @@ article
 
   .page-index .top-shoukai,
   .page-index .top-blog {
-    padding: 50px 20px;
+    padding: 50px 0px;
   }
 
   .page-introduction__bottombox {
@@ -5389,11 +5421,6 @@ article
 @media screen and (min-width: 980px) {
   .TB-br {
     display: none;
-  }
-
-  .bgc__icon {
-    top: 15px;
-    left: 15px;
   }
 
   img {
@@ -5593,8 +5620,16 @@ article
 }
 
 @media screen and (min-width: 1000px) {
-  .gnav-btn {
-    display: none;
+  .bgc__icon {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .bgc__icon p {
+    font-size: 14px;
   }
 
   .mobile-menu {
@@ -5614,7 +5649,7 @@ article
 
   .c-header__gnav.UpMove {
     width: 93.5%;
-    max-width: 960px;
+    max-width: 839px;
     padding: 20px 40px;
   }
 
@@ -5628,7 +5663,7 @@ article
   }
 
   .l-wrapper {
-    max-width: 1000px;
+    max-width: 880px;
     padding: 80px 20px;
   }
 
@@ -5684,8 +5719,20 @@ article
     margin: 120px auto 160px;
   }
 
+  .c-header__husen {
+    top: 85px;
+    right: 55px;
+    width: 230px;
+    color: #2b2a29;
+    font-size: 18px;
+  }
+
   .c-header__pic {
     margin: 100px auto 230px;
+  }
+
+  .c-header__gnav__text {
+    font-size: 14px;
   }
 
   #topics {
@@ -5728,15 +5775,26 @@ article
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .page-top__btn {
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+@media screen and (min-width: 1440px) {
+  .c-header__gnav.UpMove {
+    width: 93.5%;
+    max-width: 960px;
+    padding: 20px 40px;
+  }
+
+  .l-wrapper {
+    max-width: 1000px;
+    padding: 80px 20px;
+  }
+
+  .p-card__thumbnail {
+    width: 250px;
+    height: 250px;
   }
 }
 
-@media screen and (max-width: 980px) {
-  .bgc__icon {
+@media screen and (max-width: 1000px) {
+  .page-top__btn {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -5762,6 +5820,19 @@ article
     -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-bottom: 50px;
+  }
+
+  .bgc__icon {
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .gnav-btn.UpMove {
+    position: fixed;
+    z-index: 999;
+    -webkit-animation: DownAnime 0.5s forwards;
+    animation: DownAnime 0.5s forwards;
   }
 
   .c-footer__map {

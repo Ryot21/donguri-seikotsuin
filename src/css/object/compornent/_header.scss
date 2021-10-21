@@ -53,11 +53,11 @@ header
   &__husen {
     @include min-screen($break_point_max) {
       position: absolute;
-      top: 85px;
-      right: 55px;
-      width: 230px;
+      top: 55px;
+      right: 30px;
+      width: 180px;
       color: $inkblack;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 700;
       line-height: 1.8;
       padding: 40px 15px 10px;
@@ -71,6 +71,13 @@ header
       border-bottom: 1px solid $bg-brown;
       border-radius: 4% 8% 0 10%;
       overflow: hidden;
+    }
+    @include min-screen($break_point_pc) {
+      top: 85px;
+      right: 55px;
+      width: 230px;
+      color: $inkblack;
+      font-size: 18px;
     }
 
     ol {
@@ -216,7 +223,12 @@ header
       width: 100%;
       color: $inkblack;
       font-weight: bold;
-
+      @include min-screen($break_point_max) {
+        font-size: 11px;
+      }
+      @include min-screen($break_point_pc) {
+        font-size: 14px;
+      }
     }
   }
 

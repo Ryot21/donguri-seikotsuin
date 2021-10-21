@@ -77,6 +77,7 @@
     <div class="bgc__icon">
       <a href="/">
         <img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-children.png" alt="どんぐり家族">
+        <p>ホーム</p>
       </a>
     </div>
     
@@ -144,9 +145,9 @@
 
       <!-- お問い合わせボタン＋LINEボタン -->
       <div class="page-top__btn">
-        <div class="page-top__contact">
+        <!-- <div class="page-top__contact">
           <a href="#" class="page-top__contact__link"></a>
-        </div>
+        </div> -->
         <div class="page-top__line">
           <a href="#" class="page-top__line__link"></a>
         </div>

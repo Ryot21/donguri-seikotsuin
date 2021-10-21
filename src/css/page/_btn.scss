@@ -81,7 +81,7 @@
 			&__link {
 				position: relative;
 				display: block;
-				width: 130px;
+				width: 150px;
 				height: 40px;
 				background: $L-green;
 				margin: 0 0 0 10px;
@@ -108,7 +108,8 @@
 					z-index: 10;
 				}
 				&::after {
-					content: "お友達\A登録";
+					content: "LINEから\Aご予約";
+					// content: "お友達\A登録";
 					white-space: pre;
 					font-size: 14px;
 					font-weight: bold;
@@ -118,7 +119,7 @@
 					top: 6px;
 					right:25px;
 					@include min-screen($break_point_max) {
-						content: "お友達登録";
+						content: "LINEからご予約";
 						top: 10px;
 						right: 25px;
 						font-size: 16px;
@@ -128,7 +129,7 @@
 				// //テキスト部分
 
 				@include min-screen($break_point_max) {
-					width: 170px;
+					width: 210px;
 				}
 			}
 

@@ -48,6 +48,10 @@
     transition-duration: .8s; 
     overflow: hidden;
     @include min-screen($break_point_max) {
+      width: 230px;
+      height: 230px;
+    }
+    @include min-screen($break_point_1440) {
       width: 250px;
       height: 250px;
     }

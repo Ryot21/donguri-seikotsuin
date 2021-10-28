@@ -29,7 +29,7 @@ header
   }
 
 
-  &__logo {
+  &__logo {//インクver
     position: relative;
     width: 300px;
     margin: 50px auto 0;
@@ -47,7 +47,25 @@ header
       width: 430px;
       margin: 120px auto 160px;
     }
+  }
+  &__logo-color {// カラーver
+    position: relative;
+    width: 185px;
+    margin: 50px auto 0;
+    opacity: 0;
+    filter: drop-shadow(1px 1px 0px $inkblack);
+    // アニメーション
+    animation: FadeInLogo 1s linear;
+    animation-fill-mode: both;
 
+    @include min-screen($break_point_max) {
+      width: 235px;
+      margin: 60px auto 290px;
+    }
+    @include min-screen($break_point_pc) {
+      width: 300px;
+      margin: 100px auto 200px;
+    }
   }
 
   &__husen {
@@ -71,10 +89,14 @@ header
       border-bottom: 1px solid $bg-brown;
       border-radius: 4% 8% 0 10%;
       overflow: hidden;
+
+      // アニメーション
+      animation: FadeInLogo 1s linear;
+      animation-fill-mode: both;
     }
     @include min-screen($break_point_pc) {
       top: 85px;
-      right: 55px;
+      right: 25px;
       width: 230px;
       color: $inkblack;
       font-size: 18px;
@@ -219,15 +241,16 @@ header
     }
     &__text { //テキスト
       position: absolute;
-      bottom: -15px;
       width: 100%;
       color: $inkblack;
       font-weight: bold;
       @include min-screen($break_point_max) {
+        bottom: 10px;
         font-size: 11px;
       }
       @include min-screen($break_point_pc) {
-        font-size: 14px;
+        bottom: -11px;
+        font-size: 13px;
       }
     }
   }

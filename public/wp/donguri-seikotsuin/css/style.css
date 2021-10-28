@@ -2266,6 +2266,32 @@ th {
   padding: 0;
 }
 
+/*　ラインを描くアニメーション　*/
+
+/*アニメーション前のパスの指定*/
+
+.c-header__logo-color svg path {
+  fill-opacity: 0;
+  /*最初は透過0で見えない状態*/
+  transition: fill-opacity .5s;
+  /*カラーがつく際のアニメーション0.5秒で変化*/
+  fill: none;
+  /*塗りがない状態*/
+  stroke: #333;
+  /*線の色*/
+}
+
+/*アニメーション後に.doneというクラス名が付与された時のパスの指定*/
+
+.c-header__logo-color svg.done path {
+  fill: #666;
+  /*塗りの色*/
+  fill-opacity: 1;
+  /*透過1で見える状態*/
+  stroke: none;
+  /*線の色なし*/
+}
+
 /*=========================
 l-container
 ==========================*/
@@ -2606,7 +2632,7 @@ l-header
 }
 
 .c-header__gnav.UpMove .c-header__gnav__text {
-  bottom: 2px;
+  bottom: 5px;
 }
 
 /*　下に下がる動き　*/
@@ -2878,6 +2904,19 @@ header
   animation-fill-mode: both;
 }
 
+.c-header__logo-color {
+  position: relative;
+  width: 185px;
+  margin: 50px auto 0;
+  opacity: 0;
+  -webkit-filter: drop-shadow(1px 1px 0px #2b2a29);
+  filter: drop-shadow(1px 1px 0px #2b2a29);
+  -webkit-animation: FadeInLogo 1s linear;
+  animation: FadeInLogo 1s linear;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 .c-header__husen ol {
   margin: 0;
   text-align: center;
@@ -2977,7 +3016,6 @@ header
 
 .c-header__gnav__text {
   position: absolute;
-  bottom: -15px;
   width: 100%;
   color: #2b2a29;
   font-weight: bold;
@@ -3716,6 +3754,10 @@ article
 .page-blog-threebox-list--text__date {
   position: relative;
   font-size: 16px;
+}
+
+.page-blog-flex {
+  padding: 0 5px;
 }
 
 .blog-secbox {
@@ -5036,6 +5078,11 @@ article
     margin: 90px auto 290px;
   }
 
+  .c-header__logo-color {
+    width: 235px;
+    margin: 60px auto 290px;
+  }
+
   .c-header__husen {
     position: absolute;
     top: 55px;
@@ -5053,6 +5100,10 @@ article
     border-bottom: 1px solid rgba(131, 112, 84, 0.349);
     border-radius: 4% 8% 0 10%;
     overflow: hidden;
+    -webkit-animation: FadeInLogo 1s linear;
+    animation: FadeInLogo 1s linear;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
   }
 
   .c-header__pic {
@@ -5089,6 +5140,7 @@ article
   }
 
   .c-header__gnav__text {
+    bottom: 10px;
     font-size: 11px;
   }
 
@@ -5228,7 +5280,7 @@ article
 
   .blog-header__title,
   .page-blog-header__title {
-    font-size: 30px;
+    font-size: 20px;
     padding-left: 1.5em;
   }
 
@@ -5289,6 +5341,10 @@ article
   .page-blog-threebox-list {
     width: 100%;
     padding: 10px 5px;
+  }
+
+  .page-blog-flex {
+    width: calc(50% - 10px);
   }
 
   .blog-secbox {
@@ -5719,9 +5775,14 @@ article
     margin: 120px auto 160px;
   }
 
+  .c-header__logo-color {
+    width: 300px;
+    margin: 100px auto 200px;
+  }
+
   .c-header__husen {
     top: 85px;
-    right: 55px;
+    right: 25px;
     width: 230px;
     color: #2b2a29;
     font-size: 18px;
@@ -5732,7 +5793,8 @@ article
   }
 
   .c-header__gnav__text {
-    font-size: 14px;
+    bottom: -11px;
+    font-size: 13px;
   }
 
   #topics {
@@ -5745,6 +5807,11 @@ article
 
   .p-card:last-child {
     display: block;
+  }
+
+  .blog-header__title,
+  .page-blog-header__title {
+    font-size: 30px;
   }
 
   .page-top__btn {

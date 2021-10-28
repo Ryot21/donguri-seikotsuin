@@ -14,10 +14,12 @@
 			position: relative;
 			padding-left: 1.2em;
 			font-size: $font-title__sp;
-
 			@include min-screen($break_point_max) {
-				font-size: $font-title__pc;
+				font-size: $font-title__tb;
 				padding-left: 1.5em;
+			}
+			@include min-screen($break_point_pc) {
+				font-size: $font-title__pc;
 			}
 			&::before {
 				position: absolute;
@@ -286,8 +288,14 @@
 	}
 }
 
-// TOPページ > ブログ部分
+.page-blog-flex {
+	padding: 0 5px;
+	@include min-screen($break_point_max) {
+		width: calc(50% - 10px);
+	}
+}
 
+// TOPページ > ブログ部分
 .blog {
 		// 【ブログ】ブロック
 		&-secbox { //ul

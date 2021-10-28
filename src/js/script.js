@@ -164,7 +164,7 @@ function navControl() {
 function FixedAnime() {
 	var elemTop = $('#area-3').offset().top;//#area-3の位置まできたら
 	var scroll = $(window).scrollTop();
-	if(scroll <= 580){//上から580pxスクロールされたら $('#header').addClass('DownMove');//DownMoveというクラス名を除き } else if (scroll >= elemTop){
+	if(scroll <= 680){//上から580pxスクロールされたら $('#header').addClass('DownMove');//DownMoveというクラス名を除き } else if (scroll >= elemTop){
 			$('.c-header__gnav').removeClass('UpMove');//#headerについているUpMoveというクラス名を除く
 			$('.c-header__gnav').addClass('DownMove');//#headerについているDownMoveというクラス名を付与
 
@@ -257,4 +257,5 @@ $(window).on('load', function(){
 
     });
 });
+
 

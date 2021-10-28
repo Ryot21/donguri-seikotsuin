@@ -131,7 +131,7 @@ Template Name: BLOG template
 
 		<!-- 交通事故+訪問マッサージ -->
 		<div class="display-f">
-			<section class="page-blog pd-btm">
+			<section class="page-blog-flex pd-btm">
 				<div class="page-blog-header">
 					<h2 class="page-blog-header__title">交通事故施術</h2>
 					<div class="archive-btn">
@@ -139,7 +139,7 @@ Template Name: BLOG template
 					</div>
 				</div>
 				<!-- 画像説明 -->
-				<ul class="page-blog-threebox display-f">
+				<ul class="page-blog-threebox">
 					<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 
 					<?php if(wp_is_mobile()): ?><!-- モバイルサイト向けの記述 -->
@@ -177,7 +177,7 @@ Template Name: BLOG template
 				</ul>
 
 			</section>
-			<section class="page-blog pd-btm">
+			<section class="page-blog-flex pd-btm">
 				<div class="page-blog-header">
 					<h2 class="page-blog-header__title">訪問マッサージ</h2>
 					<div class="archive-btn">

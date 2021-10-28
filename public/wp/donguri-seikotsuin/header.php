@@ -191,10 +191,12 @@
 					<nav class="c-header">
 
 						<!-- サイトロゴ -->
-						<h1 class="c-header__logo">
+						<!-- <h1 class="c-header__logo"> -->
+						<h1 class="c-header__logo-color">
 							<!-- 1.ホーム -->
 							<a href="/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-seikotsuin3.png" alt="どんぐり整骨院">
+							<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-seikotsuin3.png" alt="どんぐり整骨院"> -->
+							<img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-seikotsuin-color-2.svg" alt="どんぐり整骨院">
 							</a>
 						</h1>
 						<!-- //サイトロゴ -->

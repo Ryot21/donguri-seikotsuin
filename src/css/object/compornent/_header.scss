@@ -193,49 +193,49 @@ header
       // position: absolute;
       // top: 0;
       width: 100%;
-      padding: 0 10px;
+      padding: 0 25px;
       transition: 0.5s;
 
     }
     .icon {
       &-kodarari { //当院のこだわり
         .c-header__gnav__iconbox {
-          content: url(../images/logo/donguri-kodawari.png);
+          content: url(../images/icon/kodawari-32.svg);
         }
       }
       &-menu { //メニュー/料金表
         .c-header__gnav__iconbox {
-          content: url(../images/logo/donguri-kodawari.png);
+          content: url(../images/icon/menu-32.svg);
         }
       }
       &-accident { //交通事故施術
         .c-header__gnav__iconbox {
-          content: url(../images/logo/donguri-kodawari.png);
+          content: url(../images/icon/accident-32.svg);
         }
       }
       &-visit { //訪問マッサージ
         .c-header__gnav__iconbox {
-          content: url(../images/logo/donguri-kodawari.png);
+          content: url(../images/icon/massage-32.svg);
         }
       }
       &-blog { //ブログ
         .c-header__gnav__iconbox {
-          content: url(../images/logo/donguri-kodawari.png);
+          content: url(../images/icon/blog-32.svg);
         }
       }
       &-introduction { //院内紹介
         .c-header__gnav__iconbox {
-          content: url(../images/logo/donguri-kodawari.png);
+          content: url(../images/icon/innai-32.svg);
         }
       }
       &-access { //アクセス
         .c-header__gnav__iconbox {
-          content: url(../images/logo/donguri-kodawari.png);
+          content: url(../images/icon/map-32.svg);
         }
       }
       &-faq { //よくある質問
         .c-header__gnav__iconbox {
-          content: url(../images/logo/donguri-kodawari.png);
+          content: url(../images/icon/faq-32.svg);
         }
       }
     }

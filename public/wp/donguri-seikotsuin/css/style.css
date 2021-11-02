@@ -2978,40 +2978,40 @@ header
 .c-header__gnav__iconbox {
   display: block;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 25px;
   transition: 0.5s;
 }
 
 .c-header__gnav .icon-kodarari .c-header__gnav__iconbox {
-  content: url(../images/logo/donguri-kodawari.png);
+  content: url(../images/icon/kodawari-32.svg);
 }
 
 .c-header__gnav .icon-menu .c-header__gnav__iconbox {
-  content: url(../images/logo/donguri-kodawari.png);
+  content: url(../images/icon/menu-32.svg);
 }
 
 .c-header__gnav .icon-accident .c-header__gnav__iconbox {
-  content: url(../images/logo/donguri-kodawari.png);
+  content: url(../images/icon/accident-32.svg);
 }
 
 .c-header__gnav .icon-visit .c-header__gnav__iconbox {
-  content: url(../images/logo/donguri-kodawari.png);
+  content: url(../images/icon/massage-32.svg);
 }
 
 .c-header__gnav .icon-blog .c-header__gnav__iconbox {
-  content: url(../images/logo/donguri-kodawari.png);
+  content: url(../images/icon/blog-32.svg);
 }
 
 .c-header__gnav .icon-introduction .c-header__gnav__iconbox {
-  content: url(../images/logo/donguri-kodawari.png);
+  content: url(../images/icon/innai-32.svg);
 }
 
 .c-header__gnav .icon-access .c-header__gnav__iconbox {
-  content: url(../images/logo/donguri-kodawari.png);
+  content: url(../images/icon/map-32.svg);
 }
 
 .c-header__gnav .icon-faq .c-header__gnav__iconbox {
-  content: url(../images/logo/donguri-kodawari.png);
+  content: url(../images/icon/faq-32.svg);
 }
 
 .c-header__gnav__text {
@@ -3984,7 +3984,7 @@ article
 =======================*/
 
 .page-index__text {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   text-align: center;
 }
 
@@ -5403,7 +5403,7 @@ article
   }
 
   .page-index__text {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   .page-index .kodawari {

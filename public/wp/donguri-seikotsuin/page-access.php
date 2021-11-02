@@ -44,25 +44,29 @@ Template Name: ACCESS template
 		<section class="page-access pd-btm">
 			<h2 class="page-access__title">院情報</h2>
 			<div class="page-access-inforbox mg-top">
-			<table class="border-table" style="height: 95px;">
-				<tbody>
-				<tr style="height: 19px;">
-				<th style="height: 19px; width: 402px;">院名</th>
-				<td style="height: 19px; width: 954px;">どんぐり整骨院</td>
-				</tr>
-				<tr style="height: 38px;">
-				<th style="height: 38px; width: 402px;">住所</th>
-				<td style="height: 38px; width: 954px;">〒359-1145 <span>埼玉県所沢市山口1439-8</span></td>
-				</tr>
-				<tr style="height: 19px;">
-				<th style="height: 19px; width: 402px;">TEL</th>
-				<td style="height: 19px; width: 954px;">00-0000-0000</td>
-				</tr>
-				<tr style="height: 19px;">
-				<th style="height: 19px; width: 402px;">最寄り駅</th>
-				<td style="height: 19px; width: 954px;"><span>西武狭山線下山口駅　出口より徒歩1分</span></td>
-				</tr>
-				</tbody>
+				<table class="border-table" style="height: 95px;">
+					<tbody>
+						<tr style="height: 19px;">
+							<th style="height: 19px; width: 402px;">院名</th>
+							<td style="height: 19px; width: 954px;">どんぐり整骨院・鍼灸マッサージ院</td>
+						</tr>
+						<tr style="height: 19px;">
+							<th style="height: 19px; width: 402px;">代表者</th>
+							<td style="height: 19px; width: 954px;">佐藤翔吾</td>
+						</tr>
+						<tr style="height: 19px;">
+							<th style="height: 19px; width: 402px;">住所</th>
+							<td style="height: 19px; width: 954px;">〒359-1145 <span>埼玉県所沢市山口1439-8</span></td>
+						</tr>
+						<tr style="height: 19px;">
+							<th style="height: 19px; width: 402px;">TEL</th>
+							<td style="height: 19px; width: 954px;">04-2936-7744</td>
+						</tr>
+						<tr style="height: 19px;">
+							<th style="height: 19px; width: 402px;">最寄り駅</th>
+							<td style="height: 19px; width: 954px;"><span>西武狭山線下山口駅　出口より徒歩1分</span></td>
+						</tr>
+					</tbody>
 				</table>
 			</div>
 

@@ -15,11 +15,11 @@ Template Name: TOP template
 
 	<!-- 院内のこだわり -->
 	<section class="kodawari">
-		<h2 class="page-index__title">どんぐりの施術の特徴</h2>
+		<h2 class="page-index__title">どんぐり施術の特徴</h2>
 		<p class="page-index__text">
 			筋肉の深層に潜り込み<br>
-			『ゆっくり、深く、持続した圧』をピンポイントで加える独自の技術。<br>
-			「揉む」と筋肉を傷つけやすく、<br class="SP-br">早い圧では力積が少ないので緩みません。<br>
+			『ゆっくり、深く、持続した圧』を<br class="SP-br">ピンポイントで加える独自の技術。<br>
+			「揉む」と筋肉を傷つけやすく、<br class="SP-br">早い圧では力積が少ないので<br class="SP-br">緩みません。<br>
 			プロの施術をぜひご体感ください。<br>
 		</p>
 		<div class="c-btn">

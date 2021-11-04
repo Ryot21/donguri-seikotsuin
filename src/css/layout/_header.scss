@@ -81,13 +81,12 @@ l-header
 			animation: SlideOut 0.3s;
 		}
 		&:hover {
-			color: $blue;
 			margin-top: 1px;
 			transition: 0.5s;
 			opacity: 1;
 			animation: SlideIn 0.5s;
 			&::after {
-				background: $blue;
+				background: $Dgreen;
 				padding: 0 10px;
 				opacity: 0.8;
 				transition: ease .4s;

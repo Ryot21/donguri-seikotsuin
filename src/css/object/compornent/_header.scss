@@ -175,17 +175,18 @@ header
       text-align: center;
       font-size: 14px;
       letter-spacing: -1px;
-      
+
       &:hover {
+        li {
+
+        }
         .c-header__gnav__iconbox {
           left: 0;
           // animation: icon-bounds 1.5s ease infinite;
           animation: icon-bounds-yoko 1.5s ease infinite;
           transition: 0.5s;
         }
-        .c-header__gnav__text {
 
-        }
       }
     }
     &__iconbox { //アイコン
@@ -193,7 +194,8 @@ header
       // position: absolute;
       // top: 0;
       width: 100%;
-      padding: 0 25px;
+      max-width: 40px;
+      margin: 0 auto;
       transition: 0.5s;
 
     }
@@ -244,14 +246,17 @@ header
       width: 100%;
       color: $inkblack;
       font-weight: bold;
+      transition: ease .4s;
+
       @include min-screen($break_point_max) {
         bottom: 10px;
         font-size: 11px;
       }
       @include min-screen($break_point_pc) {
-        bottom: -11px;
+        bottom: 0px;
         font-size: 13px;
       }
+
     }
   }
 

@@ -105,9 +105,9 @@
           </li>
           <!-- 2.当院のこだわり -->
           <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/about/">当院のこだわり</a>
+            <a class="mobile-menu__item__link" href="/about/">こだわり</a>
           </li>
-          <!-- 3.メニュー／料金表 -->
+          <!-- 3.メニュー -->
           <li class="mobile-menu__item">
             <a class="mobile-menu__item__link" href="/menu/">メニュー</a>
           </li>
@@ -125,7 +125,7 @@
           </li>
           <!-- 7.院内／スタッフ紹介 -->
           <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/introduction/">院内／スタッフ</a>
+            <a class="mobile-menu__item__link" href="/introduction/">院内紹介</a>
           </li>
           <!-- 8.アクセス -->
           <li class="mobile-menu__item">
@@ -135,12 +135,11 @@
           <li class="mobile-menu__item">
             <a class="mobile-menu__item__link" href="/faq/">よくある質問</a>
           </li>
-          <!-- 10.ご予約／お問い合わせ -->
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/contact/">ご予約／お問い合わせ</a>
+          <li class="page-top__line">
+            <a href="#" class="page-top__line__link"></a>
           </li>
 
-			</ul>
+        </ul>
       </div>
 
       <!-- お問い合わせボタン＋LINEボタン -->

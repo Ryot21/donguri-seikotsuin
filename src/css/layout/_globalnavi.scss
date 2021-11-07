@@ -109,7 +109,7 @@ global-navigation active
     @include min-screen($break_point_min) {
       // height: 2.5em;
     }
-    &__link /* a */ {
+    &__link { /* a */
       position: relative;
       display: block;
       /* 細め */
@@ -122,6 +122,12 @@ global-navigation active
       , linear-gradient(90deg, hsla(60, 100%, 85%, 1), hsla(60, 100%, 85%, 1));
       transition-duration: 0.5s;
 
+    }
+    &__line { /* LINEお問い合わせエリア */
+
+      &__link {
+        
+      }
     }
   }
 }

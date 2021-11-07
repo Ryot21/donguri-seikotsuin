@@ -14,7 +14,7 @@ Template Name: MENU template
 			<nav class="c-header">
 				<!-- 固定ページ > ヘッダー -->
 				<div class="c-header__pic">
-					<h1 class="c-header__pic__title">メニュー / 料金表<br><span>MENU</span></h1>
+					<h1 class="c-header__pic__title">メニュー<br><span>MENU</span></h1>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-page.jpg" alt="サイトヘッダー">
 					<!-- パンくず -->
 					<?php get_template_part('module/breadcrumb'); ?>

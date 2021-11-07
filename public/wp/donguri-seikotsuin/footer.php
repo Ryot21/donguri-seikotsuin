@@ -8,11 +8,12 @@
 					<!-- 詳細情報 -->
 					<div class="c-footer__detail">
 						<div class="c-footer__calendar">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/donguri-calendar2.png" alt="受付時間">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/
+							calendar/donguri-seikotsuin-footer-ink.png" alt="受付時間">
 						</div>
 					</div>
 					<div class="c-footer__map">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/map/donguri-seikotsuin-map.png" alt="どんぐり整骨院マップ">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/map/donguri-seikotsuin-map-ink.png" alt="どんぐり整骨院マップ">
 					</div>
 				</div>
 			</footer>

@@ -48,7 +48,10 @@
 		@include min-screen($break_point_max) {
 			width: 70%;
 		}
-
+		p {
+			color: $inkblack;
+			text-align: center;
+		}
 	}
 
 	&-mapbox { //【二つ目】のコンテンツ内はここに

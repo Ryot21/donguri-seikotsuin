@@ -76,7 +76,9 @@ Template Name: ACCESS template
 		<section class="page-access pd-btm">
 			<h2 class="page-access__title">受付時間</h2>
 			<div class="page-access-timebox mg-top">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/donguri-calendar2.png" alt="受付時間">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/
+				calendar/donguri-seikotsuin-ink.png" alt="受付時間">
+				<p>時間外の診断については、ご相談ください。</p>
 			</div>
 
 		</section>

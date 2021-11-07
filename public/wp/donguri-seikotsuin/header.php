@@ -104,11 +104,11 @@
 				<li class="mobile-menu__item">
 					<a class="mobile-menu__item__link" href="/">ホーム</a>
 				</li>
-				<!-- 2.当院のこだわり -->
+				<!-- 2.こだわり -->
 				<li class="mobile-menu__item">
-					<a class="mobile-menu__item__link" href="/about/">当院のこだわり</a>
+					<a class="mobile-menu__item__link" href="/about/">こだわり</a>
 				</li>
-				<!-- 3.メニュー／料金表 -->
+				<!-- 3.メニュー -->
 				<li class="mobile-menu__item">
 					<a class="mobile-menu__item__link" href="/menu/">メニュー</a>
 				</li>
@@ -124,9 +124,9 @@
 				<li class="mobile-menu__item">
 					<a class="mobile-menu__item__link" href="/blog/">ブログ</a>
 				</li>
-				<!-- 7.院内／スタッフ紹介 -->
+				<!-- 7.院内紹介 -->
 				<li class="mobile-menu__item">
-					<a class="mobile-menu__item__link" href="/introduction/">院内／スタッフ</a>
+					<a class="mobile-menu__item__link" href="/introduction/">院内紹介</a>
 				</li>
 				<!-- 8.アクセス -->
 				<li class="mobile-menu__item">
@@ -136,18 +136,16 @@
 				<li class="mobile-menu__item">
 					<a class="mobile-menu__item__link" href="/faq/">よくある質問</a>
 				</li>
-				<!-- 10.ご予約／お問い合わせ -->
-				<li class="mobile-menu__item">
-					<a class="mobile-menu__item__link" href="/contact/">ご予約／お問い合わせ</a>
+				<!-- LINEお問い合わせ -->
+				<li class="mobile-menu__item__line">
+					<a href="#" class="mobile-menu__item__line__link"></a>
 				</li>
-
 			</ul>
 		</div>
+
+		
 		<!-- お問い合わせボタン＋LINEボタン -->
 		<div class="page-top__btn">
-			<!-- <div class="page-top__contact">
-				<a href="#" class="page-top__contact__link"></a>
-			</div> -->
 			<div class="page-top__line">
 				<a href="#" class="page-top__line__link"></a>
 			</div>

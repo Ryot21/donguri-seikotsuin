@@ -25,12 +25,13 @@
 			2.現在表示している投稿タイプ名が「post(スタッフブログ)かつカテゴリー別の一覧ページ」の場合
 			*/
 			if( get_post_type() === 'post' && is_single() || 'post' && is_category() )  {
-					$classes[] = 'current-blog';
+				$classes[] = 'current-blog';
 			}
 			$classes = array_unique( $classes );
 			return $classes;
 		}
 		add_filter( 'nav_menu_css_class', 'make_menu_current', 10, 2 );
+
 
 
 // ページタイトル　デフォルトで吐き出せれる『ー』から『 | 』に変更---------------------------

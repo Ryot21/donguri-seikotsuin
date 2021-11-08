@@ -15,7 +15,7 @@ Template Name: TOP template
 
 	<!-- 院内のこだわり -->
 	<section class="kodawari">
-		<h2 class="page-index__title">どんぐり施術の特徴</h2>
+		<h2 class="page-index__title arch">どんぐり施術の特徴</h2>
 		<p class="page-index__text">
 			筋肉の深層に潜り込み<br>
 			『ゆっくり、深く、持続した圧』を<br class="SP-br">ピンポイントで加える独自の技術。<br>
@@ -29,7 +29,7 @@ Template Name: TOP template
 
 	<!-- 院内／スタッフ紹介 -->
 	<section class="top-shoukai">
-		<h2 class="page-index__title">院内の紹介</h2>
+		<h2 class="page-index__title arch">院内の紹介</h2>
 
 		<div class="top-shoukai-inner display-f">
 			<!-- 1つ目 -->
@@ -65,7 +65,7 @@ Template Name: TOP template
 
     <!-- 院内／スタッフ紹介 -->
     <section class="top-blog">
-		<h2 class="page-index__title">最近のブログ</h2>
+		<h2 class="page-index__title arch">最近のブログ</h2>
 
 		<ul class="top-blog-inner blog-secbox display-f">
 

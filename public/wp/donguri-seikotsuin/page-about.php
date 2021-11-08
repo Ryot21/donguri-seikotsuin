@@ -44,7 +44,7 @@ Template Name: ABOUT template
 
 	<!-- タイトルタイトル -->
 	<section class="page-kodawari">
-		<h2 class="page-kodawari__title">タイトルタイトル</h2>
+		<h2 class="page-kodawari__title arch">タイトルタイトル</h2>
 
 
 		<div class="page-kodawari__bottombox">
@@ -73,7 +73,7 @@ Template Name: ABOUT template
 
 	<!-- こだわり -->
 	<section class="page-kodawari pd-btm">
-		<h2 class="page-kodawari__title">こだわりその１</h2>
+		<h2 class="page-kodawari__title arch">こだわりその１</h2>
 		<!-- 画像説明 -->
 		<div class="page-kodawari-fristbox">
 		<div class="page-kodawari-fristbox__pic">

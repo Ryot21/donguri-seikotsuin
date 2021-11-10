@@ -68,38 +68,35 @@ Template Name: MENU template
 				<table>
 				<tbody>
 					<tr>
-					<td>施術（初回）</td>
+					<td>施術（30分）</td>
 					<td>000円～0,000円</td>
 					</tr>
 					<tr>
-					<td>施術（2回目以降）</td>
+					<td>施術（60分）</td>
 					<td>000円～0,000円</td>
 					</tr>
 					<tr>
-					<!-- <td></td>
-					<td></td> -->
+					<td>施術（90分）</td>
+					<td>000円～0,000円</td>
 					</tr>
 				</tbody>
 				</table>
 				<!--// テーブル -->
-				<p>【 オプション 】</p>
+				<!-- <p>【 オプション 】</p> -->
 				<!-- オプションテーブル -->
-				<table>
+				<!-- <table>
 				<tbody>
 					<tr>
-					<td>オプション１</td>
+					<td>ヘッドマッサージ</td>
 					<td>000円～0,000円</td>
 					</tr>
 					<tr>
 					<td>オプション２</td>
 					<td>000円～0,000円</td>
 					</tr>
-					<tr>
-					<!-- <td></td>
-					<td></td> -->
-					</tr>
+
 				</tbody>
-				</table>
+				</table> -->
 				<!--// オプションテーブル -->
 				<p>※表示金額は、<br class="SP-br">全て税込価格となります。</p>
 			</div>
@@ -131,23 +128,23 @@ Template Name: MENU template
 				<table>
 				<tbody>
 					<tr>
-					<td>施術（初回）</td>
+					<td>施術（30分）</td>
 					<td>000円～0,000円</td>
 					</tr>
 					<tr>
-					<td>施術（2回目以降）</td>
+					<td>施術（60分）</td>
 					<td>000円～0,000円</td>
 					</tr>
 					<tr>
-					<!-- <td></td>
-					<td></td> -->
+					<td>施術（90分）</td>
+					<td>000円～0,000円</td>
 					</tr>
 				</tbody>
 				</table>
 				<!--// テーブル -->
-				<p>【 オプション 】</p>
+				<!-- <p>【 オプション 】</p> -->
 				<!-- オプションテーブル -->
-				<table>
+				<!-- <table>
 				<tbody>
 					<tr>
 					<td>オプション１</td>
@@ -158,11 +155,9 @@ Template Name: MENU template
 					<td>000円～0,000円</td>
 					</tr>
 					<tr>
-					<!-- <td></td>
-					<td></td> -->
 					</tr>
 				</tbody>
-				</table>
+				</table> -->
 				<!--// オプションテーブル -->
 				<p>※表示金額は、<br class="SP-br">全て税込価格となります。</p>
 			</div>

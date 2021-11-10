@@ -260,5 +260,5 @@ $(window).on('load', function(){
 
 // アーチタイトル関係(jquery.arctext.js)
 $(document).ready(function() {
-  $(".arch").arctext({radius: 300});
+  $(".arch").arctext({radius: 500});
 });

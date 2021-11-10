@@ -115,6 +115,7 @@
 
 			img {
 				width: 100%;
+				opacity: 0.6;
 			}
 
 			&__title {
@@ -127,14 +128,45 @@
 			}
 		}
 		&__textbox {
-			background: $white;
 			padding: 30px 15px;
 			line-height: 1.7;
 			@include min-screen($break_point_max) {
-				display: flex;
+				// display: flex;
+				padding: 30px 40px;
+			}
+			h4 {
+				font-size: 1.3em;
+				text-align: center;
+				padding-bottom: 10px;
+				@include min-screen($break_point_max) {
+					font-size: 1.3em;
+					padding-bottom: 20px;
+				}
 			}
 			p {
-				padding: 0 5px !important;
+				padding: 0 5px 20px !important;
+				@include min-screen($break_point_max) {
+					padding: 0 5px 30px !important;
+				}
+			}
+			.staff-title { //h3
+				font-size: 1.3em;
+				text-align: center;
+				padding-bottom: 20px;
+				@include min-screen($break_point_max) {
+					padding-bottom: 30px;
+				}
+			}
+			.staff-subtitle { //h4
+				font-size: 1.1em;
+				text-align: center;
+				padding-bottom: 10px;
+				@include min-screen($break_point_max) {
+					padding-bottom: 15px;
+				}
+			}
+			.staff-text {
+				text-align: center;
 			}
 		}
 	}

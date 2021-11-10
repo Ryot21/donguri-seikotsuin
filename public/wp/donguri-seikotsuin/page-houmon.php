@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: ABOUT template
+Template Name: HOUMON template
 */
 	get_header('page');
 ?>
@@ -13,7 +13,7 @@ Template Name: ABOUT template
 			<nav class="c-header">
 				<!-- 固定ページ > ヘッダー -->
 				<div class="c-header__pic">
-					<h1 class="c-header__pic__title">こだわり<br><span>KODAWARI</span></h1>
+					<h1 class="c-header__pic__title">訪問マッサージ<br><span>HOUMON MASSAGE</span></h1>
 					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-page.jpg" alt="サイトヘッダー">
 					<!-- パンくず -->
 					<?php get_template_part('module/breadcrumb'); ?>
@@ -44,7 +44,7 @@ Template Name: ABOUT template
 
 	<!-- タイトルタイトル -->
 	<section class="page-kodawari">
-		<h2 class="page-kodawari__title arch">お客様に寄り添う施術</h2>
+		<!-- <h2 class="page-kodawari__title arch">お客様に寄り添う施術</h2> -->
 
 
 		<div class="page-kodawari__bottombox">
@@ -62,7 +62,7 @@ Template Name: ABOUT template
 			<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="">
 		</div>
 		<div class="page-kodawari__bottombox__text">
-			<h3>治すだけではなく、『アフター施術』が大事！！</h3>
+			<h3>ただ治すだけの施術では意味がありません。『アフター施術』が大事！！</h3>
 			<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
 		</div>
 		</div>
@@ -73,23 +73,28 @@ Template Name: ABOUT template
 
 	<!-- スタッフ紹介 -->
 	<section class="page-kodawari pd-btm">
-		<h2 class="page-kodawari__title arch">スタッフ紹介</h2>
+		<!-- <h2 class="page-kodawari__title arch">初めての患者さまへ</h2> -->
 		<!-- 画像説明 -->
 		<div class="page-kodawari-fristbox">
 			<div class="page-kodawari-fristbox__pic">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="こだわりその１">
+				<h3 class="page-kodawari-fristbox__pic__title">ご利用までの流れ</h3>
 			</div>
 			<div class="page-kodawari-fristbox__textbox">
-				<h3 class="staff-title">佐藤 翔吾（院長）</h3>
+				<h4>1.LINE公式アカウントからご予約</h4>
+				<p>どんぐり整骨院では予約のお客様を優先しておりますので、『<a href="">LINE公式アカウント</a>』からQRコードお持ちのスマートフォンまたは携帯から読み込んでいただき、お友達ご登録した後、ご予約をお願いします。ご予約方法につきましては公式LINEアカウントの方からお知らせいたします。</p>
 
-				<h4 class="staff-subtitle">得意な治療分野</h4>
-				<p class="staff-text">スポーツ外傷、トレーニング指導、テ－ピング、トリガーポイント療法</p>
+				<h4>2.カウンセリング</h4>
+				<p>施術当日、受付にてカウンセリングシートを受け取っていただき、お体でお悩みの場所や症状についてご記入をお願いいたします。</p>
 
-				<h4 class="staff-subtitle">趣味・特技</h4>
-				<p class="staff-text">野球、バトミントン、競馬</p>
+				<h4>3.調査・施術方法のご提案</h4>
+				<p>お答えいただいたカウンセリングシートを拝見させていただき、直接調査した上で施術方法をご提案＆ご説明させていただきます。</p>
 
-				<h4 class="staff-subtitle">メッセージ</h4>
-				<p>患者様が楽になった、痛みが取れたと笑顔になる様な治療を目指していきます。辛い痛み、悩みなど些細なことでも良いので相談してください。一緒に解決していきましょう。</p>
+				<h4>4.施術</h4>
+				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+				<h4>5.アドバイス</h4>
+				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 
 			</div>
 		</div>

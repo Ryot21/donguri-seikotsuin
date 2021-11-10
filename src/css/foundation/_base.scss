@@ -1,4 +1,9 @@
 
+.red-text {
+  color: $red;
+  font-weight: bold;
+}
+
 .PC {
   display: none;
   @include min-screen($break_point_max) {

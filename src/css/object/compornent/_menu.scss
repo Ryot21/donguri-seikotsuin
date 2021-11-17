@@ -1,0 +1,30 @@
+
+.menu-lists {
+	font-size: 14px;
+	color: $inkblack;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	padding-bottom: 50px;
+	@include max-screen($break_point_max) {
+		font-size: 12px;
+		padding-top: 15px;
+		padding-bottom: 0;
+	}
+}
+.menu-list {
+	position: relative;
+	padding: 0 10px;
+	font-weight: bold;
+	&:nth-child(n+2) :before {
+		position: absolute;
+		content: "";
+		width: 1px;
+		height: 12px;
+		background-color: #ccc;
+		left: 0;
+		top: 55%;
+		transform: translateY(-50%);
+	}
+}
+

@@ -15,7 +15,7 @@ Template Name: FAQ template
 			<!-- 固定ページ > ヘッダー -->
 			<div class="c-header__pic">
 				<h1 class="c-header__pic__title">よくある質問<br><span>F A Q</span></h1>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-page.jpg" alt="サイトヘッダー">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-faq.jpg" alt="サイトヘッダー">
 				<!-- パンくず -->
 				<?php get_template_part('module/breadcrumb'); ?>
 			</div>

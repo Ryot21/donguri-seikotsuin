@@ -26,7 +26,7 @@ l-header
 	@include min-screen($break_point_pc) {
 		width: 100%;
 		max-width: 1200px;
-		padding: 25px 50px;
+		padding: 25px 20px;
 		margin: 0 auto;
 	}
 	&__wrap {

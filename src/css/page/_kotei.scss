@@ -1,0 +1,159 @@
+
+// 2.当院のこだわり
+.page-index,
+.page-kodawari,
+.page-menu,
+.page-access,
+.page-faq,
+.page-introduction,
+.page-menu {
+		&__title {
+			position: relative;
+			display: inline-block;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: $font-title__sp;
+			@include min-screen($break_point_max) {
+				font-size: $font-title__pc;
+			}
+
+		}
+}
+
+.page-kotei {
+	&__title {
+		position: relative;
+		display: inline-block;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: $font-title__sp;
+		text-align: center;
+		@include min-screen($break_point_max) {
+			font-size: $font-title__pc;
+		}
+	}
+	.topbox {
+		margin: 60px auto 50px !important;
+		@include min-screen($break_point_max) {
+			margin: 25px auto 50px !important;
+		}
+	}
+	&__bottombox {
+		margin: 50px auto;
+			@include min-screen($break_point_max) {
+				display: flex;
+				justify-content: center;
+				&:nth-child(odd) {
+					flex-direction: row-reverse;
+				}
+			}
+			&__pic {
+				width: 100%;
+				overflow: hidden;
+				@include min-screen($break_point_max) {
+					width: calc(50% - 20px);
+				}
+				img {
+					width: 100%;
+					padding: 10px;
+				}
+			}
+			&__text {
+				width: 100%;
+				padding: 10px;
+				@include min-screen($break_point_max) {
+					width: calc(50% - 20px);
+				}
+				h3 {
+					background-color: rgba(67, 91, 91, 0.1);
+					padding: 5px 25px;
+					margin-bottom: 10px;
+					border-radius: 20px;
+				}
+				p {
+					padding: 0 5px;
+					@include min-screen($break_point_max) {
+
+					}
+				}
+			}
+	}
+	&-fristbox { //【一つ目】のコンテンツ内はここに
+		width: 100%;
+		margin: 50px auto;
+		border: 1px solid $lightblack;
+		border-radius: 20px;
+		overflow: hidden;
+		@include min-screen($break_point_max) {
+			margin: 75px auto 50px;
+		}
+
+		&__pic {
+			position: relative;
+			width: auto;
+			height: auto;
+			overflow: hidden;
+			@include min-screen($break_point_max) {
+				height: 300px;
+			}
+
+			img {
+				width: 100%;
+				opacity: 0.6;
+			}
+
+			&__title {
+				text-shadow: 2px 3px 1px $white;
+				font-size: 1.5em;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+		&__textbox {
+			padding: 30px 15px;
+			line-height: 1.7;
+			@include min-screen($break_point_max) {
+				// display: flex;
+				padding: 30px 40px;
+			}
+			h4 {
+				font-size: 1.3em;
+				text-align: center;
+				padding-bottom: 10px;
+				@include min-screen($break_point_max) {
+					font-size: 1.3em;
+					padding-bottom: 20px;
+				}
+			}
+			p {
+				padding: 0 5px 20px !important;
+				@include min-screen($break_point_max) {
+					padding: 0 5px 30px !important;
+				}
+			}
+			.staff-title { //h3
+				font-size: 1.3em;
+				text-align: center;
+				padding-bottom: 20px;
+				@include min-screen($break_point_max) {
+					padding-bottom: 30px;
+				}
+			}
+			.staff-subtitle { //h4
+				font-size: 1.1em;
+				text-align: center;
+				padding-bottom: 10px;
+				@include min-screen($break_point_max) {
+					padding-bottom: 15px;
+				}
+			}
+			.staff-text {
+				text-align: center;
+			}
+		}
+	}
+}
+
+

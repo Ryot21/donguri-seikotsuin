@@ -10,12 +10,18 @@
 
 .c-breadcrumb {
     position: absolute;
-    bottom: 0;
+    // bottom: 0;
     width: 100%;
     margin: auto;
-    padding: 5px 15px;
-    color: $black;
-    background: #ffffff6b;
+    padding: 5px 0;
+    font-size: 12px;
+    color: $inkblack;
+    // background: #c7c0c06b;
+    @include min-screen($break_point_max) {
+      font-size: 14px;
+      padding: 5px 15px;
+
+    }
     &__item {
       display: inline-block;
       &:not(:last-child) {

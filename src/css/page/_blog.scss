@@ -7,9 +7,12 @@
 		display: flex;
 		align-items: center;
 		border-bottom: 1px solid $brown;
-
 		border-radius: 30px;
 		background: hsla(30, 1%, 30%, 0.102);
+		margin-bottom: 10px;
+		@include min-screen($break_point_max) {
+			margin-bottom: 10px;
+		}
 		&__title {//h2
 			position: relative;
 			padding-left: 1.2em;
@@ -41,6 +44,18 @@
 					transform: translateY(-37%);
 				}
 
+			}
+		}
+		&__ptitle {
+			position: relative;
+			padding-left: .7em;
+			font-size: $font-title__sp;
+			@include min-screen($break_point_max) {
+				font-size: $font-title__tb;
+				padding-left: 1.2em;
+			}
+			@include min-screen($break_point_pc) {
+				font-size: $font-title__pc;
 			}
 		}
 		.archive-btn {
@@ -82,7 +97,7 @@
 			transition: all .5s;
 			&:hover {
 				// .page-blog-fristbox-list {
-					color: black;
+					// color: black;
 					background: $white;
 					transition: all .5s;
 				// }
@@ -168,14 +183,18 @@
 		&-list { //li
 			padding: 10px 15px 20px;
 			margin-bottom: 30px;
-			background: rgba(255, 255, 255, 0.600);
-
+			// background: rgba(255, 255, 255, 0.600);
+			transition: all .5s;
 			@include min-screen($break_point_max) {
 				width: calc(50% - 10px);
 			}
 			@include min-screen($break_point_1440) {
 				// width: 33.333%;
 				// padding: 10px;
+			}
+			&:hover {
+				background: $white;
+				transition: all .5s;
 			}
 			a {
 				&:hover {
@@ -230,8 +249,8 @@
 		&-list { //li
 			padding: 10px 15px 20px;
 			margin-bottom: 30px;
-			background: rgba(255, 255, 255, 0.600);
-
+			// background: rgba(255, 255, 255, 0.600);
+			transition: all .5s;
 			@include min-screen($break_point_max) {
 				// width: calc(50% - 10px);
 				width: 100%;
@@ -239,6 +258,10 @@
 			}
 			@include min-screen($break_point_1440) {
 				
+			}
+			&:hover {
+				background: $white;
+				transition: all .5s;
 			}
 			a {
 				&:hover {
@@ -283,6 +306,20 @@
 				&__title { //h2
 
 				}
+			}
+		}
+	}
+
+	// 詳細ページ
+	&-body {
+		padding-left: 1.2em;
+		@include min-screen($break_point_max) {
+			padding-left: 2em;
+		}
+		&__time {
+			margin-bottom: 10px;
+			@include min-screen($break_point_max) {
+				margin-bottom: 10px;
 			}
 		}
 	}

@@ -33,19 +33,19 @@ l-paper
 		max-width:300px;
 		background: #777;
 		box-shadow: 0 15px 10px #777;
-		transform: rotate(-2deg);
+		transform: rotate(-1deg);
 		z-index: -1;
 		@include min-screen($break_point_max) {
 			left: 15px;
-			transform: rotate(-3deg);
+			transform: rotate(-2deg);
 		}
 	}
 	&::after {
-		transform: rotate(2deg);
+		transform: rotate(1deg);
 		right: 12px;
 		left: auto;
 		@include min-screen($break_point_max) {
-			transform: rotate(3deg);
+			transform: rotate(2deg);
 			right: 15px;
 			left: auto;
 		}

@@ -137,9 +137,9 @@
 					<a class="mobile-menu__item__link" href="/faq/">よくある質問</a>
 				</li>
 				<!-- LINEお問い合わせ -->
-				<li class="mobile-menu__item__line">
+				<!-- <li class="mobile-menu__item__line">
 					<a href="#" class="mobile-menu__item__line__link"></a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 

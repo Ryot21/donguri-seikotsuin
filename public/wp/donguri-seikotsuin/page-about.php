@@ -42,65 +42,59 @@ Template Name: ABOUT template
 	<!-- ここからコンテンツ -->
 	<div id="area-3" class="page l-container">
 
-	<!-- タイトルタイトル -->
-	<section class="page-kodawari">
-		<h2 class="page-kodawari__title arch">お客様に寄り添う施術</h2>
+		<!-- タイトルタイトル -->
+		<section class="page-kotei">
+			<h2 class="page-kotei__title arch">お客様に寄り添う施術</h2>
 
 
-		<div class="page-kodawari__bottombox">
-		<div class="page-kodawari__bottombox__pic">
-			<img src="<?php echo get_template_directory_uri(); ?>//images/pic/sample-pic.png" alt="">
-		</div>
-		<div class="page-kodawari__bottombox__text">
-			<h3>お客様の小さな声に耳を傾けて的確な施術を行います。</h3>
-			<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
-		</div>
-		</div>
-
-		<div class="page-kodawari__bottombox">
-		<div class="page-kodawari__bottombox__pic">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="">
-		</div>
-		<div class="page-kodawari__bottombox__text">
-			<h3>治すだけではなく、『アフター施術』が大事！！</h3>
-			<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
-		</div>
-		</div>
-
-	</section>
-
-
-
-	<!-- スタッフ紹介 -->
-	<section class="page-kodawari pd-btm">
-		<h2 class="page-kodawari__title arch">スタッフ紹介</h2>
-		<!-- 画像説明 -->
-		<div class="page-kodawari-fristbox">
-			<div class="page-kodawari-fristbox__pic">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="こだわりその１">
+			<div class="page-kotei__bottombox">
+				<div class="page-kotei__bottombox__pic">
+					<img src="<?php echo get_template_directory_uri(); ?>//images/pic/sample-pic.png" alt="">
+				</div>
+				<div class="page-kotei__bottombox__text">
+					<h3>お客様の小さな声に耳を傾けて的確な施術を行います。</h3>
+					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+				</div>
 			</div>
-			<div class="page-kodawari-fristbox__textbox">
-				<h3 class="staff-title">佐藤 翔吾（院長）</h3>
 
-				<h4 class="staff-subtitle">得意な治療分野</h4>
-				<p class="staff-text">スポーツ外傷、トレーニング指導、テ－ピング、トリガーポイント療法</p>
-
-				<h4 class="staff-subtitle">趣味・特技</h4>
-				<p class="staff-text">野球、バトミントン、競馬</p>
-
-				<h4 class="staff-subtitle">メッセージ</h4>
-				<p>患者様が楽になった、痛みが取れたと笑顔になる様な治療を目指していきます。辛い痛み、悩みなど些細なことでも良いので相談してください。一緒に解決していきましょう。</p>
-
+			<div class="page-kotei__bottombox">
+				<div class="page-kotei__bottombox__pic">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="">
+				</div>
+				<div class="page-kotei__bottombox__text">
+					<h3>治すだけではなく、『アフター施術』が大事！！</h3>
+					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+				</div>
 			</div>
-		</div>
+
+		</section>
+
+		<!-- スタッフ紹介 -->
+		<section class="page-kotei pd-btm">
+			<h2 class="page-kotei__title arch">スタッフ紹介</h2>
+			<!-- 画像説明 -->
+			<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="page-kotei-fristbox">
+				<div class="page-kotei-fristbox__pic">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="こだわりその１">
+				</div>
+				<div class="page-kotei-fristbox__textbox">
+					<h3 class="staff-title">佐藤 翔吾（院長）</h3>
+
+					<h4 class="staff-subtitle">得意な治療分野</h4>
+					<p class="staff-text">スポーツ外傷、トレーニング指導、テ－ピング、トリガーポイント療法</p>
+
+					<h4 class="staff-subtitle">趣味・特技</h4>
+					<p class="staff-text">野球、バトミントン、競馬</p>
+
+					<h4 class="staff-subtitle">メッセージ</h4>
+					<p>患者様が楽になった、痛みが取れたと笑顔になる様な治療を目指していきます。辛い痛み、悩みなど些細なことでも良いので相談してください。一緒に解決していきましょう。</p>
+
+				</div>
+			</div>
 
 
-
-		<div class="display-f">
-
-		</div>
-
-	</section>
+		</section>
+		
 	</div>
 
 

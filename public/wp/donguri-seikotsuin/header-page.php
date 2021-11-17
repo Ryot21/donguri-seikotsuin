@@ -135,20 +135,17 @@
           <li class="mobile-menu__item">
             <a class="mobile-menu__item__link" href="/faq/">よくある質問</a>
           </li>
-          <li class="page-top__line">
+          <!-- <li class="page-top__line">
             <a href="#" class="page-top__line__link"></a>
-          </li>
+          </li> -->
 
         </ul>
       </div>
 
       <!-- お問い合わせボタン＋LINEボタン -->
-      <div class="page-top__btn">
-        <!-- <div class="page-top__contact">
-          <a href="#" class="page-top__contact__link"></a>
-        </div> -->
-        <div class="page-top__line">
-          <a href="#" class="page-top__line__link"></a>
+      <div class="page-sub__btn">
+        <div class="page-sub__line">
+          <a href="#" class="page-sub__line__link"></a>
         </div>
       </div>
 

@@ -9,10 +9,6 @@
 =======================*/
 
 .page-index {
-	&__title {
-		// aboutに記述
-
-	}
 	&__text {
 		margin-bottom: 60px;
 		text-align: center;
@@ -22,7 +18,7 @@
 	}
 	//ここから下は、コンテンツ内部
 	.kodawari {
-		padding: 50px 0px 70px;
+		padding: 120px 0px 70px;
 		// text-align: center;
 		@include min-screen($break_point_max) {
 			padding: 50px 20px;

@@ -74,7 +74,8 @@ global-navigation active
         display: block;
         text-align: center;
         letter-spacing: 0.05em;
-        font-size: 40px;
+        font-size: 35px;
+        color: $inkblack;
         letter-spacing: 0.1em;
         opacity: 1;
         transition: 0.2s ease-in, opacity 0.5s ease-out;
@@ -97,29 +98,26 @@ global-navigation active
 // ハンバーガーメニュータップopen後に表示されるメニュー　↓
 .mobile-menu {
   &__main {/* ul */
-    // display: inline-block;
-    // list-style: none;
-    // margin-bottom: 5px;
-    // width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: $inkblack;
 
   }
   &__item { /* li */
-    // position: relative;
-    // height: .5em;
+    text-align: center;
     @include min-screen($break_point_min) {
-      // height: 2.5em;
     }
     &__link { /* a */
       position: relative;
       display: block;
       /* 細め */
       padding: .2em 3em;
-      margin: 5px 10px;
+      // margin: 5px 10px;
       overflow: hidden;
-      box-shadow: 6px 0px 0.25rem $bg-brown;
-      background-image:
-        linear-gradient(90deg, hsla(0, 0%, 45%, .1) 2rem, hsla(0, 100%, 100%, 0) 2.5rem)
-      , linear-gradient(90deg, hsla(60, 100%, 85%, 1), hsla(60, 100%, 85%, 1));
+      // box-shadow: 6px 0px 0.25rem $bg-brown;
+      // background-image:
+      //   linear-gradient(90deg, hsla(0, 0%, 45%, .1) 2rem, hsla(0, 100%, 100%, 0) 2.5rem)
+      // , linear-gradient(90deg, hsla(60, 100%, 85%, 1), hsla(60, 100%, 85%, 1));
       transition-duration: 0.5s;
 
     }

@@ -44,7 +44,7 @@ Template Name: INTRODUCTION template
 
 		<!-- 院内紹介文 -->
 		<div class="page-introduction">
-			<div class="page-introduction-fristbox mg-top">
+			<div class="page-introduction-fristbox">
 			<p>当院では、お客様にリラックスして施術を受けていただけるよう、<br>
 				清潔で安らげる空間づくりを徹底しています。<br>
 				また最新治療器も導入しており、<br>

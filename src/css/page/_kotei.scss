@@ -39,9 +39,10 @@
 		}
 	}
 	&__bottombox {
-		margin: 50px auto;
+		margin: 30px auto 50px;
 			@include min-screen($break_point_max) {
 				display: flex;
+				// margin: 50px auto;
 				justify-content: center;
 				&:nth-child(odd) {
 					flex-direction: row-reverse;
@@ -80,7 +81,7 @@
 	}
 	&-fristbox { //【一つ目】のコンテンツ内はここに
 		width: 100%;
-		margin: 50px auto;
+		margin-bottom: 50px;
 		border: 1px solid $lightblack;
 		border-radius: 20px;
 		overflow: hidden;

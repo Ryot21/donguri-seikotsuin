@@ -88,12 +88,18 @@
 .top-shoukai-inner,
 .top-blog-inner,
 .page-kodawari,
-.page-menu,
+.page-menu{
+	margin-top: 60px !important;
+		@include min-screen($break_point_max) {
+			margin-top: 50px !important;
+		}
+}
+
 .page-introduction,
 .page-blog,
 .page-access,
 .page-faq{
-	margin-top: 60px !important;
+	margin-top: 30px !important;
 		@include min-screen($break_point_max) {
 			margin-top: 50px !important;
 		}

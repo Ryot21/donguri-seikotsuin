@@ -16,6 +16,8 @@ l-paper
 	margin: 0 auto;
 	padding: 0 $paper_padding_sp;
 	border-radius: 1px 1px 1px 1px;
+	transition: all .5s;
+
 	@include min-screen($break_point_pc) {
 		top: 0;
 		padding: 0 $paper_padding 40px;

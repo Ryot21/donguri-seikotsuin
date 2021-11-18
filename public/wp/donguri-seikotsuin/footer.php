@@ -1,4 +1,5 @@
 			</div><!-- l-papper-->
+
 			<footer id="footer" class="l-footer">
 				<!-- フッターロゴ -->
 				<div class="c-footer__logo">
@@ -20,6 +21,12 @@
 
 		</div><!-- bcg -->
 	</div><!-- / l-wrapper -->
+
+	<!-- サイトスクロール時表示用 LINEボタン -->
+	<div id="js-lineToggle" class="page-scroll__line">
+		<a href="#" class="page-scroll__line__link"></a>
+	</div>
+	
 	<div class="c-footer__copy">
 		Copyright 2021 Donguri-Seikotsuin. All Rights Reserved.
 	</div>

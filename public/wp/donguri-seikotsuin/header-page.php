@@ -113,11 +113,11 @@
           </li>
           <!-- 4.交通事故施術 -->
           <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/accident/">交通事故施術</a>
+            <a class="mobile-menu__item__link" href="/koutu/">交通事故施術</a>
           </li>
           <!-- 5.訪問マッサージ -->
           <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/visit/">訪問マッサージ</a>
+            <a class="mobile-menu__item__link" href="/massage/">訪問マッサージ</a>
           </li>
           <!-- 6.ブログ -->
           <li class="mobile-menu__item">
@@ -135,18 +135,16 @@
           <li class="mobile-menu__item">
             <a class="mobile-menu__item__link" href="/faq/">よくある質問</a>
           </li>
-          <!-- <li class="page-top__line">
-            <a href="#" class="page-top__line__link"></a>
-          </li> -->
 
         </ul>
       </div>
 
       <!-- お問い合わせボタン＋LINEボタン -->
-      <div class="page-sub__btn">
-        <div class="page-sub__line">
-          <a href="#" class="page-sub__line__link"></a>
-        </div>
+      <div class="page-top__line">
+        <a href="#" class="page-top__line__link"></a>
       </div>
 
-
+      <!-- サイトスクロール時表示用 LINEボタン -->
+      <div id="js-lineToggle" class="page-scroll__line">
+        <a href="#" class="page-scroll__line__link"></a>
+      </div>

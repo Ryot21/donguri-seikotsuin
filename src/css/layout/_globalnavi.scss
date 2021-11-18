@@ -8,7 +8,7 @@ global-navigation active
 .page-top__btn,
 .l-container {
   position: relative;
-  transition: all 0.5s;
+  transition: all .5s;
   
 }
 
@@ -57,14 +57,15 @@ global-navigation active
   // & #container {
   & .l-header,
   #topics,
-  .page-top__btn,
+  .page-top__line,
+  .page-scroll__btn,
   .l-container,
   .l-paper,
   .c-footer__logo,
   .c-footer__detail,
   .c-footer__map {
     opacity: 0;
-    transition: 0.01s ease-in, opacity 0.01s ease-out;
+    transition: all .5s;
   }
   & .mobile-menu {
   
@@ -120,12 +121,6 @@ global-navigation active
       // , linear-gradient(90deg, hsla(60, 100%, 85%, 1), hsla(60, 100%, 85%, 1));
       transition-duration: 0.5s;
 
-    }
-    &__line { /* LINEお問い合わせエリア */
-
-      &__link {
-        
-      }
     }
   }
 }

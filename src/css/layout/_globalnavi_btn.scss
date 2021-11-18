@@ -17,13 +17,7 @@
     display: none;
   }
 }
-.gnav-btn.UpMove {
-  @include max-screen($break_point_max) {
-    position: fixed;
-    z-index: 999;
-    animation: DownAnime 0.5s forwards;
-  }
-}
+
 
 
 .gnav-btn__container {

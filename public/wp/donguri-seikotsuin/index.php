@@ -75,7 +75,7 @@ Template Name: TOP template
 					$wp_query = new WP_Query();
 					$my_posts = array(
 						'post_type' => 'post',
-						'posts_per_page' => '3', // 表示件数の指定
+						'posts_per_page' => '6', // 表示件数の指定
 						'category_name' => '', //表示したいカテゴリー名を入力
 					);
 				?>

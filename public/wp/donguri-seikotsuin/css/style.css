@@ -1690,12 +1690,15 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .top-shoukai-inner,
 .top-blog-inner,
 .page-kodawari,
-.page-menu,
+.page-menu {
+  margin-top: 60px !important;
+}
+
 .page-introduction,
 .page-blog,
 .page-access,
 .page-faq {
-  margin-top: 60px !important;
+  margin-top: 30px !important;
 }
 
 ul,
@@ -2413,7 +2416,7 @@ global-navigation active
 .page-top__btn,
 .l-container {
   position: relative;
-  transition: all 0.5s;
+  transition: all .5s;
 }
 
 .mobile-menu {
@@ -2464,14 +2467,15 @@ global-navigation active
 
 .menu-open .l-header,
 .menu-open #topics,
-.menu-open .page-top__btn,
+.menu-open .page-top__line,
+.menu-open .page-scroll__btn,
 .menu-open .l-container,
 .menu-open .l-paper,
 .menu-open .c-footer__logo,
 .menu-open .c-footer__detail,
 .menu-open .c-footer__map {
   opacity: 0;
-  transition: 0.01s ease-in, opacity 0.01s ease-out;
+  transition: all .5s;
 }
 
 .menu-open .mobile-menu {
@@ -2571,10 +2575,6 @@ global-navigation active
   transition-duration: 0.5s;
 }
 
-.mobile-menu__item__line {
-  /* LINEお問い合わせエリア */
-}
-
 /*=========================
 l-header
 
@@ -2592,81 +2592,6 @@ l-header
   padding: 15px 10px;
 }
 
-/*==ふわっと出現させるためのCSS*/
-
-/*　上に上がる動き　*/
-
-.c-header__gnav.UpMove {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 87%;
-  max-width: 640px;
-  min-width: 640px;
-  height: 70px;
-  background: #ffffffb8;
-  padding: 20px 5px;
-  margin: 0 auto;
-  z-index: 999;
-  -webkit-animation: DownAnime 0.5s forwards;
-  animation: DownAnime 0.5s forwards;
-}
-
-.c-header__gnav.UpMove li {
-  height: auto;
-  border-right: 1px dotted #4E4848;
-}
-
-.c-header__gnav.UpMove li:last-child {
-  border-right: none;
-}
-
-.c-header__gnav.UpMove li::after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100% !important;
-  transition: 0.5s;
-  opacity: 0;
-  -webkit-animation: SlideOut 0.3s;
-  animation: SlideOut 0.3s;
-}
-
-.c-header__gnav.UpMove li:hover {
-  margin-top: 1px;
-  transition: 0.5s;
-  opacity: 1;
-  -webkit-animation: SlideIn 0.5s;
-  animation: SlideIn 0.5s;
-}
-
-.c-header__gnav.UpMove li:hover::after {
-  background: #053f3f;
-  padding: 0 10px;
-  opacity: 0.8;
-  transition: ease .4s;
-}
-
-.c-header__gnav.UpMove .c-header__gnav__iconbox {
-  display: none;
-}
-
-.c-header__gnav.UpMove .c-header__gnav__text {
-  bottom: 5px;
-}
-
-/*　下に下がる動き　*/
-
-.c-header__gnav.DownMove {
-  width: 100%;
-  height: auto;
-  z-index: 11111;
-}
-
 /*=========================
 l-paper
 
@@ -2682,6 +2607,7 @@ l-paper
   margin: 0 auto;
   padding: 0 15px;
   border-radius: 1px 1px 1px 1px;
+  transition: all .5s;
 }
 
 .l-paper::before,
@@ -2961,7 +2887,7 @@ header
 
 .c-header__pic img {
   width: 100%;
-  height: 180px;
+  height: 130px;
   border: 1px solid #5A5A5A;
   object-fit: cover;
   opacity: .8;
@@ -3170,6 +3096,121 @@ heading
   top: 55%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+/*==ふわっと出現させるためのCSS*/
+
+/*　上に上がる動き　*/
+
+.c-header__gnav.UpMove {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 87%;
+  max-width: 640px;
+  min-width: 640px;
+  height: 70px;
+  background: #ffffffb8;
+  padding: 20px 5px;
+  margin: 0 auto;
+  z-index: 999;
+  -webkit-animation: DownAnime 0.5s forwards;
+  animation: DownAnime 0.5s forwards;
+}
+
+.c-header__gnav.UpMove li {
+  height: auto;
+  border-right: 1px dotted #4E4848;
+}
+
+.c-header__gnav.UpMove li:last-child {
+  border-right: none;
+}
+
+.c-header__gnav.UpMove li::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100% !important;
+  transition: 0.5s;
+  opacity: 0;
+  -webkit-animation: SlideOut 0.3s;
+  animation: SlideOut 0.3s;
+}
+
+.c-header__gnav.UpMove li:hover {
+  margin-top: 1px;
+  transition: 0.5s;
+  opacity: 1;
+  -webkit-animation: SlideIn 0.5s;
+  animation: SlideIn 0.5s;
+}
+
+.c-header__gnav.UpMove li:hover::after {
+  background: #053f3f;
+  padding: 0 10px;
+  opacity: 0.8;
+  transition: ease .4s;
+}
+
+.c-header__gnav.UpMove .c-header__gnav__iconbox {
+  display: none;
+}
+
+.c-header__gnav.UpMove .c-header__gnav__text {
+  bottom: 5px;
+}
+
+/*　下に下がる動き　*/
+
+.c-header__gnav.DownMove {
+  width: 100%;
+  height: auto;
+  z-index: 11111;
+}
+
+.page-scroll__line.UpMove {
+  opacity: 1;
+  transition: all .5s;
+}
+
+.page-scroll__line.DownMove {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.page-scroll__line__link {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: rgba(63, 189, 5, 0.8);
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px #4E4848 inset;
+  transition: all .5s;
+}
+
+.page-scroll__line__link:hover {
+  background: #053f3f;
+  transition-duration: 0.5s;
+}
+
+.page-scroll__line__link::before {
+  font-family: 'Font Awesome 5 Brands';
+  content: '\f3c0';
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 /* ====================
@@ -3889,14 +3930,12 @@ article
   font-size: 16px;
 }
 
-.page-top__btn {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.page-top__line {
   position: absolute;
   top: 460px;
   left: 50%;
   text-shadow: 1px 1px #4E4848;
+  transition: all .5s;
   z-index: 111;
 }
 
@@ -3943,57 +3982,17 @@ article
   right: 25px;
 }
 
-.page-sub__btn {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 360px;
-  left: 50%;
-  text-shadow: 1px 1px #4E4848;
-  z-index: 111;
-}
-
-.page-sub__line__link {
-  position: relative;
-  display: block;
-  width: 150px;
+.page-scroll__line {
+  position: fixed;
+  top: 50%;
+  right: 5px;
+  width: 40px;
   height: 40px;
-  background: rgba(63, 189, 5, 0.8);
-  border-radius: 5px;
-  box-shadow: 0px 1px 2px #4E4848 inset;
-  transition-duration: 0.5s;
-}
-
-.page-sub__line__link:hover {
-  background: #053f3f;
-  transition-duration: 0.5s;
-}
-
-.page-sub__line__link::before {
-  font-family: 'Font Awesome 5 Brands';
-  content: '\f3c0';
-  font-weight: 400;
-  font-size: 25px;
-  color: #fff;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: -5px;
-  left: 25px;
-  z-index: 10;
-}
-
-.page-sub__line__link::after {
-  content: "LINEから\Aご予約";
-  white-space: pre;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  color: #ffffffeb;
-  position: absolute;
-  top: 6px;
-  right: 25px;
+  text-shadow: 1px 1px #4E4848;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0;
+  z-index: 999;
 }
 
 .page-faq__wrap {
@@ -4106,7 +4105,7 @@ article
 
 .page-introduction-fristbox {
   width: 100%;
-  margin: 50px auto;
+  margin-bottom: 50px;
   text-align: center;
   overflow: hidden;
 }
@@ -4289,7 +4288,7 @@ article
 }
 
 .page-kotei__bottombox {
-  margin: 50px auto;
+  margin: 30px auto 50px;
 }
 
 .page-kotei__bottombox__pic {
@@ -4320,7 +4319,7 @@ article
 
 .page-kotei-fristbox {
   width: 100%;
-  margin: 50px auto;
+  margin-bottom: 50px;
   border: 1px solid #4E4848;
   border-radius: 20px;
   overflow: hidden;
@@ -5237,7 +5236,10 @@ article
   .top-shoukai-inner,
   .top-blog-inner,
   .page-kodawari,
-  .page-menu,
+  .page-menu {
+    margin-top: 50px !important;
+  }
+
   .page-introduction,
   .page-blog,
   .page-access,
@@ -5424,6 +5426,30 @@ article
     font-size: 11px;
   }
 
+  .page-scroll__line__link {
+    width: 60px;
+    height: 85px;
+  }
+
+  .page-scroll__line__link::before {
+    top: 35%;
+  }
+
+  .page-scroll__line__link::after {
+    position: absolute;
+    content: "LINE\A予約";
+    top: 40px;
+    left: 50%;
+    font-size: 16px;
+    line-height: 1.2;
+    white-space: pre;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffffeb;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
   #topics {
     padding: 40px 0 0 20px;
   }
@@ -5598,7 +5624,7 @@ article
     padding: 10px 5px;
   }
 
-  .page-top__btn {
+  .page-top__line {
     top: 590px;
     left: 50%;
   }
@@ -5615,21 +5641,11 @@ article
     width: 210px;
   }
 
-  .page-sub__btn {
-    top: 590px;
-    left: 50%;
-  }
-
-  .page-sub__line__link::after {
-    content: "LINEからご予約";
-    top: 10px;
-    right: 25px;
-    font-size: 16px;
-    line-height: 1.2;
-  }
-
-  .page-sub__line__link {
-    width: 210px;
+  .page-scroll__line {
+    width: 60px;
+    height: 80px;
+    top: 60%;
+    right: 20px;
   }
 
   .page-faq__wrap {
@@ -6020,12 +6036,6 @@ article
     margin: 0 auto;
   }
 
-  .c-header__gnav.UpMove {
-    width: 93.5%;
-    max-width: 839px;
-    padding: 20px 40px;
-  }
-
   .l-paper {
     top: 0;
     padding: 0 20px 40px;
@@ -6114,6 +6124,12 @@ article
     font-size: 13px;
   }
 
+  .c-header__gnav.UpMove {
+    width: 93.5%;
+    max-width: 839px;
+    padding: 20px 40px;
+  }
+
   #topics {
     padding: 20px 0 0 20px;
   }
@@ -6140,16 +6156,14 @@ article
     font-size: 25px;
   }
 
-  .page-top__btn {
+  .page-top__line {
     top: 20px;
     right: 20px;
     left: auto;
   }
 
-  .page-sub__btn {
-    top: 20px;
-    right: 20px;
-    left: auto;
+  .page-scroll__line {
+    right: 80px;
   }
 
   .p-pagination {
@@ -6175,15 +6189,15 @@ article
 }
 
 @media screen and (min-width: 1440px) {
+  .l-wrapper {
+    max-width: 1000px;
+    padding: 80px 20px;
+  }
+
   .c-header__gnav.UpMove {
     width: 93.5%;
     max-width: 960px;
     padding: 20px 40px;
-  }
-
-  .l-wrapper {
-    max-width: 1000px;
-    padding: 80px 20px;
   }
 
   .p-card__thumbnail {
@@ -6193,12 +6207,7 @@ article
 }
 
 @media screen and (max-width: 1000px) {
-  .page-top__btn {
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-
-  .page-sub__btn {
+  .page-top__line {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -6232,13 +6241,6 @@ article
     transform: translateX(-50%);
   }
 
-  .gnav-btn.UpMove {
-    position: fixed;
-    z-index: 999;
-    -webkit-animation: DownAnime 0.5s forwards;
-    animation: DownAnime 0.5s forwards;
-  }
-
   .c-footer__map {
     margin: 100px 20px 0;
   }
@@ -6249,8 +6251,26 @@ article
     padding-bottom: 0;
   }
 
+  .gnav-btn.UpMove {
+    position: fixed;
+    z-index: 999;
+    -webkit-animation: DownAnime 0.5s forwards;
+    animation: DownAnime 0.5s forwards;
+  }
+
   .p-card {
     margin-bottom: 20px;
+  }
+
+  .about .page-top__line,
+  .menu .page-top__line,
+  .koutu .page-top__line,
+  .massage .page-top__line,
+  .blog .page-top__line,
+  .introduction .page-top__line,
+  .access .page-top__line,
+  .faq .page-top__line {
+    top: 290px;
   }
 
   .left-box_top {

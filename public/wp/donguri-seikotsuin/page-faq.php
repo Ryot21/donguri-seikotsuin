@@ -44,7 +44,7 @@ Template Name: FAQ template
 
 		<!-- お支払いについて -->
 		<section id="faq01" class="page-faq">
-			<h2 class="page-faq__title">お支払いについて</h2>
+			<h2 class="page-faq__title arch">お支払いについて</h2>
 			<ul class="page-faq__wrap ">
 			<!-- 一つ目 -->
 			<li class="page-faq-block">
@@ -81,7 +81,7 @@ Template Name: FAQ template
 
 		<!-- 交通事故施術について -->
 		<section id="faq02" class="page-faq">
-			<h2 class="page-faq__title">交通事故施術について</h2>
+			<h2 class="page-faq__title arch">交通事故施術について</h2>
 			<ul class="page-faq__wrap ">
 			<!-- 一つ目 -->
 			<li class="page-faq-block">
@@ -118,8 +118,8 @@ Template Name: FAQ template
 
 		<!-- 訪問マッサージについて -->
 		<section id="faq03" class="page-faq pd-btm">
-			<h2 class="page-faq__title">訪問マッサージについて</h2>
-			<ul class="page-faq__wrap ">
+			<h2 class="page-faq__title arch">訪問マッサージについて</h2>
+			<ul class="page-faq__wrap">
 			<!-- 一つ目 -->
 			<li class="page-faq-block">
 				<section>

@@ -39,7 +39,7 @@
 
 	&-fristbox { //【一つ目】のコンテンツ内はここに
 		width: 100%;
-		margin: 50px auto;
+		margin-bottom: 50px;
 		text-align: center;
 		overflow: hidden;
 		@include min-screen($break_point_max) {

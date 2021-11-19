@@ -6,7 +6,7 @@
 
 body #container {
     animation-name: PageAnimeAppear;
-    animation-duration: .5s;
+    animation-duration: 1s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
     opacity: 0;
@@ -29,8 +29,30 @@ body #container {
 	z-index: 99999;
 	width: 100%;
 	height: 100%;
-	background:$inkblack;
+	background:#CDAF7F;
 	text-align:center;
 	color:$white;
 	font-weight: bold;
 }
+
+/* Loading画像中央配置　*/
+#splash_logo {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	/* Loading アイコンの大きさ設定　*/
+	img {
+		width:150px;
+	}
+}
+
+/* fadeUpをするアイコンの動き */
+.fadeUp{
+	animation-name: fadeUpAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+

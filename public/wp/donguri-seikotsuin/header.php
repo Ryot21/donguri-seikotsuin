@@ -74,9 +74,10 @@
 
 <body class="<?php echo $slug; ?>">
 	<div id="splash">
-		<div id="splash_text">
-			<!-- Loading... -->
+		<div id="splash_logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-kodawari.png"  class="fadeUp" alt="どんぐり整骨院">
 		</div>
+		<div id="splash_text"></div>
 	</div>
 	<div id="container" class="bgc">
 		<!-- ボード > 左上のアイコン -->

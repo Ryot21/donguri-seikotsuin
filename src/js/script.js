@@ -9,18 +9,9 @@ $(function () {
   $(function() {// 宣言
 
     anchorLink();
-    // mvtop()//メイン画像について
-    //           setTimeoutAsync(2000).then(topFirst)//2秒後に表示
-    //           setTimeoutAsync(4000).then(topSecond)
-    //           setTimeoutAsync(6000).then(topThird)
-    //           setTimeoutAsync(8000).then(topFourth)
-    //           setTimeoutAsync(10000).then(topFifth);
-
-    // slideAnime();
-    // onScroll();
     navControl();
     mouseOver();
-});
+  });
 
 
 function openSubMenu() {
@@ -104,60 +95,6 @@ function navControl() {
   }
 });
 
-// ページTOPボタン
-// jQuery(function() {
-//   var pagetop = $('#page_top');   
-//   pagetop.hide();
-//   $(window).scroll(function () {
-//       if ($(this).scrollTop() > 500) {  //100pxスクロールしたら表示
-//           pagetop.fadeIn();
-//       } else {
-//           pagetop.fadeOut();
-//       }
-//   });
-//   $('a[href^="#"]').click(function(){
-//     var time = 500;
-//     var href= $(this).attr("href");
-//     var target = $(href == "#" ? 'html' : href);
-//     var distance = target.offset().top;
-//     $("html, body").animate({scrollTop:distance}, time, "swing");
-//     return false;
-//   });
-// });
-
-// LINE公式アカウントボタン
-// jQuery(function() {
-//   var pagetop = $('#page_top_line');   
-//   pagetop.hide();
-//   $(window).scroll(function () {
-//       if ($(this).scrollTop() > 500) {  //100pxスクロールしたら表示
-//           pagetop.fadeIn();
-//       } else {
-//           pagetop.fadeOut();
-//       }
-//   });
-//   $('a[href^="#"]').click(function(){
-//     var time = 500;
-//     var href= $(this).attr("href");
-//     var target = $(href == "#" ? 'html' : href);
-//     var distance = target.offset().top;
-//     $("html, body").animate({scrollTop:distance}, time, "swing");
-//     return false;
-//   });
-// });
-
-
-//ブログ記事内の【strongタグ】の装飾
-// $(window).on('scroll',function(){
-//   $("strong").each(function(){
-//     var position = $(this).offset().top;
-//     var scroll = $(window).scrollTop();
-//     var windowHeight = $(window).height();
-//     if (scroll > position - windowHeight){
-//       $(this).addClass('isActive');
-//     }
-//   });
-// });
 
 
 //スクロール途中からヘッダーを出現させるための設定を関数でまとめる(1/3)
@@ -255,6 +192,53 @@ function navControl() {
       $(".arch").arctext({radius: 500});
     });
 
-//Loadingに使用
-    //仕様上、固定ページ用のファイルには記述しない。
-    //TOP用のみ記述
+
+
+//Loadingに使用（1/3）
+    //テキストのカウントアップの設定
+    var bar = new ProgressBar.Line(splash_text, {//id名を指定
+      strokeWidth: 0,//進捗ゲージの太さ
+      duration: 1500,//時間指定(1000＝1秒)
+      trailWidth: 0,//線の太さ
+      text: {//テキストの形状を直接指定	
+        style: {//天地中央に配置
+          position:'absolute',
+          left:'50%',
+          top:'50%',
+          padding:'0',
+          margin:'0',
+          transform:'translate(-50%,-50%)',
+          'font-size':'1.2rem',
+          color:'#fff',
+        },
+        autoStyleContainer: false //自動付与のスタイルを切る
+      },
+      step: function(state, bar) {
+        bar.setText(Math.round(bar.value() * 100) + ' %'); //テキストの数値
+      }
+    });
+    //アニメーションスタート
+    bar.animate(1.0, function () {//バーを描画する割合を指定します 1.0 なら100%まで描画します
+      $("#splash").delay(500).fadeOut(800);//アニメーションが終わったら#splashエリアをフェードアウト
+    }); 
+
+//Loadingに使用（2/3）
+    //logoの表示
+    $(window).on('load',function(){
+      $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+      $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
+    });
+
+//Loadingに使用（3/3）
+    $(function(){
+      // 1回目のアクセス
+      if($.cookie("access") == undefined) {
+        //最初にアクセスしたときにはここに書いたアニメーションのJSが動く
+        $.cookie("access","onece");
+        $("#splash").css("display","block")
+      // 2回目以降は動かないようにするけど最初は動かす
+      } else {
+    $("#splash").css("display","none")
+        // 2回目以降は動かないようにする
+      }
+    });

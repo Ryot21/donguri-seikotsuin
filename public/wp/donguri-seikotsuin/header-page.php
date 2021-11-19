@@ -72,7 +72,10 @@
 
 
 <body class="<?php echo $slug; ?>">
-  <div class="bgc">
+
+
+
+  <div id="container" class="bgc">
     <!-- ボード > 左上のアイコン -->
     <div class="bgc__icon">
       <a href="/">

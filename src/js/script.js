@@ -254,3 +254,7 @@ function navControl() {
     $(document).ready(function() {
       $(".arch").arctext({radius: 500});
     });
+
+//Loadingに使用
+    //仕様上、固定ページ用のファイルには記述しない。
+    //TOP用のみ記述

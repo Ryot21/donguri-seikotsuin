@@ -73,7 +73,12 @@
 
 
 <body class="<?php echo $slug; ?>">
-	<div class="bgc">
+	<div id="splash">
+		<div id="splash_text">
+			<!-- Loading... -->
+		</div>
+	</div>
+	<div id="container" class="bgc">
 		<!-- ボード > 左上のアイコン -->
 		<div class="bgc__icon">
 			<a href="/">
@@ -81,20 +86,19 @@
 				<p>ホーム</p>
 			</a>
 		</div>
-
-	<div class="l-wrapper">
-		<!-- ボード > 中央上部「クリップボード」 -->
-		<div class="l-wrapper__clip PC">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/clip/clip-shadow3.png" alt="クリップパーツ">
-		</div>
-		<!--ハンバーガーメニュー -->
-		<div id="js-menuToggle" class="gnav-btn">
-			<div class="gnav-btn__container">
-				<span></span>
-				<span></span>
-				<span></span>
+		<div class="l-wrapper">
+			<!-- ボード > 中央上部「クリップボード」 -->
+			<div class="l-wrapper__clip PC">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/clip/clip-shadow3.png" alt="クリップパーツ">
 			</div>
-		</div>
+			<!--ハンバーガーメニュー -->
+			<div id="js-menuToggle" class="gnav-btn">
+				<div class="gnav-btn__container">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
 
 		<!-- ハンバーガーメニュー / モバイルメニュー -->
 		<div id="js-menu" class="mobile-menu">

@@ -101,4 +101,6 @@ Template Name: ABOUT template
 
 
 <!-- ここまでコンテンツ -->
-<?php get_footer(); ?>
+<?php 
+	get_footer('page');
+?>

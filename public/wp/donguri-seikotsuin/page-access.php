@@ -96,4 +96,6 @@ Template Name: ACCESS template
 
 
 <!-- ここまでコンテンツ -->
-<?php get_footer(); ?>
+<?php 
+	get_footer('page');
+?>

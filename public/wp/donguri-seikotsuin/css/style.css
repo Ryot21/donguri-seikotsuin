@@ -1663,7 +1663,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .display-f {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .display-f-sp {
@@ -2984,6 +2984,59 @@ header
 heading
 
 =======================*/
+
+/*========= LoadingのためのCSS ===============*/
+
+#container {
+  position: relative;
+  opacity: 0;
+}
+
+body #container {
+  -webkit-animation-name: PageAnimeAppear;
+  animation-name: PageAnimeAppear;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes PageAnimeAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes PageAnimeAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Loading背景画面設定　*/
+
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  background: #2b2a29;
+  text-align: center;
+  color: #ffffffeb;
+  font-weight: bold;
+}
 
 /* ====================
 メインビジュアル
@@ -5213,7 +5266,6 @@ article
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    margin-bottom: 50px;
   }
 
   .pd-top {

@@ -141,7 +141,7 @@ Template Name: INTRODUCTION template
 		<section class="page-kotei pd-btm">
 			<h2 class="page-kotei__title arch">スタッフ紹介</h2>
 			<!-- 画像説明 -->
-			<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="page-kotei-fristbox">
+			<div class="page-kotei-fristbox">
 				<div class="page-kotei-fristbox__pic">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="こだわりその１">
 				</div>

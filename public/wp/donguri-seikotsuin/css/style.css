@@ -482,6 +482,90 @@ Version: 2021.04.01（更新日）
   }
 }
 
+@-webkit-keyframes PageAnimeAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes PageAnimeAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loadLogo {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+
+  50% {
+    top: 0;
+    opacity: 0;
+  }
+
+  100% {
+    top: 115px;
+    opacity: 1;
+  }
+}
+
+@keyframes loadLogo {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+
+  50% {
+    top: 0;
+    opacity: 0;
+  }
+
+  100% {
+    top: 115px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOutLoading {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes fadeOutLoading {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
 [data-aos][data-aos][data-aos-duration="50"],
 body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms;
@@ -3032,55 +3116,6 @@ body #container {
   opacity: 0;
 }
 
-@-webkit-keyframes PageAnimeAppear {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes PageAnimeAppear {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Loading背景画面設定　*/
-
-#splash {
-  /*fixedで全面に固定*/
-  position: fixed;
-  z-index: 99999;
-  width: 100%;
-  height: 100%;
-  background: #CDAF7F;
-  text-align: center;
-  color: #ffffffeb;
-  font-weight: bold;
-}
-
-/* Loading画像中央配置　*/
-
-#splash_logo {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  /* Loading アイコンの大きさ設定　*/
-}
-
-#splash_logo img {
-  width: 150px;
-}
-
 /* fadeUpをするアイコンの動き */
 
 .fadeUp {
@@ -3091,6 +3126,64 @@ body #container {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+
+#logo_loader {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 101;
+  background: #CDAF7F;
+}
+
+#logo_loader .f_logo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 160px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+#logo_loader .f_logo img {
+  width: 100%;
+  height: auto;
+}
+
+#logo_loader .f_logo::before {
+  content: "どんぐり整骨院";
+  display: block;
+  width: 100%;
+  height: 110%;
+  color: #ffffffeb;
+  font-size: 20px;
+  font-family: "Potta One", cursive;
+  background: #CDAF7F;
+  position: absolute;
+  top: 115px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-animation: loadLogo 1.5s;
+  animation: loadLogo 1.5s;
+}
+
+#logo_loader.open {
+  -webkit-animation-name: fadeOutLoading;
+  animation-name: fadeOutLoading;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 /* ====================
@@ -5533,6 +5626,10 @@ article
     font-size: 11px;
   }
 
+  #logo_loader .f_logo {
+    top: 45%;
+  }
+
   .page-scroll__line__link {
     width: 60px;
     height: 85px;
@@ -5842,7 +5939,7 @@ article
   }
 
   .page-kotei-fristbox {
-    margin: 75px auto 50px;
+    margin: 40px auto 50px;
   }
 
   .page-kotei-fristbox__pic {

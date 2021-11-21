@@ -73,7 +73,7 @@ Template Name: ABOUT template
 		<section class="page-kotei pd-btm">
 			<h2 class="page-kotei__title arch">スタッフ紹介</h2>
 			<!-- 画像説明 -->
-			<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="page-kotei-fristbox">
+			<div class="page-kotei-fristbox">
 				<div class="page-kotei-fristbox__pic">
 					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="こだわりその１">
 				</div>
@@ -84,7 +84,7 @@ Template Name: ABOUT template
 					<p class="staff-text">スポーツ外傷、トレーニング指導、テ－ピング、トリガーポイント療法</p>
 
 					<h4 class="staff-subtitle">趣味・特技</h4>
-					<p class="staff-text">野球、バトミントン、競馬</p>
+					<p class="staff-text">野球、バトミントン、子育て</p>
 
 					<h4 class="staff-subtitle">メッセージ</h4>
 					<p>患者様が楽になった、痛みが取れたと笑顔になる様な治療を目指していきます。辛い痛み、悩みなど些細なことでも良いので相談してください。一緒に解決していきましょう。</p>

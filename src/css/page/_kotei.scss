@@ -86,7 +86,7 @@
 		border-radius: 20px;
 		overflow: hidden;
 		@include min-screen($break_point_max) {
-			margin: 75px auto 50px;
+			margin: 40px auto 50px;
 		}
 
 		&__pic {

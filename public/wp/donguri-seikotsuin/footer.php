@@ -31,8 +31,8 @@
 		Copyright 2021 Donguri-Seikotsuin. All Rights Reserved.
 	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/progressbar.min.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.cookie.js"></script>
+	<!-- <script src="<?php echo get_template_directory_uri(); ?>/js/progressbar.min.js"></script> -->
+	<!-- <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.cookie.js"></script> -->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script><!-- ニュースティッカー用-->
 	<script src="<?php echo get_template_directory_uri(); ?>/js/script.min.js"></script>

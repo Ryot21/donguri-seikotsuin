@@ -12,41 +12,6 @@ body #container {
     opacity: 0;
 }
 
-// ローディングに関するアニメーション
-@keyframes PageAnimeAppear{
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-/* Loading背景画面設定　*/
-#splash {
-	/*fixedで全面に固定*/
-	position: fixed;
-	z-index: 99999;
-	width: 100%;
-	height: 100%;
-	background:#CDAF7F;
-	text-align:center;
-	color:$white;
-	font-weight: bold;
-}
-
-/* Loading画像中央配置　*/
-#splash_logo {
-	position: absolute;
-	top: 35%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
-	/* Loading アイコンの大きさ設定　*/
-	img {
-		width:150px;
-	}
-}
 
 /* fadeUpをするアイコンの動き */
 .fadeUp{
@@ -56,3 +21,53 @@ body #container {
 	opacity: 0;
 }
 
+
+#logo_loader {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 101;
+	background:#CDAF7F;
+	.f_logo {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		margin: auto;
+		width: 160px;
+		text-align: center;
+		color: #fff;
+		font-size: 30px;
+		@include min-screen($break_point_max) {
+			top: 45%;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		&::before {
+			content: "どんぐり整骨院";
+			display: block;
+			width: 100%;
+			height: 110%;
+			color: $white;
+			font-size: $font-title__sp;
+			font-family: $font__main_3;
+			background:#CDAF7F;
+			position: absolute;
+			top: 115px;
+			left: 50%;
+			transform: translateX(-50%);
+			animation: loadLogo 1.5s;
+		}
+	}
+}
+#logo_loader.open {
+	animation-name: fadeOutLoading;
+	animation-fill-mode: forwards;
+	animation-duration: 2s;
+	animation-delay: 2s;
+}

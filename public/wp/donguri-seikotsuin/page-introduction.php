@@ -45,11 +45,12 @@ Template Name: INTRODUCTION template
 		<!-- 院内紹介文 -->
 		<div class="page-introduction">
 			<div class="page-introduction-fristbox">
-			<p>当院では、お客様にリラックスして施術を受けていただけるよう、<br>
-				清潔で安らげる空間づくりを徹底しています。<br>
+			<p>当院では、お客様にリラックスして<br class="SP-br">施術を受けていただけるよう、<br>
+				清潔で安らげる空間づくりを<br class="SP-br">徹底しています。<br>
+				<br>
 				また最新治療器も導入しており、<br>
 				極力お客様のお体にストレスのないよう、<br>
-				効果的な施術が行えるように工夫しています。<br>
+				効果的な施術が行えるように<br class="SP-br">工夫しています。<br>
 			</p>
 			</div>
 		</div>
@@ -64,71 +65,71 @@ Template Name: INTRODUCTION template
 					<!-- 左/上 -->
 					<div class="left-box_top">
 						<div class="img-box">
-						<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
+						<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-huuhu.jpg" alt="どんぐり整骨院 笑顔">
 						</div>
 						<div class="txt-box">
 						<div class="txt">
-							<div class="txt-ttl">写真①</div>
+							<div class="txt-ttl">どんぐり整骨院は夫婦で営業しております。皆様の声を真摯に受け止め、お体のお悩みを解決します。</div>
 						</div>
 						</div>
 					</div>
 					<!-- 左/下 -->
 					<div class="left-box_bottom">
-					<div class="left-box_flex">
-						<div class="img-box">
-							<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
-						</div>
-						<div class="txt-box">
-							<div class="txt">
-							<div class="txt-ttl">写真②</div>
+						<div class="left-box_flex">
+							<div class="img-box">
+								<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
+							</div>
+							<div class="txt-box">
+								<div class="txt">
+								<div class="txt-ttl">ベンチについて書く。</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="left-box_flex">
-						<div class="img-box">
-							<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
-						</div>
-						<div class="txt-box">
-							<div class="txt">
-							<div class="txt-ttl">写真③</div>
+						<div class="left-box_flex">
+							<div class="img-box">
+								<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
+							</div>
+							<div class="txt-box">
+								<div class="txt">
+								<div class="txt-ttl">ウォーターサーバーについて書く。</div>
+								</div>
 							</div>
 						</div>
-					</div>
 					</div>
 				</div>
 				<!-- 右側 -->
 				<div class="right-box">
 					<!-- 右・上 -->
 					<div class="right-box_top">
-					<div class="right-box_flex">
-						<div class="img-box">
-							<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
-						</div>
-						<div class="txt-box">
-							<div class="txt">
-							<div class="txt-ttl">写真④</div>
+						<div class="right-box_flex">
+							<div class="img-box">
+								<img class="p-card__thumbnail-1" src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-kigu-4-scaled-e1637661914595.jpg" alt="院内紹介 器具">
+							</div>
+							<div class="txt-box">
+								<div class="txt">
+								<div class="txt-ttl">テキストテキストテキストテキストテキストテキスト</div>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="right-box_flex">
-						<div class="img-box">
-							<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
-						</div>
-						<div class="txt-box">
-							<div class="txt">
-							<div class="txt-ttl">写真⑤</div>
+						<div class="right-box_flex">
+							<div class="img-box">
+								<img class="p-card__thumbnail-1" src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-kigu-2-scaled-e1637660703540.jpg" alt="カバン置き">
+							</div>
+							<div class="txt-box">
+								<div class="txt">
+								<div class="txt-ttl">お客様のカバン置きを各ベットに設置しております。</div>
+								</div>
 							</div>
 						</div>
-					</div>
 					</div>
 					<!-- 右・下 -->
 					<div class="right-box_bottom">
 						<div class="img-box">
-						<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
+						<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-kigu-3.jpg" alt="どんぐり整骨院 ベット">
 						</div>
 						<div class="txt-box">
 						<div class="txt">
-							<div class="txt-ttl">写真⑥</div>
+							<div class="txt-ttl">お客様に使用していただくベット。こんなご時世だからこそ、皆様にご安心いただけるよう、使用前・使用後のアルコール除菌を徹底しております。</div>
 						</div>
 						</div>
 					</div>
@@ -141,25 +142,45 @@ Template Name: INTRODUCTION template
 		<section class="page-kotei pd-btm">
 			<h2 class="page-kotei__title arch">スタッフ紹介</h2>
 			<!-- 画像説明 -->
-			<div class="page-kotei-fristbox">
-				<div class="page-kotei-fristbox__pic">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="こだわりその１">
+			<!-- <div class="display-f"> -->
+				<div class="page-kotei-fristbox">
+					<div class="page-kotei-fristbox__pic">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-syougo.jpg" alt="佐藤翔吾 院長">
+					</div>
+					<div class="page-kotei-fristbox__textbox">
+						<h3 class="staff-title">佐藤 翔吾（院長）</h3>
+
+						<h4 class="staff-subtitle">得意な治療分野</h4>
+						<p class="staff-text">多くても3~4つほどあれば最高です</p>
+
+						<h4 class="staff-subtitle">趣味・特技</h4>
+						<p class="staff-text">野球、バトミントン、子育て</p>
+
+						<h4 class="staff-subtitle">メッセージ</h4>
+						<p>3行くらいで大丈夫かと思います。</p>
+
+					</div>
 				</div>
-				<div class="page-kotei-fristbox__textbox">
-					<h3 class="staff-title">佐藤 翔吾（院長）</h3>
+				<div class="page-kotei-fristbox">
+					<div class="page-kotei-fristbox__pic">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-tomomi.jpg" alt="佐藤智美">
+					</div>
+					<div class="page-kotei-fristbox__textbox">
+						<h3 class="staff-title">佐藤 智美</h3>
 
-					<h4 class="staff-subtitle">得意な治療分野</h4>
-					<p class="staff-text">スポーツ外傷、トレーニング指導、テ－ピング、トリガーポイント療法</p>
+						<h4 class="staff-subtitle">得意な治療分野</h4>
+						<p class="staff-text">多くても3~4つほどあれば最高です</p>
 
-					<h4 class="staff-subtitle">趣味・特技</h4>
-					<p class="staff-text">野球、バトミントン、競馬</p>
+						<h4 class="staff-subtitle">趣味・特技</h4>
+						<p class="staff-text">初めて訪れるお客様と何か会話にきっかけになると思ったので設置しました。</p>
 
-					<h4 class="staff-subtitle">メッセージ</h4>
-					<p>患者様が楽になった、痛みが取れたと笑顔になる様な治療を目指していきます。辛い痛み、悩みなど些細なことでも良いので相談してください。一緒に解決していきましょう。</p>
+						<h4 class="staff-subtitle">メッセージ</h4>
+						<p>3行くらいで大丈夫かと思います。</p>
 
+					</div>
 				</div>
-			</div>
 
+			<!-- </div> -->
 
 		</section>
 	</div>

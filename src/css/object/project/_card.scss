@@ -18,11 +18,11 @@
 =======================*/
 
 .p-card {
+  position: relative;
   width: 100%;
-  filter: drop-shadow(1px 1px 1px $lightblack);
-  overflow: hidden;
+  
   @include max-screen($break_point_max) {
-    margin-bottom: 20px;
+    margin-bottom: 65px;
   }
   @include min-screen($break_point_max) {
     width: calc(50% - 10px);
@@ -44,7 +44,7 @@
     background: $white;
     padding: 5px 10px;
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 20px;
     transition-duration: .8s; 
     overflow: hidden;
     @include min-screen($break_point_max) {
@@ -67,7 +67,7 @@
       width: 100%;
       display: block;
       transition: .4s ease-in-out;
-      border-radius: 50%;
+      border-radius: 20px;
       overflow: hidden;
     }
     &-1, &-2, &-3 {
@@ -80,16 +80,56 @@
       }
     }
   }
-
+  &__1 {
+    @include max-screen($break_point_max) {
+      margin-top: 100px;
+    }
+    &::before {
+      position: absolute;
+      top: -85px;
+      left: 40%;
+      transform: translateX(-50%);
+      content: "";
+      display: inline-block;
+      width: 180px;
+      height: 120px;
+      background: url(../images/comment/comment-1.png) no-repeat;
+      background-size: contain;
+      z-index: 9999;
+      @include max-screen($break_point_max) {
+        top: -60px;
+        width: 141px;
+        height: 94px;
+      }
+    }
+  }
+  &__3 {
+    &::before {
+      position: absolute;
+      top: -85px;
+      left: 82%;
+      transform: translateX(-50%);
+      content: "";
+      display: inline-block;
+      width: 180px;
+      height: 120px;
+      background: url(../images/comment/comment-2.png) no-repeat;
+      background-size: contain;
+      z-index: 9999;
+      @include max-screen($break_point_max) {
+        top: -50px;
+        width: 135px;
+        height: 90px;
+      }
+    }
+  }
   &__textbox {
     padding: 20px;
   }
-
   &__title {
     font-size:20px;
     font-weight: bold;
   }
-
   &__detail {
     font-size:14px;
     margin-top: 1em;

@@ -1,0 +1,7 @@
+
+.page-box {
+	padding: 0 10px;
+	@include min-screen($break_point_max) {
+		padding: 0px 30px;
+	}
+}

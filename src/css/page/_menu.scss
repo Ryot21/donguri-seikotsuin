@@ -36,7 +36,11 @@
 		@include min-screen($break_point_max) {
 			margin-bottom: 100px;
 		}
-
+		&:last-child {
+			@include min-screen($break_point_max) {
+				margin-bottom: 0;
+			}
+		}
 		&__pic {
 			position: relative;
 			width: auto;
@@ -47,7 +51,7 @@
 			}
 			img {
 				width: 100%;
-				opacity: 0.6;
+				opacity: 0.9;
 			}
 
 			&__title {
@@ -57,6 +61,8 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+				width: 100%;
+				text-align: center;
 			}
 		}
 		&__menubox {
@@ -69,7 +75,7 @@
 				// padding: auto 100px;
 				margin:0 auto;
 				border-collapse: collapse;
-    			border-spacing: 0;
+				border-spacing: 0;
 				tr {
 					display: grid;
 					@include min-screen($break_point_max) {
@@ -92,21 +98,17 @@
 					}
 				}
 			}
-			p {
-				margin: 30px auto;
-				text-align: center;
-			}
+
 		}
 	}
 	&-secbox {
 		width: 100%;
-		margin: 50px auto 0;
-		border: 1px solid $lightblack;
+		margin: 0px auto;
 		border-radius: 20px;
 		overflow: hidden;
 		@include min-screen($break_point_max) {
 			width: calc(50% - 10px);
-			margin: 0px auto 100px;
+			margin: 0px auto;
 		}
 		&__pic {
 			position: relative;
@@ -118,7 +120,7 @@
 			}
 			img {
 				width: 100%;
-				opacity: 0.6;
+				opacity: 0.9;
 			}
 
 			&__title {
@@ -128,7 +130,15 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
+				width: 100%;
+				text-align: center;
 			}
+		}
+		&__title {
+			font-size: 1.5em;
+			text-shadow: 2px 3px 1px #ffffffeb;
+			width: 100%;
+			text-align: center;
 		}
 		&__menubox {
 			// background: $white;
@@ -166,7 +176,30 @@
 			p {
 				margin: 30px auto;
 				text-align: center;
+				@include min-screen($break_point_max) {
+				}
 			}
+		}
+		&--strong {
+			padding-bottom: 40px;
+			// @include max-screen($break_point_max) {
+			// 	padding-bottom: 40px;
+			// }
+		}
+	}
+	p {
+		margin: 30px auto;
+		text-align: center;
+		@include min-screen($break_point_max) {
+		}
+	}
+	strong {
+		color: $inkblack;
+		font-weight: bold;
+		font-size: 16px;
+		background:linear-gradient(transparent 70%, $yellow 0%);
+		@include min-screen($break_point_max) {
+			font-size: 18px;
 		}
 	}
 }

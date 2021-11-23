@@ -7,7 +7,7 @@
 		display: flex;
 		align-items: center;
 		border-bottom: 1px solid $brown;
-		border-radius: 30px;
+		border-radius: 20px;
 		background: hsla(30, 1%, 30%, 0.102);
 		margin-bottom: 10px;
 		@include min-screen($break_point_max) {
@@ -183,14 +183,13 @@
 		&-list { //li
 			padding: 10px 15px 20px;
 			margin-bottom: 30px;
-			// background: rgba(255, 255, 255, 0.600);
+			border-radius: 20px;
 			transition: all .5s;
 			@include min-screen($break_point_max) {
 				width: calc(50% - 10px);
 			}
 			@include min-screen($break_point_1440) {
-				// width: 33.333%;
-				// padding: 10px;
+
 			}
 			&:hover {
 				background: $white;
@@ -213,6 +212,7 @@
 				height: 180px;
 				overflow: hidden;
 				filter: grayscale(20%);
+				border-radius: 20px;
 				@include min-screen($break_point_max) {
 				}
 				img {
@@ -244,17 +244,14 @@
 	&-threebox {
 		margin-top: 50px;
 		@include min-screen($break_point_max) {
-			// margin-top: 20px;
 		}
 		&-list { //li
 			padding: 10px 15px 20px;
 			margin-bottom: 30px;
-			// background: rgba(255, 255, 255, 0.600);
+			border-radius: 30px;
 			transition: all .5s;
 			@include min-screen($break_point_max) {
-				// width: calc(50% - 10px);
 				width: 100%;
-				// padding: 10px 5px;
 			}
 			@include min-screen($break_point_1440) {
 				
@@ -279,8 +276,9 @@
 				width: 100%;
 				height: 180px;
 				padding-top: 10px 0;
-				overflow: hidden;
+				border-radius: 30px;
 				filter: grayscale(20%);
+				overflow: hidden;
 				@include min-screen($break_point_max) {
 				}
 				img {

@@ -76,9 +76,12 @@
 
 
 	<div id="logo_loader" class="open">
-		<div class="f_logo">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-kodawari.png"  class="fadeUp" alt="どんぐり整骨院">
+		<div id="logo_loader_bgc">
+			<div class="f_logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-kodawari.png"  class="fadeUp" alt="どんぐり整骨院">
+			</div>
 		</div>
+
 	</div>
 
 
@@ -200,14 +203,14 @@
 						<!-- //サイトロゴ -->
 
 						<!-- 付箋 -->
-						<div class="c-header__husen PC">
+						<!-- <div class="c-header__husen PC">
 							
 							<ol>
 								<li>下山口駅から徒歩１分</li>
 								<li>駐車場完備</li>
 								<li>くつろげる空間</li>
 							</ol>
-						</div>
+						</div> -->
 						<!-- //付箋 -->
 
 

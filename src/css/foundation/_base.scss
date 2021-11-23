@@ -43,6 +43,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .page-kotei-fristbox {
+    width: calc(50% - 10px);
+    margin: 0px auto;
+  }
 }
 
 .display-f-sp {
@@ -121,7 +125,6 @@ html {
 }
 
 body {
-  // position: absolute;
 	background: url(../images/board-bg4.png) repeat;
   background-position: 40% 20%;
   // 『 焼印カラー 』
@@ -241,13 +244,13 @@ select,
 textarea {
   color: $color__text-main;
   font-family: $font__main_2;
-  font-size: 13px;
+  font-size: 15px;
   line-height: $font__line-height-body;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 2;
   @include min-screen($break_point_min) {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
@@ -261,7 +264,13 @@ a {
 }
 
 p {
+  font-family: $font__main_2;
+  color: $inkblack;
+  font-size: 15px;
   margin: 0;
+  @include min-screen($break_point_max) {
+    font-size: 17px;
+  }
 }
 
 dfn, cite, em, i {

@@ -3837,6 +3837,23 @@ article
   overflow: hidden;
 }
 
+.page-access table {
+  width: 100%;
+  font-size: 15px;
+}
+
+.page-access table tbody tr th {
+  width: 30%;
+  text-align: end;
+}
+
+.page-access table tbody tr td {
+  width: 70%;
+  text-align: start;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
 .page-accident-header__title {
   font-size: 20px;
 }
@@ -5798,6 +5815,14 @@ article
 
   .page-access-timebox {
     width: 70%;
+  }
+
+  .page-access table {
+    font-size: 17px;
+  }
+
+  .page-access table tbody tr td {
+    padding-left: 40px;
   }
 
   .page-accident-header__title {

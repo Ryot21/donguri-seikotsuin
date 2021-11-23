@@ -46,25 +46,25 @@ Template Name: ACCESS template
 			<div class="page-access-inforbox mg-top">
 				<table class="border-table" style="height: 95px;">
 					<tbody>
-						<tr style="height: 19px;">
-							<th style="height: 19px; width: 402px;">院名</th>
-							<td style="height: 19px; width: 954px;">どんぐり整骨院・鍼灸マッサージ院</td>
+						<tr>
+							<th>院名</th>
+							<td>どんぐり整骨院<br class="SP-br">・鍼灸マッサージ院</td>
 						</tr>
-						<tr style="height: 19px;">
-							<th style="height: 19px; width: 402px;">代表者</th>
-							<td style="height: 19px; width: 954px;">佐藤翔吾</td>
+						<tr>
+							<th>代表者</th>
+							<td>佐藤翔吾</td>
 						</tr>
-						<tr style="height: 19px;">
-							<th style="height: 19px; width: 402px;">住所</th>
-							<td style="height: 19px; width: 954px;">〒359-1145 <span>埼玉県所沢市山口1439-8</span></td>
+						<tr>
+							<th>住所</th>
+							<td>埼玉県所沢市山口1439-8</td>
 						</tr>
-						<tr style="height: 19px;">
-							<th style="height: 19px; width: 402px;">TEL</th>
-							<td style="height: 19px; width: 954px;">04-2936-7744</td>
+						<tr>
+							<th>TEL</th>
+							<td>04-2936-7744</td>
 						</tr>
-						<tr style="height: 19px;">
-							<th style="height: 19px; width: 402px;">最寄り駅</th>
-							<td style="height: 19px; width: 954px;"><span>西武狭山線下山口駅　出口より徒歩1分</span></td>
+						<tr>
+							<th>最寄駅</th>
+							<td>西武狭山線下山口駅　<br class="SP-br">出口より徒歩1分</td>
 						</tr>
 					</tbody>
 				</table>

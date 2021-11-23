@@ -2,45 +2,41 @@
 // 8.アクセス
 .page-access {
 	
-		&__title {
-			// aboutに記述
+	&__title {
+		// aboutに記述
 
-		}
-		&__bottombox {
-			margin: 50px auto;
+	}
+	&__bottombox {
+		margin: 50px auto;
+			@include min-screen($break_point_max) {
+				display: flex;
+				justify-content: center;
+				&:nth-child(odd) {
+					flex-direction: row-reverse;
+				}
+			}
+			&__pic {
+				width: 100%;
+				overflow: hidden;
 				@include min-screen($break_point_max) {
-					display: flex;
-					justify-content: center;
-					&:nth-child(odd) {
-						flex-direction: row-reverse;
-					}
+					width: calc(50% - 20px);
 				}
-				&__pic {
-					width: 100%;
-					overflow: hidden;
-					@include min-screen($break_point_max) {
-						width: calc(50% - 20px);
-					}
-					img {
-						width: 100%;
-						padding: 10px;
-					}
-				}
-				&__text {
+				img {
 					width: 100%;
 					padding: 10px;
-					@include min-screen($break_point_max) {
-						width: calc(50% - 20px);
-					}
 				}
-		}
-
-
+			}
+			&__text {
+				width: 100%;
+				padding: 10px;
+				@include min-screen($break_point_max) {
+					width: calc(50% - 20px);
+				}
+			}
+	}
 	&-inforbox {
 		color: $black;
 	}
-
-
 	&-timebox { //【一つ目】のコンテンツ内はここに
 		width: 100%;
 		margin-left: auto;
@@ -65,6 +61,33 @@
 
 	}
 
+	table {
+		width: 100%;
+		font-size: 15px;
+		@include min-screen($break_point_max) {
+			font-size: 17px;
+		}
+		tbody {
+			tr {
+				th {
+					// @include min-screen($break_point_max) {
+						width: 30%;
+						text-align: end;
+					// }
+				}
+				td {
+					width: 70%;
+					text-align: start;
+					padding-left: 20px;
+					line-height: 1.5;
+					@include min-screen($break_point_max) {
+						padding-left: 40px;
+					}
+
+				}
+			}
+		}
+	}
 }
 
 

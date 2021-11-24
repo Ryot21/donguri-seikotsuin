@@ -15,7 +15,7 @@ Template Name: MENU template
 				<!-- 固定ページ > ヘッダー -->
 				<div class="c-header__pic">
 					<h1 class="c-header__pic__title">メニュー<br><span>MENU</span></h1>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-page.jpg" alt="サイトヘッダー">
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-huuhu-1-scaled.jpg" alt="メニューページ">
 					<!-- パンくず -->
 					<?php get_template_part('module/breadcrumb'); ?>
 				</div>
@@ -62,7 +62,7 @@ Template Name: MENU template
 		<!-- 深層指圧 -->
 			<div id="menu1" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="深層指圧">
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-sinsou-scaled-e1637744017827.jpg" alt="深層指圧">
 					<h3 class="page-menu-fristbox__pic__title">深層指圧</h3>
 				</div>
 				<div class="page-menu-fristbox__menubox">
@@ -103,7 +103,7 @@ Template Name: MENU template
 		<!-- 整体矯正 -->
 			<div id="menu2" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="整体矯正">
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-seitai-scaled-e1637743834598.jpg" alt="整体矯正">
 					<h3 class="page-menu-fristbox__pic__title">整体矯正</h3>
 				</div>
 				<div class="page-menu-fristbox__menubox">
@@ -144,10 +144,10 @@ Template Name: MENU template
 					<p>※表示金額は、<br class="SP-br">全て税込価格となります。</p>
 				</div>
 			</div>
-		<!-- 鍼 -->
+		<!-- 鍼治療 -->
 			<div id="menu3" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="鍼">
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-hari-scaled-e1637743383731.jpg" alt="鍼治療">
 					<h3 class="page-menu-fristbox__pic__title">鍼治療</h3>
 				</div>
 				<div class="page-menu-fristbox__menubox">
@@ -192,7 +192,7 @@ Template Name: MENU template
 		<!-- 電気治療 -->
 			<div id="menu4" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="電気治療">
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-denki-scaled-e1637743587429.jpg" alt="電気治療">
 					<h3 class="page-menu-fristbox__pic__title">電気治療</h3>
 				</div>
 				<div class="page-menu-fristbox__menubox">

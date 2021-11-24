@@ -13,7 +13,7 @@
 		background: #ffffffb8;
 		padding: 20px 5px;
 		margin: 0 auto;
-		z-index: 999;
+		z-index: 99999;
 		animation: DownAnime 0.5s forwards;
 		@include min-screen($break_point_pc) {
 			width:93.5%;

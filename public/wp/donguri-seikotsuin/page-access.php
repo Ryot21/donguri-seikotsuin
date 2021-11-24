@@ -14,7 +14,7 @@ Template Name: ACCESS template
 				<!-- 固定ページ > ヘッダー -->
 				<div class="c-header__pic">
 					<h1 class="c-header__pic__title">アクセス<br><span>ACCESS</span></h1>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-page.jpg" alt="サイトヘッダー">
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-michi-2-1-scaled.jpg" alt="アクセスページ">
 					<!-- パンくず -->
 					<?php get_template_part('module/breadcrumb'); ?>
 				</div>

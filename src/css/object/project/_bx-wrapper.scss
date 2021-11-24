@@ -60,12 +60,21 @@
 				height: 45px !important;
 			}
 		}
-		span {
-			display:inline-block;
-			font-size:0.8rem;
-			margin-right:10px;
-			color:#777;
-		}
+
 		
 	}
+}
+
+
+.new-day {
+	display:inline-block;
+	font-size:0.8rem;
+	margin-right:10px;
+	color:#777;
+}
+.new-text {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }

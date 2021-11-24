@@ -15,11 +15,11 @@
 					<?php the_time('Y.m.d'); ?>
 					<?php categories_blog_label() ?><!-- カテゴリー表示 -->
 				</p>
-				<h2 class="page-blog-threebox-list--text__title">
+				<h3 class="page-blog-threebox-list--text__title">
 					<?php the_title(); ?>
 
 					<?php wp_reset_postdata(); ?>
-				</h2>
+				</h3>
 			</div>
 		</a>
 	</li>

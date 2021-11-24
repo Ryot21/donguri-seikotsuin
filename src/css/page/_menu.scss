@@ -45,13 +45,14 @@
 			position: relative;
 			width: auto;
 			height: auto;
+			background: white;
 			overflow: hidden;
 			@include min-screen($break_point_max) {
-				height: 200px;
+				height: 300px;
 			}
 			img {
 				width: 100%;
-				opacity: 0.9;
+				opacity: 0.5;
 			}
 
 			&__title {

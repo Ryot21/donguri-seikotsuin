@@ -48,14 +48,14 @@ Template Name: TOP template
 			</div>
 			<div class="p-card p-card__2">
 				<div class="p-card__thumbnail">
-					<img class="p-card__thumbnail-3" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その３">
-					<img class="p-card__thumbnail-3" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-2.jpg" alt="院内紹介その3">
+					<img class="p-card__thumbnail-2" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その３">
+					<img class="p-card__thumbnail-2" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-2.jpg" alt="院内紹介その3">
 				</div>
 			</div>
 			<div class="p-card p-card__3">
 				<div class="p-card__thumbnail">
-					<img class="p-card__thumbnail-2" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="どんぐり整骨院 外観">
-					<img class="p-card__thumbnail-2" src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-huuhu-scaled-e1637669783207.jpg" alt="佐藤夫婦">
+					<img class="p-card__thumbnail-3" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="どんぐり整骨院 外観">
+					<img class="p-card__thumbnail-3" src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-huuhu-scaled-e1637669783207.jpg" alt="佐藤夫婦">
 				</div>
 			</div>
 		</div>
@@ -100,7 +100,7 @@ Template Name: TOP template
 
 
     <!-- 院内／スタッフ紹介 -->
-    <section class="top-blog">
+    <section class="top-blog kodawari">
 		<h2 class="page-kotei__title arch">最近のブログ</h2>
 
 		<ul class="top-blog-inner blog-secbox display-f">
@@ -111,7 +111,7 @@ Template Name: TOP template
 					$wp_query = new WP_Query();
 					$my_posts = array(
 						'post_type' => 'post',
-						'posts_per_page' => '6', // 表示件数の指定
+						'posts_per_page' => '3', // 表示件数の指定
 						'category_name' => '', //表示したいカテゴリー名を入力
 					);
 				?>
@@ -120,7 +120,7 @@ Template Name: TOP template
 					$wp_query = new WP_Query();
 					$my_posts = array(
 						'post_type' => 'post',
-						'posts_per_page' => '2', // 表示件数の指定
+						'posts_per_page' => '3', // 表示件数の指定
 						'category_name' => '', //表示したいカテゴリー名を入力
 					);
 				?>

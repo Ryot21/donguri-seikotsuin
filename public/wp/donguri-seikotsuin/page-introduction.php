@@ -65,7 +65,7 @@ Template Name: INTRODUCTION template
 					<!-- 左/上 -->
 					<div class="left-box_top">
 						<div class="img-box">
-						<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-huuhu.jpg" alt="どんぐり整骨院 笑顔">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-huuhu.jpg" alt="どんぐり整骨院 笑顔">
 						</div>
 						<div class="txt-box">
 						<div class="txt">
@@ -77,7 +77,7 @@ Template Name: INTRODUCTION template
 					<div class="left-box_bottom">
 						<div class="left-box_flex">
 							<div class="img-box">
-								<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
 							</div>
 							<div class="txt-box">
 								<div class="txt">
@@ -87,7 +87,7 @@ Template Name: INTRODUCTION template
 						</div>
 						<div class="left-box_flex">
 							<div class="img-box">
-								<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
 							</div>
 							<div class="txt-box">
 								<div class="txt">
@@ -103,7 +103,7 @@ Template Name: INTRODUCTION template
 					<div class="right-box_top">
 						<div class="right-box_flex">
 							<div class="img-box">
-								<img class="p-card__thumbnail-1" src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-kigu-4-scaled-e1637661914595.jpg" alt="院内紹介 器具">
+								<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-kigu-4-scaled-e1637661914595.jpg" alt="院内紹介 器具">
 							</div>
 							<div class="txt-box">
 								<div class="txt">
@@ -113,7 +113,7 @@ Template Name: INTRODUCTION template
 						</div>
 						<div class="right-box_flex">
 							<div class="img-box">
-								<img class="p-card__thumbnail-1" src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-kigu-2-scaled-e1637660703540.jpg" alt="カバン置き">
+								<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-kigu-2-scaled-e1637660703540.jpg" alt="カバン置き">
 							</div>
 							<div class="txt-box">
 								<div class="txt">
@@ -125,12 +125,12 @@ Template Name: INTRODUCTION template
 					<!-- 右・下 -->
 					<div class="right-box_bottom">
 						<div class="img-box">
-						<img class="p-card__thumbnail-1" src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-kigu-3.jpg" alt="どんぐり整骨院 ベット">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-kigu-3.jpg" alt="どんぐり整骨院 ベット">
 						</div>
 						<div class="txt-box">
-						<div class="txt">
-							<div class="txt-ttl">お客様に使用していただくベット。こんなご時世だからこそ、皆様にご安心いただけるよう、使用前・使用後のアルコール除菌を徹底しております。</div>
-						</div>
+							<div class="txt">
+								<div class="txt-ttl">お客様に使用していただくベット。こんなご時世だからこそ、皆様にご安心いただけるよう、使用前・使用後のアルコール除菌を徹底しております。</div>
+							</div>
 						</div>
 					</div>
 				</div>

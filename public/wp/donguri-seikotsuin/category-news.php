@@ -43,7 +43,7 @@
 	<!-- ここからコンテンツ -->
 	<div id="area-3" class="page l-container">
 		<!-- お知らせ -->
-		<section class="page-blog pd-btm">
+		<section class="page-blog">
 			<div class="page-blog-header">
 				<h2 class="page-blog-header__title">お知らせ</h2>
 			</div>

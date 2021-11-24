@@ -182,9 +182,9 @@
 	right: 0;
 	transform: translateY(-50%);
 	&-ttl {
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 1.4;
-		@include min-screen($break_point_max) {
+		@include min-screen($break_point_pc) {
 			font-size: 20px;
 		}
 	}

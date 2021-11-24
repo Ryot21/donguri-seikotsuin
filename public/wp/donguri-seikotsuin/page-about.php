@@ -14,7 +14,7 @@ Template Name: ABOUT template
 				<!-- 固定ページ > ヘッダー -->
 				<div class="c-header__pic">
 					<h1 class="c-header__pic__title">こだわり<br><span>KODAWARI</span></h1>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-page.jpg" alt="サイトヘッダー">
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-title-about-1-scaled-e1637742642698.jpg" alt="こだわりページ">
 					<!-- パンくず -->
 					<?php get_template_part('module/breadcrumb'); ?>
 				</div>

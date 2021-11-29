@@ -1,7 +1,7 @@
 // PCの固定関係
 /*==ふわっと出現させるためのCSS*/
 	/*　上に上がる動き　*/
-	.c-header__gnav.UpMove{
+	.pc-nav__lists.UpMove{
 		position: fixed;
 		top: 0;
 		left: 50%;
@@ -55,15 +55,15 @@
 				}
 			}
 		}
-		.c-header__gnav__iconbox {
+		.pc-nav__lists__iconbox {
 			display: none;
 		}
-		.c-header__gnav__text {
+		.pc-nav__lists__text {
 			bottom: 5px;
 		}
 	}
 	/*　下に下がる動き　*/
-	.c-header__gnav.DownMove{
+	.pc-nav__lists.DownMove{
 		width:100%;
 		height: auto;
 		z-index: 11111;
@@ -79,66 +79,102 @@
 	}
 
 // PCの固定関係
-	.page-scroll {
-		&__line.UpMove {
-			opacity: 1;
-			transition: all .5s;
-		}
-		&__line.DownMove {
-			opacity: 0;
-			transition: all .5s;
-		}
-		&__line {
-			&__link {
+	.page-btm {
+		// &__line.UpMove {
+		// 	opacity: 1;
+		// 	transition: all .5s;
+		// }
+		// &__line.DownMove {
+		// 	opacity: 0;
+		// 	transition: all .5s;
+		// }
+		&__btn {
+			@include max-screen($break_point_max) {
 				position: relative;
-				display: block;
-				width: 40px;
-				height: 40px;
-				background: $L-green;
-				border-radius: 5px;
-				box-shadow: 0px 1px 2px $lightblack inset;
-				transition: all .5s;
-
-
-				@include min-screen($break_point_max) {
-					width: 60px;
-					height: 85px;
-				}
-
-				&:hover {
-					background: $Dgreen;
-					transition-duration: 0.5s; 
-				}
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 60px;
+				z-index: 999999;
+			}
+		}
+		&__tel {
+			position: relative;
+			width: 50%;
+			height: 60px;
+			background: $gray;
+			box-shadow: 0px 1px 2px $lightblack inset;
+			transition: all .5s;
+			&__link {
 				// アイコン部分
 				&::before {
+					position: absolute;
+					top: 50%;
+					left: 20px;
+					transform: translateY(-50%);
+					z-index: 10;
+
+					font-family: 'Font Awesome 5 Free';
+					content: '\f098';
+					font-weight: bolder;
+					font-size: 35px;
+					color: #fff;
+				}
+				&::after {
+					position: absolute;
+					content: "電話で予約";
+					top: 53%;
+					left: 60px;
+					transform: translateY(-50%);
+					font-size: 18px;
+					line-height: 1.2;
+					white-space: pre;
+					font-weight: bold;
+					color: $white;
+
+				}
+			}
+		}
+		&__line {
+			position: relative;
+			width: 50%;
+			height: 60px;
+			background: #62C734;
+			box-shadow: 0px 1px 2px $lightblack inset;
+			transition: all .5s;
+			// &:hover {
+			// 		background: $Dgreen;
+			// 		transition-duration: 0.5s; 
+			// }
+			&__link {
+
+				// アイコン部分
+				&::before {
+					position: absolute;
+					top: 50%;
+					left: 20px;
+					transform: translateY(-50%);
+					z-index: 10;
+
 					font-family: 'Font Awesome 5 Brands';
 					content: '\f3c0';
 					font-weight: 400;
-					font-size: 25px;
+					font-size: 35px;
 					color: #fff;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%,-50%);
-					z-index: 10;
-					@include min-screen($break_point_max) {
-						top: 35%;
-					}
 				}
 				&::after {
-					@include min-screen($break_point_max) {
-						position: absolute;
-						content: "LINE\A予約";
-						top: 40px;
-						left: 50%;
-						font-size: 16px;
-						line-height: 1.2;
-						white-space: pre;
-						font-size: 14px;
-						font-weight: bold;
-						color: $white;
-						transform: translateX(-50%);
-					}
+					position: absolute;
+					content: "LINEで予約";
+					top: 53%;
+					left: 60px;
+					transform: translateY(-50%);
+					font-size: 18px;
+					line-height: 1.2;
+					white-space: pre;
+					font-weight: bold;
+					color: $white;
+
 				}
 			}
 		}

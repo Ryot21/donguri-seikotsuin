@@ -3,14 +3,14 @@
 
 // 固定ページ > TOP画像下部のスペース
 #area-3 {
-	padding: 50px 0px 70px;
-	// text-align: center;
-	@include min-screen($break_point_max) {
-		padding: 0px 20px;
-	}
-	@include min-screen($break_point_pc) {
-		padding: 40px 20px;
-	}
+	// padding: 50px 0px 70px;
+	// // text-align: center;
+	// @include min-screen($break_point_max) {
+	// 	padding: 0px 20px;
+	// }
+	// @include min-screen($break_point_pc) {
+	// 	padding: 140px 20px 40px;
+	// }
 }
 
 .page-kodawari {

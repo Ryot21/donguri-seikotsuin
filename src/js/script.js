@@ -102,13 +102,13 @@ function navControl() {
       var elemTop = $('#area-3').offset().top;//#area-3の位置まできたら
       var scroll = $(window).scrollTop();
       if(scroll <= 680){//上から580pxスクロールされたら $('#header').addClass('DownMove');//DownMoveというクラス名を除き } else if (scroll >= elemTop){
-          $('.c-header__gnav').removeClass('UpMove');//#headerについているUpMoveというクラス名を除く
-          $('.c-header__gnav').addClass('DownMove');//#headerについているDownMoveというクラス名を付与
+          $('.pc-nav__lists').removeClass('UpMove');//#headerについているUpMoveというクラス名を除く
+          $('.pc-nav__lists').addClass('DownMove');//#headerについているDownMoveというクラス名を付与
 
         }else{
-          if($('.c-header__gnav').hasClass('DownMove')){//すでに#headerにDownMoveというクラス名がついていたら
-            $('.c-header__gnav').removeClass('DownMove');//DownMoveというクラス名を除き
-            $('.c-header__gnav').addClass('UpMove');//UpnMoveというクラス名を付与
+          if($('.pc-nav__lists').hasClass('DownMove')){//すでに#headerにDownMoveというクラス名がついていたら
+            $('.pc-nav__lists').removeClass('DownMove');//DownMoveというクラス名を除き
+            $('.pc-nav__lists').addClass('UpMove');//UpnMoveというクラス名を付与
           }
         }
     }
@@ -117,35 +117,35 @@ function navControl() {
       FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
     });
 //スクロール途中からヘッダーを出現させるための設定を関数でまとめる(2/3)
-    function FixedAnimeSP() {
-      var elemTop = $('#area-3').offset().top;
-      var scroll = $(window).scrollTop();
-      if(scroll <= 580){
-          $('#js-menuToggle').removeClass('UpMove');
-          $('#js-menuToggle').addClass('DownMove');
-      }else{
-          if($('#js-menuToggle').hasClass('DownMove')){
-            $('#js-menuToggle').removeClass('DownMove');
-            $('#js-menuToggle').addClass('UpMove');
-          }
-      }
-    }
-    $(window).scroll(function () {  FixedAnimeSP(); });
+    // function FixedAnimeSP() {
+    //   var elemTop = $('#area-3').offset().top;
+    //   var scroll = $(window).scrollTop();
+    //   if(scroll <= 580){
+    //       $('#js-menuToggle').removeClass('UpMove');
+    //       $('#js-menuToggle').addClass('DownMove');
+    //   }else{
+    //       if($('#js-menuToggle').hasClass('DownMove')){
+    //         $('#js-menuToggle').removeClass('DownMove');
+    //         $('#js-menuToggle').addClass('UpMove');
+    //       }
+    //   }
+    // }
+    // $(window).scroll(function () {  FixedAnimeSP(); });
 //スクロール途中からヘッダーを出現させるための設定を関数でまとめる(3/3)
-    function FixedAnimeLINE() {
-      var elemTop = $('#area-3').offset().top;
-      var scroll = $(window).scrollTop();
-      if(scroll <= 580){
-          $('#js-lineToggle').removeClass('UpMove');
-          $('#js-lineToggle').addClass('DownMove');
-      }else{
-          if($('#js-lineToggle').hasClass('DownMove')){
-            $('#js-lineToggle').removeClass('DownMove');
-            $('#js-lineToggle').addClass('UpMove');
-          }
-      }
-    }
-    $(window).scroll(function () {  FixedAnimeLINE(); });
+    // function FixedAnimeLINE() {
+    //   var elemTop = $('#area-3').offset().top;
+    //   var scroll = $(window).scrollTop();
+    //   if(scroll <= 580){
+    //       $('#js-lineToggle').removeClass('UpMove');
+    //       $('#js-lineToggle').addClass('DownMove');
+    //   }else{
+    //       if($('#js-lineToggle').hasClass('DownMove')){
+    //         $('#js-lineToggle').removeClass('DownMove');
+    //         $('#js-lineToggle').addClass('UpMove');
+    //       }
+    //   }
+    // }
+    // $(window).scroll(function () {  FixedAnimeLINE(); });
 
 
 
@@ -242,3 +242,27 @@ function navControl() {
     //     // 2回目以降は動かないようにする
     //   }
     // });
+
+
+$('.c-slider').slick({
+		fade:true,//切り替えをフェードで行う。初期値はfalse。
+		autoplay: true,//自動的に動き出すか。
+		autoplaySpeed: 1000,//次のスライドに切り替わる待ち時間
+		speed:5000,//スライドの動きのスピード。初期値は300。
+		infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+		slidesToShow: 1,//スライドを画面に3枚見せる
+		slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
+		arrows: true,//左右の矢印あり
+		prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+		nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+		dots: true,//下部ドットナビゲーションの表示
+    dotsClass: "slide-dots",
+        pauseOnFocus: false,//フォーカスで一時停止を無効
+        pauseOnHover: false,//マウスホバーで一時停止を無効
+        pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+});
+
+//スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
+$('.c-slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
+    $('.c-slider').slick('slickPlay');
+});

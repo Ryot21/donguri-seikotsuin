@@ -56,16 +56,20 @@ global-navigation active
   overflow: hidden;
   // & #container {
   & .l-header,
+  .sp-nav-fixed__inner_box,
   #topics,
   .page-top__line,
   .page-scroll__btn,
   .l-container,
   .l-paper,
+  .l-paper,
+  .l-paper::before,
+  .l-paper::after,
   .c-footer__logo,
   .c-footer__detail,
   .c-footer__map {
     opacity: 0;
-    transition: all .5s;
+    transition: all .1s;
   }
   & .mobile-menu {
   

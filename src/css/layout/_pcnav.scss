@@ -1,0 +1,120 @@
+
+
+.pc-nav {
+	@include min-screen($break_point_pc) {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	&__lists { //ul
+		display: none;
+		@include min-screen($break_point_max) {
+		// position: absolute;
+		// bottom: 0;
+		// top: 100px;
+		// left: 50%;
+		// transform: translate(-50%,-50%);
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		list-style: none;
+		
+		width: 100%;
+		// padding: 0 20px;
+		// アニメーション
+		animation: FadeInNavi 1s linear;
+		animation-fill-mode: both;
+		}
+		li {
+		position: relative;
+		width: 12.5%;
+		height: 70px;
+		text-align: center;
+		font-size: 14px;
+		letter-spacing: -1px;
+
+		&:hover {
+			li {
+
+			}
+			.c-header__gnav__iconbox {
+			left: 0;
+			// animation: icon-bounds 1.5s ease infinite;
+			animation: icon-bounds-yoko 1.5s ease infinite;
+			transition: 0.5s;
+			}
+
+		}
+		}
+		&__iconbox { //アイコン
+		display: block;
+		// position: absolute;
+		// top: 0;
+		width: 100%;
+		max-width: 40px;
+		margin: 0 auto;
+		transition: 0.5s;
+
+		}
+		.icon {
+		&-kodarari { //当院のこだわり
+			.pc-nav__lists__iconbox {
+			content: url(../images/icon/kodawari-32.svg);
+			}
+		}
+		&-menu { //メニュー/料金表
+			.pc-nav__lists__iconbox {
+			content: url(../images/icon/menu-32.svg);
+			}
+		}
+		&-accident { //交通事故施術
+			.pc-nav__lists__iconbox {
+			content: url(../images/icon/accident-32.svg);
+			}
+		}
+		&-visit { //訪問マッサージ
+			.pc-nav__lists__iconbox {
+			content: url(../images/icon/massage-32.svg);
+			}
+		}
+		&-blog { //ブログ
+			.pc-nav__lists__iconbox {
+			content: url(../images/icon/blog-32.svg);
+			}
+		}
+		&-introduction { //院内紹介
+			.pc-nav__lists__iconbox {
+			content: url(../images/icon/innai-32.svg);
+			}
+		}
+		&-access { //アクセス
+			.pc-nav__lists__iconbox {
+			content: url(../images/icon/map-32.svg);
+			}
+		}
+		&-faq { //よくある質問
+			.pc-nav__lists__iconbox {
+			content: url(../images/icon/faq-32.svg);
+			}
+		}
+		}
+		&__text { //テキスト
+		position: absolute;
+		width: 100%;
+		color: $inkblack;
+		font-weight: bold;
+		transition: ease .4s;
+
+		@include min-screen($break_point_max) {
+			bottom: 10px;
+			font-size: 11px;
+		}
+		@include min-screen($break_point_pc) {
+			bottom: 0px;
+			font-size: 13px;
+		}
+
+		}
+	}
+}

@@ -1,0 +1,49 @@
+
+
+.sp-nav-fixed {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+
+  &__inner { //ul
+    margin: 0;
+    text-align: center;
+    &_box {
+      
+    }
+  }
+
+  li {
+    width: 20%;
+    border-right: solid 1px rgba(255,255,255,.7);
+    background: #CDAF7F;
+    &:last-child {
+      border-right:none;
+    }
+    a {
+      display: block;
+    }
+    p {
+      // color: $white;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    img {
+      padding: 10px 20px 0;
+    }
+    .d-top {
+      padding: 10px 12px 1px;
+    }
+    .d-sec {
+      padding: 9px 20px 1px;
+    }
+    .d-thr {
+      padding: 8px 21px 4px;
+    }
+    .d-four {
+      padding: 6px 18px 0;
+    }
+  }
+}

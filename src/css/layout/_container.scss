@@ -4,9 +4,9 @@ l-container
 
 .l-container {
   margin: 0 auto;
-  padding: 0 $content_padding_sp;
+  // padding: 0 $content_padding_sp;
   @include clearfix;
   @include min-screen($break_point_max) {
-    padding: 0 $content_padding;
+    // padding: 0 $content_padding;
   }
 }

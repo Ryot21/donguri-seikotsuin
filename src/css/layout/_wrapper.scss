@@ -5,7 +5,7 @@ l-wrapper
 .l-wrapper {
 	position: relative;
 	margin: 0 auto;
-	padding: 80px $wrapper_padding_sp;
+	padding: 92px $wrapper_padding_sp;
 	@include clearfix;
 	@include min-screen($break_point_max) {
 		width: 100%;
@@ -26,19 +26,24 @@ l-wrapper
 		display: none;
 		// ページ上部 > 金具部分
 		@include min-screen($break_point_max) {
-		display: block;
-		position: absolute;
-		// top: 20px;
-		left: 50%;
-		transform: translateX(-50%);
-		// width: 200px;
-		filter: drop-shadow(0px -3px 4px $lightblack);
-		z-index: 1111;
+			display: block;
+			position: absolute;
+			// top: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			// width: 200px;
+			filter: drop-shadow(0px -3px 4px $lightblack);
+			z-index: 1111;
 		
 			top: 0px;
-			width: 270px;
+			width: 220px;
 			filter: drop-shadow(0px -3px 5px $lightblack);
-
+		}
+		@include min-screen($break_point_pc) {
+			width: 250px;
+		}
+		@include min-screen($break_point_1440) {
+			width: 270px;
 		}
 	}
 

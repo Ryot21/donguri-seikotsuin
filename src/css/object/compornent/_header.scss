@@ -21,14 +21,14 @@ header
 
 .c-header {
   
-  @include min-screen($break_point_pc) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+  // @include min-screen($break_point_pc) {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   flex-wrap: wrap;
+  //   align-items: center;
+  // }
 
-
+// 廃止 ↓
   &__logo {//インクver
     position: relative;
     width: 300px;
@@ -50,7 +50,7 @@ header
   }
   &__logo-color {// カラーver
     position: relative;
-    width: 165px;
+    width: 200px;
     margin: 50px auto 0;
     opacity: 0;
     filter: drop-shadow(1px 1px 0px $inkblack);
@@ -107,13 +107,14 @@ header
       text-align: center;
     }
   }
+// 廃止 ↑
 
   &__pic { //固定ページのヘッダー画像
-
     position: relative;
     width: 100%;
     height: auto;
-    margin: 10px auto 80px;
+    // margin: 10px auto 80px;
+    margin-bottom: 50px;
     background: white;
     border: 1px solid $black;
     filter: drop-shadow(0px 0px 0px $black);
@@ -122,10 +123,12 @@ header
     animation-fill-mode: both;
     
     @include min-screen($break_point_max) {
-      margin: 90px auto 360px;
+      // margin: 90px auto 360px;
+      margin-bottom: 100px;
     }
     @include min-screen($break_point_pc) {
-      margin: 100px auto 230px;
+      // margin: 100px auto 230px;
+      margin-bottom: 100px;
     }
     img {
       width: 100%;
@@ -162,7 +165,8 @@ header
     display: none;
     @include min-screen($break_point_max) {
       position: absolute;
-      bottom: 0;
+      // bottom: 0;
+      top: 100px;
       left: 50%;
       transform: translate(-50%,-50%);
       display: flex;

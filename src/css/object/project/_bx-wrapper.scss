@@ -3,29 +3,41 @@
 // ニュースティッカー用
 
 #topics {
-	border-left: 4px double $lightblack;
     padding: 0px 0 0 20px;
-	@include min-screen($break_point_max) {
-		padding: 40px 0 0 20px;
 
+	@include min-screen($break_point_max) {
+		padding: 20px 0 0 0;
+		justify-content: start !important;
 	}
 	@include min-screen($break_point_pc) {
-		padding: 20px 0 0 20px;
-
+		// padding: 20px 0 0 0;
 	}
-	h2 {
-		position: relative;
-		&::before {
-			position: absolute;
-			content: '鍼灸マッサージ院';
-			top: 5px;
-			right: 5px;
-			font-size: 12px;
-			@include min-screen($break_point_max) {
-				top: -15px;
-				right: 30px;
-				font-size: 16px;
-			}
+	// h2 {
+	// 	position: relative;
+	// 	&::before {
+	// 		position: absolute;
+	// 		content: '鍼灸マッサージ院';
+	// 		top: 5px;
+	// 		right: 5px;
+	// 		font-size: 12px;
+	// 		@include min-screen($break_point_max) {
+	// 			top: -15px;
+	// 			right: 30px;
+	// 			font-size: 16px;
+	// 		}
+
+	// 	}
+	// }
+
+}
+.topics {
+	&-title {
+		font-weight: bold;
+		border-left: 4px double $lightblack;
+		padding-left: 15px;
+		@include min-screen($break_point_max) {
+			// max-width: 50% !important;
+			margin-top: 8px;
 
 		}
 	}
@@ -39,7 +51,8 @@
 	box-shadow:none;
 
 	@include min-screen($break_point_max) {
-		max-width: 50% !important;
+		// max-width: 50% !important;
+		padding-left: 15px;
 	}
 	.bx-viewport {
 		height: 45px !important;

@@ -96,7 +96,7 @@
           <li class="sp-nav-fixed__inner_box">
             <a href="/">
               <p>
-                <img class="d-top" src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-kodawari.png" alt="トップ">
+                <img class="d-top" src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-kodawari-s.png" alt="トップ">
                 <br>
                 トップ
               </p>
@@ -205,7 +205,7 @@
       <div id="js-lineToggle" class="SP page-btm__btn">
         <div class="display-f-sp">
           <div class="page-btm__tel">
-            <a href="#" class="page-btm__tel__link"></a>
+            <a href="tel:04-2936-7744" class="page-btm__tel__link"></a>
           </div>
           <div class="page-btm__line">
             <a href="https://line.me/R/ti/p/%40962vsbox" class="page-btm__line__link"></a>

@@ -42,10 +42,10 @@ Template Name: FAQ template
 	<div id="area-3" class="page l-container">
 
 		<!-- お支払いについて -->
-		<section id="faq01" class="page-faq">
+		<!-- <section id="faq01" class="page-faq">
 			<h2 class="page-faq__title arch">お支払いについて</h2>
 			<ul class="page-faq__wrap ">
-			<!-- 一つ目 -->
+			
 			<li class="page-faq-block">
 				<section>
 				<h3 class="page-faq-block__title">質問１</h3>
@@ -55,7 +55,7 @@ Template Name: FAQ template
 				</div>
 				</section>
 			</li>
-			<!-- 二つ目 -->
+			
 			<li class="page-faq-block">
 				<section>
 				<h3 class="page-faq-block__title">質問１</h3>
@@ -65,7 +65,7 @@ Template Name: FAQ template
 				</div>
 				</section>
 			</li>
-			<!-- 三つ目 -->
+			
 			<li class="page-faq-block">
 				<section>
 				<h3 class="page-faq-block__title">質問１</h3>
@@ -76,7 +76,7 @@ Template Name: FAQ template
 				</section>
 			</li>
 			</ul>
-		</section>
+		</section> -->
 
 		<!-- 交通事故施術について -->
 		<section id="faq02" class="page-faq">

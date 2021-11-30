@@ -18,25 +18,29 @@
 		}
 		&-item01 {
 			background:url(../images/logo/donguri-seikotsuin-color-3@3x.png);
-			border: 1px solid rgba(33, 39, 98, 0);
+			// border: 1px solid rgba(33, 39, 98, 0);
 			background-size: 65% !important;
 			@include min-screen($break_point_max) {
 				background-size: 40% !important;
 			}
 			@include min-screen($break_point_pc) {
-				background-size: 30% !important;
+				background-size: 40% !important;
 			}
 			@include min-screen($break_point_1440) {
-				background-size: 35% !important;
+				background-size: 40% !important;
 			}
 		}
 		&-item02 {
 			background:url(../images/slider/donguri-kigu-1.jpg);
-			border: 1px solid $inkblack;
+			// border: 1px solid $inkblack;
+			border-radius: 20px;
+
 		}
 		&-item03 {
 			background:url(../images/slider/donguri-kigu-2.jpg);
-			border: 1px solid $inkblack;
+			// border: 1px solid $inkblack;
+			border-radius: 20px;
+
 		}
 	}
 

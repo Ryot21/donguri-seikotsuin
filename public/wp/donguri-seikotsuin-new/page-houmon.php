@@ -70,28 +70,58 @@ Template Name: HOUMON template
 
 
 
-		<div class="page-box">
-			<div class="page-kotei-fristbox ">
-				<h2 class="page-kotei__title arch pd-top">ご利用までの流れ</h2>
-				<div class="page-kotei-fristbox__textbox">
-					<h4>1.LINE公式アカウントからご予約</h4>
-					<p>どんぐり整骨院では予約のお客様を優先しておりますので、<a href="" class="red-text">『LINE公式アカウント』</a>からQRコードお持ちのスマートフォンまたは携帯から読み込んでいただき、お友達ご登録した後、ご予約をお願いします。ご予約方法につきましては公式LINEアカウントの方からお知らせいたします。</p>
-
-					<h4>2.カウンセリング</h4>
-					<p>施術当日、受付にてカウンセリングシートを受け取っていただき、お体でお悩みの場所や症状についてご記入をお願いいたします。</p>
-
-					<h4>3.調査・施術方法のご提案</h4>
-					<p>お答えいただいたカウンセリングシートを拝見させていただき、直接調査した上で施術方法をご提案＆ご説明させていただきます。</p>
-
-					<h4>4.施術</h4>
-					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-
-					<h4>5.アドバイス</h4>
-					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-
+	<div class="page-box pd-btm">
+		<div class="page-kotei-fristbox">
+			<h2 class="page-kotei__title arch pd-top">ご利用までの流れ</h2>
+			<div class="page-kotei-fristbox__textbox">
+				<h4>1.LINEや電話からご予約</h4>
+				<div class="display-f c-flow-box">
+					<div class="c-flow-box-img">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-line.jpg" alt="ご予約方法">
+					</div>
+					<p>当院ではLINEやお電話からのご予約を行うことができます。<a href="https://line.me/R/ti/p/%40962vsbox" class="red-text">こちら</a>からアクセスいただき、QRコードをお持ちのスマートフォンから読み込んでいただき、お友達ご登録した後にご予約をお願いします。</p>
 				</div>
+
+
+				<h4>2.カウンセリング</h4>
+				<div class="display-f c-flow-box">
+					<div class="c-flow-box-img">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" alt="カウンセリング">
+					</div>
+					<p>施術当日、受付にてカウンセリングシートを受け取っていただき、お体でお悩みの場所や症状についてご記入をお願いいたします。</p>
+				</div>
+
+
+				<h4>3.検査</h4>
+				<div class="display-f c-flow-box">
+					<div class="c-flow-box-img">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-2.jpg" alt="検査">
+					</div>
+
+					<p>お答えいただいたカウンセリングシートを拝見させていただき、直接調査した上で施術方法をご提案＆ご説明させていただきます。</p>
+				</div>
+
+
+				<h4>3.施術</h4>
+				<div class="display-f c-flow-box">
+					<div class="c-flow-box-img">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-3.jpg" alt="施術">
+					</div>
+
+					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				</div>
+				<h4>4.アフターカウンセリング</h4>
+				<div class="display-f c-flow-box">
+					<div class="c-flow-box-img">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-4.jpg" alt="アフターカウンセリング">
+					</div>
+					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				</div>
+
+
 			</div>
 		</div>
+	</div>
 
 
 

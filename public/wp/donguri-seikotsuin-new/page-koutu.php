@@ -47,7 +47,7 @@ Template Name: KOUTU template
 		<!-- <h2 class="page-kodawari__title arch">交通事故治療について</h2> -->
 
 
-		<div class="topbox page-kotei__bottombox">
+		<!-- <div class="topbox page-kotei__bottombox">
 			<div class="page-kotei__bottombox__pic">
 				<img src="<?php echo get_template_directory_uri(); ?>//images/pic/donguri-kou-1.jpg" alt="">
 			</div>
@@ -56,7 +56,6 @@ Template Name: KOUTU template
 				<p>交通事故直後は症状が少なくても、後になって痛みが増してくる場合もあります。当院では、交通事故にあわれた方のお体のケアに最善を尽くしております。症状が改善し納得いただけるまで、しっかりと治療させていただきます。</p>
 			</div>
 		</div>
-
 		<div class="page-kotei__bottombox">
 			<div class="page-kotei__bottombox__pic">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-kou-2.jpg" alt="">
@@ -65,29 +64,82 @@ Template Name: KOUTU template
 				<h3>自賠責保険・慰謝料について</h3>
 				<p>当院では自賠責保険にて交通事故による症状を治療いたします。患者様の治療負担金は０円です。自賠責保険には、休業損害などの保障もありますので、保険会社への対応など分からないこともお気軽にご相談ください。</p>
 			</div>
-		</div>
+		</div> -->
 
-	<!-- </section> -->
 
-		<div class="page-box">
+		<section class="kodawari">
+			<!-- 交通事故に遭ってしまったら -->
+			<h2 class="page-index__title">交通事故に遭ってしまったら</h2>
+			<div class="page-index-">
+
+			</div>
+
+
+
+
+
+		</section>
+
+
+
+
+
+
+		<div class="page-box pd-btm">
 			<div class="page-kotei-fristbox ">
-				<h2 class="page-kotei__title arch pd-top">ご利用までの流れ</h2>
+				<h2 class="page-kotei__title pd-top">事故発生から通院までの流れ</h2>
 				<div class="page-kotei-fristbox__textbox">
-					<h4>1.LINE公式アカウントからご予約</h4>
-					<p>どんぐり整骨院では予約のお客様を優先しておりますので、<a href="" class="red-text">『LINE公式アカウント』</a>からQRコードお持ちのスマートフォンまたは携帯から読み込んでいただき、お友達ご登録した後、ご予約をお願いします。ご予約方法につきましては公式LINEアカウントの方からお知らせいたします。</p>
 
-					<h4>2.カウンセリング</h4>
-					<p>施術当日、受付にてカウンセリングシートを受け取っていただき、お体でお悩みの場所や症状についてご記入をお願いいたします。</p>
+					<h3 class="SP c-flow-box-title">1.交通事故証明書を発行する</h3>
+					<div class="display-f c-flow-box__inner">
+						<div class="c-flow-box-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" alt="交通事故証明書を発行する">
+						</div>
+						<div class="c-flow-box-textbox">
+							<h3 class="PC c-flow-box-title">1.交通事故証明書を発行する</h3>
+							<p>交通事故の届出をして<span class="red-text">「交通事故証明書」</span>を発行してもらってください。この証明書は自賠責保険を適用する場合に必要となります。</p>
+						</div>
+					</div>
 
-					<h4>3.調査・施術方法のご提案</h4>
-					<p>お答えいただいたカウンセリングシートを拝見させていただき、直接調査した上で施術方法をご提案＆ご説明させていただきます。</p>
+					<h3 class="SP c-flow-box-title">2.病院で診察を受ける</h3>
+					<div class="display-f c-flow-box__inner">
+						<div class="c-flow-box-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" alt="病院にて診察を受ける">
+						</div>
+						<div class="c-flow-box-textbox">
+							<h3 class="PC c-flow-box-title">2.病院で診察を受ける</h3>
+							<p>近くの病院で医師による診察を受けてください。重症の場合は、病院での通院・治療が有効です。整骨院に来る前に必ず病院で見てもらうようにしましょう。</p>
+						</div>
+					</div>
 
-					<h4>4.施術</h4>
-					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 
-					<h4>5.アドバイス</h4>
-					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+					<h3 class="SP c-flow-box-title">3.保険会社に報告をしましょう</h3>
+					<div class="display-f c-flow-box__inner">
+						<div class="c-flow-box-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-2.jpg" alt="保険会社に報告">
+						</div>
+						<div class="c-flow-box-textbox">
+							<h3 class="PC c-flow-box-title">3.保険会社に報告をしましょう</h3>
+							<p>保険会社の方に、<span class="red-text">「どんぐり整骨院鍼灸マッサージ院で交通事故の治療を受ける」</span>と伝えてください。その後、保険会社から当院に連絡が入り、自賠責保険での治療が可能となります。</p>
+						</div>
+					</div>
 
+
+					<h3 class="SP c-flow-box-title">4.当院にご連絡ください</h3>
+					<div class="display-f c-flow-box__inner">
+						<div class="c-flow-box-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-3.jpg" alt="当院にご連絡">
+						</div>
+						<div class="c-flow-box-textbox">
+							<h3 class="PC c-flow-box-title">4.当院にご連絡ください</h3>
+							<p>当院に<span class="red-text">受診予約</span>のご連絡をください。診察日時を調整させていただきます。予約方法につきましては、電話予約もしくはLINE予約があります。<br>
+							<span class="black-text">電話予約</span>はこちら：
+							<a class="c-flow-box-textbox__link black-text" href="tel:04-2936-7744">04-2936-7744</a><br class="PC-br">
+							<span class="black-text">LINE予約</span>はこちら：
+							<a class="c-flow-box-textbox__link black-text" href="https://line.me/R/ti/p/%40962vsbox">公式アカウント</a>
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- 交通事故施術について -->

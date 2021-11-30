@@ -137,13 +137,78 @@ Template Name: TOP template
 		</div>
 
 		<!-- ご利用までの流れ -->
-		<h2 class="top-flow__title">ご利用までの流れ</h2>
+		<!-- <h2 class="top-flow__title">ご利用までの流れ</h2>
 		<div class="top-flow">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow@3x.png" alt="ご利用までの流れ">
-		</div>
+		</div> -->
+		
 	</section>
 
+	<div class="page-box pd-btm">
+		<div class="page-kotei-fristbox">
+			<h2 class="page-kotei__title pd-top">ご利用までの流れ</h2>
+			<div class="page-kotei-fristbox__textbox  c-flow-box">
 
+				<h3 class="SP c-flow-box-title">1.LINEや電話からご予約</h3>
+				<div class="display-f c-flow-box__inner">
+					<div class="c-flow-box-img">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-line.jpg" alt="ご予約方法">
+					</div>
+					<div class="c-flow-box-textbox">
+						<h3 class="PC c-flow-box-title">1.LINEや電話からご予約</h3>
+						<p>当院ではLINEやお電話からのご予約を行うことができます。<a href="https://line.me/R/ti/p/%40962vsbox" class="red-text">こちら</a>からアクセスいただき、QRコードをお持ちのスマートフォンから読み込んでいただき、お友達ご登録した後にご予約をお願いします。</p>
+					</div>
+				</div>
+
+				<h3 class="SP c-flow-box-title">2.カウンセリング</h3>
+				<div class="display-f c-flow-box__inner">
+					<div class="c-flow-box-img">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" alt="カウンセリング">
+					</div>
+					<div class="c-flow-box-textbox">
+						<h3 class="PC c-flow-box-title">2.カウンセリング</h3>
+						<p>施術当日、受付にてカウンセリングシートを受け取っていただき、お体でお悩みの場所や症状についてご記入をお願いいたします。</p>
+					</div>
+				</div>
+
+				<h3 class="SP c-flow-box-title">3.検査</h3>
+				<div class="display-f c-flow-box__inner">
+					<div class="c-flow-box-img">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-2.jpg" alt="検査">
+					</div>
+					<div class="c-flow-box-textbox">
+						<h3 class="PC c-flow-box-title">3.検査</h3>
+						<p>お答えいただいたカウンセリングシートを拝見させていただき、直接調査した上で施術方法をご提案＆ご説明させていただきます。</p>
+					</div>
+
+				</div>
+
+				<h3 class="SP c-flow-box-title">4.施術</h3>
+				<div class="display-f c-flow-box__inner">
+					<div class="c-flow-box-img">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-3.jpg" alt="施術">
+					</div>
+					<div class="c-flow-box-textbox">
+						<h3 class="PC c-flow-box-title">4.施術</h3>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+					</div>
+				</div>
+
+				<h3 class="SP c-flow-box-title">5.アフターカウンセリング</h3>
+				<div class="display-f c-flow-box__inner">
+					<div class="c-flow-box-img">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-4.jpg" alt="アフターカウンセリング">
+					</div>
+					<div class="c-flow-box-textbox">
+						<h3 class="PC c-flow-box-title">5.アフターカウンセリング</h3>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
 
 
 

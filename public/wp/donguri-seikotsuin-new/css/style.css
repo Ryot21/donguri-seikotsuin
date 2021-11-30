@@ -1779,31 +1779,25 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .red-text {
   color: #b01717 !important;
-  font-weight: bold;
-  text-shadow: 1px 1px #BCBBB6;
 }
 
 .blue-text {
   color: #c3ecfa !important;
-  font-weight: bold;
   text-shadow: 1px 1px #BCBBB6;
 }
 
 .green-text {
   color: #BADD74 !important;
-  font-weight: bold;
   text-shadow: 1px 1px #BCBBB6;
 }
 
 .yellow-text {
   color: #f8f68e !important;
-  font-weight: bold;
   text-shadow: 1px 1px #BCBBB6;
 }
 
 .pink-text {
   color: #f584ca !important;
-  font-weight: bold;
   text-shadow: 1px 1px #BCBBB6;
 }
 
@@ -1814,7 +1808,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .text-L__pink {
   font-size: 23px;
   font-weight: bold;
-  text-shadow: 2px 2px #BCBBB6;
+  text-shadow: 1px 1px #BCBBB6;
 }
 
 .text-L__red {
@@ -2895,7 +2889,7 @@ l-paper
 .pc-nav__lists__iconbox {
   display: block;
   width: 100%;
-  max-width: 40px;
+  max-width: 45px;
   margin: 0 auto;
   transition: 0.5s;
 }
@@ -3127,6 +3121,44 @@ l-wrapper
   border-radius: 4px;
 }
 
+.c-flow-box__inner {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.c-flow-box__inner:not(:last-child):before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 25px 25px 0px 25px;
+  bottom: -63px;
+  left: 50%;
+  margin-left: -25px;
+  border-color: rgba(67, 91, 91, 0.1) transparent transparent transparent;
+  -webkit-filter: drop-shadow(1px 1px 1px #BCBBB6);
+  filter: drop-shadow(1px 1px 1px #BCBBB6);
+}
+
+.c-flow-box-title {
+  background-color: rgba(67, 91, 91, 0.1);
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  line-height: 1.8;
+}
+
+.c-flow-box-img {
+  margin-bottom: 15px;
+}
+
+.c-flow-box-img img {
+  border-radius: 10px;
+}
+
 /* ====================
 footer
 
@@ -3277,7 +3309,7 @@ header
 .c-header__gnav__iconbox {
   display: block;
   width: 100%;
-  max-width: 40px;
+  max-width: 45px;
   margin: 0 auto;
   transition: 0.5s;
 }
@@ -3820,18 +3852,17 @@ body #container {
 
 .c-slider-item01 {
   background: url(../images/logo/donguri-seikotsuin-color-3@3x.png);
-  border: 1px solid rgba(33, 39, 98, 0);
   background-size: 65% !important;
 }
 
 .c-slider-item02 {
   background: url(../images/slider/donguri-kigu-1.jpg);
-  border: 1px solid #2b2a29;
+  border-radius: 20px;
 }
 
 .c-slider-item03 {
   background: url(../images/slider/donguri-kigu-2.jpg);
-  border: 1px solid #2b2a29;
+  border-radius: 20px;
 }
 
 /*矢印の設定*/
@@ -4612,10 +4643,6 @@ article
   font-size: 16px;
 }
 
-.page-box {
-  padding: 0 10px;
-}
-
 .page-top__line {
   position: absolute;
   top: 460px;
@@ -5066,7 +5093,7 @@ article
 
 .page-kotei__bottombox__text h3 {
   background-color: rgba(67, 91, 91, 0.1);
-  padding: 5px 25px;
+  padding: 5px 20px;
   margin-bottom: 10px;
   border-radius: 20px;
   line-height: 1.8;
@@ -5119,7 +5146,7 @@ article
 }
 
 .page-kotei-fristbox__textbox p {
-  padding: 0 5px 20px !important;
+  padding: 0 5px !important;
 }
 
 .page-kotei-fristbox__textbox span {
@@ -6199,7 +6226,7 @@ article
   }
 
   .c-footer__calendar {
-    padding: 0 20px 20px;
+    padding: 0 20px 10px;
   }
 
   .c-footer__copy {
@@ -6297,6 +6324,7 @@ article
 
   .topics-title {
     margin-top: 8px;
+    line-height: 2.3;
   }
 
   .bx-wrapper {
@@ -6464,10 +6492,6 @@ article
     padding: 10px 5px;
   }
 
-  .page-box {
-    padding: 0px 30px;
-  }
-
   .page-top__line {
     top: 11px;
     right: 20px;
@@ -6624,7 +6648,7 @@ article
   }
 
   .page-kotei-fristbox__textbox p {
-    padding: 0 5px 30px !important;
+    padding: 0 5px !important;
   }
 
   .page-kotei-fristbox__textbox .staff-title {
@@ -6958,6 +6982,17 @@ article
     padding: 4px 5px 4px;
   }
 
+  .c-flow-box-img {
+    width: calc(50% - 5px);
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
+
+  .c-flow-box-textbox {
+    width: calc(50% - 5px);
+    margin-left: 5px;
+  }
+
   .c-footer__logo {
     width: 130px;
     margin: 50px auto 20px;
@@ -7012,7 +7047,7 @@ article
   }
 
   .c-slider-item01 {
-    background-size: 30% !important;
+    background-size: 40% !important;
   }
 
   .p-card {
@@ -7096,7 +7131,7 @@ article
   }
 
   .c-slider-item01 {
-    background-size: 35% !important;
+    background-size: 40% !important;
   }
 
   .p-card__thumbnail {

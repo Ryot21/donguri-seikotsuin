@@ -8,11 +8,10 @@
     font-size: $font-title__pc;
   }
   &-lb {
-    // display: inline-block;
+
   }
   &-logo {
-    // vertical-align: top;
-    // vertical-align: text-top;
+
 
   }
   &-logo img {
@@ -23,84 +22,11 @@
   }
 }
 
-.black-text {
-  color: $inkblack !important;
-  font-weight: bold;
-}
-
-.red-text {
-  color: $hiromi-red !important;
-  // font-weight: bold;
-  // text-shadow: 1px 1px $gray;
-}
-.blue-text {
-  color: $hiromi-blue !important;
-  // font-weight: bold;
-  text-shadow: 1px 1px $gray;
-}
-.green-text {
-  color: $hiromi-green !important;
-  // font-weight: bold;
-  text-shadow: 1px 1px $gray;
-}
-.yellow-text {
-  color: $hiromi-yellow !important;
-  // font-weight: bold;
-  text-shadow: 1px 1px $gray;
-}
-.pink-text {
-  color: $pink !important;
-  // font-weight: bold;
-  text-shadow: 1px 1px $gray;
-}
-
-.text-L {
-  &__red,
-  &__blue,
-  &__green,
-  &__yellow,
-  &__pink {
-    font-size: $font-title-pick__sp;
-    font-weight: bold;
-    text-shadow: 1px 1px $gray;
-    @include min-screen($break_point_max) {
-      font-size: $font-title-pick__tb;
-    }
-    @include min-screen($break_point_max) {
-      font-size: $font-title-pick__pc;
-    }
+.o-img-size {
+  height: 170px;
+  @include min-screen($break_point_max) {
+    height: 235px;
   }
-
-  &__red {color: $hiromi-red !important;}
-  &__blue {color: $hiromi-blue !important;}
-  &__green {color: $hiromi-green !important;}
-  &__yellow {color: $hiromi-yellow !important;}
-  &__pink {color: $hiromi-pink !important;}
-
-}
-.text-LL {
-  &__red,
-  &__blue,
-  &__green,
-  &__yellow,
-  &__pink {
-    font-size: $font-title-LL__sp;
-    font-weight: bold;
-    text-shadow: 2px 2px $gray;
-    @include min-screen($break_point_max) {
-      font-size: $font-title-LL__tb;
-    }
-    @include min-screen($break_point_max) {
-      font-size: $font-title-LL__pc;
-    }
-  }
-
-  &__red {color: $hiromi-red !important;}
-  &__blue {color: $hiromi-blue !important;}
-  &__green {color: $hiromi-green !important;}
-  &__yellow {color: $hiromi-yellow !important;}
-  &__pink {color: $hiromi-pink !important;}
-
 }
 
 .PC {

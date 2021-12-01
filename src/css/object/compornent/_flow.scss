@@ -1,4 +1,37 @@
 
+.c-flow {
+	width: 100%;
+	margin-bottom: 50px;
+	border: 1px solid $lightblack;
+	border-radius: 20px;
+	overflow: hidden;
+	@include min-screen($break_point_max) {
+		margin: 40px auto 50px;
+	}
+	&__title {
+		position: relative;
+		display: inline-block;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: $font-title__sp;
+		text-align: center;
+		line-height: 1.3;
+		@include min-screen($break_point_max) {
+			font-size: $font-title__pc;
+		}
+	}
+	&-box {
+		padding: 45px 15px 0;
+		line-height: 1.7;
+		@include min-screen($break_point_max) {
+			// display: flex;
+			font-size: 18px;
+			padding: 50px 40px 10px;
+		}
+	}
+}
+
+
 .c-flow-box {
 	&__inner {
 		position: relative;
@@ -25,6 +58,9 @@
 		margin-bottom: 10px;
 		border-radius: 20px;
 		line-height: 1.8;
+		@include min-screen($break_point_max) {
+			padding: 5px 20px;
+		}
 	}
 	&-img {
 		margin-bottom: 15px;

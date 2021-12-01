@@ -44,56 +44,86 @@ Template Name: KOUTU template
 
 	<!-- タイトルタイトル -->
 	<!-- <section class="page-kodawari"> -->
-		<!-- <h2 class="page-kodawari__title arch">交通事故治療について</h2> -->
+		<!-- <h2 class="page-kodawari__title">交通事故治療について</h2> -->
 
 
-		<!-- <div class="topbox page-kotei__bottombox">
+
+
+		<!-- 交通事故に遭ってしまったら -->
+		<section class="kodawari pd-top">
+			<h2 class="page-kotei__title">交通事故に遭ってしまったら</h2>
+			<p class="page-kotei__text">
+			どんぐり整骨院では<br class="PC-br">ただ電気を当てたりするだけでなくマッサージで筋肉を緩めたり、<br class="PC-br">鍼灸、ソフトな関節整体で不調を解消いたします。<br class="PC-br">
+			当整骨院は<span class="red-text">手技の施術</span>がメインの整骨院です！
+			</p>
+		</section>
+
+		<!-- 交通事故に遭ったら不調がでやすい症状 -->
+		<div class="page-kotei__bottombox">
 			<div class="page-kotei__bottombox__pic">
 				<img src="<?php echo get_template_directory_uri(); ?>//images/pic/donguri-kou-1.jpg" alt="">
 			</div>
 			<div class="page-kotei__bottombox__text">
-				<h3>悪化する前にしっかり完治！！</h3>
-				<p>交通事故直後は症状が少なくても、後になって痛みが増してくる場合もあります。当院では、交通事故にあわれた方のお体のケアに最善を尽くしております。症状が改善し納得いただけるまで、しっかりと治療させていただきます。</p>
+				<h3>交通事故に遭ったら不調がでやすい症状</h3>
+				<p><strong>お身体の痛み</strong><br>
+				　・首の痛み、むち打ち、頭痛<br>
+				　・腰の痛み、腰痛<br>
+				　・肩や背中の痛み<br>
+				　・膝や肘などの打撲<br>
+				<strong>自律神経系のお悩み</strong><br>
+				　・めまい、吐き気、気分がすぐれない<br>
+				　・不眠、血圧の上昇、寒気...etc</p>
 			</div>
 		</div>
+		<!-- 交通事故の施術内容 -->
 		<div class="page-kotei__bottombox">
 			<div class="page-kotei__bottombox__pic">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-kou-2.jpg" alt="">
+				<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-kou-2.jpg" alt=""> -->
+				<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" class="o-img-size" alt="交通事故の施術内容">
+
 			</div>
 			<div class="page-kotei__bottombox__text">
-				<h3>自賠責保険・慰謝料について</h3>
-				<p>当院では自賠責保険にて交通事故による症状を治療いたします。患者様の治療負担金は０円です。自賠責保険には、休業損害などの保障もありますので、保険会社への対応など分からないこともお気軽にご相談ください。</p>
+				<h3>交通事故の施術内容</h3>
+				<p>・ハンドメイド手技による施術<br>
+				・痛めた個所の回復をはかる電気機器<br>
+				・鍼灸による施術<br>
+				・痛みの回復後の運動療法<br class="SP-br">・ストレッチ<br>
+				・骨格の矯正</p>
 			</div>
-		</div> -->
+		</div>
 
+		<!-- 交交通事故にお悩みの方へ -->
+		<section class="kodawari pd-top">
+			<h2 class="page-kotei__title">交通事故にお悩みの方へ</h2>
+			<p class="page-kotei__text">
+			交通事故によるお身体のお痛みは長期になることがあります。<br class="PC-br">ですので<span class="red-text">早期の施術開始</span>と<span class="red-text">早期の復帰</span>が重要です。<br class="PC-br">事故直後は不安もたくさんあります。<br>
+			<br>
 
-		<section class="kodawari">
-			<!-- 交通事故に遭ってしまったら -->
-			<h2 class="page-index__title">交通事故に遭ってしまったら</h2>
-			<div class="page-index-">
+			「はじめて事故に遭ってしまった。」<br>
+			「身体の痛みが不安・・」<br>
+			「車はどうしたらいいのだろうか・・」<br>
+			「だれに相談したらいいの？」<br>
+			「仕事や損害賠償のことで頭がいっぱい・・」<br>
+			<br>
+			お悩みを解消する為、当整骨院では<span class="red-text">交通事故無料相談</span>も承っております。<br class="PC-br">お怪我や痛みから一刻も早く回復する為、<br class="PC-br">難しいことやお悩みはご相談いただき不調の回復に集中できる環境をご提供いたします。<br class="PC-br"><span class="red-text">下山口駅から徒歩1分</span>にあり、時間外も相談いただければ対応しております。
 
-			</div>
-
-
-
-
-
+			</p>
 		</section>
 
 
 
 
-
-
+		<!-- 事故発生から通院までの流れ -->
 		<div class="page-box pd-btm">
-			<div class="page-kotei-fristbox ">
-				<h2 class="page-kotei__title pd-top">事故発生から通院までの流れ</h2>
-				<div class="page-kotei-fristbox__textbox">
-
-					<h3 class="SP c-flow-box-title">1.交通事故証明書を発行する</h3>
+			<div class="c-flow">
+				<h2 class="c-flow__title pd-top">事故発生から通院までの流れ</h2>
+				<div class="c-flow-box">
+					
+					<h3 class="SP c-flow-box-title">1.交通事故証明書を発行</h3>
 					<div class="display-f c-flow-box__inner">
 						<div class="c-flow-box-img">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" alt="交通事故証明書を発行する">
+							<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" alt="交通事故証明書を発行する"> -->
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-5.jpg" alt="交通事故証明書を発行する">
 						</div>
 						<div class="c-flow-box-textbox">
 							<h3 class="PC c-flow-box-title">1.交通事故証明書を発行する</h3>
@@ -104,19 +134,20 @@ Template Name: KOUTU template
 					<h3 class="SP c-flow-box-title">2.病院で診察を受ける</h3>
 					<div class="display-f c-flow-box__inner">
 						<div class="c-flow-box-img">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" alt="病院にて診察を受ける">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" class="o-img-size" alt="病院にて診察を受ける">
 						</div>
 						<div class="c-flow-box-textbox">
 							<h3 class="PC c-flow-box-title">2.病院で診察を受ける</h3>
-							<p>近くの病院で医師による診察を受けてください。重症の場合は、病院での通院・治療が有効です。整骨院に来る前に必ず病院で見てもらうようにしましょう。</p>
+							<p>近くの病院で医師による診察を受けてください。重症の場合は、病院での通院・治療が有効です。整骨院に来る前に必ず病院で診てもらうようにしましょう。</p>
 						</div>
 					</div>
 
 
-					<h3 class="SP c-flow-box-title">3.保険会社に報告をしましょう</h3>
+					<h3 class="SP c-flow-box-title">3.保険会社に報告</h3>
 					<div class="display-f c-flow-box__inner">
 						<div class="c-flow-box-img">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-2.jpg" alt="保険会社に報告">
+
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-7.jpg" alt="保険会社に報告">
 						</div>
 						<div class="c-flow-box-textbox">
 							<h3 class="PC c-flow-box-title">3.保険会社に報告をしましょう</h3>
@@ -144,7 +175,7 @@ Template Name: KOUTU template
 			</div>
 			<!-- 交通事故施術について -->
 			<section id="faq02" class="page-faq">
-				<h2 class="page-faq__title arch">よくある質問</h2>
+				<h2 class="page-kotei__title">よくある質問</h2>
 					<ul class="page-faq__wrap ">
 					<!-- 一つ目 -->
 					<li class="page-faq-block">
@@ -171,8 +202,15 @@ Template Name: KOUTU template
 						<section>
 						<h3 class="page-faq-block__title">慰謝料はどのくらいですか？</h3>
 						<div class="page-faq-block__text">
-							<p>通院期間と実際に施術を受けた日数で変わってきますが自賠責基準ですと１日4,300円～8,400円になります。通院期間×4,300円 実日数×4,300円×2</p>
-							<p>どちらか少ない方で算出されますので30日間毎日通ったら252,000円にはなりませんのでご注意を。ただ保険会社様が整骨院に通うと慰謝料が下がりますと仰る事がございますが、整骨院でも病院でも慰謝料の計算式は変わりませんのでご安心ください。</p>
+							<p>通院期間と実際に施術を受けた日数で変わってきます。</p>
+							<p class="red-text">【自賠責基準の場合】<br>
+								１日4,300円～8,400円<br>
+								通院期間×4,300円 <br class="SP-br">実日数×4,300円×2<br>
+								※どちらか少ない方が算出されます。
+							</p>
+							<p>30日間毎日通ったら252,000円にはなりません。<br class="PC-br">
+								ただし保険会社様が整骨院に通うと慰謝料が下がりますと仰る事がございますが、整骨院でも病院でも慰謝料の計算式は変わりませんのでご安心ください。
+							</p>
 						</div>
 						</section>
 					</li>

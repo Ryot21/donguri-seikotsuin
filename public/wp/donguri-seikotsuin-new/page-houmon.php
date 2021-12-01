@@ -43,7 +43,7 @@ Template Name: HOUMON template
 
 	<!-- タイトルタイトル -->
 	<!-- <section class="page-kodawari"> -->
-		<!-- <h2 class="page-kodawari__title arch">お客様に寄り添う施術</h2> -->
+		<!-- <h2 class="page-kodawari__title">お客様に寄り添う施術</h2> -->
 
 
 		<div class="topbox page-kotei__bottombox">
@@ -72,7 +72,7 @@ Template Name: HOUMON template
 
 	<div class="page-box pd-btm">
 		<div class="page-kotei-fristbox">
-			<h2 class="page-kotei__title arch pd-top">ご利用までの流れ</h2>
+			<h2 class="page-kotei__title pd-top">ご利用までの流れ</h2>
 			<div class="page-kotei-fristbox__textbox">
 				<h4>1.LINEや電話からご予約</h4>
 				<div class="display-f c-flow-box">

@@ -43,7 +43,7 @@ Template Name: ACCESS template
 	<div id="area-3" class="page l-container">
 		<!-- 受付時間 -->
 		<section class="page-access pd-btm">
-			<h2 class="page-access__title arch">整骨院情報</h2>
+			<h2 class="page-access__title">整骨院情報</h2>
 			<div class="page-access-inforbox mg-top">
 				<table class="border-table" style="height: 95px;">
 					<tbody>
@@ -75,17 +75,17 @@ Template Name: ACCESS template
 
 		<!-- 受付時間 -->
 		<section class="page-access pd-btm">
-			<h2 class="page-access__title arch">受付時間について</h2>
+			<h2 class="page-access__title">受付時間について</h2>
 			<div class="page-access-timebox mg-top">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/
 				calendar/donguri-seikotsuin-ink.png" alt="受付時間">
-				<p>時間外の診断については、ご相談ください。</p>
+				<p>時間外の診断については、<br class="SP-br">ご相談ください。</p>
 			</div>
 
 		</section>
 		<!-- 所在地 -->
 		<section class="page-access pd-btm">
-			<h2 class="page-access__title arch">整骨院の所在地</h2>
+			<h2 class="page-access__title">整骨院の所在地</h2>
 			<div class="page-access-mapbox mg-top">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.8374274704615!2d139.4381114514931!3d35.77936963209235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018de040cb0bfa3%3A0x48ec1c7212af83d!2z44CSMzU5LTExNDUg5Z-8546J55yM5omA5rKi5biC5bGx5Y-j77yR77yU77yT77yZ4oiS77yY!5e0!3m2!1sja!2sjp!4v1633338245412!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>

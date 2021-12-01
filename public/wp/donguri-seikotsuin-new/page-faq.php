@@ -41,46 +41,10 @@ Template Name: FAQ template
 	<!-- ここからコンテンツ -->
 	<div id="area-3" class="page l-container">
 
-		<!-- お支払いについて -->
-		<!-- <section id="faq01" class="page-faq">
-			<h2 class="page-faq__title arch">お支払いについて</h2>
-			<ul class="page-faq__wrap ">
-			
-			<li class="page-faq-block">
-				<section>
-				<h3 class="page-faq-block__title">質問１</h3>
-				<div class="page-faq-block__text">
-					<p>用語の説明用語の説明用語の説明用語の説明用語の説明用語の説明用語の説明用語の説明。</p>
-
-				</div>
-				</section>
-			</li>
-			
-			<li class="page-faq-block">
-				<section>
-				<h3 class="page-faq-block__title">質問１</h3>
-				<div class="page-faq-block__text">
-					<p>用語の説明用語の説明用語の説明用語の説明用語の説明用語の説明用語の説明用語の説明。</p>
-
-				</div>
-				</section>
-			</li>
-			
-			<li class="page-faq-block">
-				<section>
-				<h3 class="page-faq-block__title">質問１</h3>
-				<div class="page-faq-block__text">
-					<p>用語の説明用語の説明用語の説明用語の説明用語の説明用語の説明用語の説明用語の説明。</p>
-
-				</div>
-				</section>
-			</li>
-			</ul>
-		</section> -->
 
 		<!-- 交通事故施術について -->
 		<section id="faq02" class="page-faq">
-			<h2 class="page-faq__title arch">交通事故施術について</h2>
+			<h2 class="page-kotei__title ">交通事故施術について</h2>
 			<ul class="page-faq__wrap ">
 			<!-- 一つ目 -->
 			<li class="page-faq-block">
@@ -182,7 +146,7 @@ Template Name: FAQ template
 
 		<!-- 訪問マッサージについて -->
 		<section id="faq03" class="page-faq pd-btm">
-			<h2 class="page-faq__title arch">訪問マッサージについて</h2>
+			<h2 class="page-kotei__title">訪問マッサージについて</h2>
 			<ul class="page-faq__wrap">
 			<!-- 一つ目 -->
 			<li class="page-faq-block">

@@ -140,7 +140,7 @@ Template Name: INTRODUCTION template
 
 		<!-- スタッフ紹介 -->
 		<section class="page-kotei pd-btm">
-			<h2 class="page-kotei__title arch">スタッフ紹介</h2>
+			<h2 class="page-kotei__title">スタッフ紹介</h2>
 			<!-- 画像説明 -->
 			<!-- <div class="display-f"> -->
 				<div class="page-kotei-fristbox">
@@ -149,6 +149,10 @@ Template Name: INTRODUCTION template
 					</div>
 					<div class="page-kotei-fristbox__textbox">
 						<h3 class="staff-title">佐藤 翔吾（院長）</h3>
+
+						<h4 class="staff-subtitle">資格</h4>
+						<p class="staff-text">資格①、資格②、資格③</p>
+
 
 						<h4 class="staff-subtitle">得意な治療分野</h4>
 						<p class="staff-text">多くても3~4つほどあれば最高です</p>
@@ -167,6 +171,10 @@ Template Name: INTRODUCTION template
 					</div>
 					<div class="page-kotei-fristbox__textbox">
 						<h3 class="staff-title">佐藤 智美</h3>
+
+						<h4 class="staff-subtitle">資格</h4>
+						<p class="staff-text">資格①、資格②、資格③</p>
+
 
 						<h4 class="staff-subtitle">得意な治療分野</h4>
 						<p class="staff-text">多くても3~4つほどあれば最高です</p>

@@ -14,7 +14,7 @@ Template Name: TOP template
 <div id="area-3" class="page-index l-container">
 
 	<section class="kodawari">
-		<h2 class="page-kotei__title">こんなことで<br class="SP-br"><span class="text-L__red">お悩み</span>ではありませんか？</h2>
+		<h2 class="page-index__title">こんなことで<br class="SP-br"><span class="text-L__red">お悩み</span>ではありませんか？</h2>
 		<div class="page-index-worries">
 			<div class="row">
 				<p>	
@@ -62,15 +62,11 @@ Template Name: TOP template
 				
 			</div>
 		</div>
-		<h2 class="page-kotei__title">そんな時は…</h2>
+		<h2 class="page-index__title">そんな時は…</h2>
 		<div class="page-index-sita">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/icon/shita.png" alt="矢印">
 		</div>
 
-	<!-- </section> -->
-	<!-- 院内／スタッフ紹介 -->
-
-	<!-- <section class="kodawari"> -->
 		<h2 class="donguri-title text-L__red donguri-title-lb">
 			どんぐり整骨院<br>鍼灸マッサージ院
 		</h2>
@@ -102,13 +98,8 @@ Template Name: TOP template
 			</div>
 		</div>
 
-		<!-- <div class="c-btn">
-			<a href="/introduction/" class="c-btn-link">詳しくはこちら</a>
-		</div> -->
-
 		<!-- 選ばれる7つの理由 -->
-		<!-- <section class="kodawari"> -->
-		<h2 class="page-kotei__title">選ばれる<span class="text-LL__red">8</span><span class="red-text">つの理由</span></h2>
+		<h2 class="page-index__title">選ばれる<span class="text-LL__red">8</span><span class="red-text">つの理由</span></h2>
 		<div class="top-riyuu">
 			<!-- 1. -->
 			<h3 class="top-riyuu__title">オーダーメイドの施術</h3>
@@ -135,19 +126,13 @@ Template Name: TOP template
 			<h3 class="top-riyuu__title">駐車場完備</h3>
 			<p class="top-riyuu__text">当院専用の駐車スペースを用意しております。</p>
 		</div>
-
-		<!-- ご利用までの流れ -->
-		<!-- <h2 class="top-flow__title">ご利用までの流れ</h2>
-		<div class="top-flow">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow@3x.png" alt="ご利用までの流れ">
-		</div> -->
 		
 	</section>
 
 	<div class="page-box pd-btm">
-		<div class="page-kotei-fristbox">
-			<h2 class="page-kotei__title pd-top">ご利用までの流れ</h2>
-			<div class="page-kotei-fristbox__textbox  c-flow-box">
+		<div class="c-flow">
+			<h2 class="c-flow__title pd-top">ご利用までの流れ</h2>
+			<div class="c-flow-box">
 
 				<h3 class="SP c-flow-box-title">1.LINEや電話からご予約</h3>
 				<div class="display-f c-flow-box__inner">

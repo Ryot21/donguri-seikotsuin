@@ -34,16 +34,35 @@ Template Name: HOUMON template
 			</div>
 		</div>
 	</header>
-
-
-
-
 	<!-- ここからコンテンツ -->
 	<div id="area-3" class="page l-container">
 
-	<!-- タイトルタイトル -->
-	<!-- <section class="page-kodawari"> -->
-		<!-- <h2 class="page-kodawari__title">お客様に寄り添う施術</h2> -->
+
+		<section class="kodawari pd-top">
+			<!-- まず初めに -->
+			<h2 class="page-kotei__title">まずはじめに</h2>
+			<p class="page-kotei__text">
+				通院が難しい方の為に健康保険適用で<span class="red-text">国家資格を取得した</span><br class="PC-br">
+				鍼灸・あん摩マッサージ師が<span class="red-text">お身体の辛さを改善する</span>ためご自宅に伺います！<br class="PC-br">
+				高齢・障害・病気などで<span class="red-text">一人での通院が難しく</span>お困りの方へ、<br class="PC-br">
+				痛みの緩和・身体機能改善を目的としたマッサージで<br class="PC-br">
+				様々な悩みを解決していくお手伝いをいたします！
+			</p>
+			<!-- 訪問マッサージとは -->
+			<h2 class="page-kotei__title">訪問マッサージとは</h2>
+			<p class="page-kotei__text">
+				訪問マッサージは『歩行困難』『寝たきり』などの<span class="red-text">ご自身での通院困難</span>で<br class="PC-br">
+				マッサージや鍼灸治療が受けられない患者様が、ご自宅や入居されている介護施設等で<br class="PC-br">
+				医師の同意のもと<span class="red-text">健康保険</span>を使ってマッサージ・鍼灸治療を受けられるものです。<br>
+				<br>
+				目的としては、痛み・しびれ・むくみ等の改善、<br class="PC-br">関節の動きの回復や維持などを目的としています。<br>
+				<br>
+				お伺いする施術者は<span class="red-text">“国家資格者”</span>であり<br class="PC-br">
+				多くの施術経験と実績があり、患者様の状態にあった施術を提供します。
+			</p>
+		</section>
+
+
 
 
 		<div class="topbox page-kotei__bottombox">
@@ -51,8 +70,13 @@ Template Name: HOUMON template
 				<img src="<?php echo get_template_directory_uri(); ?>//images/pic/sample-pic.png" alt="">
 			</div>
 			<div class="page-kotei__bottombox__text">
-				<h3>お客様の小さな声に耳を傾けて的確な施術を行います。</h3>
-				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+				<h3>様々なお悩みを解決します！</h3>
+				<p>・歩行困難でお悩みの方<br>
+					・身体が辛く慢性的な痛みや痺れがある方<br>
+					・介護施設や在宅でのリハビリが必要な方<br>
+					・パーキンソン病や難病でお困りの方<br>
+					といったお悩み方！どんぐり訪問マッサージにご連絡ください！<br>
+					TEL：<a class="red-text" href="tel:04-2936-7744">04-2936-7744</a>				</p>
 			</div>
 		</div>
 
@@ -61,61 +85,97 @@ Template Name: HOUMON template
 				<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="">
 			</div>
 			<div class="page-kotei__bottombox__text">
-				<h3>ただ治すだけの施術では意味がありません。『アフター施術』が大事！！</h3>
-				<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。</p>
+				<h3>国家資格取得者がご自宅にお伺いします！</h3>
+				<p>
+				・関節可動域の維持や改善<br>
+				・血液循環促進により痛みや痺れの緩和<br>
+				・適度な筋肉への刺激で筋力の維持向上<br>
+				・日常生活動作(ADL)の維持や向上<br>
+				などの効果と身体の変化が期待できます！
+
+				</p>
 			</div>
 		</div>
 
-	</section>
+
+		<section class="kodawari pd-top">
+
+			<!-- 施術無料体験 -->
+			<h2 class="page-index__title red-text">無料体験募集中<br>（はり・きゅう・マッサージ）</h2>
+		
+			
+		</section>
+
+
+
+
+
+
+
 
 
 
 	<div class="page-box pd-btm">
-		<div class="page-kotei-fristbox">
-			<h2 class="page-kotei__title pd-top">ご利用までの流れ</h2>
-			<div class="page-kotei-fristbox__textbox">
-				<h4>1.LINEや電話からご予約</h4>
-				<div class="display-f c-flow-box">
+		<div class="c-flow">
+			<h2 class="c-flow__title pd-top">無料施術体験までの流れ</h2>
+			<div class="c-flow-box">
+
+				<h3 class="SP c-flow-box-title">1.お気軽にお電話ください！</h3>
+				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-line.jpg" alt="ご予約方法">
 					</div>
-					<p>当院ではLINEやお電話からのご予約を行うことができます。<a href="https://line.me/R/ti/p/%40962vsbox" class="red-text">こちら</a>からアクセスいただき、QRコードをお持ちのスマートフォンから読み込んでいただき、お友達ご登録した後にご予約をお願いします。</p>
+					<div class="c-flow-box-textbox">
+						<h3 class="PC c-flow-box-title">1.まずはお気軽にお電話ください！</h3>
+						<p>
+							お忙しい日々の中でお体でお悩みなどありましたら、<span class="red-text">随時受付中</span>ですので、是非ご連絡下さい。ご希望の方は<a class="red-text" href="tel:04-2936-7744">04-2936-7744</a>までご連絡下さい。
+						</p>
+					</div>
 				</div>
 
 
-				<h4>2.カウンセリング</h4>
-				<div class="display-f c-flow-box">
+				<h3 class="SP c-flow-box-title">2.訪問日程を相談</h3>
+				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" alt="カウンセリング">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-8.jpg" alt="訪問日程調整">
 					</div>
-					<p>施術当日、受付にてカウンセリングシートを受け取っていただき、お体でお悩みの場所や症状についてご記入をお願いいたします。</p>
+					<div class="c-flow-box-textbox">
+						<h3 class="PC c-flow-box-title">2.訪問日程を相談</h3>
+						<p>
+							お電話の中でお客さまのご都合の良い日程を提示させていただきます。キャンセルの場合は、<span class="red-text">前日まで</span>にご連絡いただきますようお願いします。
+						</p>
+					</div>
 				</div>
 
 
-				<h4>3.検査</h4>
-				<div class="display-f c-flow-box">
+				<h3 class="SP c-flow-box-title">3.ご自宅に訪問</h3>
+				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-2.jpg" alt="検査">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-9.jpg" alt="ご自宅に訪問">
 					</div>
-
-					<p>お答えいただいたカウンセリングシートを拝見させていただき、直接調査した上で施術方法をご提案＆ご説明させていただきます。</p>
+					<div class="c-flow-box-textbox">
+						<h3 class="PC c-flow-box-title">3.ご自宅に訪問</h3>
+						<p>
+							お客さまとの簡単な会話で、お体でお悩みの箇所をお聞きかせいただき、
+							マッサージの準備をさせていただきます。
+						</p>
+					</div>
 				</div>
 
 
-				<h4>3.施術</h4>
-				<div class="display-f c-flow-box">
-					<div class="c-flow-box-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-3.jpg" alt="施術">
-					</div>
 
-					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-				</div>
-				<h4>4.アフターカウンセリング</h4>
-				<div class="display-f c-flow-box">
+				<h3 class="SP c-flow-box-title">4.無料施術開始</h3>
+				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-4.jpg" alt="アフターカウンセリング">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-3.jpg" alt="無料施術開始">
 					</div>
-					<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+					<div class="c-flow-box-textbox">
+						<h3 class="PC c-flow-box-title">4.無料施術開始</h3>
+						<p>
+							30分程度の医療マッサージを受けていただいた後に、
+							サービス内容のご説明をさせていただきます。（全所要時間60分）
+						</p>
+					</div>
 				</div>
 
 
@@ -126,7 +186,7 @@ Template Name: HOUMON template
 
 
 	<!-- </section> -->
-	</div>
+</div>
 
 
 

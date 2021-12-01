@@ -35,18 +35,8 @@ Template Name: KOUTU template
 			</div>
 		</div>
 	</header>
-
-
-
-
 	<!-- ここからコンテンツ -->
 	<div id="area-3" class="page l-container">
-
-	<!-- タイトルタイトル -->
-	<!-- <section class="page-kodawari"> -->
-		<!-- <h2 class="page-kodawari__title">交通事故治療について</h2> -->
-
-
 
 
 		<!-- 交通事故に遭ってしまったら -->
@@ -105,7 +95,13 @@ Template Name: KOUTU template
 			「だれに相談したらいいの？」<br>
 			「仕事や損害賠償のことで頭がいっぱい・・」<br>
 			<br>
-			お悩みを解消する為、当整骨院では<span class="red-text">交通事故無料相談</span>も承っております。<br class="PC-br">お怪我や痛みから一刻も早く回復する為、<br class="PC-br">難しいことやお悩みはご相談いただき不調の回復に集中できる環境をご提供いたします。<br class="PC-br"><span class="red-text">下山口駅から徒歩1分</span>にあり、時間外も相談いただければ対応しております。
+			お悩みを解消する為、<br class="PC-br">
+			当整骨院では<span class="red-text">交通事故無料相談</span>も承っております。<br class="PC-br">
+			お怪我や痛みから一刻も早く回復する為、<br class="PC-br">
+			難しいことやお悩みはご相談いただき<br class="PC-br">
+			不調の回復に集中できる環境をご提供いたします。<br class="PC-br">
+			<span class="red-text">下山口駅から徒歩1分</span>にあり、<br class="PC-br">
+			時間外も相談いただければ対応しております。
 
 			</p>
 		</section>
@@ -118,11 +114,10 @@ Template Name: KOUTU template
 			<div class="c-flow">
 				<h2 class="c-flow__title pd-top">事故発生から通院までの流れ</h2>
 				<div class="c-flow-box">
-					
+
 					<h3 class="SP c-flow-box-title">1.交通事故証明書を発行</h3>
 					<div class="display-f c-flow-box__inner">
 						<div class="c-flow-box-img">
-							<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" alt="交通事故証明書を発行する"> -->
 							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-5.jpg" alt="交通事故証明書を発行する">
 						</div>
 						<div class="c-flow-box-textbox">
@@ -164,10 +159,10 @@ Template Name: KOUTU template
 						<div class="c-flow-box-textbox">
 							<h3 class="PC c-flow-box-title">4.当院にご連絡ください</h3>
 							<p>当院に<span class="red-text">受診予約</span>のご連絡をください。診察日時を調整させていただきます。予約方法につきましては、電話予約もしくはLINE予約があります。<br>
-							<span class="black-text">電話予約</span>はこちら：
-							<a class="c-flow-box-textbox__link black-text" href="tel:04-2936-7744">04-2936-7744</a><br class="PC-br">
-							<span class="black-text">LINE予約</span>はこちら：
-							<a class="c-flow-box-textbox__link black-text" href="https://line.me/R/ti/p/%40962vsbox">公式アカウント</a>
+							<span class="">電話予約</span>はこちら：
+							<a class="c-flow-box-textbox__link red-text" href="tel:04-2936-7744">04-2936-7744</a><br class="PC-br">
+							<span class="">LINE予約</span>はこちら：
+							<a class="c-flow-box-textbox__link red-text" href="https://line.me/R/ti/p/%40962vsbox">公式アカウント</a>
 							</p>
 						</div>
 					</div>

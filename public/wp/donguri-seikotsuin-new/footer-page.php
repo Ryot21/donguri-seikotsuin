@@ -9,12 +9,11 @@
 				<div class="c-footer__bottombox display-f">
 					<!-- 詳細情報 -->
 					<div class="c-footer__detail">
-						<div class="c-footer__calendar">
-							<!-- <img src="<?php echo get_template_directory_uri(); ?>/images/
-							calendar/donguri-calendar-footer-bold@3x.png" alt="受付時間"> -->
-							<img src="<?php echo get_template_directory_uri(); ?>/images/
+					<div class="c-footer__calendar">
+							<img class="SP" src="<?php echo get_template_directory_uri(); ?>/images/
+							calendar/donguri-calendar-footer-bold-2-SP@3x.png" alt="受付時間">
+							<img class="PC" src="<?php echo get_template_directory_uri(); ?>/images/
 							calendar/donguri-calendar-footer-bold-2@3x.png" alt="受付時間">
-
 						</div>
 					</div>
 					<div class="c-footer__map">

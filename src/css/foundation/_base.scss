@@ -40,7 +40,13 @@
   @include min-screen($break_point_max) {
     display: none;
   }
+  &-text-space {
+    letter-spacing: -0.5px;
+    @include min-screen($break_point_max) {
+    }
+  }
 }
+
 
 .SP-br { //スマホのみ
   @include min-screen($break_point_max) {

@@ -7,28 +7,28 @@
 
 .red-text {
 	color: $hiromi-red !important;
-	// font-weight: bold;
+	font-weight: bold;
 	// text-shadow: 1px 1px $gray;
 }
 .blue-text {
 	color: $hiromi-blue !important;
 	// font-weight: bold;
-	text-shadow: 1px 1px $gray;
+	text-shadow: 1px 1px $inkblack;
 }
 .green-text {
 	color: $hiromi-green !important;
-	// font-weight: bold;
-	text-shadow: 1px 1px $gray;
+	font-weight: bold;
+	text-shadow: 1px 1px $inkblack;
 }
 .yellow-text {
 	color: $hiromi-yellow !important;
 	// font-weight: bold;
-	text-shadow: 1px 1px $gray;
+	text-shadow: 1px 1px $inkblack;
 }
 .pink-text {
 	color: $pink !important;
 	// font-weight: bold;
-	text-shadow: 1px 1px $gray;
+	text-shadow: 1px 1px $inkblack;
 }
 
 .text-L {
@@ -39,7 +39,7 @@
 	&__pink {
 		font-size: $font-title-pick__sp;
 		font-weight: bold;
-		text-shadow: 1px 1px $gray;
+		text-shadow: 1px 1px $inkblack;
 		@include min-screen($break_point_max) {
 		font-size: $font-title-pick__tb;
 		}
@@ -63,7 +63,7 @@
 	&__pink {
 		font-size: $font-title-LL__sp;
 		font-weight: bold;
-		text-shadow: 2px 2px $gray;
+		text-shadow: 2px 2px $inkblack;
 		@include min-screen($break_point_max) {
 		font-size: $font-title-LL__tb;
 		}

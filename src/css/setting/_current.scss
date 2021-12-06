@@ -2,9 +2,10 @@
 	.current-menu-item a p,
 
 	.current-menu-item a .st0 {
-		color: $yellow !important;
+	&__green {color: $hiromi-green !important;}
+		color: $hiromi-green !important;
 		font-weight: bold;
-		text-shadow: 1px 0px 1px $inkblack;
+		// text-shadow: 1px 0px 1px $inkblack;
 	}
 
 
@@ -21,17 +22,17 @@
 }
 
 // .current,
-// .current-item {
-// 	color: $Dgreen !important;
-// 	font-weight: bold;
-// 	text-shadow: 2px 2px 1px $white;
-// }
+.current-item {
+	color: $hiromi-green !important;
+	font-weight: bold;
+	// text-shadow: 2px 2px 1px $white;
+}
 
 
 .blog {
 	.current-blog:nth-child(5) a p {
-		color: $yellow !important;
+		color: $hiromi-green !important;
 		font-weight: bold;
-		text-shadow: 1px 0px 1px $inkblack;
+		// text-shadow: 1px 0px 1px $inkblack;
 	}
 }

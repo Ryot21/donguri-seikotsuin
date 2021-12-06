@@ -41,7 +41,7 @@ Template Name: HOUMON template
 		<section class="kodawari pd-top">
 			<!-- まず初めに -->
 			<h2 class="page-kotei__title">まずはじめに</h2>
-			<p class="page-kotei__text">
+			<p class="page-kotei__text pd-btm">
 				通院が難しい方の為に健康保険適用で<span class="red-text">国家資格を取得した</span><br class="PC-br">
 				鍼灸・あん摩マッサージ師が<span class="red-text">お身体の辛さを改善する</span>ためご自宅に伺います！<br class="PC-br">
 				高齢・障害・病気などで<span class="red-text">一人での通院が難しく</span>お困りの方へ、<br class="PC-br">
@@ -50,7 +50,7 @@ Template Name: HOUMON template
 			</p>
 			<!-- 訪問マッサージとは -->
 			<h2 class="page-kotei__title">訪問マッサージとは</h2>
-			<p class="page-kotei__text">
+			<p class="page-kotei__text pd-btm">
 				訪問マッサージは『歩行困難』『寝たきり』などの<span class="red-text">ご自身での通院困難</span>で<br class="PC-br">
 				マッサージや鍼灸治療が受けられない患者様が、ご自宅や入居されている介護施設等で<br class="PC-br">
 				医師の同意のもと<span class="red-text">健康保険</span>を使ってマッサージ・鍼灸治療を受けられるものです。<br>
@@ -98,10 +98,10 @@ Template Name: HOUMON template
 		</div>
 
 
-		<section class="kodawari pd-top">
+		<section class="kodawari pd-top pd-btm">
 
 			<!-- 施術無料体験 -->
-			<h2 class="page-index__title red-text">無料体験募集中<br>（はり・きゅう・マッサージ）</h2>
+			<h2 class="page-index__title red-text"><span style="background: linear-gradient(transparent 45%, #E5D02F 0%);">無料体験募集中</span><br><span style="background: linear-gradient(transparent 45%, #E5D02F 0%);">（はり・きゅう・マッサージ）</span></h2>
 		
 			
 		</section>

@@ -14,7 +14,7 @@ Template Name: TOP template
 <div id="area-3" class="page-index l-container">
 
 	<section class="kodawari">
-		<h2 class="page-index__title">こんなことで<br class="SP-br"><span class="text-L__red">お悩み</span>ではありませんか？</h2>
+		<h2 class="page-index__title">こんなことで<span class="text-L__green" style="background: linear-gradient(transparent 70%, #E5D02F 0%);">お悩み</span><br class="SP-br">ではありませんか？</h2>
 		<div class="page-index-worries">
 			<div class="row">
 				<p>	
@@ -22,42 +22,42 @@ Template Name: TOP template
 					<span>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon/check-box.png" alt="チェックボックス">
 					</span>
-					寝ても<span class="pink-text">疲労感がとれない</span>
+					寝ても<span class="green-text">疲労感がとれない</span>
 				</p>
 				<p>	
 					<!-- チェックマーク -->
 					<span>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon/check-box.png" alt="チェックボックス">
 					</span>
-					<span class="pink-text">首</span>や<span class="pink-text">肩が凝っていて</span>よく頭痛がする
+					<span class="green-text">首</span>や<span class="green-text">肩が凝っていて</span>よく頭痛がする
 				</p>
 				<p>	
 					<!-- チェックマーク -->
 					<span>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon/check-box.png" alt="チェックボックス">
 					</span>
-					デスクワークや立ち仕事など、<span class="pink-text">長時間同じ姿勢</span>でいると<br class="PC-br"><span class="pink-text">体が辛い</span>
+					デスクワークや立ち仕事など、<span class="green-text">長時間同じ姿勢</span>でいると<br class="PC-br"><span class="green-text">体が辛い</span>
 				</p>
 				<p>	
 					<!-- チェックマーク -->
 					<span>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon/check-box.png" alt="チェックボックス">
 					</span>
-					<span class="pink-text">首や肩に痛み</span>があり、家事育児に集中できない
+					<span class="green-text">首や肩に痛み</span>があり、家事育児に集中できない
 				</p>
 				<p>	
 					<!-- チェックマーク -->
 					<span>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon/check-box.png" alt="チェックボックス">
 					</span>
-					<span class="pink-text">スマホ首や猫背</span>など、姿勢の悪さが気になる
+					<span class="green-text">スマホ首や猫背</span>など、姿勢の悪さが気になる
 				</p>
 				<p>	
 					<!-- チェックマーク -->
 					<span>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon/check-box.png" alt="チェックボックス">
 					</span>
-					<span class="pink-text">交通事故</span>によるムチウチや目眩が治らない
+					<span class="green-text">交通事故</span>によるムチウチや目眩が治らない
 				</p>
 				
 			</div>
@@ -99,93 +99,93 @@ Template Name: TOP template
 		</div>
 
 		<!-- 選ばれる7つの理由 -->
-		<h2 class="page-index__title">選ばれる<span class="text-LL__red">8</span><span class="red-text">つの理由</span></h2>
+		<h2 class="page-index__title" style="background: linear-gradient(transparent 70%, #E5D02F 0%);">選ばれる<span class="text-LL__green" style="font-style: italic; padding-right: 5px;">8</span><span class="green-text">つの理由</span></h2>
 		<div class="top-riyuu">
 			<!-- 1. -->
-			<h3 class="top-riyuu__title">オーダーメイドの施術</h3>
+			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">1.</span>オーダーメイドの施術</h3>
 			<p class="top-riyuu__text"><span class="black-text">一人ひとりの症状に合った治療</span>をしますので、効果が出やすい。</p>
 			<!-- 2. -->
-			<h3 class="top-riyuu__title">分かりやすく丁寧なカウンセリング</h3>
+			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">2.</span>分かりやすく丁寧なカウンセリング</h3>
 			<p class="top-riyuu__text">お客さまがご自身でも気づかないところまで<span class="black-text">詳しく分析</span>し、分かりやすくご説明いたします。</p>
 			<!-- 3. -->
-			<h3 class="top-riyuu__title">予約優先制なので、待ち時間が少ない</h3>
+			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">3.</span>予約優先制なので、待ち時間が少ない</h3>
 			<p class="top-riyuu__text"><span class="black-text">予約優先制</span>を導入しておりますので、計画的に治療を行います。<span class="black-text">当日予約されていない場合はお電話やLINEでお問い合わせください。</span></p>
 			<!-- 4. -->
-			<h3 class="top-riyuu__title">国家資格者が施術を行うので安心です</h3>
+			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">4.</span>国家資格者が施術を行うので安心です</h3>
 			<p class="top-riyuu__text"><span class="black-text">柔道整復師・鍼灸師・あんま・マッサージ指圧師資格</span>を得た先生が施術を行います。</p>
 			<!-- 5. -->
-			<h3 class="top-riyuu__title">ふらっと手ぶらで施術できます</h3>
+			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">5.</span>ふらっと手ぶらで施術できます</h3>
 			<p class="top-riyuu__text">テキストテキストテキスト</p>
 			<!-- 6. -->
-			<h3 class="top-riyuu__title">女性に優しい治療院</h3>
+			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">6.</span>女性に優しい治療院</h3>
 			<p class="top-riyuu__text"><span class="black-text">女性スタッフ</span>が在籍しているので、女性の方でも安心して施術を受けていただきます。</p>
 			<!-- 7. -->
-			<h3 class="top-riyuu__title">下山口駅から徒歩１分以内</h3>
+			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">7.</span>下山口駅から徒歩１分以内</h3>
 			<p class="top-riyuu__text">西部狭山線 下山口駅を降りてすぐなので<span class="black-text">好アクセス</span></p>
 			<!-- 8. -->
-			<h3 class="top-riyuu__title">駐車場完備</h3>
+			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">8.</span>駐車場完備</h3>
 			<p class="top-riyuu__text">当院専用の駐車スペースを用意しております。</p>
 		</div>
 		
 	</section>
-
+	<!-- ご利用までの流れ -->
 	<div class="page-box pd-btm">
 		<div class="c-flow">
-			<h2 class="c-flow__title pd-top">ご利用までの流れ</h2>
+			<h2 class="c-flow__title pd-top" style="background: linear-gradient(transparent 80%, #E5D02F 0%);">ご利用までの流れ</h2>
 			<div class="c-flow-box">
 
-				<h3 class="SP c-flow-box-title">1.LINEや電話からご予約</h3>
+				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">1.</span>LINEや電話からご予約</h3>
 				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-line.jpg" alt="ご予約方法">
 					</div>
 					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title">1.LINEや電話からご予約</h3>
+						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">1.</span>LINEや電話からご予約</h3>
 						<p>当院ではLINEやお電話からのご予約を行うことができます。<a href="https://line.me/R/ti/p/%40962vsbox" class="red-text">こちら</a>からアクセスいただき、QRコードをお持ちのスマートフォンから読み込んでいただき、お友達ご登録した後にご予約をお願いします。</p>
 					</div>
 				</div>
 
-				<h3 class="SP c-flow-box-title">2.カウンセリング</h3>
+				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">2.</span>カウンセリング</h3>
 				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" alt="カウンセリング">
 					</div>
 					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title">2.カウンセリング</h3>
+						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">2.</span>カウンセリング</h3>
 						<p>施術当日、受付にてカウンセリングシートを受け取っていただき、お体でお悩みの場所や症状についてご記入をお願いいたします。</p>
 					</div>
 				</div>
 
-				<h3 class="SP c-flow-box-title">3.検査</h3>
+				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">3.</span>検査</h3>
 				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-2.jpg" alt="検査">
 					</div>
 					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title">3.検査</h3>
+						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">3.</span>検査</h3>
 						<p>お答えいただいたカウンセリングシートを拝見させていただき、直接調査した上で施術方法をご提案＆ご説明させていただきます。</p>
 					</div>
 
 				</div>
 
-				<h3 class="SP c-flow-box-title">4.施術</h3>
+				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">4.</span>施術</h3>
 				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-3.jpg" alt="施術">
 					</div>
 					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title">4.施術</h3>
+						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">4.</span>施術</h3>
 						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 					</div>
 				</div>
 
-				<h3 class="SP c-flow-box-title">5.アフターカウンセリング</h3>
+				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">5.</span>アフターカウンセリング</h3>
 				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-4.jpg" alt="アフターカウンセリング">
 					</div>
 					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title">5.アフターカウンセリング</h3>
+						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">5.</span>アフターカウンセリング</h3>
 						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 					</div>
 				</div>

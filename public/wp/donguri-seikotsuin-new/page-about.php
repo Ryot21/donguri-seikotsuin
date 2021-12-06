@@ -82,53 +82,9 @@ Template Name: ABOUT template
 		<!-- スタッフ紹介 -->
 		<section class="page-kotei page-box pd-btm">
 			<h2 class="page-kotei__title">スタッフ紹介</h2>
-			<!-- 画像説明 -->
-			<!-- <div class="display-f"> -->
-				<div class="page-kotei-fristbox">
-					<div class="page-kotei-fristbox__pic">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-syougo.jpg" alt="佐藤翔吾 院長">
-					</div>
-					<div class="page-kotei-fristbox__textbox">
-						<h3 class="staff-title">佐藤 翔吾（院長）</h3>
 
-						<h4 class="staff-subtitle">資格</h4>
-						<p class="staff-text">資格①、資格②、資格③</p>
+			<?php get_template_part('module/staff'); ?>
 
-						<h4 class="staff-subtitle">得意な治療分野</h4>
-						<p class="staff-text">スポーツ外傷、トレーニング指導、テ－ピング、トリガーポイント療法</p>
-
-						<h4 class="staff-subtitle">趣味・特技</h4>
-						<p class="staff-text">野球、バトミントン、子育て</p>
-
-						<h4 class="staff-subtitle">メッセージ</h4>
-						<p>患者様が楽になった、痛みが取れたと笑顔になる様な治療を目指していきます。辛い痛み、悩みなど些細なことでも良いので相談してください。一緒に解決していきましょう。</p>
-
-					</div>
-				</div>
-				<div class="page-kotei-fristbox">
-					<div class="page-kotei-fristbox__pic">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-tomomi.jpg" alt="佐藤智美">
-					</div>
-					<div class="page-kotei-fristbox__textbox">
-						<h3 class="staff-title">佐藤 智美</h3>
-
-						<h4 class="staff-subtitle">資格</h4>
-						<p class="staff-text">資格①、資格②、資格③</p>
-
-
-						<h4 class="staff-subtitle">得意な治療分野</h4>
-						<p class="staff-text">スポーツ外傷、トレーニング指導、テ－ピング、トリガーポイント療法</p>
-
-						<h4 class="staff-subtitle">趣味・特技</h4>
-						<p class="staff-text">野球、バトミントン、子育て</p>
-
-						<h4 class="staff-subtitle">メッセージ</h4>
-						<p>患者様が楽になった、痛みが取れたと笑顔になる様な治療を目指していきます。辛い痛み、悩みなど些細なことでも良いので相談してください。一緒に解決していきましょう。</p>
-
-					</div>
-				</div>
-
-			<!-- </div> -->
 		</section>
 		
 	</div>

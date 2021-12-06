@@ -141,54 +141,8 @@ Template Name: INTRODUCTION template
 		<!-- スタッフ紹介 -->
 		<section class="page-kotei pd-btm">
 			<h2 class="page-kotei__title">スタッフ紹介</h2>
-			<!-- 画像説明 -->
-			<!-- <div class="display-f"> -->
-				<div class="page-kotei-fristbox">
-					<div class="page-kotei-fristbox__pic">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-syougo.jpg" alt="佐藤翔吾 院長">
-					</div>
-					<div class="page-kotei-fristbox__textbox">
-						<h3 class="staff-title">佐藤 翔吾（院長）</h3>
-
-						<h4 class="staff-subtitle">資格</h4>
-						<p class="staff-text">資格①、資格②、資格③</p>
-
-
-						<h4 class="staff-subtitle">得意な治療分野</h4>
-						<p class="staff-text">多くても3~4つほどあれば最高です</p>
-
-						<h4 class="staff-subtitle">趣味・特技</h4>
-						<p class="staff-text">野球、バトミントン、子育て</p>
-
-						<h4 class="staff-subtitle">メッセージ</h4>
-						<p>3行くらいで大丈夫かと思います。</p>
-
-					</div>
-				</div>
-				<div class="page-kotei-fristbox">
-					<div class="page-kotei-fristbox__pic">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-tomomi.jpg" alt="佐藤智美">
-					</div>
-					<div class="page-kotei-fristbox__textbox">
-						<h3 class="staff-title">佐藤 智美</h3>
-
-						<h4 class="staff-subtitle">資格</h4>
-						<p class="staff-text">資格①、資格②、資格③</p>
-
-
-						<h4 class="staff-subtitle">得意な治療分野</h4>
-						<p class="staff-text">多くても3~4つほどあれば最高です</p>
-
-						<h4 class="staff-subtitle">趣味・特技</h4>
-						<p class="staff-text">初めて訪れるお客様と何か会話にきっかけになると思ったので設置しました。</p>
-
-						<h4 class="staff-subtitle">メッセージ</h4>
-						<p>3行くらいで大丈夫かと思います。</p>
-
-					</div>
-				</div>
-
-			<!-- </div> -->
+			
+			<?php get_template_part('module/staff'); ?>
 
 		</section>
 	</div>

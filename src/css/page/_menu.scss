@@ -2,7 +2,6 @@
 // 3.メニュー／料金表
 
 .page-menu {
-
 	&__bottombox {
 		margin: 50px auto;
 		@include min-screen($break_point_max) {
@@ -56,14 +55,19 @@
 			}
 
 			&__title {
-				font-size: 1.5em;
-				text-shadow: 2px 3px 1px $white;
+				color: $hiromi-green;
+				font-size: 20px;
+				text-shadow: 2px 3px 1px $gray;
 				position: absolute;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 100%;
 				text-align: center;
+				line-height: 1.5;
+				@include min-screen($break_point_max) {
+					font-size: 30px;
+				}
 			}
 		}
 		&__menubox {
@@ -99,7 +103,6 @@
 					}
 				}
 			}
-
 		}
 	}
 	&-secbox {
@@ -195,15 +198,28 @@
 		}
 	}
 	strong {
-		color: $inkblack;
+		color: $hiromi-green;
 		font-weight: bold;
-		font-size: 16px;
+		font-size: 20px;
+		line-height: 1.5;
 		background:linear-gradient(transparent 70%, $yellow 0%);
 		@include min-screen($break_point_max) {
-			font-size: 18px;
+			font-size: 25px;
+		}
+	}
+	.osusume {
+		display: inline-block;
+		position: relative;
+		&::before {
+			position: absolute;
+			top: 48%;
+			// left: -20px;
+			left: -85px;
+			transform: translateY(-50%);
+			content: '★オススメ';
+			// color: $inkblack;
+			color: $hiromi-red;
+			font-size: 15px;
 		}
 	}
 }
-
-
-

@@ -41,8 +41,8 @@ Template Name: KOUTU template
 
 		<!-- 交通事故に遭ってしまったら -->
 		<section class="kodawari pd-top">
-			<h2 class="page-kotei__title">交通事故に遭ってしまったら</h2>
-			<p class="page-kotei__text">
+			<h2 class="page-kotei__title">交通事故に<br class="SP-br">遭ってしまったら</h2>
+			<p class="page-kotei__text pd-btm">
 			どんぐり整骨院では<br class="PC-br">ただ電気を当てたりするだけでなくマッサージで筋肉を緩めたり、<br class="PC-br">鍼灸、ソフトな関節整体で不調を解消いたします。<br class="PC-br">
 			当整骨院は<span class="red-text">手技の施術</span>がメインの整骨院です！
 			</p>
@@ -85,7 +85,7 @@ Template Name: KOUTU template
 		<!-- 交交通事故にお悩みの方へ -->
 		<section class="kodawari pd-top">
 			<h2 class="page-kotei__title">交通事故にお悩みの方へ</h2>
-			<p class="page-kotei__text">
+			<p class="page-kotei__text pd-btm">
 			交通事故によるお身体のお痛みは長期になることがあります。<br class="PC-br">ですので<span class="red-text">早期の施術開始</span>と<span class="red-text">早期の復帰</span>が重要です。<br class="PC-br">事故直後は不安もたくさんあります。<br>
 			<br>
 
@@ -112,7 +112,7 @@ Template Name: KOUTU template
 		<!-- 事故発生から通院までの流れ -->
 		<div class="page-box pd-btm">
 			<div class="c-flow">
-				<h2 class="c-flow__title pd-top">事故発生から通院までの流れ</h2>
+				<h2 class="c-flow__title pd-top">事故発生から<br class="SP-br">通院までの流れ</h2>
 				<div class="c-flow-box">
 
 					<h3 class="SP c-flow-box-title">1.交通事故証明書を発行</h3>
@@ -170,7 +170,7 @@ Template Name: KOUTU template
 			</div>
 			<!-- 交通事故施術について -->
 			<section id="faq02" class="page-faq">
-				<h2 class="page-kotei__title">よくある質問</h2>
+				<h2 class="page-kotei__title pd-top">よくある質問</h2>
 					<ul class="page-faq__wrap ">
 					<!-- 一つ目 -->
 					<li class="page-faq-block">

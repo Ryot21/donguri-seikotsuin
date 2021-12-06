@@ -54,7 +54,6 @@ global-navigation active
 .menu-open {
   /* スマホhーmenu時にスクロール禁止 */
   overflow: hidden;
-  // & #container {
   & .l-header,
   .sp-nav-fixed__inner_box,
   #topics,
@@ -71,6 +70,11 @@ global-navigation active
     opacity: 0;
     transition: all .1s;
   }
+  & .sp-nav-fixed__inner li {
+    filter: none;
+    background: none;
+  }
+
   & .mobile-menu {
   
     z-index: 10;
@@ -99,6 +103,8 @@ global-navigation active
       }
   }
 }
+
+
 
 // ハンバーガーメニュータップopen後に表示されるメニュー　↓
 .mobile-menu {

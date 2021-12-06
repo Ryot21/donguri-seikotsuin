@@ -45,107 +45,101 @@ Template Name: MENU template
 		<ul class="menu-lists">
 			<!-- 投稿されているWORKSの全てを表示 -->
 			<li class="menu-list">
-				<a href="#menu1">深層指圧</a>
+				<a href="#menu1">DONGURIコース</a>
 			</li>
 			<li class="menu-list">
-				<a href="#menu2">整体矯正</a>
+				<a href="#menu2">DONGURIマッサージ </a>
 			</li>
-			<li class="menu-list">
+			<!-- <li class="menu-list">
 				<a href="#menu3">鍼治療</a>
 			</li>
 			<li class="menu-list">
 				<a href="#menu4">電気治療</a>
-			</li>
+			</li> -->
 		</ul>
 
 		<div class="page-menu pd-btm">
-		<!-- 深層指圧 -->
+		<!-- DONGURIコース -->
 			<div id="menu1" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">
-					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-sinsou-scaled-e1637744017827.jpg" alt="深層指圧">
-					<h3 class="page-menu-fristbox__pic__title">深層指圧</h3>
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-sinsou-scaled-e1637744017827.jpg" alt="DONGURIコース">
+					<h3 class="page-menu-fristbox__pic__title">DONGURIコース<br><span class="SP-text-space">オーダーメイド式マッサージ</span></h3>
 				</div>
 				<div class="page-menu-fristbox__menubox">
+					<p><strong>身体の痛み歪み<br>そのままにしていませんか？</strong></p>
 					<p class="page-menu-fristbox__menubox__text">
-					どんぐりの施術でスタンダードな施術になります。<br class="PC-br">
-					肩、腰、腕、足、身体中を独自の深い指圧で<br class="PC-br">
-					通常のもみほぐしでは届かない深いところまでほぐします。<br class="PC-br">
-					ゆっくり圧が入るのでもみ返しが起こりにくいのが特徴の一つにあります。<br class="PC-br">
-					一度やってみると違いがわかるはずです。ぜひご実感ください。
+						<br>
+						・頭痛がひどく肩こりや<br class="SP-br">手の痺れがある<br><br class="SP-br">
+						・腰の痛みで仕事や<br class="SP-br">家事に集中できない<br><br class="SP-br">
+						・日々の疲れで身体が<br class="SP-br">ずっしり重く眠れない<br> <br class="SP-br">
+						・子どもの猫背やスマホ首など<br class="SP-br">姿勢が気になる…などなど<br>
+						<br>
+						"人"はそれぞれ<span class="red-text">自分に合った</span>施術法があります。<br class="PC-br">
+						どんぐり整骨院ではあなたに合った施術を提案して施術をおこないます。<br class="PC-br">
+						筋肉、神経、ツボにアプローチをして痛みを改善し、根本の歪みを正し、<br class="PC-br">
+						<span class="red-text">痛みの出ない身体づくり</span>を目指します。 
+
+
+					
 					</p>
 					<!-- オススメ -->
-					<p><strong>こんな方にお勧め</strong></p>
+					<p><strong>施術内容</strong></p>
 					<p class="page-menu-fristbox__menubox__text">
-						肩こり、腰痛、だるい、リラックス、日頃の疲れ<br class="PC-br">などの症状をお持ちの方<br>
+						<span class="black-text">1.鍼灸治療</span><br>
+						東洋・西洋を用いて様々な症状を改善<br>
+						<br>
+						<span class="black-text">2.骨格・骨盤矯正</span><br>
+						背骨や骨盤を中心に各関節の歪みを<br class="SP-br">整えます<br>
+						<br>
+						<span class="black-text">3.マッサージ</span><br>
+						<span class="red-text">どんぐり整骨院独自の深い圧</span>で深層筋にアプローチしていきます<br>
+						<br>
+						<span class="black-text">4.ストレッチ</span><br>
+						独自の方法で関節の機能を<br class="SP-br">改善させます<br>
+						<br>
+						<span class="black-text">5.特殊電気療法</span><br>
+						手技では緩み切らないコリなどに<br>
 					</p>
 					<!-- 料金・テーブル -->
 					<p><strong>料金プラン</strong></p>
-					<table>
-						<tbody>
-							<tr>
-							<td>30分</td>
-							<td>000円～0,000円</td>
-							</tr>
-							<tr>
-							<td>60分</td>
-							<td>000円～0,000円</td>
-							</tr>
-							<tr>
-							<td>90分</td>
-							<td>000円～0,000円</td>
-							</tr>
-						</tbody>
-					</table>
-					<!--// オプションテーブル -->
+					<p class="black-text">
+						30分 4,000円<br>
+						<span class="osusume">60分 7,600円</span>
+					</p>
 					<p>※表示金額は、<br class="SP-br">全て税込価格となります。</p>
 				</div>
 			</div>
-		<!-- 整体矯正 -->
+		<!-- DONGURIマッサージ  -->
 			<div id="menu2" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">
-					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-seitai-scaled-e1637743834598.jpg" alt="整体矯正">
-					<h3 class="page-menu-fristbox__pic__title">整体矯正</h3>
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-seitai-scaled-e1637743834598.jpg" alt="DONGURIマッサージ ">
+					<h3 class="page-menu-fristbox__pic__title">DONGURIマッサージ<br><span class="SP-text-space">もみほぐしのみコース</span></h3>
 				</div>
 				<div class="page-menu-fristbox__menubox">
+					<p><strong>日頃の疲れを<br>ゆったりほぐしたい方に<br class="SP-br">おすすめ！</strong></p>
 					<p class="page-menu-fristbox__menubox__text">
-					背骨、骨盤を中心に身体のバランスを調整し、身体本来の機能を引き出します。<br>
-					スポーツ前後の調整や日頃のメンテナンスに効果的です。<br>
-					身体のバランスを整えると筋肉も緩んでいきます。<br>
-					深層指圧と併用することでより効果が得られますので<br>
-					組み合わせていただくことをお勧めいたします。
-					</p>
-					<!-- オススメ -->
-					<p><strong>こんな方にお勧め</strong></p>
-					<p class="page-menu-fristbox__menubox__text">
-						頑固な肩こり、腰痛、猫背、反り腰、左右差、歪みが気になる方<br>
-						知り合いに方の位置が違うといわれたことがある方<br>
-						スポーツ前、パフォーマンスを上げたい方<br>
-						スポーツ後、日頃のメンテナンス等
+						
+						肩、腰、腕、足、身体中を<span class="red-text">独自の深い指圧</span>で通常のもみほぐしでは<br class="PC-br">
+						届かない深いところまでほぐします。
+						<br>
+						ゆっくり圧が入るので<span class="red-text">もみ返しが起こりにくい</span>のが特徴です。<br class="PC-br">
+						一度やってみると違いがわかりますので、ぜひご実感ください。
+					
 					</p>
 					<!-- 料金・テーブル -->
 					<p><strong>料金プラン</strong></p>
-					<table>
-						<tbody>
-							<tr>
-							<td>30分</td>
-							<td>000円～0,000円</td>
-							</tr>
-							<tr>
-							<td>60分</td>
-							<td>000円～0,000円</td>
-							</tr>
-							<tr>
-							<td>90分</td>
-							<td>000円～0,000円</td>
-							</tr>
-						</tbody>
-					</table>
-					<!--// オプションテーブル -->
-					<p>※表示金額は、<br class="SP-br">全て税込価格となります。</p>
+					<p class="black-text">
+						30分 4,000円<br>
+						<span class="osusume">60分 7,600円</span>
+					</p>
+					<p>
+						※表示金額は、<br class="SP-br">全て税込価格となります。<br>
+						※その他オプションメニューあります。 <br class="SP-br">ご不明な点ご相談ください。
+					</p>
 				</div>
 			</div>
 		<!-- 鍼治療 -->
-			<div id="menu3" class="page-menu-fristbox">
+			<!-- <div id="menu3" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">
 					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-hari-scaled-e1637743383731.jpg" alt="鍼治療">
 					<h3 class="page-menu-fristbox__pic__title">鍼治療</h3>
@@ -159,7 +153,7 @@ Template Name: MENU template
 						こちらもまた、深層指圧と併用することでより効果が得られますので<br>
 						組み合わせていただくことをお勧めいたします。
 					</p>
-					<!-- オススメ -->
+					
 					<p><strong>こんな方にお勧め</strong></p>
 					<p class="page-menu-fristbox__menubox__text">
 						頑固な肩こり、腰痛、頭痛、ぎっくり腰、寝違え、神経痛が気になる方<br>
@@ -167,7 +161,7 @@ Template Name: MENU template
 						長時間のデスクワークで眼精疲労が溜まった方<br>
 						鍼に興味がある方
 					</p>
-					<!-- 料金・テーブル -->
+					
 					<p><strong>料金プラン</strong></p>
 					<table>
 						<tbody>
@@ -185,12 +179,12 @@ Template Name: MENU template
 							</tr>
 						</tbody>
 					</table>
-					<!--// オプションテーブル -->
+					
 					<p>※表示金額は、<br class="SP-br">全て税込価格となります。</p>
 				</div>
-			</div>
+			</div> -->
 		<!-- 電気治療 -->
-			<div id="menu4" class="page-menu-fristbox">
+			<!-- <div id="menu4" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">
 					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-denki-scaled-e1637743587429.jpg" alt="電気治療">
 					<h3 class="page-menu-fristbox__pic__title">電気治療</h3>
@@ -206,7 +200,6 @@ Template Name: MENU template
 						大リーガーの投手でも使用している選手が多く評価もとても高い治療機械です。
 					</p>
 
-					<!-- 料金・テーブル -->
 					<p><strong>料金プラン</strong></p>
 					<table>
 						<tbody>
@@ -224,10 +217,10 @@ Template Name: MENU template
 							</tr>
 						</tbody>
 					</table>
-					<!--// オプションテーブル -->
+
 					<p>※表示金額は、<br class="SP-br">全て税込価格となります。</p>
 				</div>
-				<!-- 料金・テーブル -->
+
 				<p class="page-menu-secbox--strong"><strong>代表的な治療をご紹介！</strong></p>
 				<div class="display-f">
 					<div id="menu5" class="page-menu-secbox">
@@ -237,7 +230,7 @@ Template Name: MENU template
 							<p class="page-menu-secbox__menubox__text">
 								3対の異なる高い周波数の電流が生体内部で干渉し、立体的で複雑な電流のうねりを発生させます。6点の電極から流れる電流が3次元的に干渉することで、生体深部の筋や神経にも刺激を与えることができます。
 							</p>
-							<!-- オススメ -->
+	
 							<p><strong>こんな方にお勧め</strong></p>
 							<p class="page-menu-fristbox__menubox__text">
 								頸椎椎間板ヘルニアで手に痺しびれがある方<br>
@@ -255,7 +248,7 @@ Template Name: MENU template
 						<p class="page-menu-secbox__menubox__text">
 							他の電気治療に比べ、身体の奥深い患部へのアプローチが出来るため、とても即効性が高く、変化をその場で体感しやすいのが特徴です。強い痛みを早くとりたい、症状の変化がみられない…とうでお悩みの方にお勧めです。
 						</p>
-						<!-- オススメ -->
+		
 						<p><strong>こんな方にお勧め</strong></p>
 						<p class="page-menu-fristbox__menubox__text">
 							ぎっくり腰、寝違え、捻挫、四十肩･五十肩、ひざの痛み、<br>
@@ -263,8 +256,8 @@ Template Name: MENU template
 						</p>
 					</div>
 				</div>
-			</div>
-			</div>
+			</div> -->
+
 
 
 		</div>

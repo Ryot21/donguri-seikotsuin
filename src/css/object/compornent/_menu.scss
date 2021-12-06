@@ -1,15 +1,15 @@
 
 .menu-lists {
-	font-size: 14px;
+	font-size: 12px;
 	color: $inkblack;
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	padding-bottom: 50px;
-	@include max-screen($break_point_max) {
-		font-size: 12px;
-		padding-top: 15px;
-		padding-bottom: 0;
+	padding-bottom: 15px;
+	@include min-screen($break_point_max) {
+		font-size: 14px;
+		padding-top: 20px;
+		padding-bottom: 50px;
 	}
 }
 .menu-list {

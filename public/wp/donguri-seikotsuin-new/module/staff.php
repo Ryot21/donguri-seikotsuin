@@ -18,16 +18,16 @@
 						<p class="staff-text">鍼灸とマッサージ、骨格矯正を組み合わせての施術(<a href="/menu/#menu1" class="red-text">DONGURIコース</a>)が得意です。</p>
 
 						<h4 class="staff-subtitle">趣味・特技</h4>
-						<p class="staff-text">野球、バトミントン、子育て(2021年11月1日に第1子誕生
-)</p>
+						<p class="staff-text">
+							野球、バトミントン、子育て(2021年11月1日に第1子誕生)
+						</p>
 
 						<h4 class="staff-subtitle">メッセージ</h4>
-						<p class="staff-text">世田谷内の鍼灸整骨院で6年勤務。<br class="PC-br">グループ内最年少院長を務め、院運営に携わり、<br class="PC-br">その経験を生かし妻の地元である下山口に独立開業。</p>
-
+						<p class="staff-text">世田谷内の鍼灸整骨院で6年勤務。<br class="PC-br">グループ内最年少院長を務め、院運営に携わり、<br class="PC-br">その経験を生かし妻の地元である下山口に独立開業。<br class="PC-br">妻も同資格でたまに出勤しています。</p>
 					</div>
 				</div>
 				<!-- 智美さん -->
-				<div class="page-kotei-fristbox">
+				<!-- <div class="page-kotei-fristbox">
 					<div class="page-kotei-fristbox__pic">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-tomomi.jpg" alt="佐藤智美">
 					</div>
@@ -47,5 +47,5 @@
 						<h4 class="staff-subtitle">メッセージ</h4>
 						<p class="staff-text">3行くらいで大丈夫かと思います。</p>
 					</div>
-				</div>
+				</div> -->
 			<!-- </div> -->

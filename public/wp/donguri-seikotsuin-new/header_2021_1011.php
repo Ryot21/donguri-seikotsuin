@@ -95,11 +95,11 @@
 						<span class="ja-title">ブログ</span>
 					</a>
 				</li>
-				<!-- 7.院内／スタッフ紹介 -->
+				<!-- 7.院内／院長紹介 -->
 				<li class="mobile-menu__item">
 					<a class="mobile-menu__link" href="/introduction/">
 						<span class="en-title">introduction</span>
-						<span class="ja-title">院内／スタッフ</span>
+						<span class="ja-title">院内紹介</span>
 					</a>
 				</li>
 				<!-- 8.アクセス -->
@@ -192,7 +192,7 @@
 						ブログ
 					</a>
 					</li>
-					<!-- 7.院内／スタッフ紹介 -->
+					<!-- 7.院内／院長紹介 -->
 					<li class="c-header__menu">
 					<a href="/introduction/">
 						<!-- <img src="images/icon/menu_icon1.svg" alt="院内／スタッフ"> -->

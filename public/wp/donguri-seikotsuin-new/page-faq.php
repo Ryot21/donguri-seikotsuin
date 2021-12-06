@@ -42,9 +42,9 @@ Template Name: FAQ template
 	<div id="area-3" class="page l-container">
 
 
-		<!-- 交通事故施術について -->
+		<!-- 施術について -->
 		<section id="faq02" class="page-faq">
-			<h2 class="page-kotei__title ">交通事故施術について</h2>
+			<h2 class="page-kotei__title ">施術について</h2>
 			<ul class="page-faq__wrap ">
 			<!-- 一つ目 -->
 			<li class="page-faq-block">

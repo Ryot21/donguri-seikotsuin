@@ -70,11 +70,26 @@ Template Name: TOP template
 		<h2 class="donguri-title text-L__red donguri-title-lb">
 			どんぐり整骨院<br>鍼灸マッサージ院
 		</h2>
-		<p class="page-index__text">
-			どんぐりは夫婦２人で作り出す<br class="SP-br">
-			あたたかな雰囲気でお迎えします。<br>
-			地域の皆様の健康と笑顔を<br class="SP-br">
-			サポートします。
+		<p class="page-index__text" style="font-weight: bold;">
+
+			原因の多くは筋肉と筋肉の滑りの悪さによる滑走不全です。<br class="PC-br">
+			当院では滑走不全の場所を特定し、改善させることによって<br class="PC-br">
+			<span class="red-text">痛みの除去</span>、<span class="red-text">筋肉の出力UP</span>、<span class="red-text">筋肉の柔軟性を改善</span>させて<br class="PC-br">
+			<span class="red-text">根本的な解決を目指す施術</span>になります。<br class="PC-br">
+			また、鍼、灸、特殊電気療法を用いて、自律神経や<br class="PC-br">
+			原因の分からない症状を東洋医学と西洋医学の混合治療により<br class="PC-br">
+			改善を目指します。<br>
+			<br>
+			①鍼灸<br>
+			②骨盤の歪み矯正<br>
+			③深層指圧<br>
+			④ストレッチ<br>
+			⑤特殊電気療法<br>
+			<br>
+			これら<span class="red-text">５つ</span>を全て用いて、<br class="PC-br">
+			その時の身体の状態に合わせた<br class="PC-br">
+			<span style="background:linear-gradient(transparent 70%, #E5D02F 0%);">オーダーメイド施術で根本的解決を目指します。</span>
+
 		</p>
 		<div class="top-shoukai-inner display-f">
 			<div class="p-card p-card__1">
@@ -87,12 +102,12 @@ Template Name: TOP template
 			<div class="p-card p-card__2">
 				<div class="p-card__thumbnail">
 					<img class="p-card__thumbnail-2" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その３">
-					<img class="p-card__thumbnail-2" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-2.jpg" alt="院内紹介その3">
+					<img class="p-card__thumbnail-2" src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syoumen-e1638813324206.jpg" alt="どんぐり整骨院 正面">
 				</div>
 			</div>
 			<div class="p-card p-card__3">
 				<div class="p-card__thumbnail">
-					<img class="p-card__thumbnail-3" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="どんぐり整骨院 外観">
+					<img class="p-card__thumbnail-3" src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syogo-5-1-scaled-e1638813010757.jpg" alt="院長　施術">
 					<img class="p-card__thumbnail-3" src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-huuhu-scaled-e1637669783207.jpg" alt="佐藤夫婦">
 				</div>
 			</div>
@@ -134,7 +149,7 @@ Template Name: TOP template
 			<h2 class="c-flow__title pd-top" style="background: linear-gradient(transparent 80%, #E5D02F 0%);">ご利用までの流れ</h2>
 			<div class="c-flow-box">
 
-				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">1.</span>LINEや電話からご予約</h3>
+				<!-- <h3 class="SP c-flow-box-title"><span class="top-flow__nab">1.</span>LINEや電話からご予約</h3>
 				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-line.jpg" alt="ご予約方法">
@@ -143,49 +158,49 @@ Template Name: TOP template
 						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">1.</span>LINEや電話からご予約</h3>
 						<p>当院ではLINEやお電話からのご予約を行うことができます。<a href="https://line.me/R/ti/p/%40962vsbox" class="red-text">こちら</a>からアクセスいただき、QRコードをお持ちのスマートフォンから読み込んでいただき、お友達ご登録した後にご予約をお願いします。</p>
 					</div>
-				</div>
+				</div> -->
 
-				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">2.</span>カウンセリング</h3>
+				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">1.</span>カウンセリング</h3>
 				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-1.jpg" alt="カウンセリング">
 					</div>
 					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">2.</span>カウンセリング</h3>
+						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">1.</span>カウンセリング</h3>
 						<p>施術当日、受付にてカウンセリングシートを受け取っていただき、お体でお悩みの場所や症状についてご記入をお願いいたします。</p>
 					</div>
 				</div>
 
-				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">3.</span>検査</h3>
+				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">2.</span>検査</h3>
 				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-2.jpg" alt="検査">
 					</div>
 					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">3.</span>検査</h3>
+						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">2.</span>検査</h3>
 						<p>お答えいただいたカウンセリングシートを拝見させていただき、直接調査した上で施術方法をご提案＆ご説明させていただきます。</p>
 					</div>
 
 				</div>
 
-				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">4.</span>施術</h3>
+				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">3.</span>施術</h3>
 				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-3.jpg" alt="施術">
 					</div>
 					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">4.</span>施術</h3>
+						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">3.</span>施術</h3>
 						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 					</div>
 				</div>
 
-				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">5.</span>アフターカウンセリング</h3>
+				<h3 class="SP c-flow-box-title"><span class="top-flow__nab">4.</span>アフターカウンセリング</h3>
 				<div class="display-f c-flow-box__inner">
 					<div class="c-flow-box-img">
 						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-4.jpg" alt="アフターカウンセリング">
 					</div>
 					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">5.</span>アフターカウンセリング</h3>
+						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">4.</span>アフターカウンセリング</h3>
 						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 					</div>
 				</div>

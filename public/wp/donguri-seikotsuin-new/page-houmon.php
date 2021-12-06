@@ -62,9 +62,6 @@ Template Name: HOUMON template
 			</p>
 		</section>
 
-
-
-
 		<div class="topbox page-kotei__bottombox">
 			<div class="page-kotei__bottombox__pic">
 				<img src="<?php echo get_template_directory_uri(); ?>//images/pic/sample-pic.png" alt="">
@@ -97,7 +94,6 @@ Template Name: HOUMON template
 			</div>
 		</div>
 
-
 		<section class="kodawari pd-top pd-btm">
 
 			<!-- 施術無料体験 -->
@@ -105,15 +101,6 @@ Template Name: HOUMON template
 		
 			
 		</section>
-
-
-
-
-
-
-
-
-
 
 	<div class="page-box pd-btm">
 		<div class="c-flow">

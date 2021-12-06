@@ -45,11 +45,15 @@ Template Name: MENU template
 		<ul class="menu-lists">
 			<!-- 投稿されているWORKSの全てを表示 -->
 			<li class="menu-list">
-				<a href="#menu1">DONGURIコース</a>
+				<a href="#menu1">DONGURI整体コース</a>
 			</li>
 			<li class="menu-list">
-				<a href="#menu2">DONGURIマッサージ </a>
+				<a href="#menu2">DONGURIマッサージ</a>
 			</li>
+			<li class="menu-list">
+				<a href="#menu3">保険治療</a>
+			</li>
+
 			<!-- <li class="menu-list">
 				<a href="#menu3">鍼治療</a>
 			</li>
@@ -59,11 +63,11 @@ Template Name: MENU template
 		</ul>
 
 		<div class="page-menu pd-btm">
-		<!-- DONGURIコース -->
+		<!-- DONGURI整体コース -->
 			<div id="menu1" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">
 					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-sinsou-scaled-e1637744017827.jpg" alt="DONGURIコース">
-					<h3 class="page-menu-fristbox__pic__title">DONGURIコース<br><span class="SP-text-space">オーダーメイド式マッサージ</span></h3>
+					<h3 class="page-menu-fristbox__pic__title">DONGURI整体コース<br><span class="SP-text-space">オーダーメイド式マッサージ</span></h3>
 				</div>
 				<div class="page-menu-fristbox__menubox">
 					<p><strong>身体の痛み歪み<br>そのままにしていませんか？</strong></p>
@@ -112,7 +116,7 @@ Template Name: MENU template
 		<!-- DONGURIマッサージ  -->
 			<div id="menu2" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">
-					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-seitai-scaled-e1637743834598.jpg" alt="DONGURIマッサージ ">
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syogo-5-scaled-e1638812702723.jpg" alt="DONGURIマッサージ ">
 					<h3 class="page-menu-fristbox__pic__title">DONGURIマッサージ<br><span class="SP-text-space">もみほぐしのみコース</span></h3>
 				</div>
 				<div class="page-menu-fristbox__menubox">
@@ -138,6 +142,28 @@ Template Name: MENU template
 					</p>
 				</div>
 			</div>
+		<!-- 保険治療  -->
+			<div id="menu3" class="page-menu-fristbox">
+				<div class="page-menu-fristbox__pic">
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-seitai-scaled-e1637743834598.jpg" alt="保険治療 ">
+					<h3 class="page-menu-fristbox__pic__title">保険治療</h3>
+				</div>
+				<div class="page-menu-fristbox__menubox">
+					<p><strong>健康保険で一部負担可能です！</strong></p>
+					<p class="page-menu-fristbox__menubox__text">
+						
+						原因と発症日がはっきりと分かる腰痛や肩痛、<br class="PC-br">
+						その他の痛みなどの場合、健康保険を一部使用しての治療が可能です。<br class="PC-br">
+						初診の際は必ず健康保険証をご提示ください。<br class="PC-br">
+						料金は負担割合によって変更します。<br class="PC-br">
+						その他ご不明な点はお気軽にお問い合せください。
+					
+					</p>
+				</div>
+			</div>
+
+
+
 		<!-- 鍼治療 -->
 			<!-- <div id="menu3" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">

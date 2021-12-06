@@ -79,9 +79,9 @@ Template Name: ABOUT template
 
 		</section>
 
-		<!-- スタッフ紹介 -->
+		<!-- 院長紹介 -->
 		<section class="page-kotei page-box pd-btm">
-			<h2 class="page-kotei__title">スタッフ紹介</h2>
+			<h2 class="page-kotei__title">院長紹介</h2>
 
 			<?php get_template_part('module/staff'); ?>
 

@@ -113,11 +113,11 @@ Template Name: INTRODUCTION template
 						</div>
 						<div class="right-box_flex">
 							<div class="img-box">
-								<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-kigu-2-scaled-e1637660703540.jpg" alt="カバン置き">
+								<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syogo-5-1-scaled-e1638813010757.jpg" alt="カバン置き">
 							</div>
 							<div class="txt-box">
 								<div class="txt">
-								<div class="txt-ttl">お客様のカバン置きを各ベットに設置しております。</div>
+								<div class="txt-ttl">テキストテキストテキストテキスト</div>
 								</div>
 							</div>
 						</div>
@@ -138,9 +138,9 @@ Template Name: INTRODUCTION template
 		</section>
 
 
-		<!-- スタッフ紹介 -->
+		<!-- 院長紹介 -->
 		<section class="page-kotei pd-btm">
-			<h2 class="page-kotei__title">スタッフ紹介</h2>
+			<h2 class="page-kotei__title">院長紹介</h2>
 			
 			<?php get_template_part('module/staff'); ?>
 

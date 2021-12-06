@@ -176,7 +176,7 @@
           <li class="mobile-menu__item">
             <a class="mobile-menu__item__link" href="/blog/">ブログ</a>
           </li>
-          <!-- 7.院内／スタッフ紹介 -->
+          <!-- 7.院内／院長紹介 -->
           <li class="mobile-menu__item">
             <a class="mobile-menu__item__link" href="/introduction/">院内紹介</a>
           </li>

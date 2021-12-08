@@ -102,73 +102,161 @@ Template Name: HOUMON template
 			
 		</section>
 
-	<div class="page-box pd-btm">
-		<div class="c-flow">
-			<h2 class="c-flow__title pd-top">無料施術体験までの流れ</h2>
-			<div class="c-flow-box">
+		<div class="page-box pd-btm">
+			<div class="c-flow">
+				<h2 class="c-flow__title pd-top">無料施術体験までの流れ</h2>
+				<div class="c-flow-box">
 
-				<h3 class="SP c-flow-box-title">1.お気軽にお電話ください！</h3>
-				<div class="display-f c-flow-box__inner">
-					<div class="c-flow-box-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-line.jpg" alt="ご予約方法">
+					<h3 class="SP c-flow-box-title">1.お気軽にお電話ください！</h3>
+					<div class="display-f c-flow-box__inner">
+						<div class="c-flow-box-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-line.jpg" alt="ご予約方法">
+						</div>
+						<div class="c-flow-box-textbox">
+							<h3 class="PC c-flow-box-title">1.まずはお気軽にお電話ください！</h3>
+							<p>
+								お忙しい日々の中でお体でお悩みなどありましたら、<span class="red-text">随時受付中</span>ですので、是非ご連絡下さい。ご希望の方は<a class="red-text" href="tel:04-2936-7744">04-2936-7744</a>までご連絡下さい。
+							</p>
+						</div>
 					</div>
-					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title">1.まずはお気軽にお電話ください！</h3>
-						<p>
-							お忙しい日々の中でお体でお悩みなどありましたら、<span class="red-text">随時受付中</span>ですので、是非ご連絡下さい。ご希望の方は<a class="red-text" href="tel:04-2936-7744">04-2936-7744</a>までご連絡下さい。
-						</p>
+
+
+					<h3 class="SP c-flow-box-title">2.訪問日程を相談</h3>
+					<div class="display-f c-flow-box__inner">
+						<div class="c-flow-box-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-8.jpg" alt="訪問日程調整">
+						</div>
+						<div class="c-flow-box-textbox">
+							<h3 class="PC c-flow-box-title">2.訪問日程を相談</h3>
+							<p>
+								お電話の中でお客さまのご都合の良い日程を提示させていただきます。キャンセルの場合は、<span class="red-text">前日まで</span>にご連絡いただきますようお願いします。
+							</p>
+						</div>
 					</div>
+
+
+					<h3 class="SP c-flow-box-title">3.ご自宅に訪問</h3>
+					<div class="display-f c-flow-box__inner">
+						<div class="c-flow-box-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-9.jpg" alt="ご自宅に訪問">
+						</div>
+						<div class="c-flow-box-textbox">
+							<h3 class="PC c-flow-box-title">3.ご自宅に訪問</h3>
+							<p>
+								お客さまとの簡単な会話で、お体でお悩みの箇所をお聞きかせいただき、
+								マッサージの準備をさせていただきます。
+							</p>
+						</div>
+					</div>
+
+
+
+					<h3 class="SP c-flow-box-title">4.無料施術開始</h3>
+					<div class="display-f c-flow-box__inner">
+						<div class="c-flow-box-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-3.jpg" alt="無料施術開始">
+						</div>
+						<div class="c-flow-box-textbox">
+							<h3 class="PC c-flow-box-title">4.無料施術開始</h3>
+							<p>
+								30分程度の医療マッサージを受けていただいた後に、
+								サービス内容のご説明をさせていただきます。（全所要時間60分）
+							</p>
+						</div>
+					</div>
+
+
 				</div>
-
-
-				<h3 class="SP c-flow-box-title">2.訪問日程を相談</h3>
-				<div class="display-f c-flow-box__inner">
-					<div class="c-flow-box-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-8.jpg" alt="訪問日程調整">
-					</div>
-					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title">2.訪問日程を相談</h3>
-						<p>
-							お電話の中でお客さまのご都合の良い日程を提示させていただきます。キャンセルの場合は、<span class="red-text">前日まで</span>にご連絡いただきますようお願いします。
-						</p>
-					</div>
-				</div>
-
-
-				<h3 class="SP c-flow-box-title">3.ご自宅に訪問</h3>
-				<div class="display-f c-flow-box__inner">
-					<div class="c-flow-box-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-9.jpg" alt="ご自宅に訪問">
-					</div>
-					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title">3.ご自宅に訪問</h3>
-						<p>
-							お客さまとの簡単な会話で、お体でお悩みの箇所をお聞きかせいただき、
-							マッサージの準備をさせていただきます。
-						</p>
-					</div>
-				</div>
-
-
-
-				<h3 class="SP c-flow-box-title">4.無料施術開始</h3>
-				<div class="display-f c-flow-box__inner">
-					<div class="c-flow-box-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-3.jpg" alt="無料施術開始">
-					</div>
-					<div class="c-flow-box-textbox">
-						<h3 class="PC c-flow-box-title">4.無料施術開始</h3>
-						<p>
-							30分程度の医療マッサージを受けていただいた後に、
-							サービス内容のご説明をさせていただきます。（全所要時間60分）
-						</p>
-					</div>
-				</div>
-
-
 			</div>
+			<!-- 訪問マッサージについて -->
+			<section id="faq03" class="page-faq">
+				<h2 class="page-kotei__title pd-top">よくある質問</h2>
+				<ul class="page-faq__wrap">
+					<!-- 一つ目 -->
+					<li class="page-faq-block">
+						<section>
+						<h3 class="page-faq-block__title">一度試してみたいのですが…</h3>
+						<div class="page-faq-block__text">
+							<p>無料施術体験を行っていますので、マッサージの施術内容を実際に身をもって体験していただき、またお身体の状態を見させていただければと思います。</p>
+
+						</div>
+						</section>
+					</li>
+					<!-- 二つ目 -->
+					<li class="page-faq-block">
+						<section>
+						<h3 class="page-faq-block__title">介護保険と併用はできますか？</h3>
+						<div class="page-faq-block__text">
+							<p>はい、併用可能です。訪問マッサージは健康保険を使いますので介護保険の上限を気にすることなくご利用いただけます。</p>
+
+						</div>
+						</section>
+					</li>
+					<!-- 三つ目 -->
+					<li class="page-faq-block">
+						<section>
+						<h3 class="page-faq-block__title">1回にかかる料金を知りたいです。</h3>
+						<div class="page-faq-block__text">
+							<p>医師の同意をいただけた場合は、健康保険適用となります。<br>
+							１部例外はございますが、自己負担割が１割負担の場合は400円～600円程度になります。その他、自己負担割合により異なります。</p>
+
+						</div>
+						</section>
+					</li>
+					<!-- 四つ目 -->
+					<li class="page-faq-block">
+						<section>
+						<h3 class="page-faq-block__title">交通費はかかりますか？</h3>
+						<div class="page-faq-block__text">
+							<p>いいえ、交通費込み金額となっていますので、別途で請求されることはございません。</p>
+
+						</div>
+						</section>
+					</li>
+					<!-- 五つ目 -->
+					<li class="page-faq-block">
+						<section>
+						<h3 class="page-faq-block__title">訪問時間はどのくらいですか？</h3>
+						<div class="page-faq-block__text">
+							<p>１回の訪問時間は30分程度のとなっております。</p>
+
+						</div>
+						</section>
+					</li>
+					<!-- 六つ目 -->
+					<li class="page-faq-block">
+						<section>
+						<h3 class="page-faq-block__title">生活保護の場合は訪問マッサージを受けられますか？</h3>
+						<div class="page-faq-block__text">
+							<p>はい、もちろん訪問マッサージを受けることができます。受ける際には、市町村の生活保護（福祉）課の承諾が必要になります。</p>
+
+						</div>
+						</section>
+					</li>
+					<!-- 七つ目 -->
+					<li class="page-faq-block">
+						<section>
+						<h3 class="page-faq-block__title">医師の同意は整形外科以外の診療科の医師でも大丈夫ですか？</h3>
+						<div class="page-faq-block__text">
+							<p>はい、大丈夫です。同意書は毎月医師に書いていただく必要がありますので、定期的に診ていただいている医師であれば、問題ないです。</p>
+
+						</div>
+						</section>
+					</li>
+					<!-- 八つ目 -->
+					<li class="page-faq-block">
+						<section>
+						<h3 class="page-faq-block__title">介護施設に入居していますが施設に来ていただけますか？</h3>
+						<div class="page-faq-block__text">
+							<p>はい、お伺い可能です！入浴やお食事のお時間など、施設での生活に差し支えない時間帯での訪問をさせていただきます。</p>
+
+						</div>
+						</section>
+					</li>
+
+				</ul>
+			</section>
 		</div>
-	</div>
 
 
 

@@ -87,7 +87,7 @@ Template Name: TOP template
 			⑤特殊電気療法<br>
 			<br>
 			これら<span class="red-text">５つ</span>を全て用いて、<br class="PC-br">
-			その時の身体の状態に合わせた<br class="PC-br">
+			　　その時の身体の状態に合わせた<br class="PC-br">
 			<span style="background:linear-gradient(transparent 70%, #E5D02F 0%);">オーダーメイド施術で根本的解決を目指します。</span>
 
 		</p>
@@ -118,35 +118,35 @@ Template Name: TOP template
 		<div class="top-riyuu">
 			<!-- 1. -->
 			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">1.</span>オーダーメイドの施術</h3>
-			<p class="top-riyuu__text"><span class="black-text">一人ひとりの症状に合った治療</span>をしますので、効果が出やすい。</p>
+			<p class="top-riyuu__text"><span class="red-text">一人ひとりの症状に合った治療</span>をしますので、効果が出やすい。</p>
 			<!-- 2. -->
 			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">2.</span>分かりやすく丁寧なカウンセリング</h3>
-			<p class="top-riyuu__text">お客さまがご自身でも気づかないところまで<span class="black-text">詳しく分析</span>し、分かりやすくご説明いたします。</p>
+			<p class="top-riyuu__text">お客さまがご自身でも気づかないところまで<span class="red-text">詳しく分析</span>し、分かりやすくご説明いたします。</p>
 			<!-- 3. -->
 			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">3.</span>予約優先制なので、待ち時間が少ない</h3>
-			<p class="top-riyuu__text"><span class="black-text">予約優先制</span>を導入しておりますので、計画的に治療を行います。<span class="black-text">当日予約されていない場合はお電話やLINEでお問い合わせください。</span></p>
+			<p class="top-riyuu__text"><span class="red-text">予約優先制</span>を導入しておりますので、計画的に治療を行います。<span class="red-text">当日予約されていない場合はお電話やLINEでお問い合わせください。</span></p>
 			<!-- 4. -->
 			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">4.</span>国家資格者が施術を行うので安心です</h3>
-			<p class="top-riyuu__text"><span class="black-text">柔道整復師・鍼灸師・あんま・マッサージ指圧師資格</span>を得た先生が施術を行います。</p>
+			<p class="top-riyuu__text"><span class="red-text">柔道整復師・鍼灸師・あんま・マッサージ指圧師資格</span>を得た先生が施術を行います。</p>
 			<!-- 5. -->
 			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">5.</span>ふらっと手ぶらで施術できます</h3>
 			<p class="top-riyuu__text">テキストテキストテキスト</p>
 			<!-- 6. -->
 			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">6.</span>女性に優しい治療院</h3>
-			<p class="top-riyuu__text"><span class="black-text">女性スタッフ</span>が在籍しているので、女性の方でも安心して施術を受けていただきます。</p>
+			<p class="top-riyuu__text"><span class="red-text">女性スタッフ</span>が在籍しているので、女性の方でも安心して施術を受けていただきます。</p>
 			<!-- 7. -->
 			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">7.</span>下山口駅から徒歩１分以内</h3>
-			<p class="top-riyuu__text">西部狭山線 下山口駅を降りてすぐなので<span class="black-text">好アクセス</span></p>
+			<p class="top-riyuu__text">西部狭山線 下山口駅を降りてすぐなので<span class="red-text">好アクセス</span></p>
 			<!-- 8. -->
 			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">8.</span>駐車場完備</h3>
 			<p class="top-riyuu__text">当院専用の駐車スペースを用意しております。</p>
 		</div>
 		
 	</section>
-	<!-- ご利用までの流れ -->
+	<!-- 施術の流れ -->
 	<div class="page-box pd-btm">
 		<div class="c-flow">
-			<h2 class="c-flow__title pd-top" style="background: linear-gradient(transparent 80%, #E5D02F 0%);">ご利用までの流れ</h2>
+			<h2 class="c-flow__title pd-top" style="background: linear-gradient(transparent 80%, #E5D02F 0%);">施術の流れ</h2>
 			<div class="c-flow-box">
 
 				<!-- <h3 class="SP c-flow-box-title"><span class="top-flow__nab">1.</span>LINEや電話からご予約</h3>

@@ -298,6 +298,7 @@ p {
   // font-family: $font__main_2;
   color: $inkblack;
   font-size: 15px;
+  font-weight: bold;
   margin: 0;
   @include min-screen($break_point_max) {
     font-size: 17px;

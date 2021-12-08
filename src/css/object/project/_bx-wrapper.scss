@@ -82,7 +82,7 @@
 
 .new-day {
 	display:inline-block;
-	font-size:0.8rem;
+	font-size:1rem;
 	margin-right:10px;
 	color:#777;
 }
@@ -91,4 +91,10 @@
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	@include min-screen($break_point_max) {
+		padding-top: 3px;
+	}
+}
+.new-title {
+	font-size:1rem;
 }

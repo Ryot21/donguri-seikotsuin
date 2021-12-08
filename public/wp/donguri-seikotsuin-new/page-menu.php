@@ -45,13 +45,13 @@ Template Name: MENU template
 		<ul class="menu-lists">
 			<!-- 投稿されているWORKSの全てを表示 -->
 			<li class="menu-list">
-				<a href="#menu1">DONGURI整体コース</a>
+				<a href="#menu1">DONGURI<br class="SP-br">整体コース</a>
 			</li>
 			<li class="menu-list">
-				<a href="#menu2">DONGURIマッサージ</a>
+				<a href="#menu2">DONGURI<br class="SP-br">マッサージ</a>
 			</li>
-			<li class="menu-list">
-				<a href="#menu3">保険治療</a>
+			<li class="menu-list menu-list-1">
+				<a href="#menu3">保険診療</a>
 			</li>
 
 			<!-- <li class="menu-list">
@@ -102,7 +102,7 @@ Template Name: MENU template
 						独自の方法で関節の機能を<br class="SP-br">改善させます<br>
 						<br>
 						<span class="black-text">5.特殊電気療法</span><br>
-						手技では緩み切らないコリなどに<br>
+						手技ではとれない痛みや自律神経に作用させ全体の機能改善に<br>
 					</p>
 					<!-- 料金・テーブル -->
 					<p><strong>料金プラン</strong></p>
@@ -142,11 +142,12 @@ Template Name: MENU template
 					</p>
 				</div>
 			</div>
-		<!-- 保険治療  -->
+		<!-- 保険診療  -->
 			<div id="menu3" class="page-menu-fristbox">
 				<div class="page-menu-fristbox__pic">
-					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-seitai-scaled-e1637743834598.jpg" alt="保険治療 ">
-					<h3 class="page-menu-fristbox__pic__title">保険治療</h3>
+					<!-- <img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-menu-seitai-scaled-e1637743834598.jpg" alt="保険診療"> -->
+					<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-menu-hoken-1.jpg" alt="保険診療">
+					<h3 class="page-menu-fristbox__pic__title">保険診療</h3>
 				</div>
 				<div class="page-menu-fristbox__menubox">
 					<p><strong>健康保険で一部負担可能です！</strong></p>

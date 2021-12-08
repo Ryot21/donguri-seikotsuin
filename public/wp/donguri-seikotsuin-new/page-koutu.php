@@ -82,7 +82,7 @@ Template Name: KOUTU template
 			</div>
 		</div>
 
-		<!-- 交交通事故にお悩みの方へ -->
+		<!-- 交通事故にお悩みの方へ -->
 		<section class="kodawari pd-top">
 			<h2 class="page-kotei__title">交通事故にお悩みの方へ</h2>
 			<p class="page-kotei__text pd-btm">
@@ -171,7 +171,7 @@ Template Name: KOUTU template
 			<!-- 交通事故施術について -->
 			<section id="faq02" class="page-faq">
 				<h2 class="page-kotei__title pd-top">よくある質問</h2>
-					<ul class="page-faq__wrap ">
+				<ul class="page-faq__wrap ">
 					<!-- 一つ目 -->
 					<li class="page-faq-block">
 						<section>

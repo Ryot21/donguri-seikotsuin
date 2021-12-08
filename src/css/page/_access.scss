@@ -35,7 +35,10 @@
 			}
 	}
 	&-inforbox {
-		color: $black;
+		// color: $black;
+		@include min-screen($break_point_max) {
+			font-weight: bold;
+		}
 	}
 	&-timebox { //【一つ目】のコンテンツ内はここに
 		width: 100%;

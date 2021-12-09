@@ -2460,7 +2460,7 @@ th {
 }
 
 .red-text {
-  color: #b01717 !important;
+  color: #d70000 !important;
   font-weight: bold;
 }
 
@@ -2470,9 +2470,9 @@ th {
 }
 
 .green-text {
-  color: #568766 !important;
+  color: #416b4f !important;
   font-weight: bold;
-  text-shadow: 1px 1px #2b2a29;
+  text-shadow: 0 0 #2b2a29;
 }
 
 .yellow-text {
@@ -2492,11 +2492,11 @@ th {
 .text-L__pink {
   font-size: 32px;
   font-weight: bold;
-  text-shadow: 1px 1px #2b2a29;
+  text-shadow: 1px 1px #BCBBB6;
 }
 
 .text-L__red {
-  color: #b01717 !important;
+  color: #d70000 !important;
 }
 
 .text-L__blue {
@@ -2504,7 +2504,7 @@ th {
 }
 
 .text-L__green {
-  color: #568766 !important;
+  color: #416b4f !important;
 }
 
 .text-L__yellow {
@@ -2526,7 +2526,7 @@ th {
 }
 
 .text-LL__red {
-  color: #b01717 !important;
+  color: #d70000 !important;
 }
 
 .text-LL__blue {
@@ -2534,7 +2534,7 @@ th {
 }
 
 .text-LL__green {
-  color: #568766 !important;
+  color: #416b4f !important;
 }
 
 .text-LL__yellow {
@@ -3102,8 +3102,8 @@ l-wrapper
   content: '';
   width: 5px;
   height: 5px;
-  border-top: 3px solid #053f3f;
-  border-right: 3px solid #053f3f;
+  border-top: 3px solid #416b4f;
+  border-right: 3px solid #416b4f;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   transition-duration: 0.5s;
@@ -4442,7 +4442,6 @@ article
 .blog-fristbox,
 .page-blog-fristbox {
   max-width: 1000px;
-  padding-top: 30px;
   margin: 0 auto;
 }
 
@@ -4731,7 +4730,7 @@ article
 }
 
 .page-top__line__link:hover {
-  background: #053f3f;
+  background: #416b4f;
   transition-duration: 0.5s;
 }
 
@@ -5164,7 +5163,7 @@ article
   right: 0;
   margin: 0 auto;
   width: 30px;
-  background-color: #053f3f;
+  background-color: #416b4f;
   height: 2px;
 }
 
@@ -5474,7 +5473,7 @@ article
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   content: '★オススメ';
-  color: #b01717;
+  color: #d70000;
   font-size: 15px;
 }
 
@@ -5499,7 +5498,7 @@ article
 .p-pagination_arrow:after {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
-  color: #053f3f;
+  color: #416b4f;
   position: relative;
   top: -2px;
 }
@@ -5515,7 +5514,7 @@ article
 .p-pagination_count {
   width: 30px;
   height: 30px;
-  color: #053f3f;
+  color: #416b4f;
   border-radius: 10px;
   display: inline-block;
   text-align: center;
@@ -5526,8 +5525,8 @@ article
 }
 
 .p-pagination_current {
-  background-color: #053f3f;
-  border: solid 2px #053f3f;
+  background-color: #416b4f;
+  border: solid 2px #416b4f;
   color: #ffffffeb;
 }
 
@@ -5570,7 +5569,7 @@ article
 .p-pagination__single .single-pagination__title span {
   display: block;
   margin-bottom: 5px;
-  color: #053f3f;
+  color: #416b4f;
 }
 
 .p-pagination .pages {

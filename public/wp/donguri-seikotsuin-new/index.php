@@ -130,7 +130,7 @@ Template Name: TOP template
 			<p class="top-riyuu__text"><span class="red-text">柔道整復師・鍼灸師・あんま・マッサージ指圧師資格</span>を得た先生が施術を行います。</p>
 			<!-- 5. -->
 			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">5.</span>ふらっと手ぶらで施術できます</h3>
-			<p class="top-riyuu__text">テキストテキストテキスト</p>
+			<p class="top-riyuu__text">上下お着替えもご用意あるので会社帰りでもOK</p>
 			<!-- 6. -->
 			<h3 class="top-riyuu__title"><span class="top-riyuu__nab">6.</span>女性に優しい治療院</h3>
 			<p class="top-riyuu__text"><span class="red-text">女性スタッフ</span>が在籍しているので、女性の方でも安心して施術を受けていただきます。</p>
@@ -190,7 +190,7 @@ Template Name: TOP template
 					</div>
 					<div class="c-flow-box-textbox">
 						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">3.</span>施術</h3>
-						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<p>どんぐり整骨院ではあなたに合った施術を提案して施術をおこないます。 筋肉、神経、ツボにアプローチをして痛みを改善し、根本の歪みを正し、 痛みの出ない身体づくりを目指します。</p>
 					</div>
 				</div>
 
@@ -201,7 +201,7 @@ Template Name: TOP template
 					</div>
 					<div class="c-flow-box-textbox">
 						<h3 class="PC c-flow-box-title"><span class="top-flow__nab">4.</span>アフターカウンセリング</h3>
-						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						<p>施術後の変化であったり、お身体をより楽にするために、ご自宅でできるストレッチやトレーニングなどをお身体に合わせてアドバイスします。</p>
 					</div>
 				</div>
 

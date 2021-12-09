@@ -151,45 +151,10 @@
       <!-- ハンバーガーメニュー / モバイルメニュー -->
       <div id="js-menu" class="mobile-menu">
         <h2 class="mobile-menu__ttl">menu</h2>
-        <ul class="mobile-menu__main">
-          <!-- 1.ホーム -->
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/">ホーム</a>
-          </li>
-          <!-- 2.当院のこだわり -->
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/about/">こだわり</a>
-          </li>
-          <!-- 3.メニュー -->
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/menu/">メニュー</a>
-          </li>
-          <!-- 4.交通事故施術 -->
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/koutu/">交通事故施術</a>
-          </li>
-          <!-- 5.訪問マッサージ -->
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/massage/">訪問マッサージ</a>
-          </li>
-          <!-- 6.ブログ -->
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/blog/">ブログ</a>
-          </li>
-          <!-- 7.院内／院長紹介 -->
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/introduction/">院内紹介</a>
-          </li>
-          <!-- 8.アクセス -->
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/access/">アクセス</a>
-          </li>
-          <!-- 9.よくあるご質問 -->
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__item__link" href="/faq/">よくある質問</a>
-          </li>
 
-        </ul>
+        <!-- ナビゲーション -->
+        <?php get_template_part('module/nav-sp'); ?>
+        
       </div>
 
 

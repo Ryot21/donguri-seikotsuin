@@ -10,7 +10,7 @@
 
 
 <!-- 紙 -->
-<div class="l-paper">
+<div class="l-paper pd-btm">
 	<header id="header" class="l-header">
 		<div class="l-header__wrap">
 			<div class="c-header">
@@ -23,19 +23,7 @@
 				</div>
 
 
-				<nav class="pc-nav">
-					<!-- ul -->
-					<?php $args = array(
-						'menu' => 'header-menu', //管理画面で作成したメニュー名
-						'menu_class' => 'pc-nav__lists', //メニューを構成する<ul>タグのクラス名
-						'container' => 'false', //<ul>タグを囲っている<div>タグについて
-						'link_before'  => '<div class="pc-nav__lists__iconbox"></div><p class="pc-nav__lists__text">',//テキストの直前
-						'link_after'      => '</p>',//テキストの直後
-					);
-						wp_nav_menu($args);
-					?>
-					<!-- // ul -->
-				</nav>
+				<?php get_template_part('module/nav-pc'); ?>
 
 			</div>
 		</div>
@@ -45,9 +33,9 @@
 	<div id="area-3" class="page l-container">
 		<!-- お知らせ -->
 		<section class="page-blog">
-			<div class="page-blog-header">
+			<!-- <div class="page-blog-header">
 				<h2 class="page-blog-header__title">お知らせ</h2>
-			</div>
+			</div> -->
 			<!-- 画像説明 -->
 			<ul class="page-blog-fristbox">
 

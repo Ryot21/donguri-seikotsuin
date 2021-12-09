@@ -16,9 +16,9 @@
 	text-shadow: 1px 1px $inkblack;
 }
 .green-text {
-	color: $hiromi-green !important;
+	color: $Dgreen !important;
 	font-weight: bold;
-	text-shadow: 1px 1px $inkblack;
+	text-shadow: 0 0 $inkblack;
 }
 .yellow-text {
 	color: $hiromi-yellow !important;
@@ -39,7 +39,7 @@
 	&__pink {
 		font-size: $font-title-pick__sp;
 		font-weight: bold;
-		text-shadow: 1px 1px $inkblack;
+		text-shadow: 1px 1px $gray;
 		@include min-screen($break_point_max) {
 		font-size: $font-title-pick__tb;
 		}
@@ -50,7 +50,7 @@
 
 	&__red {color: $hiromi-red !important;}
 	&__blue {color: $hiromi-blue !important;}
-	&__green {color: $hiromi-green !important;}
+	&__green {color: $Dgreen !important;}
 	&__yellow {color: $hiromi-yellow !important;}
 	&__pink {color: $hiromi-pink !important;}
 
@@ -74,7 +74,7 @@
 
 	&__red {color: $hiromi-red !important;}
 	&__blue {color: $hiromi-blue !important;}
-	&__green {color: $hiromi-green !important;}
+	&__green {color: $Dgreen !important;}
 	&__yellow {color: $hiromi-yellow !important;}
 	&__pink {color: $hiromi-pink !important;}
 

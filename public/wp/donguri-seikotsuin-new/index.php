@@ -87,7 +87,7 @@ Template Name: TOP template
 			⑤特殊電気療法<br>
 			<br>
 			これら<span class="red-text">５つ</span>を全て用いて、<br class="PC-br">
-			　　その時の身体の状態に合わせた<br class="PC-br">
+			その時の身体の状態に合わせた<br class="PC-br">
 			<span style="background:linear-gradient(transparent 70%, #E5D02F 0%);">オーダーメイド施術で根本的解決を目指します。</span>
 
 		</p>

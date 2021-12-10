@@ -67,7 +67,7 @@ Template Name: INTRODUCTION template
 					<div class="left-box_bottom">
 						<div class="left-box_flex">
 							<div class="img-box">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
+								<img src="https://donguri-massage.com/wp-content/uploads/2021/12/line_oa_chat_211210_210833-min-e1639138186796.jpg" alt="ウォーターサーバー">
 							</div>
 							<!-- <div class="txt-box">
 								<div class="txt">
@@ -77,7 +77,7 @@ Template Name: INTRODUCTION template
 						</div>
 						<div class="left-box_flex">
 							<div class="img-box">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
+								<img src="https://donguri-massage.com/wp-content/uploads/2021/12/line_oa_chat_211210_210325-e1639137910949.jpg" alt="院内待合室">
 							</div>
 							<!-- <div class="txt-box">
 								<div class="txt">
@@ -93,7 +93,7 @@ Template Name: INTRODUCTION template
 					<div class="right-box_top">
 						<div class="right-box_flex">
 							<div class="img-box">
-								<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-kigu-4-scaled-e1637661914595.jpg" alt="院内紹介 器具">
+								<img src="https://donguri-massage.com/wp-content/uploads/2021/12/line_oa_chat_211210_205409-min.jpg" alt="院内紹介 電気器具">
 							</div>
 							<!-- <div class="txt-box">
 								<div class="txt">
@@ -103,7 +103,7 @@ Template Name: INTRODUCTION template
 						</div>
 						<div class="right-box_flex">
 							<div class="img-box">
-								<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syogo-5-1-scaled-e1638813010757.jpg" alt="カバン置き">
+								<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syogo-5-1-scaled-e1638813010757.jpg" alt="施術風景">
 							</div>
 							<!-- <div class="txt-box">
 								<div class="txt">

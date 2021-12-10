@@ -116,8 +116,8 @@ Template Name: MENU template
 					<!-- 料金・テーブル -->
 					<p><strong>料金プラン</strong></p>
 					<p class="black-text">
-						30分 4,000円<br>
-						<span class="osusume">60分 7,600円</span>
+						45分 5,000円<br>
+						<span class="osusume">90分 9,500円</span>
 					</p>
 					<p>
 						※表示金額は、<br class="SP-br">全て税込価格となります。<br>

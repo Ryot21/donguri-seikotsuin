@@ -54,7 +54,7 @@ Template Name: HOUMON template
 
 		<div class="topbox page-kotei__bottombox">
 			<div class="page-kotei__bottombox__pic">
-				<img src="<?php echo get_template_directory_uri(); ?>//images/pic/sample-pic.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>//images/pic/donguri-houmon-1.jpg" alt="様々なお悩みを解決します">
 			</div>
 			<div class="page-kotei__bottombox__text">
 				<h3>様々なお悩みを解決します！</h3>
@@ -69,7 +69,7 @@ Template Name: HOUMON template
 
 		<div class="page-kotei__bottombox">
 			<div class="page-kotei__bottombox__pic">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/pic/sample-pic.png" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-houmon-2.jpg" alt="国家資格取得者がご自宅にお伺いします">
 			</div>
 			<div class="page-kotei__bottombox__text">
 				<h3>国家資格取得者がご自宅にお伺いします！</h3>
@@ -144,7 +144,7 @@ Template Name: HOUMON template
 					<h3 class="SP c-flow-box-title">4.無料施術開始</h3>
 					<div class="display-f c-flow-box__inner">
 						<div class="c-flow-box-img">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-flow-3.jpg" alt="無料施術開始">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/flow/donguri-houmon-3.jpg" alt="無料施術開始">
 						</div>
 						<div class="c-flow-box-textbox">
 							<h3 class="PC c-flow-box-title">4.無料施術開始</h3>

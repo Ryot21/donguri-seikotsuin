@@ -102,56 +102,56 @@
 			<!-- SP / 固定ナビ -->
 			<nav class="SP sp-nav-fixed">
 				<ul class="display-f-sp sp-nav-fixed__inner">
-				<!-- トップ -->
-				<li class="sp-nav-fixed__inner_box">
-					<a href="/">
-					<p>
-						<img class="d-top" src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-kodawari-s.png" alt="トップ">
-						<br>
-						トップ
-					</p>
-					</a>
-				</li>
-				<!-- メニュー -->
-				<li class="sp-nav-fixed__inner_box">
-					<a href="/menu/">
-					<p>
-						<img class="d-sec" src="<?php echo get_template_directory_uri(); ?>/images/icon/menu-32.svg" alt="メニュー">
-						<br>
-						メニュー
-					</p>
-					</a>
-				</li>
-				<!-- アクセス -->
-				<li class="sp-nav-fixed__inner_box">
-					<a href="/access/">
-					<p>
-						<img class="d-thr" src="<?php echo get_template_directory_uri(); ?>/images/icon/map-32.svg" alt="アクセス">
-						<br>
-						アクセス
-					</p>
-					</a>
-				</li>
-				<!-- よくある質問 -->
-				<li class="sp-nav-fixed__inner_box">
-					<a href="/faq/">
-					<p>
-						<img class="d-four" src="<?php echo get_template_directory_uri(); ?>/images/icon/faq-32.svg" alt="よくある質問">
-						<br>
-						FAQ
-					</p>
-					</a>
-				</li>
-				<!--ハンバーガーメニュー -->
-				<li>
-					<div id="js-menuToggle" class="gnav-btn">
-						<div class="gnav-btn__container">
-							<span></span>
-							<span></span>
-							<span></span>
+					<!-- トップ -->
+					<li class="sp-nav-fixed__inner_box">
+						<a href="/">
+						<p>
+							<img class="d-top" src="<?php echo get_template_directory_uri(); ?>/images/logo/donguri-kodawari-s.png" alt="トップ">
+							<br>
+							トップ
+						</p>
+						</a>
+					</li>
+					<!-- メニュー -->
+					<li class="sp-nav-fixed__inner_box">
+						<a href="/menu/">
+						<p>
+							<img class="d-sec" src="<?php echo get_template_directory_uri(); ?>/images/icon/menu-32.svg" alt="メニュー">
+							<br>
+							メニュー
+						</p>
+						</a>
+					</li>
+					<!-- アクセス -->
+					<li class="sp-nav-fixed__inner_box">
+						<a href="/access/">
+						<p>
+							<img class="d-thr" src="<?php echo get_template_directory_uri(); ?>/images/icon/map-32.svg" alt="アクセス">
+							<br>
+							アクセス
+						</p>
+						</a>
+					</li>
+					<!-- よくある質問 -->
+					<li class="sp-nav-fixed__inner_box">
+						<a href="/faq/">
+						<p>
+							<img class="d-four" src="<?php echo get_template_directory_uri(); ?>/images/icon/faq-32.svg" alt="よくある質問">
+							<br>
+							FAQ
+						</p>
+						</a>
+					</li>
+					<!--ハンバーガーメニュー -->
+					<li>
+						<div id="js-menuToggle" class="gnav-btn">
+							<div class="gnav-btn__container">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
 						</div>
-					</div>
-				</li>
+					</li>
 				</ul>
 			</nav>
 

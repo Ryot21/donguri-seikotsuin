@@ -19,19 +19,9 @@ Template Name: INTRODUCTION template
 					<!-- パンくず -->
 					<?php get_template_part('module/breadcrumb'); ?>
 				</div>
-				<nav class="pc-nav">
-					<!-- ul -->
-					<?php $args = array(
-						'menu' => 'header-menu', //管理画面で作成したメニュー名
-						'menu_class' => 'pc-nav__lists', //メニューを構成する<ul>タグのクラス名
-						'container' => 'false', //<ul>タグを囲っている<div>タグについて
-						'link_before'  => '<div class="pc-nav__lists__iconbox"></div><p class="pc-nav__lists__text">',//テキストの直前
-						'link_after'      => '</p>',//テキストの直後
-					);
-						wp_nav_menu($args);
-					?>
-					<!-- // ul -->
-				</nav>
+
+				<!-- ナビゲーション -->
+				<?php get_template_part('module/nav-pc'); ?>
 
 			</div>
 		</div>
@@ -67,11 +57,11 @@ Template Name: INTRODUCTION template
 						<div class="img-box">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-huuhu.jpg" alt="どんぐり整骨院 笑顔">
 						</div>
-						<div class="txt-box">
-						<div class="txt">
-							<div class="txt-ttl">どんぐり整骨院は夫婦で営業しております。皆様の声を真摯に受け止め、お体のお悩みを解決します。</div>
-						</div>
-						</div>
+						<!-- <div class="txt-box">
+							<div class="txt">
+								<div class="txt-ttl">どんぐり整骨院は夫婦で営業しております。皆様の声を真摯に受け止め、お体のお悩みを解決します。</div>
+							</div>
+						</div> -->
 					</div>
 					<!-- 左/下 -->
 					<div class="left-box_bottom">
@@ -79,21 +69,21 @@ Template Name: INTRODUCTION template
 							<div class="img-box">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
 							</div>
-							<div class="txt-box">
+							<!-- <div class="txt-box">
 								<div class="txt">
-								<div class="txt-ttl">ベンチについて書く。</div>
+									<div class="txt-ttl">ベンチについて書く。</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<div class="left-box_flex">
 							<div class="img-box">
 								<img src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その１">
 							</div>
-							<div class="txt-box">
+							<!-- <div class="txt-box">
 								<div class="txt">
-								<div class="txt-ttl">ウォーターサーバーについて書く。</div>
+									<div class="txt-ttl">ウォーターサーバーについて書く。</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -105,21 +95,21 @@ Template Name: INTRODUCTION template
 							<div class="img-box">
 								<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/11/donguri-kigu-4-scaled-e1637661914595.jpg" alt="院内紹介 器具">
 							</div>
-							<div class="txt-box">
+							<!-- <div class="txt-box">
 								<div class="txt">
-								<div class="txt-ttl">テキストテキストテキストテキストテキストテキスト</div>
+									<div class="txt-ttl">テキストテキストテキストテキストテキストテキスト</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<div class="right-box_flex">
 							<div class="img-box">
 								<img src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syogo-5-1-scaled-e1638813010757.jpg" alt="カバン置き">
 							</div>
-							<div class="txt-box">
+							<!-- <div class="txt-box">
 								<div class="txt">
-								<div class="txt-ttl">テキストテキストテキストテキスト</div>
+									<div class="txt-ttl">テキストテキストテキストテキスト</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<!-- 右・下 -->
@@ -127,11 +117,11 @@ Template Name: INTRODUCTION template
 						<div class="img-box">
 							<img src="<?php echo get_template_directory_uri(); ?>/images/pic/donguri-kigu-3.jpg" alt="どんぐり整骨院 ベット">
 						</div>
-						<div class="txt-box">
+						<!-- <div class="txt-box">
 							<div class="txt">
 								<div class="txt-ttl">お客様に使用していただくベット。こんなご時世だからこそ、皆様にご安心いただけるよう、使用前・使用後のアルコール除菌を徹底しております。</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

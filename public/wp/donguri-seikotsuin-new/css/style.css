@@ -3927,7 +3927,7 @@ body #container {
 }
 
 .c-slider-item03 {
-  background: url(../images/slider/donguri-syogo-5.jpg);
+  background: url(http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syogo-5-scaled-e1639127059717.jpg);
   border-radius: 20px;
 }
 
@@ -5088,45 +5088,6 @@ article
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
   vertical-align: top;
-}
-
-.txt {
-  margin: auto;
-  color: #ffffff;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 0.34em;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.txt-ttl {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.txt-box {
-  background: rgba(101, 80, 70, 0.5);
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: 0.8s;
-  opacity: 0;
-}
-
-.txt-box:hover {
-  transition: 0.8s;
-  opacity: 1;
 }
 
 .page-index__title,
@@ -6481,6 +6442,10 @@ article
     background-size: 40% !important;
   }
 
+  .c-slider-item03 {
+    background: url(http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syogo-5-2-scaled-e1639126698156.jpg);
+  }
+
   #topics {
     padding: 20px 0 0 0;
     -webkit-justify-content: start !important;
@@ -7288,10 +7253,6 @@ article
 
   .page-index-worries .row {
     padding: 0 0 0 155px;
-  }
-
-  .txt-ttl {
-    font-size: 20px;
   }
 
   .p-pagination {

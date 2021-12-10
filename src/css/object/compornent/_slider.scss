@@ -37,7 +37,12 @@
 
 		}
 		&-item03 {
-			background:url(../images/slider/donguri-syogo-5.jpg);
+
+			background:url(http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syogo-5-scaled-e1639127059717.jpg);
+
+			@include min-screen($break_point_max) {
+				background:url(http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syogo-5-2-scaled-e1639126698156.jpg);
+			}
 			// border: 1px solid $inkblack;
 			border-radius: 20px;
 

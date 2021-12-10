@@ -36,7 +36,7 @@ Template Name: TOP template
 					<span>
 						<img src="<?php echo get_template_directory_uri(); ?>/images/icon/check-box.png" alt="チェックボックス">
 					</span>
-					デスクワークや立ち仕事など、<span class="green-text">長時間同じ姿勢</span>でいると<br class="PC-br"><span class="green-text">体が辛い</span>
+					デスクワークや立ち仕事など、<span class="green-text">長時間同じ姿勢</span>でいると<span class="green-text">体が辛い</span>
 				</p>
 				<p>	
 					<!-- チェックマーク -->
@@ -101,7 +101,7 @@ Template Name: TOP template
 			</div>
 			<div class="p-card p-card__2">
 				<div class="p-card__thumbnail">
-					<img class="p-card__thumbnail-2" src="<?php echo get_template_directory_uri(); ?>/images/innaisyoukai/sample-1.jpg" alt="院内紹介その３">
+					<img class="p-card__thumbnail-2" src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-bed-scaled-e1639119894911.jpg" alt="どんぐり整骨院 ベット">
 					<img class="p-card__thumbnail-2" src="http://donguri.dev-webitch.xyz/wp-content/uploads/2021/12/donguri-syoumen-e1638813324206.jpg" alt="どんぐり整骨院 正面">
 				</div>
 			</div>

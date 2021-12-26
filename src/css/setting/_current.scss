@@ -1,11 +1,10 @@
 #menu-header-menu {
 	.current-menu-item a p,
-
 	.current-menu-item a .st0 {
-	&__green {color: $hiromi-green !important;}
-		color: $hiromi-green !important;
+		//color: $hiromi-green !important;
 		font-weight: bold;
 		// text-shadow: 1px 0px 1px $inkblack;
+		&__green {color: $hiromi-green !important;}
 	}
 
 
@@ -28,11 +27,20 @@
 	// text-shadow: 2px 2px 1px $white;
 }
 
-
+.news {
+	.current-menu-item:nth-child(4) a p,
+	.current-blog:nth-child(4) a p {
+		color: $hiromi-green !important;
+		font-weight: bold;
+		// text-shadow: 1px 0px 1px $inkblack;
+	}
+}
 .blog {
+	.current-menu-item:nth-child(5) a p,
 	.current-blog:nth-child(5) a p {
 		color: $hiromi-green !important;
 		font-weight: bold;
 		// text-shadow: 1px 0px 1px $inkblack;
 	}
 }
+

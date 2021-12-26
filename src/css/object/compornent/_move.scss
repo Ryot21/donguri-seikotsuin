@@ -22,7 +22,7 @@
 		}
 		@include min-screen($break_point_1440) {
 			width:93.5%;
-			max-width: 960px;
+			max-width: 1060px;
 			padding: 20px 40px;
 		}
 		li { 
@@ -96,6 +96,7 @@
 				left: 0;
 				width: 100%;
 				height: 60px;
+				box-shadow: 0px 0px 2px $lightblack;
 				z-index: 999999;
 			}
 		}
@@ -104,9 +105,10 @@
 			width: 50%;
 			height: 60px;
 			background: $gray;
-			box-shadow: 0px 1px 2px $lightblack inset;
+			// box-shadow: 0px 1px 2px $lightblack inset;
 			transition: all .5s;
 			&__link {
+				text-shadow: 0 0 2px hsla(0, 0%, 0%, 0.149);
 				// アイコン部分
 				&::before {
 					position: absolute;
@@ -141,14 +143,14 @@
 			width: 50%;
 			height: 60px;
 			background: #62C734;
-			box-shadow: 0px 1px 2px $lightblack inset;
+			// box-shadow: 0px 1px 2px $lightblack inset;
 			transition: all .5s;
 			// &:hover {
 			// 		background: $Dgreen;
 			// 		transition-duration: 0.5s; 
 			// }
 			&__link {
-
+				text-shadow: 0 0 2px hsla(0, 0%, 0%, 0.149);
 				// アイコン部分
 				&::before {
 					position: absolute;

@@ -91,6 +91,14 @@ Template Name: TOP template
 			<span style="background:linear-gradient(transparent 70%, #E5D02F 0%);">オーダーメイド施術で根本的解決を目指します。</span>
 
 		</p>
+
+
+		<?php
+			echo do_shortcode('[smartslider3 slider="5"]');
+		?>
+
+
+
 		<div class="top-shoukai-inner display-f">
 			<div class="p-card p-card__1">
 				<div class="p-card__thumbnail">

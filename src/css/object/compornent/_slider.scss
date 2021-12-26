@@ -27,11 +27,13 @@
 				background-size: 40% !important;
 			}
 			@include min-screen($break_point_1440) {
-				background-size: 40% !important;
+				background-size: 35% !important;
 			}
 		}
 		&-item02 {
-			background:url(../images/slider/donguri-kigu-1.jpg);
+			// background:url(../images/slider/donguri-kigu-1.jpg);
+			background:url(../images/slider/donguri-hari-1.jpg);
+
 			// border: 1px solid $inkblack;
 			border-radius: 20px;
 
@@ -50,7 +52,7 @@
 	}
 
 
-
+	
 	/*矢印の設定*/
 	.slick-prev, 
 	.slick-next {

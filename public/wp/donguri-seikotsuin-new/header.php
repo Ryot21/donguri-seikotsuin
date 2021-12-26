@@ -191,41 +191,27 @@
 			<header id="header" class="l-header">
 				<div class="l-header__wrap">
 					<!-- Slick スライダー -->
-					<ul class="c-slider">
-							<li class="c-slider-item c-slider-item02">
+					<!-- <ul class="c-slider"> -->
+							<!-- <li class="c-slider-item c-slider-item02"> -->
 								<!-- _slider.scss / 1枚目 -->
-							</li>
-							<li class="c-slider-item c-slider-item01">
+							<!-- </li> -->
+							<!-- <li class="c-slider-item c-slider-item01"> -->
 								<!-- _slider.scss / 2枚目 -->
-							</li>
-							<li class="c-slider-item c-slider-item03">
+							<!-- </li> -->
+							<!-- <li class="c-slider-item c-slider-item03"> -->
 								<!-- _slider.scss / 3枚目 -->
-							</li>
-					</ul>
+							<!-- </li> -->
+					<!-- </ul> -->
+					<?php
+						echo do_shortcode('[smartslider3 slider="2"]');
+					?>
+
+
 					<!-- ニュースティッカー -->
-					<di id="topics" class="display-f"><!-- bx-wrapper > project > scss -->
-						<p class="topics-title">お知らせ</p>
-						<ul class="l-page-newsbox">
+					<!-- bx-wrapper > project > scss -->
+					<div id="topics" class="display-f">
 
-							<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
-								<?php
-									$wp_query = new WP_Query();
-									$my_posts = array(
-										'post_type' => 'post',
-										'posts_per_page' => '3', // 表示件数の指定
-										'category_name' => 'news', //表示したいカテゴリー名を入力
-									);
-									$wp_query->query( $my_posts );
-									if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
-								?>
-
-								<?php get_template_part('module/news-top'); ?>
-								<?php endwhile; endif; ?>
-
-							<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
-
-						</ul>
-					</di>
+					</div>
 					<!-- ナビゲーション -->
 					<?php get_template_part('module/nav-pc'); ?>
 

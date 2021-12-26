@@ -24,7 +24,6 @@ Version: 2021.04.01（更新日）
 
 #menu-header-menu .current-menu-item a p,
 #menu-header-menu .current-menu-item a .st0 {
-  color: #568766 !important;
   font-weight: bold;
 }
 
@@ -38,6 +37,13 @@ Version: 2021.04.01（更新日）
   font-weight: bold;
 }
 
+.news .current-menu-item:nth-child(4) a p,
+.news .current-blog:nth-child(4) a p {
+  color: #568766 !important;
+  font-weight: bold;
+}
+
+.blog .current-menu-item:nth-child(5) a p,
 .blog .current-blog:nth-child(5) a p {
   color: #568766 !important;
   font-weight: bold;
@@ -1867,7 +1873,6 @@ body {
 
 .bgc {
   position: relative;
-  background-color: rgba(131, 112, 84, 0.349);
 }
 
 .bgc__icon {
@@ -2982,7 +2987,7 @@ l-sec-content
 
 .sp-nav-fixed li {
   width: 20%;
-  background: #CDAF7F;
+  background: #F0CC94;
   -webkit-filter: drop-shadow(0px 0px 1px black);
   filter: drop-shadow(0px 0px 1px black);
 }
@@ -3715,8 +3720,11 @@ body #container {
   width: 50%;
   height: 60px;
   background: #BCBBB6;
-  box-shadow: 0px 1px 2px #4E4848 inset;
   transition: all .5s;
+}
+
+.page-btm__tel__link {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.149);
 }
 
 .page-btm__tel__link::before {
@@ -3752,8 +3760,11 @@ body #container {
   width: 50%;
   height: 60px;
   background: #62C734;
-  box-shadow: 0px 1px 2px #4E4848 inset;
   transition: all .5s;
+}
+
+.page-btm__line__link {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.149);
 }
 
 .page-btm__line__link::before {
@@ -3922,7 +3933,7 @@ body #container {
 }
 
 .c-slider-item02 {
-  background: url(../images/slider/donguri-kigu-1.jpg);
+  background: url(../images/slider/donguri-hari-1.jpg);
   border-radius: 20px;
 }
 
@@ -4150,10 +4161,6 @@ body #container {
 article
 
 =======================*/
-
-#topics {
-  padding: 0px 0 0 20px;
-}
 
 .topics-title {
   font-weight: bold;
@@ -6331,6 +6338,21 @@ article
     padding: 10px 30px 10px 35px;
   }
 
+  .c-flow-box-img {
+    width: calc(50% - 5px);
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
+
+  .c-flow-box-textbox {
+    width: calc(50% - 5px);
+    margin-left: 5px;
+  }
+
+  .c-flow-box-textbox p {
+    padding-left: 10px;
+  }
+
   .c-footer__logo {
     width: 75px;
     margin: 25px auto;
@@ -7149,17 +7171,6 @@ article
     padding: 4px 5px 4px;
   }
 
-  .c-flow-box-img {
-    width: calc(50% - 5px);
-    margin-right: 5px;
-    margin-bottom: 0;
-  }
-
-  .c-flow-box-textbox {
-    width: calc(50% - 5px);
-    margin-left: 5px;
-  }
-
   .c-footer__logo {
     width: 130px;
     margin: 50px auto 20px;
@@ -7289,12 +7300,12 @@ article
 
   .pc-nav__lists.UpMove {
     width: 93.5%;
-    max-width: 960px;
+    max-width: 1060px;
     padding: 20px 40px;
   }
 
   .c-slider-item01 {
-    background-size: 40% !important;
+    background-size: 35% !important;
   }
 
   .p-card__thumbnail {
@@ -7365,7 +7376,13 @@ article
     left: 0;
     width: 100%;
     height: 60px;
+    box-shadow: 0px 0px 2px #4E4848;
     z-index: 999999;
+  }
+
+  #topics {
+    margin-top: 30px;
+    margin-bottom: 0px !important;
   }
 
   .p-card {

@@ -1,0 +1,19 @@
+	<p class="topics-title">お知らせ</p>
+	<ul class="l-page-newsbox">
+
+
+			<?php
+				$wp_query = new WP_Query();
+				$my_posts = array(
+					'post_type' => 'post',
+					'posts_per_page' => '3',
+					'category_name' => 'news',
+				);
+				$wp_query->query( $my_posts );
+				if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
+			?>
+
+			<?php get_template_part('module/news-top'); ?>
+			<?php endwhile; endif; ?>
+
+	</ul>

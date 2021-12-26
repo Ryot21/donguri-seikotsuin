@@ -149,10 +149,9 @@ Template Name: KOUTU template
 						<div class="c-flow-box-textbox">
 							<h3 class="PC c-flow-box-title">4.当院にご連絡ください</h3>
 							<p>当院に<span class="red-text">受診予約</span>のご連絡をください。診察日時を調整させていただきます。予約方法につきましては、電話予約もしくはLINE予約があります。<br>
-							<span class="">電話予約</span>はこちら：
-							<a class="c-flow-box-textbox__link red-text" href="tel:04-2936-7744">04-2936-7744</a><br class="PC-br">
-							<span class="">LINE予約</span>はこちら：
-							<a class="c-flow-box-textbox__link red-text" href="https://line.me/R/ti/p/%40962vsbox">公式アカウント</a>
+							電話予約はこちら：<br class="TB-br"><a class="c-flow-box-textbox__link red-text" href="tel:04-2936-7744">04-2936-7744</a>
+							<br class="PC-br">
+							LINE予約はこちら：<br class="TB-br"><a class="c-flow-box-textbox__link red-text" href="https://line.me/R/ti/p/%40962vsbox">公式アカウント</a>
 							</p>
 						</div>
 					</div>

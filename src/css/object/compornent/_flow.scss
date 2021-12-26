@@ -79,7 +79,7 @@
 	}
 	&-img {
 		margin-bottom: 15px;
-		@include min-screen($break_point_pc) {
+		@include min-screen($break_point_max) {
 			width: calc(50% - 5px);
 			margin-right: 5px;
 			margin-bottom: 0;
@@ -89,9 +89,14 @@
 		}
 	}
 	&-textbox {
-		@include min-screen($break_point_pc) {
+		@include min-screen($break_point_max) {
 			width: calc(50% - 5px);
 			margin-left: 5px;
+		}
+		p {
+			@include min-screen($break_point_max) {
+				padding-left: 10px;
+			}
 		}
 		&__link {
 			// @include max-screen($break_point_max) {

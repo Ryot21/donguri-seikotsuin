@@ -64,8 +64,10 @@
     $slug = $page->post_name;
   } elseif(is_home()) {//トップ
     $slug = 'index';
-  } elseif(is_category() || is_single()) {//ブログ
+  } elseif(is_category(array('1', '2','3')) || in_category(array('1', '2','3'))) {//ブログ
     $slug = 'blog';
+  } elseif(is_category('4') || in_category('4')) {//ブログ > お知らせ
+    $slug = 'news';
   }
 
 ?>
